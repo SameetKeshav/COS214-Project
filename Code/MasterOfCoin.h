@@ -1,6 +1,12 @@
 #ifndef MASTEROFCOIN_H
 #define MASTEROFCOIN_H
 
+#include "Economy.h"
+#include "Bannerman.h"
+#include "Factory.h"
+#include "Strategy.h"
+#include "Treasury.h"
+
 class MasterOfCoin : Treasury {
 
 private:
