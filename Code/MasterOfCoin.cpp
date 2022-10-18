@@ -1,16 +1,25 @@
 #include "MasterOfCoin.h"
 
-void MasterOfCoin::notify(WarIndicators sender) {
-	// TODO - implement MasterOfCoin::notify
-	throw "Not yet implemented";
+void MasterOfCoin::notify(WarIndicators sender)
+{
+
+    if(sender == bannerman)
+    {
+        decreaseCurrency();
+    }
+
+    else if(sender == economy)
+    {
+        manufacture();
+    }
 }
 
-void MasterOfCoin::decreaseCurrency() {
-	// TODO - implement MasterOfCoin::decreaseCurrency
-	throw "Not yet implemented";
+void MasterOfCoin::decreaseCurrency()
+{
+    economy->decreaseCurrency();
 }
 
-void MasterOfCoin::manufacture() {
-	// TODO - implement MasterOfCoin::manufacture
-	throw "Not yet implemented";
+void MasterOfCoin::manufacture()
+{
+    factory->make();
 }
