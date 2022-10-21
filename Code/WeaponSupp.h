@@ -1,11 +1,13 @@
 #ifndef WEAPONSUPP_H
 #define WEAPONSUPP_H
+#include "ArmySupplies.h"
 
 class WeaponSupp : ArmySupplies {
 
-
 public:
-	virtual int getAmount() = 0;
+    int getAmount() {
+        return 50;
+    }
 };
 
 #endif
