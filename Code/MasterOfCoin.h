@@ -2,7 +2,7 @@
 #define MASTEROFCOIN_H
 
 #include "Economy.h"
-#include "Bannerman.h"
+#include "Raven.h"
 #include "Factory.h"
 #include "Strategy.h"
 #include "Treasury.h"
@@ -11,15 +11,13 @@ class MasterOfCoin : Treasury {
 
 private:
 	Economy* economy;
-	Bannermanb* bannerman;
-	Factory* factory;
+	Raven* observer;
 	Strategy* strategy;
 
 public:
+    MasterOfCoin(Economy* economy, Raven* observer, Factory* factory, Strategy strategy);
 	void notify(WarIndicators sender);
-
 	void decreaseCurrency();
-
 	void manufacture();
 };
 
