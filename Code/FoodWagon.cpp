@@ -11,3 +11,7 @@ SupplyWagon* FoodWagon::clone() {
 void FoodWagon::setSup(ArmySupplies* sup){
     supp=sup;
 }
+
+ArmySupplies* FoodWagon::getSupplies() {
+    return supp;
+}
