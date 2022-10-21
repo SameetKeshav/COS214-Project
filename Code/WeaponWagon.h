@@ -10,7 +10,9 @@ class WeaponWagon : SupplyWagon {
 public:
 	ArmySupplies* supp;
 
-
+~WeaponWagon(){
+    delete supp;
+}
 };
 
 #endif
