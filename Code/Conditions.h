@@ -1,12 +1,12 @@
 #ifndef CONDITIONS_H
 #define CONDITIONS_H
 
-class Conditions : WarTheatre {
+class Conditions : public  WarTheatre {
 
 public:
 	WarTheatre* myVenue;
 
-	Strategy* getStrategy();
+	void sendScout();
 
 	Conditions(WarTheatre* myVenue);
 };

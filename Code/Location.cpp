@@ -1,16 +1,25 @@
 #include "Location.h"
 
-Location::Location() {
+Location::Location(String venue) {
 	// TODO - implement Location::Location
-	throw "Not yet implemented";
+	//throw "Not yet implemented";
+    cout << "Bannermen arrived " << venue << "!";
 }
 
-Strategy* Location::getStrategy() {
-	// TODO - implement Location::getStrategy
+void Location::sendScout() {
+	// TODO - implement Location::sendScout
 	throw "Not yet implemented";
+    //update conditions and all
 }
 
 void Location::createVenue(string venue) {
 	// TODO - implement Location::createVenue
-	throw "Not yet implemented";
+	//throw "Not yet implemented";
+   Conditions myDecorator = new Conditions(this); //check the pointer passed
+   //then decorate?
+
+}
+
+Location::~Location() {
+    cout << venue  << " destroyed.";
 }

@@ -1,13 +1,16 @@
 #ifndef LOCATION_H
 #define LOCATION_H
+#include <iostream>
 
-class Location : WarTheatre {
+using namespace std;
+
+class Location : public WarTheatre {
 
 
 public:
-	Location();
+	Location(string);
 
-	Strategy* getStrategy();
+	void sendScout();
 
 	void createVenue(string venue);
 

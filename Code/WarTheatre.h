@@ -1,6 +1,8 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
 
+using namespace std;
+
 class WarTheatre {
 
 private:
