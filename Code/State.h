@@ -9,7 +9,6 @@ private:
 
 public:
 	void decreaseCurrency();
-
 	void increaseCurrency();
 };
 
