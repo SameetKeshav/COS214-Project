@@ -38,3 +38,14 @@ void sendRaven::checkSupplies()
         subject->setMedical(as->getAmount());
     }
 }
+
+sendRaven::~sendRaven()
+{
+    /*for(int i = 0; i < 3; i++)
+    {
+        delete supplies[i];
+    }*/
+
+    //delete supplies;
+    delete subject;
+}

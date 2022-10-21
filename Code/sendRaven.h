@@ -14,12 +14,12 @@ private:
 	int numWeapons;
 	SupplyWagon** supplies;
 	Bannerman* subject;
-	MasterOfCoin m;
 
 public:
     sendRaven(SupplyWagon** supplies, Bannerman* subject);
 	void update();
 	void checkSupplies();
+    ~sendRaven();
 };
 
 #endif

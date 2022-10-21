@@ -30,3 +30,10 @@ void MasterOfCoin::manufacture()
 {
     observer->update();
 }
+
+MasterOfCoin::~MasterOfCoin()
+{
+    delete economy;
+    delete observer;
+    delete strategy;
+}
