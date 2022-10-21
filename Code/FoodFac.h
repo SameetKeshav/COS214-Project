@@ -1,11 +1,16 @@
 #ifndef FOODFAC_H
 #define FOODFAC_H
-
+#include "Factory.h"
+#include "ArmySupplies.h"
+#include "FoodSupp.h"
 class FoodFac : Factory {
 
 
 public:
-	virtual ArmySupplies* make() = 0;
+	 ArmySupplies* make() {
+         ArmySupplies supplies = new FoodSupp();
+         return supplies;
+     }
 };
 
 #endif
