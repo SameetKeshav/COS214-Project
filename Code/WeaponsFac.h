@@ -1,11 +1,16 @@
 #ifndef WEAPONSFAC_H
 #define WEAPONSFAC_H
+#include "Factory.h"
+#include "ArmySupplies.h"
+#include "WeaponSupp.h"
 
 class WeaponsFac : Factory {
 
-
 public:
-	virtual ArmySupplies* make() = 0;
+    ArmySupplies* make() {
+        ArmySupplies supplies = new WeaponSupp();
+        return supplies;
+    }
 };
 
 #endif
