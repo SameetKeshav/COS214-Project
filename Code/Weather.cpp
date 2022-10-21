@@ -36,7 +36,15 @@ int Weather::calcEffect() {
     }
 
     //windspeed
-    //come back
+    if(rain)
+    {
+        int rVAL = 10;
+        difficulty += (windspeed + rVaL)/temp;
+    }
+    else
+    {
+        difficulty += windspeed/temp;
+    }
 
 
 }
@@ -54,5 +62,6 @@ void Weather::setWindSpeed() {
 }
 
 //void Weather::weatherReport() {
-//
+//     String output = "The weather at the venue is as follows: \n ;
+//      cout << output << "Temp: " << temp << "\nRain: " << rain << "\nWS: " << windspeed << "\n-----------------" <<endl;
 //}
