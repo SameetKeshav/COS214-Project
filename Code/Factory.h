@@ -9,7 +9,12 @@ class Factory : WarIndicators {
 protected:
     virtual ArmySupplies* make() = 0;
 public:
-    void operation();
+    void operation(){
+        supply = make();
+    }
+    ArmySupplies* getSupply(){
+        return supply;
+    }
 private:
     ArmySupplies* supply;
 

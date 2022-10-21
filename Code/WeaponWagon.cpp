@@ -1,6 +1,14 @@
 #include "WeaponWagon.h"
 
 SupplyWagon* WeaponWagon::clone() {
-	// TODO - implement WeaponWagon::clone
-	throw "Not yet implemented";
+
+     supp = new WeaponSupp();
+     SupplyWagon* wagon = new WeaponWagon();
+     wagon->setSup(supp);
+    return wagon;
+
+
+}
+void WeaponWagon::setSup(ArmySupplies* sup){
+    supp=sup;
 }
