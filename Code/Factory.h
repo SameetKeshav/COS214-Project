@@ -15,6 +15,9 @@ public:
     ArmySupplies* getSupply(){
         return supply;
     }
+    void ~Factory(){
+        delete supply;
+    }
 private:
     ArmySupplies* supply;
 

@@ -8,6 +8,7 @@ public:
     void setSup(ArmySupplies* sup)=0;
     virtual SupplyWagon* clone() = 0;
     virtual ArmySupplies* getSupplies()=0;
+
 };
 
 #endif
