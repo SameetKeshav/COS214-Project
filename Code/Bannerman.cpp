@@ -35,6 +35,20 @@ void Bannerman::detach(Raven o) {
 	throw "Not yet implemented";
 }
 
+int Bannerman::getHP(){
+    return this->HP;
+}
+
+void Bannerman::setHP(int hp){
+    this->HP = hp;
+}
+
+Strategy* Bannerman::getStrategy(){
+    return this->strategy;
+}
+void Bannerman::setStrategy(Strategy* s){
+    this->strategy = s;
+}
 void Bannerman::increaseHP(int boost) {
 	// TODO - implement Bannerman::increaseHP
 	throw "Not yet implemented";
