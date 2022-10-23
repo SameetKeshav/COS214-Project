@@ -1,14 +1,15 @@
 #ifndef AMBUSH_H
 #define AMBUSH_H
+#include "Strategy.h"
+
 
 class Ambush : Strategy {
 
 public:
 	int stealth;
-
-	void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
-
-	Ambush(int stealth);
+	Ambush(int stealth,int min,int minFavour);
+	bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	~Ambush();
 };
 
 #endif

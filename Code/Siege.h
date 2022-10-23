@@ -1,14 +1,13 @@
 #ifndef SIEGE_H
 #define SIEGE_H
-
-class Siege : Strategy {
+#include "Strategy.h"
+class Siege :public Strategy {
 
 public:
 	int stealth;
-
-	Siege(int stealth);
-
-	void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	Siege(int stealth,int min,int minFavour);
+	bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	~Siege();
 };
 
 #endif
