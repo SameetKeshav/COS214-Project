@@ -1,51 +1,55 @@
 #include "Commander.h"
 
-Iterator* Commander::createIterator() {
-	// TODO - implement Commander::createIterator
-	throw "Not yet implemented";
+Commander::Commander():groundForces() {
+
+}
+ConIterator* Commander::createIterator() {
+    return new ConIterator(groundForces);
 }
 
 void Commander::giveCommand() {
-	// TODO - implement Commander::giveCommand
-	throw "Not yet implemented";
+    // TODO - implement Commander::giveCommand
+    throw "Not yet implemented";
 }
 
-void Commander::attackKingdom(Kingdom* X) {
-	// TODO - implement Commander::attackKingdom
-	throw "Not yet implemented";
+//void Commander::attackKingdom(Kingdom* X) {// TODO - Test
+//
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        (*it)->attackKingdom(X);
+//
+//}
+
+void Commander::addBannerman(Bannerman* b) {// TODO - Test
+    groundForces.push_back(b);
 }
 
-void Commander::addBannerman(Bannerman* b) {
-	// TODO - implement Commander::addBannerman
-	throw "Not yet implemented";
+
+
+int Commander::getWeapons() {// TODO - Test
+    return this->numWeapons;
 }
 
-int Commander::getWeapons() {
-	// TODO - implement Commander::getWeapons
-	throw "Not yet implemented";
+int Commander::getFood() {// TODO - Test
+    return this->numFood;
 }
 
-int Commander::getFood() {
-	// TODO - implement Commander::getFood
-	throw "Not yet implemented";
-}
-
-int Commander::getMedical() {
-	// TODO - implement Commander::getMedical
-	throw "Not yet implemented";
+int Commander::getMedical() {// TODO - Test
+    return this->numMedical;
 }
 
 void Commander::setWeapons(int numWeapons) {
-	// TODO - implement Commander::setWeapons
-	throw "Not yet implemented";
+    this->numWeapons = numWeapons;
 }
 
 void Commander::setFood(int numFood) {
-	// TODO - implement Commander::setFood
-	throw "Not yet implemented";
+    this->numFood = numFood;
 }
 
 void Commander::setMedical(int numMedical) {
-	// TODO - implement Commander::setMedical
-	throw "Not yet implemented";
+    this->numMedical = numMedical;
+}
+
+Commander::~Commander() {// TODO - Test
+    for (std::list<Bannerman*>::iterator it = groundForces.begin();it != groundForces.end(); ++it)
+        delete *it;
 }

@@ -17,6 +17,12 @@ private:
 	int HP;
 
 public:
+    int getHP();
+    void setHP(int);
+
+    Strategy* getStrategy();
+    void setStrategy(Strategy* s);
+
 	void giveCommand();
 
 	Iterator* createIterator();
