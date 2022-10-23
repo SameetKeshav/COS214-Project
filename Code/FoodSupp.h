@@ -1,11 +1,14 @@
 #ifndef FOODSUPP_H
 #define FOODSUPP_H
+#include "ArmySupplies.h"
 
 class FoodSupp : ArmySupplies {
 
 
 public:
-	virtual int getAmount() = 0;
+	 int getAmount() {
+        return 50;
+    }
 };
 
 #endif
