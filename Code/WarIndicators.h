@@ -6,13 +6,13 @@ class WarIndicators {
 protected:
 	Treasury* m;
 
-//public:
-	/*WarIndicators(Treasury* m){
+public:
+	WarIndicators(Treasury* m){
 		this->m=m;
 	}
-	~WarIndicators(){
+	virtual ~WarIndicators(){
 		delete m;
-	}*/
+	}
 };
 
 #endif
