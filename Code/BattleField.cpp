@@ -3,7 +3,7 @@
 BattleField::BattleField(int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"BattleField",min,minFavour){}
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	/*while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
+	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		//getDamage is how much damage the bannerman can inflict
 		enemyBannerman->recieveDamage(myBannerman->getDamage());
@@ -64,7 +64,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	else
 	{
 		return false;
-	}*/
+	}
 	
 }
 

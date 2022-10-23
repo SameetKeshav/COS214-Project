@@ -7,6 +7,9 @@ protected:
 	Treasury* m;
 
 public:
+	WarIndicators(){
+		m=NULL;
+	}
 	WarIndicators(Treasury* m){
 		this->m=m;
 	}
