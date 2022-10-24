@@ -4,23 +4,23 @@
 class Troop : Bannerman {
 
 private:
-	int HP;
-	int size;
-	Strategy* strategy;
-	int damage;
+    int HP;
+    int size;
+    Strategy* strategy;
+    int damage;
 
 public:
-	Troop(int HP, int tSize, Strategy* strategy);
+    Troop(int HP, int tSize, Strategy* strategy);
 
-	int getHP();
+    int getHP();
 
-	int getSize();
+    int getSize();
 
-	void attackKingdom(Kingdom* X);
+    void attackKingdom(Kingdom* X);
 
-	void receiveDamage(int X);
+    void receiveDamage(int X);
 
-	void ~Troop();
+    ~Troop();
 };
 
 #endif
