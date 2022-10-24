@@ -14,19 +14,27 @@ public:
 
     Commander();//new function
 
-    Iterator* createIterator();
+    ConIterator* createIterator();
 
     void removeTroop(Bannerman* x);
+
+    void giveCommand();//redundant
 
     void attackKingdom(Kingdom* X);
 
     void addBannerman(Bannerman* b);
 
-    int getTotalWeapons();
+    int getWeapons();
 
-    int getTotalFood();
+    int getFood();
 
-    int getTotalMedical();
+    int getMedical();
+
+    void setWeapons(int numWeapons);
+
+    void setFood(int numFood);
+
+    void setMedical(int numMedical);
 
     ~Commander();//new function
 };
