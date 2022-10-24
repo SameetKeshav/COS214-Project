@@ -79,6 +79,7 @@ int Bannerman::getFood(){
     return this->numFood;
 }
 
+
 int Bannerman::getMedical(){
     return this->numMedical;
 }
@@ -94,4 +95,5 @@ void Bannerman::setFood(int numFood){
 
 void Bannerman::setMedical(int numMedical){
     this->numMedical = numMedical;
+
 }
