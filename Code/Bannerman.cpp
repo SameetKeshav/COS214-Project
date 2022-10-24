@@ -36,6 +36,14 @@ int Bannerman::getHP(){
     return this->HP;
 }
 
+int Bannerman::getID(){
+    return id;
+}
+
+void Bannerman::setID(int id){
+    this->id=id;
+}
+
 void Bannerman::setHP(int hp){
     this->HP = hp;
 }

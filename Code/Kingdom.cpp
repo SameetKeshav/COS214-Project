@@ -3,6 +3,7 @@
 Kingdom::Kingdom(){
 }
 
+//tell everyone i am removing alliance and adding remove and add methods for bannerman
 void Kingdom::makeAllience() {
 	// TODO - implement Kingdom::makeAllience
 	throw "Not yet implemented";

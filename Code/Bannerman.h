@@ -49,6 +49,8 @@ public:
     virtual void decreaseMedical();
     virtual warTheatre* getWarZone();
 
+	int getID();
+	void setID(int);
     virtual int getWeapons();
 
 	virtual int getFavour();
