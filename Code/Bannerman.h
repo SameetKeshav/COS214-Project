@@ -51,6 +51,8 @@ public:
 
     virtual int getWeapons();
 
+	virtual int getFavour();
+
     virtual int getFood();
 
     virtual int getMedical();

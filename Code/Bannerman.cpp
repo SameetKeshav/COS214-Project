@@ -68,6 +68,11 @@ void Bannerman::increasePower(int boost) {
 int Bannerman::getDamage(){
     return this->damage;
 }
+
+int Bannerman::getFavour(){
+    return favour;
+}
+
 void Bannerman::receiveDamage(int x){
     this->damage+= x;
 }
