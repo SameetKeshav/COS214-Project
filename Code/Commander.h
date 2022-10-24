@@ -14,7 +14,7 @@ public:
 
     Commander();//new function
 
-    ConIterator* createIterator();
+    Iterator* createIterator();
 
     void removeTroop(Bannerman* x);
 

@@ -3,7 +3,7 @@
 Commander::Commander():groundForces() {
 
 }
-ConIterator* Commander::createIterator() {
+Iterator* Commander::createIterator() {
     return new ConIterator(groundForces);
 }
 
