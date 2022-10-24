@@ -59,7 +59,7 @@ public:
 
     virtual void setFood(int numFood);
 
-    virtual void setMedical(int numMedical);
+    virtual void setMedical(int numMedical);//
 };
 
 #endif
