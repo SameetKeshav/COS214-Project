@@ -108,4 +108,5 @@ void Bannerman::setFood(int numFood){
 
 void Bannerman::setMedical(int numMedical){
     this->numMedical = numMedical;
+
 }
