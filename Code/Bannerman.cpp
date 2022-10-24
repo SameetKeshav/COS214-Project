@@ -79,7 +79,6 @@ int Bannerman::getFood(){
     return this->numFood;
 }
 
-
 int Bannerman::getMedical(){
     return this->numMedical;
 }

@@ -46,7 +46,6 @@ public:
     virtual void decreaseWeapons();
     virtual void decreaseFood();
     virtual void decreaseMedical();
-
     virtual warTheatre* getWarZone();
 
     virtual int getWeapons();
