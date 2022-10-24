@@ -42,6 +42,7 @@ public:
 
     virtual int getHP();
     virtual int getDamage();
+
     virtual void receiveDamage(int);
     virtual void decreaseWeapons();
     virtual void decreaseFood();

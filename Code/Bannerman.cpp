@@ -74,7 +74,6 @@ warTheatre* Bannerman::getWarZone(){
 int Bannerman::getWeapons(){
     return this->numWeapons;
 }
-
 int Bannerman::getFood(){
     return this->numFood;
 }
