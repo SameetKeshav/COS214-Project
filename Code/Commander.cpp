@@ -7,42 +7,46 @@ ConIterator* Commander::createIterator() {
     return new ConIterator(groundForces);
 }
 
-void Commander::attackKingdom(Kingdom* X) {// TODO - Test
-
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        (*it)->attackKingdom(X);
-
+void Commander::giveCommand() {
+    // TODO - implement Commander::giveCommand
+    throw "Not yet implemented";
 }
+
+//void Commander::attackKingdom(Kingdom* X) {// TODO - Test
+//
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        (*it)->attackKingdom(X);
+//
+//}
 
 void Commander::addBannerman(Bannerman* b) {// TODO - Test
     groundForces.push_back(b);
 }
 
-int Commander::getTotalWeapons() {// TODO - Test
-    int totalWeapons = 0;
 
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalWeapons+=(*it)->getWeapons();
 
-    return totalWeapons;
+int Commander::getWeapons() {// TODO - Test
+    return this->numWeapons;
 }
 
-int Commander::getTotalFood() {// TODO - Test
-    int totalFood = 0;
-
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalFood+=(*it)->getFood();
-
-    return totalFood;
+int Commander::getFood() {// TODO - Test
+    return this->numFood;
 }
 
-int Commander::getTotalMedical() {// TODO - Test
-    int totalMedical = 0;
+int Commander::getMedical() {// TODO - Test
+    return this->numMedical;
+}
 
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalMedical+=(*it)->getMedical();
+void Commander::setWeapons(int numWeapons) {
+    this->numWeapons = numWeapons;
+}
 
-    return totalMedical;
+void Commander::setFood(int numFood) {
+    this->numFood = numFood;
+}
+
+void Commander::setMedical(int numMedical) {
+    this->numMedical = numMedical;
 }
 
 Commander::~Commander() {// TODO - Test

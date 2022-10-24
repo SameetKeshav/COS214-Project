@@ -4,61 +4,46 @@
 class Bannerman : WarIndicators {
 
 protected:
-    int favour;
-    int numWeapons;
-    int damage;
-    int numFood;
-    int numMedical;
-    int id;
-    list<Raven> ravenList;
-
+	int favour;
+	int numWeapons;
+	int numFood;
+	int numMedical;
+	list<Raven> ravenList;
 private:
-    bool assassin;
-    MasterOfCoin m;
-    Strategy* strategy;
-    warTheatre* warZone;
-    int HP;
+	bool assassin;
+	MasterOfCoin m;
+	Strategy* strategy;
+	warTheatre* warZone;
+	int HP;
 
 public:
-    Iterator* createIterator();
+    int getHP();
+    void setHP(int);
 
-    virtual void attackKingdom(Kingdom* X);
+    Strategy* getStrategy();
+    void setStrategy(Strategy* s);
 
-    virtual void increaseFavour();
+	void giveCommand();
 
-    virtual void decreaseFavour();
+	Iterator* createIterator();
 
-    virtual void attach(Raven o);
+	void attackKingdom(Kingdom* X);
 
-    virtual void detach(Raven o);
+	void increaseFavour();
 
-    virtual void increaseHP(int boost);
+	void decreaseFavour();
 
-    virtual void changeStrategy(Strategy* strategy);
+	void attach(Raven o);
 
-    virtual void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	void detach(Raven o);
 
-    virtual void increasePower(int boost);
+	void increaseHP(int boost);
 
-    virtual int getHP();
-    virtual int getDamage();
-    virtual void receiveDamage(int);
-    virtual void decreaseWeapons();
-    virtual void decreaseFood();
-    virtual void decreaseMedical();
-    virtual warTheatre* getWarZone();
+	void changeStrategy(Strategy* strategy);
 
-    virtual int getWeapons();
+	void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
 
-    virtual int getFood();
-
-    virtual int getMedical();
-
-    virtual void setWeapons(int numWeapons);
-
-    virtual void setFood(int numFood);
-
-    virtual void setMedical(int numMedical);
+	void increasePower(int boost);
 };
 
 #endif
