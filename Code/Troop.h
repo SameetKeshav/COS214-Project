@@ -1,6 +1,8 @@
 #ifndef TROOP_H
 #define TROOP_H
-
+#include "Kingdom.h"
+#include "Strategy.h"
+#include "Bannerman.h"
 class Troop : Bannerman {
 
 private:
