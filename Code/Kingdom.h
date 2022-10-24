@@ -1,13 +1,19 @@
 #ifndef KINGDOM_H
 #define KINGDOM_H
+using namespace std;
+#include <vector>
+#include "Bannerman.h"
 
 class Kingdom {
 
 private:
-	Bannerman* bannerman;
+	vector<Bannerman*> bannerman;
 
 public:
+	Kingdom();
 	void makeAllience();
+	//void remove(Bannerman* b);
+	//void add(Bannerman* b);
 };
 
 #endif
