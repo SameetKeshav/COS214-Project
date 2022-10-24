@@ -1,7 +1,12 @@
 #include "Strategy.h"
-
-void Strategy::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	// TODO - implement Strategy::attack
+Strategy(Bannerman* myBannerman, Bannerman* enemyBannerman,string name){
+	strategy=name;
+	this->myBannerman=myBannerman;
+	this->enemyBannerman=enemyBannerman;
+}
+void Strategy::attack(Bannerman* myBannerman, Bannerman* enemyBannerman,string name) {
+	// TODO - implement Strategy::attack2
+	
 	throw "Not yet implemented";
 }
 
