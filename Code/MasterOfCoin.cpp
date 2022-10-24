@@ -1,9 +1,16 @@
 #include "MasterOfCoin.h"
 
+MasterOfCoin::MasterOfCoin(Economy *economy, Raven *observer, Strategy strategy)
+{
+    this->economy = economy;
+    this->observer = observer;
+    this->strategy = strategy;
+}
+
 void MasterOfCoin::notify(WarIndicators sender)
 {
 
-    if(sender == bannerman)
+    if(sender == strategy)
     {
         decreaseCurrency();
     }
@@ -21,5 +28,12 @@ void MasterOfCoin::decreaseCurrency()
 
 void MasterOfCoin::manufacture()
 {
-    factory->make();
+    observer->update();
+}
+
+MasterOfCoin::~MasterOfCoin()
+{
+    delete economy;
+    delete observer;
+    delete strategy;
 }

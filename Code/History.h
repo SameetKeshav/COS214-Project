@@ -1,17 +1,19 @@
 #ifndef HISTORY_H
 #define HISTORY_H
-
+#include "Bannerman.h"
+#include <iostream>
+using namespace std;
 class History {
 
 private:
 	Bannerman* bannerman;
 
 public:
-	History(Bannerman* f);
+	History(Bannerman* b);
 
 	Bannerman* getBannerman();
 
-	void ~Memento();
+	~History(){delete bannerman;};
 };
 
 #endif

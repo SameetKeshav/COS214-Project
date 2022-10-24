@@ -1,19 +1,20 @@
 #ifndef HISTORIAN_H
 #define HISTORIAN_H
-
+#include "Bannerman.h"
+#include "History.h"
 class Historian {
 
 private:
-	Bannerman* Bannerman;
+	Bannerman* bannerman;
 
 public:
 	Historian(Bannerman* b);
 
 	History* setAlly();
 
-	Bannerman* restoreAlly(History* m);
+	Bannerman* restoreAlly(History* h);
 
-	void ~Originator();
+	~Historian(){delete bannerman;};
 };
 
 #endif

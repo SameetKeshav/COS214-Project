@@ -1,16 +1,23 @@
 #include "Historian.h"
 
+/// @brief constructor
+/// @param b bannerman that is defecting
 Historian::Historian(Bannerman* b) {
-	// TODO - implement Historian::Historian
-	throw "Not yet implemented";
+	bannerman = b;
 }
 
+/// @brief set the memento object of the defecting bannerman
+/// @return the created memento object for that bannerman
 History* Historian::setAlly() {
-	// TODO - implement Historian::setAlly
-	throw "Not yet implemented";
+	History* h = new History(bannerman);
+	return h;
 }
 
-Bannerman* Historian::restoreAlly(History* m) {
-	// TODO - implement Historian::restoreAlly
-	throw "Not yet implemented";
+/// @brief return the bannerman that defected
+/// @param h the memento object that needs to be restored
+/// @return the bannerman of that object
+Bannerman* Historian::restoreAlly(History* h) {
+	bannerman = h->getBannerman();
+	return bannerman;
 }
+
