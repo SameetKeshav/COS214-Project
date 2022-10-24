@@ -39,7 +39,14 @@ public:
 
 	void increaseHP(int boost);
 
-	void changeStrategy(Strategy* strategy);
+    virtual int getHP();
+    virtual int getDamage();
+
+    virtual void receiveDamage(int);
+    virtual void decreaseWeapons();
+    virtual void decreaseFood();
+    virtual void decreaseMedical();
+    virtual warTheatre* getWarZone();
 
 	void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
 
