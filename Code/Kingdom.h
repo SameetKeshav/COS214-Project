@@ -11,9 +11,8 @@ private:
 
 public:
 	Kingdom();
-	void makeAllience();
-	//void remove(Bannerman* b);
-	//void add(Bannerman* b);
+	void remove(Bannerman* b);
+	void add(Bannerman* b);
 };
 
 #endif
