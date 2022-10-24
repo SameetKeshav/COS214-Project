@@ -18,21 +18,15 @@ public:
 
     void removeTroop(Bannerman* x);
 
-    //void attackKingdom(Kingdom* X);
+    void attackKingdom(Kingdom* X);
 
     void addBannerman(Bannerman* b);
 
-    int getWeapons();
+    int getTotalWeapons();
 
-    int getFood();
+    int getTotalFood();
 
-    int getMedical();
-
-    void setWeapons(int numWeapons);
-
-    void setFood(int numFood);
-
-    void setMedical(int numMedical);
+    int getTotalMedical();
 
     ~Commander();//new function
 };
