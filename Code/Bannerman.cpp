@@ -82,7 +82,6 @@ int Bannerman::getFood(){
 int Bannerman::getMedical(){
     return this->numMedical;
 }
-
 void Bannerman::setWeapons(int numWeapons){
     this->numWeapons = numWeapons;
 }
