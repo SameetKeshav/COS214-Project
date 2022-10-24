@@ -1,17 +1,16 @@
 #ifndef HISTORYBOOK_H
 #define HISTORYBOOK_H
-
+#include "History.h"
+#include <list>
 class HistoryBook {
 
 private:
-	History* defectedAllies[];
+	list<History*> defectedAllies;
 
 public:
-	void add(History* m);
+	void add(History* h);
 
-	Bannerman* restoreAlly(History* m);
-
-	void ~Caretaker();
+	History* restoreAlly(History* h);  
 };
 
 #endif
