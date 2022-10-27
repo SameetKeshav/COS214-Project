@@ -1,9 +1,13 @@
 #ifndef BANNERMAN_H
 #define BANNERMAN_H
-
-class Bannerman : WarIndicators {
+#include "Strategy.h"
+#include "Iterator.h"
+#include "WarTheatre.h"
+#include <string>
+class Bannerman : public WarIndicators {
 
 protected:
+    string name;
     int favour;
     int numWeapons;
     int damage;
@@ -12,17 +16,17 @@ protected:
     int id;
     list<Raven> ravenList;
 
+    int HP;
 private:
     bool assassin;
-    MasterOfCoin m;
+    MasterOfCoin* m;
     Strategy* strategy;
-    warTheatre* warZone;
-    int HP;
+    WarTheatre* warZone;
 
 public:
-    Iterator* createIterator();
+    Bannerman(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m);
 
-    virtual void attackKingdom(Kingdom* X);
+    virtual void attackKingdom(Kingdom* X)=0;
 
     virtual void increaseFavour();
 
@@ -32,7 +36,7 @@ public:
 
     virtual void detach(Raven o);
 
-    virtual void increaseHP(int boost);
+    virtual void increaseHP(int boost) = 0;//implement
 
     virtual void changeStrategy(Strategy* strategy);
 
@@ -40,26 +44,29 @@ public:
 
     virtual void increasePower(int boost);
 
-    virtual int getHP();
-    virtual int getDamage();
+    virtual string getName() = 0;
+
+    virtual int getHP() = 0;
+
+    virtual int getDamage() = 0;
 
     virtual void receiveDamage(int);
     virtual void decreaseWeapons();
     virtual void decreaseFood();
     virtual void decreaseMedical();
-    virtual warTheatre* getWarZone();
+    warTheatre* getWarZone();
 
-    virtual int getWeapons();
+    virtual int getWeapons() = 0;
 
-    virtual int getFood();
+    virtual int getFood() = 0;
 
-    virtual int getMedical();
+    virtual int getMedical() = 0;
 
-    virtual void setWeapons(int numWeapons);
+    virtual void setWeapons(int numWeapons) = 0;
 
-    virtual void setFood(int numFood);
+    virtual void setFood(int numFood) = 0;
 
-    virtual void setMedical(int numMedical);//
+    virtual void setMedical(int numMedical) = 0;
 };
 
 #endif

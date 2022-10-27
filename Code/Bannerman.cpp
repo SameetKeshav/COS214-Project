@@ -1,12 +1,18 @@
 #include "Bannerman.h"
 
+
+Bannerman::Bannerman(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m) {
+    this->name =name;
+    this->favour =favor;
+    this->numFood =numFood;
+    this->numMedical =Medical;
+    this->HP =HP;
+    this->warZone =warZone;
+    this->strategy =strategy;
+    this->m =m;
+}
 int Bannerman::getHP() {
     return this->HP;
-}
-
-Iterator* Bannerman::createIterator() {
-    // TODO - implement Bannerman::createIterator
-    throw "Not yet implemented";
 }
 
 void Bannerman::attackKingdom(Kingdom* X) {
@@ -32,20 +38,7 @@ void Bannerman::detach(Raven o) {
     throw "Not yet implemented";
 }
 
-int Bannerman::getHP(){
-    return this->HP;
-}
 
-void Bannerman::setHP(int hp){
-    this->HP = hp;
-}
-
-Strategy* Bannerman::getStrategy(){
-    return this->strategy;
-}
-void Bannerman::setStrategy(Strategy* s){
-    this->strategy = s;
-}
 void Bannerman::increaseHP(int boost) {
     this->HP+= boost;
 }
@@ -65,9 +58,6 @@ void Bannerman::increasePower(int boost) {
     throw "Not yet implemented";
 }
 
-int Bannerman::getDamage(){
-    return this->damage;
-}
 void Bannerman::receiveDamage(int x){
     this->damage+= x;
 }
@@ -80,33 +70,6 @@ void Bannerman::decreaseFood(){
 void Bannerman::decreaseMedical(){
     this->numMedical -= 1;
 }
-warTheatre* Bannerman::getWarZone(){
+WarTheatre* Bannerman::getWarZone(){
     return this->warZone;
-}
-
-
-int Bannerman::getWeapons(){
-    return this->numWeapons;
-}
-
-int Bannerman::getFood(){
-    return this->numFood;
-}
-
-int Bannerman::getMedical(){
-    return this->numMedical;
-}
-
-void Bannerman::setWeapons(int numWeapons){
-    this->numWeapons = numWeapons;
-}
-
-void Bannerman::setFood(int numFood){
-    this->numFood = numFood;
-}
-
-
-void Bannerman::setMedical(int numMedical){
-    this->numMedical = numMedical;
-
 }
