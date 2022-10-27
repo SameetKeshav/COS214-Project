@@ -20,12 +20,8 @@ void Bannerman::attackKingdom(Kingdom* X) {
     throw "Not yet implemented";
 }
 
-void Bannerman::increaseFavour() {
-    this->favour +=1;
-}
-
-void Bannerman::decreaseFavour() {
-    this->favour -=1;
+string Bannerman::getName() {
+    return this->name;
 }
 
 void Bannerman::attach(Raven o) {

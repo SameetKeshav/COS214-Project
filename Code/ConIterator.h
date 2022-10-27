@@ -4,7 +4,7 @@
 #include "Iterator.h"
 #include <list>
 using namespace std;
-class ConIterator : Iterator {
+class ConIterator : public Iterator {
 private:
     list<Bannerman*> armyList;
     list<Bannerman*>::iterator it;

@@ -1,7 +1,19 @@
 #include "Troop.h"
 
-Troop::Troop(string name, int favor, int numFood, int Medical, int HP,int size,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m): Bannerman(name,favor,numFood,Medical,HP,warZone,strategy,m){
+Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
+
     this->size = size;
+
+    this->name =name;
+    this->favour =favor;
+    this->numFood =numFood;
+    this->numMedical =Medical;
+    this->HP =HP;
+    this->warZone =warZone;
+    this->strategy =strategy;
+    this->m =m;
+
+    this->assassin = assassin;
 }
 int Troop::getHP() {
     return this->HP;
@@ -16,8 +28,34 @@ void Troop::attackKingdom(Kingdom* X) {
     throw "Not yet implemented";
 }
 
-string Troop::getName(){
-    return this->name;
+void Troop::increaseHP(int boost){
+    this->HP += boost;
+}
+
+void Troop::changeStrategy(Strategy* strategy){
+    this->strategy = strategy;
+}
+
+int Troop::getDamage(){
+    return this->damage;
+}
+
+void Troop::increaseFavour() {
+    this->favour +=1;
+}
+
+void Troop::decreaseFavour() {
+    this->favour -=1;
+}
+
+void Troop::decreaseWeapons(){
+    this->numWeapons-=1;
+}
+void Troop::decreaseFood(){
+    this->numFood-=1;
+}
+void Troop::decreaseMedical(){
+    this->numMedical-=1;
 }
 
 void Troop::receiveDamage(int X) {

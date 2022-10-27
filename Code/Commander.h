@@ -6,7 +6,7 @@
 #include <list>
 class Iterator;
 using namespace std;
-class Commander : Bannerman {
+class Commander : public Bannerman {
 private:
     list<Bannerman*> groundForces;
 
@@ -14,21 +14,37 @@ public:
 
     Commander();//new function
 
-    ConIterator* createIterator();
+    Iterator* createIterator();
 
-    void removeTroop(Bannerman* x);
+    void removeBannerman(Bannerman* x);
 
-    void giveCommand();//redundant
-
-    void attackKingdom(Kingdom* X);
+    void attackKingdom(Kingdom* X) override;
 
     void addBannerman(Bannerman* b);
 
-    int getWeapons();
+    int getHP();
 
-    int getFood();
+    int getDamage();
 
-    int getMedical();
+    void receiveDamage(int);
+
+    void decreaseWeapons();
+    void decreaseFood();
+    void decreaseMedical();
+
+    int getWeapons() override;
+
+    int getFood() override;
+
+    int getMedical() override;
+
+    void increaseHP(int boost) override;
+
+    void changeStrategy(Strategy* strategy) override;
+
+    void increaseFavour() override;
+
+    void decreaseFavour() override;
 
     void setWeapons(int numWeapons);
 

@@ -11,14 +11,27 @@ private:
     int damage;
 
 public:
-    Troop(string name, int favor, int numFood, int Medical, int HP,int size,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m);
+    Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size);
 
     int getHP();
 
     int getSize();
-    string getName();
 
     void attackKingdom(Kingdom* X);
+
+    void decreaseWeapons();
+    void decreaseFood();
+    void decreaseMedical();
+
+    void changeStrategy(Strategy* strategy);
+
+    void increaseFavour();
+
+    void decreaseFavour();
+
+    void increaseHP(int boost);
+
+    int getDamage();
 
     void receiveDamage(int X);
 
