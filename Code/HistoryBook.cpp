@@ -1,11 +1,22 @@
 #include "HistoryBook.h"
+#include<bits/stdc++.h>
 
-void HistoryBook::add(History* m) {
-	// TODO - implement HistoryBook::add
-	throw "Not yet implemented";
+/// @brief add memento object to the list of defecetded allies
+/// @param h the memento object added
+void HistoryBook::add(History* h) {
+	defectedAllies.push_back(h);
 }
 
-Bannerman* HistoryBook::restoreAlly(History* m) {
-	// TODO - implement HistoryBook::restoreAlly
-	throw "Not yet implemented";
+/// @brief restore the state of an ally returning
+/// @param h the ally that wants to return
+/// @return the state of the ally to be returning
+History* HistoryBook::restoreAlly(History* h) {
+	list<History*>::iterator it;
+	it = find(defectedAllies.begin(), defectedAllies.end(), h);
+	if (it != defectedAllies.end()){
+		
+		return *it;
+	}else{
+		cout<<"This kingdom is not an ally of yours"<<endl;
+	}
 }
