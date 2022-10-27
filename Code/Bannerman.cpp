@@ -1,15 +1,8 @@
 #include "Bannerman.h"
 
 
-Bannerman::Bannerman(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m) {
-    this->name =name;
-    this->favour =favor;
-    this->numFood =numFood;
-    this->numMedical =Medical;
-    this->HP =HP;
-    this->warZone =warZone;
-    this->strategy =strategy;
-    this->m =m;
+Bannerman::Bannerman() {
+
 }
 int Bannerman::getHP() {
     return this->HP;
