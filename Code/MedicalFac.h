@@ -7,10 +7,7 @@ class MedicalFac : Factory {
 
 
 public:
-    ArmySupplies* make() {
-        ArmySupplies supplies = new MedicalSupp();
-        return supplies;
-    }
+    ArmySupplies* make() ;
 };
 
 #endif
