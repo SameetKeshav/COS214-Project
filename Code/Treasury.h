@@ -5,7 +5,7 @@ class Treasury {
 
 
 public:
-	virtual void notify(WarIndicators sender) = 0;
+	virtual void notify(WarIndicators* sender) = 0;
 };
 
 #endif

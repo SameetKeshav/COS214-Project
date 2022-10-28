@@ -1,30 +1,58 @@
 #ifndef COMMANDER_H
 #define COMMANDER_H
 
-class Commander : Bannerman {
+#include "Bannerman.h"
+#include "ConIterator.h"
+#include <list>
+class Iterator;
+using namespace std;
+class Commander : public Bannerman {
+private:
+    list<Bannerman*> groundForces;
 
 public:
-	list<Bannerman*> groundForces;
 
-	Iterator* createIterator();
+    Commander();//new function
 
-	void giveCommand();
+    Iterator* createIterator();
 
-	void attackKingdom(Kingdom* X);
+    void removeBannerman(Bannerman* x);
 
-	void addBannerman(Bannerman* b);
+    void attackKingdom(Kingdom* X) override;
 
-	int getWeapons();
+    void addBannerman(Bannerman* b);
 
-	int getFood();
+    int getHP();
 
-	int getMedical();
+    int getDamage();
 
-	void setWeapons(int numWeapons);
+    void receiveDamage(int);
 
-	void setFood(int numFood);
+    void decreaseWeapons();
+    void decreaseFood();
+    void decreaseMedical();
 
-	void setMedical(int numMedical);
+    int getWeapons() override;
+
+    int getFood() override;
+
+    int getMedical() override;
+
+    void increaseHP(int boost) override;
+
+    void changeStrategy(Strategy* strategy) override;
+
+    void increaseFavour() override;
+
+    void decreaseFavour() override;
+
+    void setWeapons(int numWeapons);
+
+    void setFood(int numFood);
+
+    void setMedical(int numMedical);
+
+    ~Commander();//new function
 };
 
 #endif

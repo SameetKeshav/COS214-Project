@@ -1,15 +1,23 @@
 #ifndef CONITERATOR_H
 #define CONITERATOR_H
-
-class ConIterator : Iterator {
-
-
+#include "Bannerman.h"
+#include "Iterator.h"
+#include <list>
+using namespace std;
+class ConIterator : public Iterator {
+private:
+    list<Bannerman*> armyList;
+    list<Bannerman*>::iterator it;
 public:
-	Bannerman* next();
+    ConIterator(list<Bannerman*> X);
 
-	bool hasNext();
+    Bannerman* Current();
 
-	bool isActive();
+    Bannerman* next();
+
+    bool hasNext();
+
+    bool isActive();
 };
 
 #endif
