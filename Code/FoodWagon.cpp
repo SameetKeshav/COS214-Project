@@ -8,10 +8,11 @@ SupplyWagon* FoodWagon::clone() {
     return wagon;
 
 }
-void FoodWagon::setSup(ArmySupplies* sup){
-    supp=sup;
-}
 
 ArmySupplies* FoodWagon::getSupplies() {
     return supp;
+}
+
+FoodWagon::~FoodWagon() {
+    delete supp;
 }
