@@ -69,5 +69,5 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 }
 
 BattleField::~BattleField(){
-
+	
 }

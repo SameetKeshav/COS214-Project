@@ -20,50 +20,54 @@ private:
     int HP;
 
 public:
-    Iterator* createIterator();
+    Bannerman();
+    /*please note that due to bannerman being an abstract class
+     * in accordance with GoF composite design pattern, it's necessary to
+     * call the troop constructor instead of the bannerman constructor.*/
 
-    virtual void attackKingdom(Kingdom* X);
 
-    virtual void increaseFavour();
+    virtual void attackKingdom(Kingdom* X)=0;
 
-    virtual void decreaseFavour();
+    virtual void increaseFavour() = 0;
+
+    virtual void decreaseFavour() = 0;
 
     virtual void attach(Raven o);
 
     virtual void detach(Raven o);
 
-    virtual void increaseHP(int boost);
+    virtual void increaseHP(int boost) = 0;//implement
 
-    virtual void changeStrategy(Strategy* strategy);
+    virtual void changeStrategy(Strategy* strategy) = 0;
 
     virtual void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
 
-    virtual void increasePower(int boost);
+    virtual void increasePower(int boost);//what is power?
 
-    virtual int getHP();
-    virtual int getDamage();
+    string getName();
 
-    virtual void receiveDamage(int);
-    virtual void decreaseWeapons();
-    virtual void decreaseFood();
-    virtual void decreaseMedical();
-    virtual warTheatre* getWarZone();
+    virtual int getHP() = 0;
 
-	int getID();
-	void setID(int);
-    virtual int getWeapons();
+    virtual int getDamage() = 0;
 
-	virtual int getFavour();
+    virtual void receiveDamage(int) = 0;
+    virtual void decreaseWeapons() = 0;
+    virtual void decreaseFood() = 0;
+    virtual void decreaseMedical() = 0;
 
-    virtual int getFood();
+    warTheatre* getWarZone();
 
-    virtual int getMedical();
+    virtual int getWeapons() = 0;
 
-    virtual void setWeapons(int numWeapons);
+    virtual int getFood() = 0;
 
-    virtual void setFood(int numFood);
+    virtual int getMedical() = 0;
 
-    virtual void setMedical(int numMedical);//
+    virtual void setWeapons(int numWeapons) = 0;
+
+    virtual void setFood(int numFood) = 0;
+
+    virtual void setMedical(int numMedical) = 0;
 };
 
 #endif
