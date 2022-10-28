@@ -7,12 +7,7 @@ Iterator* Commander::createIterator() {
     return new ConIterator(groundForces);
 }
 
-void Commander::attackKingdom(Kingdom* X) {// TODO - Test
 
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        (*it)->attackKingdom(X);
-
-}
 
 void Commander::addBannerman(Bannerman* b) {// TODO - Test
     groundForces.push_back(b);
@@ -29,6 +24,11 @@ int Commander::getHP() {
         totalHP+=(*it)->getHP();
 
     return totalHP;
+}
+
+void Commander::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->attack(myBannerman, enemyBannerman);
 }
 
 int Commander::getDamage() {

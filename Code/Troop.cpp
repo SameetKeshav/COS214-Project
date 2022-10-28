@@ -34,10 +34,8 @@ void Troop::increasePower(int boost){
 int Troop::getSize() {
     return this->size;
 }
-
-void Troop::attackKingdom(Kingdom* X) {
-    // TODO - implement Troop::attackKingdom
-    throw "Not yet implemented";
+void Troop::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
+    strategy->attack(myBannerman,enemyBannerman);
 }
 
 void Troop::increaseHP(int boost){

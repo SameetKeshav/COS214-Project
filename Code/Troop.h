@@ -21,9 +21,7 @@ public:
 
     void detach(Raven* o) override;
     void increasePower(int boost) override;
-
-    void attackKingdom(Kingdom* X);
-
+    void attack(Bannerman* myBannerman, Bannerman* enemyBannerman) override;
     void decreaseWeapons() override;
     void decreaseFood() override;
     void decreaseMedical() override;

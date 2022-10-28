@@ -33,7 +33,6 @@ public:
      * in accordance with GoF composite design pattern, it's necessary to
      * call the troop constructor instead of the bannerman constructor.*/
 
-    virtual void attackKingdom(Kingdom* X)=0;
 
     virtual void increaseFavour() = 0;
 
@@ -47,7 +46,7 @@ public:
 
     virtual void changeStrategy(Strategy* strategy) = 0;
 
-    virtual void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+    virtual void attack(Bannerman* myBannerman, Bannerman* enemyBannerman) = 0;
 
     virtual void increasePower(int boost) = 0;
 

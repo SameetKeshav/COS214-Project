@@ -17,8 +17,7 @@ public:
     Iterator* createIterator();
 
     void removeBannerman(Bannerman* x);
-
-    void attackKingdom(Kingdom* X) override;
+    void attack(Bannerman* myBannerman, Bannerman* enemyBannerman) override;
 
     void addBannerman(Bannerman* b);
 
