@@ -1,16 +1,17 @@
 #include "HealthyState.h"
 
-HealthyState::HealthyState(Economy* context, MasterOfCoin* m) {
-	// TODO - implement HealthyState::HealthyState
-	throw "Not yet implemented";
+HealthyState::HealthyState(Economy* context):State(context) {
+
 }
 
 void HealthyState::decreaseCurrency() {
-	// TODO - implement HealthyState::decreaseCurrency
-	throw "Not yet implemented";
+	context->removeCurrency(5);
+	if (context->getCurrency()<50)
+	{
+		context->SetState();
+	}
 }
 
-void HealthyState::increaseCurrency() {
-	// TODO - implement HealthyState::increaseCurrency
-	throw "Not yet implemented";
+State* HealthyState::getDemotionState(){
+	return new UnstableState(context);
 }
