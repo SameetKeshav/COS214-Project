@@ -1,5 +1,6 @@
 #ifndef WARINDICATORS_H
 #define WARINDICATORS_H
+#include "Treasury.h"
 
 class WarIndicators {
 
@@ -8,7 +9,7 @@ protected:
 
 public:
 	WarIndicators(){
-		m=NULL;
+		m=nullptr;
 	}
 	WarIndicators(Treasury* m){
 		this->m=m;

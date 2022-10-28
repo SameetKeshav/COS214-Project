@@ -1,16 +1,16 @@
 #include "UnstableState.h"
 
-UnstableState::UnstableState(Economy* context, MasterOfCoin* m) {
-	// TODO - implement UnstableState::UnstableState
-	throw "Not yet implemented";
+UnstableState::UnstableState(Economy* context):State(context) {
 }
 
 void UnstableState::decreaseCurrency() {
-	// TODO - implement UnstableState::decreaseCurrency
-	throw "Not yet implemented";
+	context->removeCurrency(10);
+	if (context->getCurrency()<30)
+	{
+		context->SetState();
+	}
 }
 
-void UnstableState::increaseCurrency() {
-	// TODO - implement UnstableState::increaseCurrency
-	throw "Not yet implemented";
+State* UnstableState::getDemotionState(){
+	return new FailedState(context);
 }

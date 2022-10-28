@@ -6,7 +6,7 @@ Assassinate::Assassinate(int stealth, bool alive,int min,int minFavour):Strategy
 }
 
 bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	/*if (alive)
+	if (alive)
 	{
 		if (stealth>60)
 		{
@@ -19,8 +19,7 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
 		
 	}
-	return alive;*/
-	throw "Not yet implemented";
+	return alive;
 }
 
 Assassinate::~Assassinate(){

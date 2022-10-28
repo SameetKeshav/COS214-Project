@@ -1,6 +1,7 @@
 #ifndef SIEGE_H
 #define SIEGE_H
 #include "Strategy.h"
+
 class Siege :public Strategy {
 
 public:

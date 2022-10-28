@@ -1,11 +1,13 @@
 #include "State.h"
 
-void State::decreaseCurrency() {
-	// TODO - implement State::decreaseCurrency
-	throw "Not yet implemented";
+State::State(Economy* context){
+	this->context=context;
 }
 
-void State::increaseCurrency() {
-	// TODO - implement State::increaseCurrency
-	throw "Not yet implemented";
+State* State::getDemotionState(){
+	return nullptr;
+}
+
+State::~State(){
+	delete context;
 }

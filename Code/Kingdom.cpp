@@ -1,6 +1,8 @@
 #include "Kingdom.h"
 
-Kingdom::Kingdom(){
+Kingdom::Kingdom(Economy* economy,vector<Bannerman*> bannerman){
+	this->bannerman=bannerman;
+	this->economy=economy;
 }
 
 void Kingdom::remove(Bannerman* b){
@@ -19,4 +21,12 @@ void Kingdom::remove(Bannerman* b){
 
 void Kingdom::add(Bannerman* b){
 	bannerman.push_back(b);
+}
+
+Kingdom::~Kingdom(){
+	delete economy;
+	for (int i = 0; i < bannerman.size(); i++)
+	{
+		delete bannerman[i];
+	}
 }
