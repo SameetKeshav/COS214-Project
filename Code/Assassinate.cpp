@@ -10,14 +10,14 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	{
 		if (stealth>60)
 		{
-			enemyBannerman->recieveDamage(myBannerman->getDamage());
-			enemyBannerman->decreaseFavour();
+			enemyKingdom->remove(enemyBannerman);
+			myBannerman->increaseHP(5);
 		}
 		else
 		{
 			alive=false;
 		}
-		
+
 	}
 	return alive;
 }
