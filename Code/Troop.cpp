@@ -19,6 +19,18 @@ int Troop::getHP() {
     return this->HP;
 }
 
+void Troop::attach(Raven* o){
+    this->ravenList.push_back(o);
+}
+
+void Troop::detach(Raven* o){
+    this->ravenList.remove(o);
+}
+
+void Troop::increasePower(int boost){
+    this->damage+= boost;
+}
+
 int Troop::getSize() {
     return this->size;
 }

@@ -2,8 +2,13 @@
 #define BANNERMAN_H
 #include "Strategy.h"
 #include "Iterator.h"
+#include "MasterOfCoin.h"
+#include "WarIndicators.h"
+#include "Raven.h"
 #include "WarTheatre.h"
 #include <string>
+#include <list>
+
 class Bannerman : public WarIndicators {
 
 protected:
@@ -14,7 +19,7 @@ protected:
     int numFood;
     int numMedical;
     int id;//redundant, because we have a name @ Morgan
-    list<Raven> ravenList;
+    list<Raven*> ravenList;
     bool assassin;
     MasterOfCoin* m;
     Strategy* strategy;
@@ -28,16 +33,15 @@ public:
      * in accordance with GoF composite design pattern, it's necessary to
      * call the troop constructor instead of the bannerman constructor.*/
 
-
     virtual void attackKingdom(Kingdom* X)=0;
 
     virtual void increaseFavour() = 0;
 
     virtual void decreaseFavour() = 0;
 
-    virtual void attach(Raven o);
+    virtual void attach(Raven* o)=0;
 
-    virtual void detach(Raven o);
+    virtual void detach(Raven* o)=0;
 
     virtual void increaseHP(int boost) = 0;//implement
 
@@ -45,7 +49,7 @@ public:
 
     virtual void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
 
-    virtual void increasePower(int boost);//what is power?
+    virtual void increasePower(int boost) = 0;
 
     string getName();
 
@@ -58,7 +62,7 @@ public:
     virtual void decreaseFood() = 0;
     virtual void decreaseMedical() = 0;
 
-    warTheatre* getWarZone();
+    WarTheatre* getWarZone(); // use createIterator to get this
 
     virtual int getWeapons() = 0;
 
@@ -71,6 +75,10 @@ public:
     virtual void setFood(int numFood) = 0;
 
     virtual void setMedical(int numMedical) = 0;
+
+    /** Default destructor.
+*/
+    ~Bannerman();
 };
 
 #endif

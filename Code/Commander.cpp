@@ -125,3 +125,18 @@ Commander::~Commander() {// TODO - Test
     for (std::list<Bannerman*>::iterator it = groundForces.begin();it != groundForces.end(); ++it)
         delete *it;
 }
+
+void Commander::attach(Raven *o) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->attach(o);
+}
+
+void Commander::detach(Raven *o) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->detach(o);
+}
+
+void Commander::increasePower(int boost) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->increasePower(boost);
+}

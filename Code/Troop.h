@@ -13,41 +13,48 @@ private:
 public:
     Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size);
 
-    int getHP();
+    int getHP() override;
 
     int getSize();
 
+    void attach(Raven* o) override;
+
+    void detach(Raven* o) override;
+    void increasePower(int boost) override;
+
     void attackKingdom(Kingdom* X);
 
-    void decreaseWeapons();
-    void decreaseFood();
-    void decreaseMedical();
+    void decreaseWeapons() override;
+    void decreaseFood() override;
+    void decreaseMedical() override;
 
-    void changeStrategy(Strategy* strategy);
+    void changeStrategy(Strategy* strategy) override;
 
-    void increaseFavour();
+    void increaseFavour() override;
 
-    void decreaseFavour();
+    void decreaseFavour() override;
 
-    void increaseHP(int boost);
+    void increaseHP(int boost) override;
 
-    int getDamage();
+    int getDamage() override;
 
-    void receiveDamage(int X);
+    void receiveDamage(int X) override;
 
-    int getWeapons();
+    int getWeapons() override;
 
-    int getFood();
+    int getFood() override;
 
-    int getMedical();
+    int getMedical() override;
 
-    void setWeapons(int numWeapons);
+    void setWeapons(int numWeapons) override;
 
-    void setFood(int numFood);
+    void setFood(int numFood) override;
 
-    void setMedical(int numMedical);
+    void setMedical(int numMedical) override;
 
-    ~Troop();
+    /** Default destructor.
+*/
+    ~Troop() override;
 };
 
 #endif
