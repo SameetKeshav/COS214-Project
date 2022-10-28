@@ -22,37 +22,91 @@ public:
 
     void addBannerman(Bannerman* b);
 
-    int getHP();
 
-    int getDamage();
+    /**
+ * Returns the HP.
+ *
+ * @return The total Bannermen HP.
+ */
+    int getHP() override;
 
-    void receiveDamage(int);
+    /**
+* Returns the damage.
+*
+* @return The total Bannermen damage.
+*/
+    int getDamage() override;
 
-    void decreaseWeapons();
-    void decreaseFood();
-    void decreaseMedical();
+    void attach(Raven* o) override;
 
+    void detach(Raven* o) override;
+
+    void receiveDamage(int) override;
+
+    void decreaseWeapons() override;
+    void decreaseFood() override;
+    void decreaseMedical() override;
+
+    void increasePower(int boost) override;
+
+    /**
+* Returns numWeapons.
+*
+* @return The total Bannermen number of Weapons.
+*/
     int getWeapons() override;
 
+    /**
+* Returns numFood.
+*
+* @return The total Bannermen amount of food.
+*/
     int getFood() override;
 
+    /**
+* Returns numMedical.
+*
+* @return The total Bannermen amount of medicals.
+*/
     int getMedical() override;
 
+
+    /** increases the HP variables of the bannerman objects in groundForces.
+@param boost - The number by which to increase the HPs of the bannerman objects in groundForces.
+*/
     void increaseHP(int boost) override;
 
+    /** Changes the strategy variable of the bannerman objects in groundForces.
+@param strategy - The new strategy bannerman objects in groundForces should have.
+*/
     void changeStrategy(Strategy* strategy) override;
 
+    /** Increases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
+*/
     void increaseFavour() override;
 
+    /** Decreases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
+*/
     void decreaseFavour() override;
 
-    void setWeapons(int numWeapons);
+    /** Sets the number of weapon supplies of the bannerman objects in groundForces.
+@param numWeapons - The new numWeapons bannerman objects in groundForces should have.
+*/
+    void setWeapons(int numWeapons) override;
 
-    void setFood(int numFood);
+    /** Sets the number of food supplies of the bannerman objects in groundForces.
+@param numFood - The new numFood bannerman objects in groundForces should have.
+*/
+    void setFood(int numFood) override;
 
-    void setMedical(int numMedical);
+    /** Sets the number of medical supplies of the bannerman objects in groundForces.
+@param numMedical - The new numMedical bannerman objects in groundForces should have.
+*/
+    void setMedical(int numMedical) override;
 
-    ~Commander();//new function
+    /** Default destructor.
+    */
+    ~Commander() override;
 };
 
 #endif
