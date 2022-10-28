@@ -7,10 +7,7 @@
 class WeaponsFac : Factory {
 
 public:
-    ArmySupplies* make() {
-        ArmySupplies supplies = new WeaponSupp();
-        return supplies;
-    }
+    ArmySupplies* make() ;
 };
 
 #endif

@@ -6,18 +6,12 @@
 
 class Factory : WarIndicators {
 
+public:
+    void operation();
+    ArmySupplies* getSupply();
+    void ~Factory();
 protected:
     virtual ArmySupplies* make() = 0;
-public:
-    void operation(){
-        supply = make();
-    }
-    ArmySupplies* getSupply(){
-        return supply;
-    }
-    void ~Factory(){
-        delete supply;
-    }
 private:
     ArmySupplies* supply;
 

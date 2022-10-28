@@ -7,10 +7,7 @@ class FoodFac : Factory {
 
 
 public:
-	 ArmySupplies* make() {
-         ArmySupplies supplies = new FoodSupp();
-         return supplies;
-     }
+	 ArmySupplies* make();
 };
 
 #endif
