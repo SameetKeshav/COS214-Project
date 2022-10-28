@@ -1,7 +1,7 @@
 #include "Ambush.h"
 
 bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
-	/*if (stealth>60)
+	if (stealth>60)
 	{
 		//tell Thapelo we must decide on power or damage
 		myBannerman->increasePower();
@@ -70,8 +70,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	else
 	{
 		return false;
-	}*/
-	throw "Not yet implemented";
+	}
 }
 
 Ambush::Ambush(int stealth,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Ambush",min,minFavour)  {

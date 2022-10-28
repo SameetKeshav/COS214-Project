@@ -1,15 +1,14 @@
 #ifndef FAILEDSTATE_H
 #define FAILEDSTATE_H
+#include "State.h"
+#include "Economy.h"
 
-class FailedState : State {
+class FailedState :public State {
 
 
 public:
-	FailedState(Economy* context, MasterOfCoin* m);
-
+	FailedState(Economy* context);
 	void decreaseCurrency();
-
-	void increaseCurrency();
 };
 
 #endif
