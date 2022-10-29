@@ -6,15 +6,15 @@ Topology* Topology::getTopology() {
     return *this;
 }
 
-Topology::Topology(char choose) {
+Topology::Topology() {
 	// TODO - implement Topology::Topology
 	//throw "Not yet implemented";
-    chosen = c;
+    sendScout();
 }
 
 void topology::setTopology()
 {
-    switch (chosen)
+    switch (venue)
     {
         case 'a':
             cout << "The battle is at an open war field" << endl;
