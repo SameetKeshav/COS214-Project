@@ -1,9 +1,21 @@
 #include "Weather.h"
 
-Weather::Weather() {
+Weather::Weather(int val) {
 	// TODO - implement Weather::Weather
 	//throw "Not yet implemented";
 
+    //deciding on rain
+    if (val%2 != 0)
+        makeItRain();
+    else rain = false;
+
+    //setting SP
+    if (val < 40)
+        setWindSpeed(val);
+    else setWindSpeed(50);
+
+    //setting temp
+    setTemp(val);
 }
 
 int Weather::calcEffect() {
@@ -45,6 +57,8 @@ int Weather::calcEffect() {
     {
         difficulty += windspeed/temp;
     }
+
+    //affect Bannermaen here
 
 
 }

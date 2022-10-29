@@ -9,7 +9,7 @@ private:
 	int windspeed;
 
 public:
-	Weather();
+	Weather(int val);
 
 	int calcEffect();
 

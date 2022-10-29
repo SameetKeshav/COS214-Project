@@ -8,9 +8,12 @@ public:
 
 	Topology* getTopology();
 
+    void setTopology();
+
 	Topology();
 
-	Strategy* getStrategy();
+	//Strategy* getStrategy();
+    void sendScout();
 };
 
 #endif
