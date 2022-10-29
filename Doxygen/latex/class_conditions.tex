@@ -1,5 +1,14 @@
 \hypertarget{class_conditions}{}\doxysection{Conditions Class Reference}
 \label{class_conditions}\index{Conditions@{Conditions}}
+
+
+decorator class. This is the class/object decorates the concrete\+Component. Inherits from \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} class.  
+
+
+
+
+{\ttfamily \#include $<$Conditions.\+h$>$}
+
 Inheritance diagram for Conditions\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,31 +18,75 @@ Inheritance diagram for Conditions\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_conditions_a52b106840d6360db804d796e804d82f4}{get\+Strategy}} ()
-\item 
-\mbox{\Hypertarget{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}\label{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}} 
-{\bfseries Conditions} (\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$my\+Venue)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}{send\+Scout}} ()
+\begin{DoxyCompactList}\small\item\em Abstract. Decorates the location of the battle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}{Conditions}} (\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$\mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{my\+Venue}})
+\begin{DoxyCompactList}\small\item\em constructor for the decorator class. merely used to assign variables and call the decorator function \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_conditions_aa487fd98106d4c4e0d9035b602a06092}\label{class_conditions_aa487fd98106d4c4e0d9035b602a06092}} 
-\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ {\bfseries my\+Venue}
+\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{my\+Venue}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+decorator class. This is the class/object decorates the concrete\+Component. Inherits from \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} class. 
+
+\begin{DoxyAuthor}{Author}
+Keabetswe Mothapo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}\label{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}} 
+\index{Conditions@{Conditions}!Conditions@{Conditions}}
+\index{Conditions@{Conditions}!Conditions@{Conditions}}
+\doxysubsubsection{\texorpdfstring{Conditions()}{Conditions()}}
+{\footnotesize\ttfamily Conditions\+::\+Conditions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$}]{my\+Venue }\end{DoxyParamCaption})}
+
+
+
+constructor for the decorator class. merely used to assign variables and call the decorator function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Venue} & -\/ pointer to the object that is to be decoraed \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_conditions_a52b106840d6360db804d796e804d82f4}\label{class_conditions_a52b106840d6360db804d796e804d82f4}} 
-\index{Conditions@{Conditions}!getStrategy@{getStrategy}}
-\index{getStrategy@{getStrategy}!Conditions@{Conditions}}
-\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ Conditions\+::get\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}\label{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}} 
+\index{Conditions@{Conditions}!sendScout@{sendScout}}
+\index{sendScout@{sendScout}!Conditions@{Conditions}}
+\doxysubsubsection{\texorpdfstring{sendScout()}{sendScout()}}
+{\footnotesize\ttfamily void Conditions\+::send\+Scout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}.
+Abstract. Decorates the location of the battle. 
 
 
+
+Implements \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}{War\+Theatre}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e038e}{Topology}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_conditions_aa487fd98106d4c4e0d9035b602a06092}\label{class_conditions_aa487fd98106d4c4e0d9035b602a06092}} 
+\index{Conditions@{Conditions}!myVenue@{myVenue}}
+\index{myVenue@{myVenue}!Conditions@{Conditions}}
+\doxysubsubsection{\texorpdfstring{myVenue}{myVenue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}$\ast$ Conditions\+::my\+Venue}
+
+Pointer to the decorated component 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

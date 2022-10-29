@@ -39,7 +39,7 @@ public:
 	*/
 	Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour);
 	/** @todo Abstract method
-	 * @param myBannerman - attacking bannerman object.
+	 * @param myBannerman - attacking Bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.
 	 * @return battle result as a boolean with true implying the attacking bannerman object
 	 * won and false implying the opposite**/

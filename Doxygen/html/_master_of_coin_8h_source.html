@@ -78,33 +78,41 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Economy.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Raven.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Factory.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Treasury.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Treasury.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;WarIndicators.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_master_of_coin.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_master_of_coin.html">MasterOfCoin</a> : <a class="code hl_class" href="class_treasury.html">Treasury</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="class_economy.html">Economy</a>* economy;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_class" href="class_raven.html">Raven</a>* observer;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_strategy.html">Strategy</a>* strategy;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="class_master_of_coin.html">MasterOfCoin</a>(<a class="code hl_class" href="class_economy.html">Economy</a>* economy, <a class="code hl_class" href="class_raven.html">Raven</a>* observer, <a class="code hl_class" href="class_factory.html">Factory</a>* factory, <a class="code hl_class" href="class_strategy.html">Strategy</a> strategy);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> notify(<a class="code hl_class" href="class_war_indicators.html">WarIndicators</a> sender);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> decreaseCurrency();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> manufacture();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_master_of_coin.html">~MasterOfCoin</a>();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_master_of_coin.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_master_of_coin.html">MasterOfCoin</a> : <a class="code hl_class" href="class_treasury.html">Treasury</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_economy.html">Economy</a>* economy;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_raven.html">Raven</a>* observer;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_strategy.html">Strategy</a>* strategy;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_master_of_coin.html">MasterOfCoin</a>(<a class="code hl_class" href="class_economy.html">Economy</a>* economy, <a class="code hl_class" href="class_raven.html">Raven</a>* observer, <a class="code hl_class" href="class_strategy.html">Strategy</a> strategy);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_master_of_coin.html#aaf0a509b1fd95a2811199bd59835943a">notify</a>(<a class="code hl_class" href="class_war_indicators.html">WarIndicators</a> sender);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_master_of_coin.html#ab90a80f0004b5abdc4a2d632e61a462e">decreaseCurrency</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_master_of_coin.html#aebac61b7c8474aa34c5ab24d0a286d99">manufacture</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="class_master_of_coin.html#a250eb3154300bc63cba4261b5e76446b">~MasterOfCoin</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_economy_html"><div class="ttname"><a href="class_economy.html">Economy</a></div><div class="ttdef"><b>Definition:</b> Economy.h:6</div></div>
-<div class="ttc" id="aclass_factory_html"><div class="ttname"><a href="class_factory.html">Factory</a></div><div class="ttdef"><b>Definition:</b> Factory.h:7</div></div>
-<div class="ttc" id="aclass_master_of_coin_html"><div class="ttname"><a href="class_master_of_coin.html">MasterOfCoin</a></div><div class="ttdef"><b>Definition:</b> MasterOfCoin.h:10</div></div>
+<div class="ttc" id="aclass_master_of_coin_html"><div class="ttname"><a href="class_master_of_coin.html">MasterOfCoin</a></div><div class="ttdef"><b>Definition:</b> MasterOfCoin.h:12</div></div>
+<div class="ttc" id="aclass_master_of_coin_html_a250eb3154300bc63cba4261b5e76446b"><div class="ttname"><a href="class_master_of_coin.html#a250eb3154300bc63cba4261b5e76446b">MasterOfCoin::~MasterOfCoin</a></div><div class="ttdeci">~MasterOfCoin()</div><div class="ttdoc">This is the destructer used to deallocate all memory used in this class.</div><div class="ttdef"><b>Definition:</b> MasterOfCoin.cpp:34</div></div>
+<div class="ttc" id="aclass_master_of_coin_html_aaf0a509b1fd95a2811199bd59835943a"><div class="ttname"><a href="class_master_of_coin.html#aaf0a509b1fd95a2811199bd59835943a">MasterOfCoin::notify</a></div><div class="ttdeci">void notify(WarIndicators sender)</div><div class="ttdoc">This is the method that all objects will use to call the mediator when a change is made.</div><div class="ttdef"><b>Definition:</b> MasterOfCoin.cpp:10</div></div>
+<div class="ttc" id="aclass_master_of_coin_html_ab90a80f0004b5abdc4a2d632e61a462e"><div class="ttname"><a href="class_master_of_coin.html#ab90a80f0004b5abdc4a2d632e61a462e">MasterOfCoin::decreaseCurrency</a></div><div class="ttdeci">void decreaseCurrency()</div><div class="ttdoc">Will call the decreaseCurrency method of the Economy.</div><div class="ttdef"><b>Definition:</b> MasterOfCoin.cpp:24</div></div>
+<div class="ttc" id="aclass_master_of_coin_html_aebac61b7c8474aa34c5ab24d0a286d99"><div class="ttname"><a href="class_master_of_coin.html#aebac61b7c8474aa34c5ab24d0a286d99">MasterOfCoin::manufacture</a></div><div class="ttdeci">void manufacture()</div><div class="ttdoc">will call on the obsever to create more supplies</div><div class="ttdef"><b>Definition:</b> MasterOfCoin.cpp:29</div></div>
 <div class="ttc" id="aclass_raven_html"><div class="ttname"><a href="class_raven.html">Raven</a></div><div class="ttdef"><b>Definition:</b> Raven.h:4</div></div>
 <div class="ttc" id="aclass_strategy_html"><div class="ttname"><a href="class_strategy.html">Strategy</a></div><div class="ttdoc">An Abstract strategy class. A class that provides an interface to the alternative concrete strategies...</div><div class="ttdef"><b>Definition:</b> Strategy.h:16</div></div>
 <div class="ttc" id="aclass_treasury_html"><div class="ttname"><a href="class_treasury.html">Treasury</a></div><div class="ttdef"><b>Definition:</b> Treasury.h:4</div></div>
-<div class="ttc" id="aclass_war_indicators_html"><div class="ttname"><a href="class_war_indicators.html">WarIndicators</a></div><div class="ttdef"><b>Definition:</b> WarIndicators.h:5</div></div>
+<div class="ttc" id="aclass_war_indicators_html"><div class="ttname"><a href="class_war_indicators.html">WarIndicators</a></div><div class="ttdoc">An interface class for all classes that communicate with each other through Treasury mediator.</div><div class="ttdef"><b>Definition:</b> WarIndicators.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

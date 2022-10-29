@@ -78,18 +78,23 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;State.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Economy.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_failed_state.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_failed_state.html">FailedState</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_state.html">State</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_class" href="class_failed_state.html">FailedState</a>(<a class="code hl_class" href="class_economy.html">Economy</a>* context);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> decreaseCurrency();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_failed_state.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_failed_state.html">FailedState</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_state.html">State</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="class_failed_state.html#a7bfe4fc02a6e47edf07e0d721a03a3ea">FailedState</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_failed_state.html#acc9cac035280bef2ba36d7049b422956">   20</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_failed_state.html#acc9cac035280bef2ba36d7049b422956">setContext</a>(<a class="code hl_class" href="class_economy.html">Economy</a>* <a class="code hl_variable" href="class_state.html#a00fd56d8caa101c7ef2488b914ddffc9">context</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_failed_state.html#afaaef228a607bb585a980642985d18a2">decreaseCurrency</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_economy_html"><div class="ttname"><a href="class_economy.html">Economy</a></div><div class="ttdef"><b>Definition:</b> Economy.h:6</div></div>
-<div class="ttc" id="aclass_failed_state_html"><div class="ttname"><a href="class_failed_state.html">FailedState</a></div><div class="ttdef"><b>Definition:</b> FailedState.h:6</div></div>
-<div class="ttc" id="aclass_state_html"><div class="ttname"><a href="class_state.html">State</a></div><div class="ttdef"><b>Definition:</b> State.h:5</div></div>
+<div class="ttc" id="aclass_failed_state_html"><div class="ttname"><a href="class_failed_state.html">FailedState</a></div><div class="ttdoc">A concrete state class. A class that is one of the alternative concrete states for Economy of Kingdom...</div><div class="ttdef"><b>Definition:</b> FailedState.h:11</div></div>
+<div class="ttc" id="aclass_failed_state_html_a7bfe4fc02a6e47edf07e0d721a03a3ea"><div class="ttname"><a href="class_failed_state.html#a7bfe4fc02a6e47edf07e0d721a03a3ea">FailedState::FailedState</a></div><div class="ttdeci">FailedState()</div><div class="ttdoc">Default constructor. initializes context to null.</div><div class="ttdef"><b>Definition:</b> FailedState.cpp:3</div></div>
+<div class="ttc" id="aclass_failed_state_html_acc9cac035280bef2ba36d7049b422956"><div class="ttname"><a href="class_failed_state.html#acc9cac035280bef2ba36d7049b422956">FailedState::setContext</a></div><div class="ttdeci">void setContext(Economy *context)</div></div>
+<div class="ttc" id="aclass_failed_state_html_afaaef228a607bb585a980642985d18a2"><div class="ttname"><a href="class_failed_state.html#afaaef228a607bb585a980642985d18a2">FailedState::decreaseCurrency</a></div><div class="ttdeci">void decreaseCurrency()</div><div class="ttdef"><b>Definition:</b> FailedState.cpp:7</div></div>
+<div class="ttc" id="aclass_state_html"><div class="ttname"><a href="class_state.html">State</a></div><div class="ttdoc">An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...</div><div class="ttdef"><b>Definition:</b> State.h:10</div></div>
+<div class="ttc" id="aclass_state_html_a00fd56d8caa101c7ef2488b914ddffc9"><div class="ttname"><a href="class_state.html#a00fd56d8caa101c7ef2488b914ddffc9">State::context</a></div><div class="ttdeci">Economy * context</div><div class="ttdef"><b>Definition:</b> State.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

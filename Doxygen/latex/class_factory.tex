@@ -9,20 +9,78 @@ Inheritance diagram for Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_factory_a1b1c29e611333ec1b350b75cea18e43d}\label{class_factory_a1b1c29e611333ec1b350b75cea18e43d}} 
-void {\bfseries operation} ()
-\item 
-\mbox{\Hypertarget{class_factory_a02d52979c980f3e841f4c759c03fcd61}\label{class_factory_a02d52979c980f3e841f4c759c03fcd61}} 
-\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ {\bfseries get\+Supply} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation}} ()
+\begin{DoxyCompactList}\small\item\em Calls the method needed to manufacture the supplies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_factory_a02d52979c980f3e841f4c759c03fcd61}{get\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Returns supplies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_factory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Deletes allocated memory to supply variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_factory_ad6810ce8fe545d508c3f0db8079f7727}\label{class_factory_ad6810ce8fe545d508c3f0db8079f7727}} 
-virtual \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ {\bfseries make} ()=0
+virtual \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{make}} ()=0
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_factory_a8f71456f48e4df402c778a44191ff40e}\label{class_factory_a8f71456f48e4df402c778a44191ff40e}} 
+\index{Factory@{Factory}!````~Factory@{$\sim$Factory}}
+\index{````~Factory@{$\sim$Factory}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{$\sim$Factory()}{~Factory()}}
+{\footnotesize\ttfamily Factory\+::$\sim$\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes allocated memory to supply variable. 
+
+\begin{DoxyAuthor}{Author}
+Ronin Brookes 19069686 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_factory_a02d52979c980f3e841f4c759c03fcd61}\label{class_factory_a02d52979c980f3e841f4c759c03fcd61}} 
+\index{Factory@{Factory}!getSupply@{getSupply}}
+\index{getSupply@{getSupply}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getSupply()}{getSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ Factory\+::get\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns supplies. 
+
+\begin{DoxyReturn}{Returns}
+returns the supplies the \mbox{\hyperlink{class_factory}{Factory}} manufactured 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Ronin Brookes 19069686 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_factory_ad6810ce8fe545d508c3f0db8079f7727}\label{class_factory_ad6810ce8fe545d508c3f0db8079f7727}} 
+\index{Factory@{Factory}!make@{make}}
+\index{make@{make}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ Factory\+::make (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_food_fac_aefe22538ae07c92211f99521873db12c}{Food\+Fac}}, \mbox{\hyperlink{class_medical_fac_aadfa87f2e0de7a3ac66e291c561f3105}{Medical\+Fac}}, and \mbox{\hyperlink{class_weapons_fac_a47a43b9a99d4ace910a315ada5412177}{Weapons\+Fac}}.
+
+\mbox{\Hypertarget{class_factory_a1b1c29e611333ec1b350b75cea18e43d}\label{class_factory_a1b1c29e611333ec1b350b75cea18e43d}} 
+\index{Factory@{Factory}!operation@{operation}}
+\index{operation@{operation}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{operation()}{operation()}}
+{\footnotesize\ttfamily void Factory\+::operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls the method needed to manufacture the supplies. 
+
+\begin{DoxyAuthor}{Author}
+Ronin Brookes 19069686 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Factory.\+h\end{DoxyCompactItemize}
+Factory.\+h\item 
+Factory.\+cpp\end{DoxyCompactItemize}

@@ -77,39 +77,197 @@ $(function() {
   <div class="headertitle"><div class="title">State Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An Abstract state class. A class that provides an interface to the alternative concrete states for <a class="el" href="class_economy.html">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>.  
+ <a href="class_state.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_state_8h_source.html">State.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for State:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_state.png" usemap="#State_map" alt=""/>
   <map id="State_map" name="State_map">
-<area href="class_failed_state.html" alt="FailedState" shape="rect" coords="0,56,88,80"/>
-<area href="class_healthy_state.html" alt="HealthyState" shape="rect" coords="98,56,186,80"/>
-<area href="class_unstable_state.html" alt="UnstableState" shape="rect" coords="196,56,284,80"/>
+<area href="class_failed_state.html" title="A concrete state class. A class that is one of the alternative concrete states for Economy of Kingdom..." alt="FailedState" shape="rect" coords="0,56,88,80"/>
+<area href="class_healthy_state.html" title="A concrete state class. A class that is one of the alternative concrete states for Economy of Kingdom..." alt="HealthyState" shape="rect" coords="98,56,186,80"/>
+<area href="class_unstable_state.html" title="A concrete state class. A class that is one of the alternative concrete states for Economy of Kingdom..." alt="UnstableState" shape="rect" coords="196,56,284,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abe70d9305cbdfe8ee2606e6a497dac3d"><td class="memItemLeft" align="right" valign="top"><a id="abe70d9305cbdfe8ee2606e6a497dac3d" name="abe70d9305cbdfe8ee2606e6a497dac3d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>State</b> (<a class="el" href="class_economy.html">Economy</a> *context)</td></tr>
-<tr class="separator:abe70d9305cbdfe8ee2606e6a497dac3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5773daf54efd2c1e6723950d4e44b5a7"><td class="memItemLeft" align="right" valign="top"><a id="a5773daf54efd2c1e6723950d4e44b5a7" name="a5773daf54efd2c1e6723950d4e44b5a7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>decreaseCurrency</b> ()=0</td></tr>
+<tr class="memitem:ab91bb1dd5aa6260ab2a456581daf9ec2"><td class="memItemLeft" align="right" valign="top"><a id="ab91bb1dd5aa6260ab2a456581daf9ec2" name="ab91bb1dd5aa6260ab2a456581daf9ec2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>State</b> ()</td></tr>
+<tr class="memdesc:ab91bb1dd5aa6260ab2a456581daf9ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:ab91bb1dd5aa6260ab2a456581daf9ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c1972e00c66761620cf9c3d4d8cb49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#ae8c1972e00c66761620cf9c3d4d8cb49">setContext</a> (<a class="el" href="class_economy.html">Economy</a> *<a class="el" href="class_state.html#a00fd56d8caa101c7ef2488b914ddffc9">context</a>)</td></tr>
+<tr class="separator:ae8c1972e00c66761620cf9c3d4d8cb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5773daf54efd2c1e6723950d4e44b5a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a5773daf54efd2c1e6723950d4e44b5a7">decreaseCurrency</a> ()=0</td></tr>
 <tr class="separator:a5773daf54efd2c1e6723950d4e44b5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa901c36d20da2a396e4fa27bf8576eec"><td class="memItemLeft" align="right" valign="top"><a id="aa901c36d20da2a396e4fa27bf8576eec" name="aa901c36d20da2a396e4fa27bf8576eec"></a>
-virtual <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getDemotionState</b> ()</td></tr>
+<tr class="memitem:aa901c36d20da2a396e4fa27bf8576eec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#aa901c36d20da2a396e4fa27bf8576eec">getDemotionState</a> ()</td></tr>
 <tr class="separator:aa901c36d20da2a396e4fa27bf8576eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab438d92b90dc18d194dbd9c9c8bab3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#afab438d92b90dc18d194dbd9c9c8bab3">~State</a> ()</td></tr>
+<tr class="separator:afab438d92b90dc18d194dbd9c9c8bab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a00fd56d8caa101c7ef2488b914ddffc9"><td class="memItemLeft" align="right" valign="top"><a id="a00fd56d8caa101c7ef2488b914ddffc9" name="a00fd56d8caa101c7ef2488b914ddffc9"></a>
-<a class="el" href="class_economy.html">Economy</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
+<tr class="memitem:a00fd56d8caa101c7ef2488b914ddffc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_economy.html">Economy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a00fd56d8caa101c7ef2488b914ddffc9">context</a></td></tr>
 <tr class="separator:a00fd56d8caa101c7ef2488b914ddffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >An Abstract state class. A class that provides an interface to the alternative concrete states for <a class="el" href="class_economy.html">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>Morgan Bentley </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afab438d92b90dc18d194dbd9c9c8bab3" name="afab438d92b90dc18d194dbd9c9c8bab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab438d92b90dc18d194dbd9c9c8bab3">&#9670;&#160;</a></span>~State()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">State::~State </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>destructor. deallocates context </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5773daf54efd2c1e6723950d4e44b5a7" name="a5773daf54efd2c1e6723950d4e44b5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5773daf54efd2c1e6723950d4e44b5a7">&#9670;&#160;</a></span>decreaseCurrency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void State::decreaseCurrency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Abstract method. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_failed_state.html#afaaef228a607bb585a980642985d18a2">FailedState</a>, <a class="el" href="class_healthy_state.html#a5f75e1935e20ed34b73d259a2324e4f9">HealthyState</a>, and <a class="el" href="class_unstable_state.html#a4e134532fc0e3f2471e06ad0996ae161">UnstableState</a>.</p>
+
+</div>
+</div>
+<a id="aa901c36d20da2a396e4fa27bf8576eec" name="aa901c36d20da2a396e4fa27bf8576eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa901c36d20da2a396e4fa27bf8576eec">&#9670;&#160;</a></span>getDemotionState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_state.html">State</a> * State::getDemotionState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>gets lower level state of economy with null being returned if no lower state is possible </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>concrete <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> of <a class="el" href="class_economy.html">Economy</a> </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_healthy_state.html#a97583e0f477b87971b3a586ef1ba89e6">HealthyState</a>, and <a class="el" href="class_unstable_state.html#a655d00d68c7c2e08da6b4db0df14a600">UnstableState</a>.</p>
+
+</div>
+</div>
+<a id="ae8c1972e00c66761620cf9c3d4d8cb49" name="ae8c1972e00c66761620cf9c3d4d8cb49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c1972e00c66761620cf9c3d4d8cb49">&#9670;&#160;</a></span>setContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void State::setContext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_economy.html">Economy</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>sets context variable. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>- <a class="el" href="class_economy.html">Economy</a> pointer to player's <a class="el" href="class_economy.html">Economy</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_failed_state.html#acc9cac035280bef2ba36d7049b422956">FailedState</a>, <a class="el" href="class_healthy_state.html#abdfa8ce236a9766bac7dd8ed3bf316e2">HealthyState</a>, and <a class="el" href="class_unstable_state.html#adaff0187ed507f9d0b3ae25e8a901a17">UnstableState</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a00fd56d8caa101c7ef2488b914ddffc9" name="a00fd56d8caa101c7ef2488b914ddffc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fd56d8caa101c7ef2488b914ddffc9">&#9670;&#160;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_economy.html">Economy</a>* State::context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p ><a class="el" href="class_economy.html">Economy</a> pointer of player's <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_state_8h_source.html">State.h</a></li>
+<li>FailedState.cpp</li>
+<li>HealthyState.cpp</li>
 <li>State.cpp</li>
+<li>UnstableState.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

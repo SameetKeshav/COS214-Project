@@ -76,6 +76,8 @@ $(function() {
   <div class="headertitle"><div class="title">sendRaven Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="send_raven_8h_source.html">sendRaven.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sendRaven:</div>
 <div class="dyncontent">
@@ -88,15 +90,61 @@ Inheritance diagram for sendRaven:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba59cba498ba47ef028ea18697a40633"><td class="memItemLeft" align="right" valign="top"><a id="aba59cba498ba47ef028ea18697a40633" name="aba59cba498ba47ef028ea18697a40633"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>sendRaven</b> (<a class="el" href="class_supply_wagon.html">SupplyWagon</a> **supplies, <a class="el" href="class_bannerman.html">Bannerman</a> *subject)</td></tr>
+<tr class="memitem:aba59cba498ba47ef028ea18697a40633"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsend_raven.html#aba59cba498ba47ef028ea18697a40633">sendRaven</a> (<a class="el" href="class_supply_wagon.html">SupplyWagon</a> **supplies, <a class="el" href="class_bannerman.html">Bannerman</a> *subject)</td></tr>
+<tr class="memdesc:aba59cba498ba47ef028ea18697a40633"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor for the concrete <a class="el" href="class_raven.html">Raven</a> class  <a href="classsend_raven.html#aba59cba498ba47ef028ea18697a40633">More...</a><br /></td></tr>
 <tr class="separator:aba59cba498ba47ef028ea18697a40633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ce79bbfbbf0fa7798f80bf6d707c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsend_raven.html#a97ce79bbfbbf0fa7798f80bf6d707c43">update</a> ()</td></tr>
+<tr class="memdesc:a97ce79bbfbbf0fa7798f80bf6d707c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will be called from outside the class, this method will get the amount of resources the subject has, then call the check method.  <a href="classsend_raven.html#a97ce79bbfbbf0fa7798f80bf6d707c43">More...</a><br /></td></tr>
 <tr class="separator:a97ce79bbfbbf0fa7798f80bf6d707c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f8465953140bcea6a5e2388e0b6913"><td class="memItemLeft" align="right" valign="top"><a id="ac7f8465953140bcea6a5e2388e0b6913" name="ac7f8465953140bcea6a5e2388e0b6913"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkSupplies</b> ()</td></tr>
+<tr class="memdesc:ac7f8465953140bcea6a5e2388e0b6913"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will check to see if there is too little supplies then call the appropriate Supply Wagon to fill it up. <br /></td></tr>
 <tr class="separator:ac7f8465953140bcea6a5e2388e0b6913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae649aa7e798d6ea6fe148fb2acc144"><td class="memItemLeft" align="right" valign="top"><a id="a5ae649aa7e798d6ea6fe148fb2acc144" name="a5ae649aa7e798d6ea6fe148fb2acc144"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~sendRaven</b> ()</td></tr>
+<tr class="memdesc:a5ae649aa7e798d6ea6fe148fb2acc144"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Destructor will be used to deference all pointer variables used by this class to stop all memory leaks. <br /></td></tr>
+<tr class="separator:a5ae649aa7e798d6ea6fe148fb2acc144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Sameet Keshav, u21479373 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aba59cba498ba47ef028ea18697a40633" name="aba59cba498ba47ef028ea18697a40633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba59cba498ba47ef028ea18697a40633">&#9670;&#160;</a></span>sendRaven()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendRaven::sendRaven </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_supply_wagon.html">SupplyWagon</a> **&#160;</td>
+          <td class="paramname"><em>supplies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_bannerman.html">Bannerman</a> *&#160;</td>
+          <td class="paramname"><em>subject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructor for the concrete <a class="el" href="class_raven.html">Raven</a> class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">supplies</td><td>is an array of pointer objects of type <a class="el" href="class_supply_wagon.html">SupplyWagon</a> </td></tr>
+    <tr><td class="paramname">subject</td><td>is a pointer for the <a class="el" href="class_bannerman.html" title="An abstract component class. A class that provides the interface with which the client interacts with...">Bannerman</a> subject that this Observer will observe </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a97ce79bbfbbf0fa7798f80bf6d707c43" name="a97ce79bbfbbf0fa7798f80bf6d707c43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97ce79bbfbbf0fa7798f80bf6d707c43">&#9670;&#160;</a></span>update()</h2>
@@ -120,6 +168,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkSupplies</b> ()<
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This method will be called from outside the class, this method will get the amount of resources the subject has, then call the check method. </p>
 
 <p>Implements <a class="el" href="class_raven.html">Raven</a>.</p>
 

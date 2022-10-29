@@ -1,5 +1,9 @@
 \hypertarget{class_master_of_coin}{}\doxysection{Master\+Of\+Coin Class Reference}
 \label{class_master_of_coin}\index{MasterOfCoin@{MasterOfCoin}}
+
+
+{\ttfamily \#include $<$Master\+Of\+Coin.\+h$>$}
+
 Inheritance diagram for Master\+Of\+Coin\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +13,65 @@ Inheritance diagram for Master\+Of\+Coin\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_master_of_coin_a6be23449b0d32e2424da83f4bece6eae}\label{class_master_of_coin_a6be23449b0d32e2424da83f4bece6eae}} 
-{\bfseries Master\+Of\+Coin} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$economy, \mbox{\hyperlink{class_raven}{Raven}} $\ast$observer, \mbox{\hyperlink{class_factory}{Factory}} $\ast$factory, \mbox{\hyperlink{class_strategy}{Strategy}} strategy)
-\item 
-\mbox{\Hypertarget{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}\label{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}} 
-void {\bfseries notify} (\mbox{\hyperlink{class_war_indicators}{War\+Indicators}} sender)
-\item 
+\mbox{\hyperlink{class_master_of_coin_a937c30ac28a57ff502d9b6ec93fcceb3}{Master\+Of\+Coin}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$economy, \mbox{\hyperlink{class_raven}{Raven}} $\ast$observer, \mbox{\hyperlink{class_strategy}{Strategy}} strategy)
+\begin{DoxyCompactList}\small\item\em Constructor to set the variables in this class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}{notify}} (\mbox{\hyperlink{class_war_indicators}{War\+Indicators}} sender)
+\begin{DoxyCompactList}\small\item\em This is the method that all objects will use to call the mediator when a change is made. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_master_of_coin_ab90a80f0004b5abdc4a2d632e61a462e}\label{class_master_of_coin_ab90a80f0004b5abdc4a2d632e61a462e}} 
 void {\bfseries decrease\+Currency} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Will call the decrease\+Currency method of the \mbox{\hyperlink{class_economy}{Economy}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_master_of_coin_aebac61b7c8474aa34c5ab24d0a286d99}\label{class_master_of_coin_aebac61b7c8474aa34c5ab24d0a286d99}} 
 void {\bfseries manufacture} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em will call on the obsever to create more supplies \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_master_of_coin_a250eb3154300bc63cba4261b5e76446b}\label{class_master_of_coin_a250eb3154300bc63cba4261b5e76446b}} 
+{\bfseries $\sim$\+Master\+Of\+Coin} ()
+\begin{DoxyCompactList}\small\item\em This is the destructer used to deallocate all memory used in this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Sameet Keshav u21479373 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_master_of_coin_a937c30ac28a57ff502d9b6ec93fcceb3}\label{class_master_of_coin_a937c30ac28a57ff502d9b6ec93fcceb3}} 
+\index{MasterOfCoin@{MasterOfCoin}!MasterOfCoin@{MasterOfCoin}}
+\index{MasterOfCoin@{MasterOfCoin}!MasterOfCoin@{MasterOfCoin}}
+\doxysubsubsection{\texorpdfstring{MasterOfCoin()}{MasterOfCoin()}}
+{\footnotesize\ttfamily Master\+Of\+Coin\+::\+Master\+Of\+Coin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_economy}{Economy}} $\ast$}]{economy,  }\item[{\mbox{\hyperlink{class_raven}{Raven}} $\ast$}]{observer,  }\item[{\mbox{\hyperlink{class_strategy}{Strategy}}}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Constructor to set the variables in this class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em economy} & holds the \mbox{\hyperlink{class_economy}{Economy}} that will be using the mediator \\
+\hline
+{\em observer} & holds the observer that will use the mediator \\
+\hline
+{\em strategy} & holds the strategy object that will use the mediator \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}\label{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}} 
+\index{MasterOfCoin@{MasterOfCoin}!notify@{notify}}
+\index{notify@{notify}!MasterOfCoin@{MasterOfCoin}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Master\+Of\+Coin\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war_indicators}{War\+Indicators}}}]{sender }\end{DoxyParamCaption})}
+
+
+
+This is the method that all objects will use to call the mediator when a change is made. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & is the variable that holds the object who sent the notify request \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
