@@ -13,7 +13,7 @@ public:
     /// @return the new Supply Wagon clone.
     /// @author Ronin Brookes 19069686
     virtual SupplyWagon* clone() = 0;
-    /// @brief initialize the supp variable.
+    /// @brief Return the supp variable.
     /// @return returns the supp variable. Returns the necessary supplies.
     /// @author Ronin Brookes 19069686
     virtual ArmySupplies* getSupplies()=0;
