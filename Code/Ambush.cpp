@@ -4,7 +4,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	if (stealth>60)
 	{
 		//tell Thapelo we must decide on power or damage
-		myBannerman->increasePower();
+		myBannerman->increasePower(5);
 		//tell thapelo to implement decrease power
 		enemyBannerman->decreasePower();
 	}
