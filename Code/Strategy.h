@@ -7,10 +7,15 @@ using namespace std;
 #include "MasterOfCoin.h"
 #include "Kingdom.h"
 
+/** @brief An Abstract strategy class.
+    A class that provides an interface to the alternative concrete strategies for how Bannerman
+	 will fight enemyBannerman.
+    @author Morgan Bentley
+    @date October 2022
+    */
 class Strategy : public WarIndicators  {
 
 protected:
-	//modify kingdom to have a getter for bannerman list
 	Kingdom* myKingdom;
 	Kingdom* enemyKingdom;
 	Bannerman* myBannerman;
