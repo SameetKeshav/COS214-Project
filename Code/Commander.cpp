@@ -132,8 +132,14 @@ void Commander::decreaseFavour(){
         (*it)->decreaseFavour();
 }
 
+int Commander::getFavour(){
+    int sum=0;
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        sum+=(*it)->getFavour();
+    return sum;
+}
 
-Commander::~Commander() {// TODO - Test
+Commander::~Commander() {
     for (std::list<Bannerman*>::iterator it = groundForces.begin();it != groundForces.end(); ++it)
         delete *it;
 }

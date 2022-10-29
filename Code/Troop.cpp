@@ -58,6 +58,10 @@ void Troop::decreaseFavour() {
     this->favour -=1;
 }
 
+int Troop::getFavour(){
+    return favour;
+}
+
 void Troop::decreaseWeapons(){
     this->numWeapons-=1;
 }
