@@ -18,9 +18,9 @@ Inheritance diagram for Ambush\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}{Ambush}} (int stealth, int min, int min\+Favour)
+\mbox{\hyperlink{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}{Ambush}} (int stealth, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
-bool \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)
+bool \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
 \item 
 \mbox{\hyperlink{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}{$\sim$\+Ambush}} ()
 \end{DoxyCompactItemize}
@@ -46,7 +46,7 @@ October 2022
 {\footnotesize\ttfamily Ambush\+::\+Ambush (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize min and min\+Favour. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
 
 \begin{DoxyParams}{Parameters}
 {\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
@@ -87,7 +87,7 @@ battle result as a boolean with true implying the attacking bannerman object won
 \end{DoxyReturn}
 
 
-Reimplemented from \mbox{\hyperlink{class_strategy}{Strategy}}.
+Implements \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy}}.
 
 
 

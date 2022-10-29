@@ -11,7 +11,7 @@ class BattleField :public Strategy {
 
 public:
 	/** @todo  constructor. initializes stealth and calls base class constructor to
-	 * initialize min and minFavour.
+	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
 	 * @param stealth - skill level of Bannerman.
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which bannerman change allegiances

@@ -12,7 +12,7 @@ A class that acts as a container/composite for bannerman objects as well as perf
 Inheritance diagram for Commander\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_commander}
+\includegraphics[height=3.000000cm]{class_commander}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -64,6 +64,8 @@ void \mbox{\hyperlink{class_commander_a152eeabd214d9745dd01e3a62743b3f3}{increas
 \begin{DoxyCompactList}\small\item\em Increases the loyalty favour levels variable of the bannerman objects in ground\+Forces by 1. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_a09ae0bf59592876b0c408280dcb15417}{decrease\+Favour}} () override
 \begin{DoxyCompactList}\small\item\em Decreases the loyalty favour levels variable of the bannerman objects in ground\+Forces by 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_commander_a6273d07255e979e8957247af66b7f635}{get\+Favour}} ()
+\item 
 void \mbox{\hyperlink{class_commander_a8326c6d14db39c3dd52b521dc4d23561}{set\+Weapons}} (int \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{num\+Weapons}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of weapon supplies of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_aecff03645144e0d32094a4987df70145}{set\+Food}} (int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}) override
@@ -238,6 +240,16 @@ The total ground\+Forces damage.
 
 
 Implements \mbox{\hyperlink{class_bannerman_a1a5d6adb57fcf51eb355cdef86b72cb7}{Bannerman}}.
+
+\mbox{\Hypertarget{class_commander_a6273d07255e979e8957247af66b7f635}\label{class_commander_a6273d07255e979e8957247af66b7f635}} 
+\index{Commander@{Commander}!getFavour@{getFavour}}
+\index{getFavour@{getFavour}!Commander@{Commander}}
+\doxysubsubsection{\texorpdfstring{getFavour()}{getFavour()}}
+{\footnotesize\ttfamily int Commander\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_bannerman}{Bannerman}}.
 
 \mbox{\Hypertarget{class_commander_ae8e2f3a04ce76699eb5a23c27aa7d87e}\label{class_commander_ae8e2f3a04ce76699eb5a23c27aa7d87e}} 
 \index{Commander@{Commander}!getFood@{getFood}}

@@ -1,5 +1,14 @@
 \hypertarget{class_siege}{}\doxysection{Siege Class Reference}
 \label{class_siege}\index{Siege@{Siege}}
+
+
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman.  
+
+
+
+
+{\ttfamily \#include $<$Siege.\+h$>$}
+
 Inheritance diagram for Siege\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +18,52 @@ Inheritance diagram for Siege\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_siege_a58bf6483aa888973ab9ead36635234fc}\label{class_siege_a58bf6483aa888973ab9ead36635234fc}} 
-{\bfseries Siege} (int stealth, int min, int min\+Favour)
+\mbox{\hyperlink{class_siege_a58bf6483aa888973ab9ead36635234fc}{Siege}} (int stealth, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
-bool \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
 \item 
-\mbox{\Hypertarget{class_siege_a69248708f7af9fee779719dd889f9d4a}\label{class_siege_a69248708f7af9fee779719dd889f9d4a}} 
-int {\bfseries stealth}
+\mbox{\hyperlink{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}{$\sim$\+Siege}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_siege_a58bf6483aa888973ab9ead36635234fc}\label{class_siege_a58bf6483aa888973ab9ead36635234fc}} 
+\index{Siege@{Siege}!Siege@{Siege}}
+\index{Siege@{Siege}!Siege@{Siege}}
+\doxysubsubsection{\texorpdfstring{Siege()}{Siege()}}
+{\footnotesize\ttfamily Siege\+::\+Siege (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000010}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em min} & -\/ minimum supplies for food,weapons and medicine \\
+\hline
+{\em min\+Favour} & -\/ minimum favour below which bannerman change allegiances \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}\label{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}} 
+\index{Siege@{Siege}!````~Siege@{$\sim$Siege}}
+\index{````~Siege@{$\sim$Siege}!Siege@{Siege}}
+\doxysubsubsection{\texorpdfstring{$\sim$Siege()}{~Siege()}}
+{\footnotesize\ttfamily Siege\+::$\sim$\+Siege (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]destructor. \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -30,9 +73,21 @@ int {\bfseries stealth}
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
 {\footnotesize\ttfamily bool Siege\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Bannerman} & -\/ attacking bannerman object. \\
+\hline
+{\em enemy\+Bannerman} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} object being attacked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+battle result as a boolean with true implying the attacking bannerman object won and false implying the opposite 
+\end{DoxyReturn}
 
 
-Reimplemented from \mbox{\hyperlink{class_strategy}{Strategy}}.
+Implements \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy}}.
 
 
 

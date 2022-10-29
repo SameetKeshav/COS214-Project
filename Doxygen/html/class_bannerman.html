@@ -88,65 +88,94 @@ Inheritance diagram for Bannerman:</div>
  <div class="center">
   <img src="class_bannerman.png" usemap="#Bannerman_map" alt=""/>
   <map id="Bannerman_map" name="Bannerman_map">
-<area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="0,56,79,80"/>
-<area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="89,56,168,80"/>
-<area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="178,56,257,80"/>
-<area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="267,56,346,80"/>
+<area href="class_war_indicators.html" alt="WarIndicators" shape="rect" coords="150,0,240,24"/>
+<area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="0,112,90,136"/>
+<area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="100,112,190,136"/>
+<area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="200,112,290,136"/>
+<area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="300,112,390,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a838e0518a0bf6781f5843d44934a06ff"><td class="memItemLeft" align="right" valign="top"><a id="a838e0518a0bf6781f5843d44934a06ff" name="a838e0518a0bf6781f5843d44934a06ff"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Bannerman</b> ()</td></tr>
-<tr class="memdesc:a838e0518a0bf6781f5843d44934a06ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a838e0518a0bf6781f5843d44934a06ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625c5d8fdd7633c9c319a8fef88affed"><td class="memItemLeft" align="right" valign="top"><a id="a625c5d8fdd7633c9c319a8fef88affed" name="a625c5d8fdd7633c9c319a8fef88affed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Bannerman</b> (string n)</td></tr>
+<tr class="memdesc:a625c5d8fdd7633c9c319a8fef88affed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a625c5d8fdd7633c9c319a8fef88affed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87872034f7a5171f084d421eba81b6a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a87872034f7a5171f084d421eba81b6a5">increaseFavour</a> ()=0</td></tr>
+<tr class="memdesc:a87872034f7a5171f084d421eba81b6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. increases the favour of the bannerman.  <a href="class_bannerman.html#a87872034f7a5171f084d421eba81b6a5">More...</a><br /></td></tr>
 <tr class="separator:a87872034f7a5171f084d421eba81b6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1af377efb06af229f9a25141e9bcc6d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1af377efb06af229f9a25141e9bcc6d4">decreaseFavour</a> ()=0</td></tr>
+<tr class="memdesc:a1af377efb06af229f9a25141e9bcc6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. decreases the favour of the bannerman.  <a href="class_bannerman.html#a1af377efb06af229f9a25141e9bcc6d4">More...</a><br /></td></tr>
 <tr class="separator:a1af377efb06af229f9a25141e9bcc6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad643991fd0fde3e08a5fd66054acf87e"><td class="memItemLeft" align="right" valign="top"><a id="ad643991fd0fde3e08a5fd66054acf87e" name="ad643991fd0fde3e08a5fd66054acf87e"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getFavour</b> ()=0</td></tr>
+<tr class="separator:ad643991fd0fde3e08a5fd66054acf87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc3abe5d8a4c9dda697829eef3fc7c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1bc3abe5d8a4c9dda697829eef3fc7c4">attach</a> (<a class="el" href="class_raven.html">Raven</a> *o)=0</td></tr>
+<tr class="memdesc:a1bc3abe5d8a4c9dda697829eef3fc7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Attaches a <a class="el" href="class_raven.html">Raven</a> Observer on the bannerman.  <a href="class_bannerman.html#a1bc3abe5d8a4c9dda697829eef3fc7c4">More...</a><br /></td></tr>
 <tr class="separator:a1bc3abe5d8a4c9dda697829eef3fc7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205b64898be42c673c9f34a03b356d8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a205b64898be42c673c9f34a03b356d8d">detach</a> (<a class="el" href="class_raven.html">Raven</a> *o)=0</td></tr>
+<tr class="memdesc:a205b64898be42c673c9f34a03b356d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. detaches a <a class="el" href="class_raven.html">Raven</a> Observer from the bannerman.  <a href="class_bannerman.html#a205b64898be42c673c9f34a03b356d8d">More...</a><br /></td></tr>
 <tr class="separator:a205b64898be42c673c9f34a03b356d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414eed3d8e51c65cab88992092dc2e3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a414eed3d8e51c65cab88992092dc2e3f">increaseHP</a> (int boost)=0</td></tr>
+<tr class="memdesc:a414eed3d8e51c65cab88992092dc2e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. increases the health points(HP) of the bannerman.  <a href="class_bannerman.html#a414eed3d8e51c65cab88992092dc2e3f">More...</a><br /></td></tr>
 <tr class="separator:a414eed3d8e51c65cab88992092dc2e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f63b80fda395e2ae0e4c311056e364"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a34f63b80fda395e2ae0e4c311056e364">changeStrategy</a> (<a class="el" href="class_strategy.html">Strategy</a> *<a class="el" href="class_bannerman.html#a1e339f6c73c8a75da5d7e88c0dabb412">strategy</a>)=0</td></tr>
+<tr class="memdesc:a34f63b80fda395e2ae0e4c311056e364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. changes the attack strategy of the bannerman.  <a href="class_bannerman.html#a34f63b80fda395e2ae0e4c311056e364">More...</a><br /></td></tr>
 <tr class="separator:a34f63b80fda395e2ae0e4c311056e364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0acd7a49687131331f594cb590a31fc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a0acd7a49687131331f594cb590a31fc4">attack</a> (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)=0</td></tr>
+<tr class="memdesc:a0acd7a49687131331f594cb590a31fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. uses strategy to attack another kingdom.  <a href="class_bannerman.html#a0acd7a49687131331f594cb590a31fc4">More...</a><br /></td></tr>
 <tr class="separator:a0acd7a49687131331f594cb590a31fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1abcef28173e5b38ece6306be6b02148"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1abcef28173e5b38ece6306be6b02148">increasePower</a> (int boost)=0</td></tr>
+<tr class="memdesc:a1abcef28173e5b38ece6306be6b02148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. increases the damage capability of the bannerman.  <a href="class_bannerman.html#a1abcef28173e5b38ece6306be6b02148">More...</a><br /></td></tr>
 <tr class="separator:a1abcef28173e5b38ece6306be6b02148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34f077972ae84ad34b77bf6f174a0ce"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#ac34f077972ae84ad34b77bf6f174a0ce">getName</a> ()</td></tr>
+<tr class="memdesc:ac34f077972ae84ad34b77bf6f174a0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor that returns the name of the bannerman.  <a href="class_bannerman.html#ac34f077972ae84ad34b77bf6f174a0ce">More...</a><br /></td></tr>
 <tr class="separator:ac34f077972ae84ad34b77bf6f174a0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c99451818f71d15d15e0bf35d4b62d6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a8c99451818f71d15d15e0bf35d4b62d6">getHP</a> ()=0</td></tr>
+<tr class="memdesc:a8c99451818f71d15d15e0bf35d4b62d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns the name of the component.  <a href="class_bannerman.html#a8c99451818f71d15d15e0bf35d4b62d6">More...</a><br /></td></tr>
 <tr class="separator:a8c99451818f71d15d15e0bf35d4b62d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5d6adb57fcf51eb355cdef86b72cb7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1a5d6adb57fcf51eb355cdef86b72cb7">getDamage</a> ()=0</td></tr>
+<tr class="memdesc:a1a5d6adb57fcf51eb355cdef86b72cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns the damage capability of the bannerman.  <a href="class_bannerman.html#a1a5d6adb57fcf51eb355cdef86b72cb7">More...</a><br /></td></tr>
 <tr class="separator:a1a5d6adb57fcf51eb355cdef86b72cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a794eacd3816c899b12fde0ab1b672485"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a794eacd3816c899b12fde0ab1b672485">receiveDamage</a> (int boost)=0</td></tr>
+<tr class="memdesc:a794eacd3816c899b12fde0ab1b672485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Increases the damage capability of the bannerman.  <a href="class_bannerman.html#a794eacd3816c899b12fde0ab1b672485">More...</a><br /></td></tr>
 <tr class="separator:a794eacd3816c899b12fde0ab1b672485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5035baa2661e9af63bae7914efb51bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#aa5035baa2661e9af63bae7914efb51bc">decreaseWeapons</a> ()=0</td></tr>
+<tr class="memdesc:aa5035baa2661e9af63bae7914efb51bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Decreases the number of weapons that the bannerman has.  <a href="class_bannerman.html#aa5035baa2661e9af63bae7914efb51bc">More...</a><br /></td></tr>
 <tr class="separator:aa5035baa2661e9af63bae7914efb51bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ea9f0f89233a5e7435c52772fc2b43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#aa8ea9f0f89233a5e7435c52772fc2b43">decreaseFood</a> ()=0</td></tr>
+<tr class="memdesc:aa8ea9f0f89233a5e7435c52772fc2b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Decreases the number of food supplies that the bannerman has.  <a href="class_bannerman.html#aa8ea9f0f89233a5e7435c52772fc2b43">More...</a><br /></td></tr>
 <tr class="separator:aa8ea9f0f89233a5e7435c52772fc2b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f16bb2b3ab703469ec9f05e81d2cefa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a0f16bb2b3ab703469ec9f05e81d2cefa">decreaseMedical</a> ()=0</td></tr>
+<tr class="memdesc:a0f16bb2b3ab703469ec9f05e81d2cefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Decreases the number of medical supplies that the bannerman has.  <a href="class_bannerman.html#a0f16bb2b3ab703469ec9f05e81d2cefa">More...</a><br /></td></tr>
 <tr class="separator:a0f16bb2b3ab703469ec9f05e81d2cefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ee23b181d1c0ae692fe86c028c65a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_war_theatre.html">WarTheatre</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a60ee23b181d1c0ae692fe86c028c65a2">getWarZone</a> ()</td></tr>
-<tr class="separator:a60ee23b181d1c0ae692fe86c028c65a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c91236353408518cb3c4c28d47f4fe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#aa5c91236353408518cb3c4c28d47f4fe">getWeapons</a> ()=0</td></tr>
+<tr class="memdesc:aa5c91236353408518cb3c4c28d47f4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns the number of weapons of the bannerman.  <a href="class_bannerman.html#aa5c91236353408518cb3c4c28d47f4fe">More...</a><br /></td></tr>
 <tr class="separator:aa5c91236353408518cb3c4c28d47f4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc69abec1cfbdb0a1d9edd434bfc53ae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#adc69abec1cfbdb0a1d9edd434bfc53ae">getFood</a> ()=0</td></tr>
+<tr class="memdesc:adc69abec1cfbdb0a1d9edd434bfc53ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns number of food supplies that the bannerman has.  <a href="class_bannerman.html#adc69abec1cfbdb0a1d9edd434bfc53ae">More...</a><br /></td></tr>
 <tr class="separator:adc69abec1cfbdb0a1d9edd434bfc53ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc89447b53e38cd0e9d6b5962419587"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a9bc89447b53e38cd0e9d6b5962419587">getMedical</a> ()=0</td></tr>
+<tr class="memdesc:a9bc89447b53e38cd0e9d6b5962419587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns the number of medical supplies that the bannerman has.  <a href="class_bannerman.html#a9bc89447b53e38cd0e9d6b5962419587">More...</a><br /></td></tr>
 <tr class="separator:a9bc89447b53e38cd0e9d6b5962419587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd90e4eaef5547c02da8f4f49186eb52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#abd90e4eaef5547c02da8f4f49186eb52">setWeapons</a> (int <a class="el" href="class_bannerman.html#abcba7f639883998c8223ca6705234348">numWeapons</a>)=0</td></tr>
+<tr class="memdesc:abd90e4eaef5547c02da8f4f49186eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Sets the number of weapons of the bannerman.  <a href="class_bannerman.html#abd90e4eaef5547c02da8f4f49186eb52">More...</a><br /></td></tr>
 <tr class="separator:abd90e4eaef5547c02da8f4f49186eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae820506437fc6806b77904186c7b3d10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#ae820506437fc6806b77904186c7b3d10">setFood</a> (int <a class="el" href="class_bannerman.html#a494fe314830fa480a9d6f729a65489c6">numFood</a>)=0</td></tr>
+<tr class="memdesc:ae820506437fc6806b77904186c7b3d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Sets the number of food supplies that the bannerman has.  <a href="class_bannerman.html#ae820506437fc6806b77904186c7b3d10">More...</a><br /></td></tr>
 <tr class="separator:ae820506437fc6806b77904186c7b3d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288a8a59848ff68be805b540cbe601ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a288a8a59848ff68be805b540cbe601ea">setMedical</a> (int <a class="el" href="class_bannerman.html#aac3030f4cb8b7ee8722a298e070f7961">numMedical</a>)=0</td></tr>
+<tr class="memdesc:a288a8a59848ff68be805b540cbe601ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Sets the number of medical supplies that the bannerman has.  <a href="class_bannerman.html#a288a8a59848ff68be805b540cbe601ea">More...</a><br /></td></tr>
 <tr class="separator:a288a8a59848ff68be805b540cbe601ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add811865a500b84e9baa7fff28230115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#add811865a500b84e9baa7fff28230115">~Bannerman</a> ()</td></tr>
+<tr class="memitem:add811865a500b84e9baa7fff28230115"><td class="memItemLeft" align="right" valign="top"><a id="add811865a500b84e9baa7fff28230115" name="add811865a500b84e9baa7fff28230115"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Bannerman</b> ()</td></tr>
+<tr class="memdesc:add811865a500b84e9baa7fff28230115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:add811865a500b84e9baa7fff28230115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_war_indicators"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_war_indicators')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_war_indicators.html">WarIndicators</a></td></tr>
+<tr class="memitem:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="ae412f0a5bb3bfc86ff6437d22e9407a5" name="ae412f0a5bb3bfc86ff6437d22e9407a5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WarIndicators</b> (<a class="el" href="class_treasury.html">Treasury</a> *m)</td></tr>
+<tr class="separator:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -166,39 +195,20 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:adcec90d90ed29a452314a3bd14a7e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36bfbb85d967236f058409fc60c5220c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a36bfbb85d967236f058409fc60c5220c">assassin</a></td></tr>
 <tr class="separator:a36bfbb85d967236f058409fc60c5220c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57933245345ac0643c872f7a5f6d6f3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a></td></tr>
-<tr class="separator:a57933245345ac0643c872f7a5f6d6f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e339f6c73c8a75da5d7e88c0dabb412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_strategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1e339f6c73c8a75da5d7e88c0dabb412">strategy</a></td></tr>
 <tr class="separator:a1e339f6c73c8a75da5d7e88c0dabb412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390074f520b1b0055424b482a807e6e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_war_theatre.html">WarTheatre</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a390074f520b1b0055424b482a807e6e0">warZone</a></td></tr>
-<tr class="separator:a390074f520b1b0055424b482a807e6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9c6fea3fb600df01d45560f5bf26185"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#aa9c6fea3fb600df01d45560f5bf26185">HP</a></td></tr>
 <tr class="separator:aa9c6fea3fb600df01d45560f5bf26185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_war_indicators"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_war_indicators')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_war_indicators.html">WarIndicators</a></td></tr>
+<tr class="memitem:af473554ebc672a6253eb56d84c1bb891 inherit pro_attribs_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="af473554ebc672a6253eb56d84c1bb891" name="af473554ebc672a6253eb56d84c1bb891"></a>
+<a class="el" href="class_treasury.html">Treasury</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m</b></td></tr>
+<tr class="separator:af473554ebc672a6253eb56d84c1bb891 inherit pro_attribs_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >An abstract component class. A class that provides the interface with which the client interacts with the country's army. </p>
 <dl class="section author"><dt>Author</dt><dd>Thapelo Thoka </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="add811865a500b84e9baa7fff28230115" name="add811865a500b84e9baa7fff28230115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add811865a500b84e9baa7fff28230115">&#9670;&#160;</a></span>~Bannerman()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Bannerman::~Bannerman </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Default destructor. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1bc3abe5d8a4c9dda697829eef3fc7c4" name="a1bc3abe5d8a4c9dda697829eef3fc7c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bc3abe5d8a4c9dda697829eef3fc7c4">&#9670;&#160;</a></span>attach()</h2>
 
@@ -222,7 +232,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Abstract. Attaches a <a class="el" href="class_raven.html">Raven</a> Observer on the bannerman. </dd></dl>
+
+<p>Abstract. Attaches a <a class="el" href="class_raven.html">Raven</a> Observer on the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">o</td><td>- the <a class="el" href="class_raven.html">Raven</a> Observer to attach. </td></tr>
@@ -267,7 +278,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Abstract. uses strategy to attack another kingdom. </dd></dl>
+
+<p>Abstract. uses strategy to attack another kingdom. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">myBannerman</td><td>- The attacking bannerman object. </td></tr>
@@ -303,7 +315,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Abstract. changes the attack strategy of the bannerman. </dd></dl>
+
+<p>Abstract. changes the attack strategy of the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">strategy</td><td>- the new attack strategy. </td></tr>
@@ -337,7 +350,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Abstract. decreases the favour of the bannerman. </dd></dl>
+
+<p>Abstract. decreases the favour of the bannerman. </p>
 
 <p>Implemented in <a class="el" href="class_commander.html#a09ae0bf59592876b0c408280dcb15417">Commander</a>, and <a class="el" href="class_troop.html#a6a8b1b705728e982a51aa84c18f2561d">Troop</a>.</p>
 
@@ -365,7 +379,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>Abstract. Decreases the number of food supplies that the bannerman has </dd></dl>
+
+<p>Abstract. Decreases the number of food supplies that the bannerman has. </p>
 
 <p>Implemented in <a class="el" href="class_commander.html#ae4b5cbfe0c1a493d6f467a03e2637de7">Commander</a>, and <a class="el" href="class_troop.html#ad0022500daf094b5f5ddb091765afc51">Troop</a>.</p>
 
@@ -393,7 +408,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Abstract. Decreases the number of medical supplies that the bannerman has </dd></dl>
+
+<p>Abstract. Decreases the number of medical supplies that the bannerman has. </p>
 
 <p>Implemented in <a class="el" href="class_commander.html#a771aba983222f2551d51106a2771ff08">Commander</a>, and <a class="el" href="class_troop.html#a7198e76633a1518f5fe6bdc2b52f3de6">Troop</a>.</p>
 
@@ -421,7 +437,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>Abstract. Decreases the number of weapons that the bannerman has </dd></dl>
+
+<p>Abstract. Decreases the number of weapons that the bannerman has. </p>
 
 <p>Implemented in <a class="el" href="class_commander.html#a7c790e93326eb33114317c0872e8679e">Commander</a>, and <a class="el" href="class_troop.html#a75d0ac8a0a8de9bd95eb007d6e3f6c72">Troop</a>.</p>
 
@@ -450,7 +467,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Abstract. detaches a <a class="el" href="class_raven.html">Raven</a> Observer from the bannerman. </dd></dl>
+
+<p>Abstract. detaches a <a class="el" href="class_raven.html">Raven</a> Observer from the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">o</td><td>- the <a class="el" href="class_raven.html">Raven</a> Observer to detach. </td></tr>
@@ -484,7 +502,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Abstract. Accessor that returns the damage capability of the bannerman. </dd></dl>
+
+<p>Abstract. Accessor that returns the damage capability of the bannerman. </p>
 <dl class="section return"><dt>Returns</dt><dd>The damage of the bannerman. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_commander.html#a37405a7e4aa51f61f3fc389e7ef41e83">Commander</a>, and <a class="el" href="class_troop.html#ab6c541f28f5221177c3b614dbcb341db">Troop</a>.</p>
@@ -513,7 +532,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Abstract. Accessor that returns number of food supplies that the bannerman has. </dd></dl>
+
+<p>Abstract. Accessor that returns number of food supplies that the bannerman has. </p>
 <dl class="section return"><dt>Returns</dt><dd>The numFood of the bannerman. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_commander.html#ae8e2f3a04ce76699eb5a23c27aa7d87e">Commander</a>, and <a class="el" href="class_troop.html#a99bd081c254958f7df3cb0733d341fd7">Troop</a>.</p>
@@ -542,7 +562,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Abstract. Accessor that returns the name of the component. </dd></dl>
+
+<p>Abstract. Accessor that returns the name of the component. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the bannerman. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_commander.html#a9ad0803e32cb9579ba1e2e58489c5084">Commander</a>, and <a class="el" href="class_troop.html#a6c6a0b620d2a7cbd8d513cfb86833606">Troop</a>.</p>
@@ -571,7 +592,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Abstract. Accessor that returns the number of medical supplies that the bannerman has. </dd></dl>
+
+<p>Abstract. Accessor that returns the number of medical supplies that the bannerman has. </p>
 <dl class="section return"><dt>Returns</dt><dd>The numMedical of the bannerman. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_commander.html#a84be90292352deba343c994e89f826aa">Commander</a>, and <a class="el" href="class_troop.html#a7f6c6ef3bd3dfe1ffa4016c4b44e0db3">Troop</a>.</p>
@@ -592,27 +614,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Accessor that returns the name of the bannerman. </dd></dl>
+
+<p>Accessor that returns the name of the bannerman. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the bannerman. </dd></dl>
-
-</div>
-</div>
-<a id="a60ee23b181d1c0ae692fe86c028c65a2" name="a60ee23b181d1c0ae692fe86c028c65a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ee23b181d1c0ae692fe86c028c65a2">&#9670;&#160;</a></span>getWarZone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_war_theatre.html">WarTheatre</a> * Bannerman::getWarZone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Accessor. that returns the <a class="el" href="class_war_theatre.html">WarTheatre</a> where the bannerman engages in battle. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_war_theatre.html">WarTheatre</a> of the bannerman. </dd></dl>
 
 </div>
 </div>
@@ -638,7 +642,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Abstract. Accessor that returns the number of weapons of the bannerman. </dd></dl>
+
+<p>Abstract. Accessor that returns the number of weapons of the bannerman. </p>
 <dl class="section return"><dt>Returns</dt><dd>The numWeapons of the bannerman. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_commander.html#a7c4bc666285ef6f1aeee228550458c4f">Commander</a>, and <a class="el" href="class_troop.html#a05179a27fd117d09077708d7322b2493">Troop</a>.</p>
@@ -667,7 +672,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Abstract. increases the favour of the bannerman. </dd></dl>
+
+<p>Abstract. increases the favour of the bannerman. </p>
 
 <p>Implemented in <a class="el" href="class_commander.html#a152eeabd214d9745dd01e3a62743b3f3">Commander</a>, and <a class="el" href="class_troop.html#a3d047fc61837848dc8c0724ff81a0eaa">Troop</a>.</p>
 
@@ -696,7 +702,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Abstract. increases the health points(HP) of the bannerman. </dd></dl>
+
+<p>Abstract. increases the health points(HP) of the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boost</td><td>- the number by which to increase HP. </td></tr>
@@ -731,7 +738,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Abstract. increases the damage capability of the bannerman. </dd></dl>
+
+<p>Abstract. increases the damage capability of the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boost</td><td>- the number by which to increase damage. </td></tr>
@@ -766,7 +774,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Abstract. Increases the damage capability of the bannerman. </dd></dl>
+
+<p>Abstract. Increases the damage capability of the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boost</td><td>- the number by which to increase damage </td></tr>
@@ -801,7 +810,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Abstract. Sets the number of food supplies that the bannerman has. </dd></dl>
+
+<p>Abstract. Sets the number of food supplies that the bannerman has. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numFood</td><td>- The new numFood the component should have </td></tr>
@@ -836,7 +846,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>Abstract. Sets the number of medical supplies that the bannerman has. </dd></dl>
+
+<p>Abstract. Sets the number of medical supplies that the bannerman has. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numMedical</td><td>- The new numMedical the component should have </td></tr>
@@ -871,7 +882,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Abstract. Sets the number of weapons of the bannerman </dd></dl>
+
+<p>Abstract. Sets the number of weapons of the bannerman. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numWeapons</td><td>- The new name the numWeapons should have </td></tr>
@@ -973,29 +985,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >The health points of the bannerman </p>
-
-</div>
-</div>
-<a id="a57933245345ac0643c872f7a5f6d6f3b" name="a57933245345ac0643c872f7a5f6d6f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57933245345ac0643c872f7a5f6d6f3b">&#9670;&#160;</a></span>m</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_master_of_coin.html">MasterOfCoin</a>* Bannerman::m</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Mediator for ensuring that the bannerman/army has the supplies it needs. </p>
 
 </div>
 </div>
@@ -1134,29 +1123,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >The attack strategy the bannerman uses </p>
-
-</div>
-</div>
-<a id="a390074f520b1b0055424b482a807e6e0" name="a390074f520b1b0055424b482a807e6e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a390074f520b1b0055424b482a807e6e0">&#9670;&#160;</a></span>warZone</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_war_theatre.html">WarTheatre</a>* Bannerman::warZone</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >The war theatre at which the bannerman fights </p>
 
 </div>
 </div>
