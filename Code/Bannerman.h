@@ -65,6 +65,8 @@ public:
     /** @brief Abstract. decreases the favour of the bannerman.
     */
     virtual void decreaseFavour() = 0;
+    
+    virtual int getFavour()=0;
 
     /** @brief Abstract. Attaches a Raven Observer on the bannerman.
      * @param o - the Raven Observer to attach.

@@ -89,6 +89,8 @@ public:
 */
     void decreaseFavour() override;
 
+    int getFavour();
+
     /** @brief increases the HP of the troop.
 @param boost - The number by which to increase the HP of the troop.
 */
