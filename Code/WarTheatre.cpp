@@ -1,6 +1,6 @@
 #include "WarTheatre.h"
 
-WarTheatre::WarTheatre(Strategy myStrat) {
+WarTheatre::WarTheatre(Strategy* myStrat) {
 	// TODO - implement WarTheatre::WarTheatre
 	//throw "Not yet implemented";
     strategy = myStrat;
@@ -13,9 +13,11 @@ Strategy* WarTheatre::getStrategy() {
     return strategy;
 }
 
-string decideVenue(Strategy*)
+char decideVenue(Strategy*)
 {
    //TODO - implement decideVenue this way:
-        //if strategy.getName() == xx, then return yy
-        //do for all available strategies.
+   if(strategy->getStrategyName() == "Battlefield") return  'a';
+   if (strategy->getStrategyName() == "Siege") return 'b';
+   if (strategy->getStrategyName() == "Ambush") return 'c';
+   if (strategy->getStrategyName() == "Assassination") return 'd';
 }

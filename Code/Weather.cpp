@@ -58,9 +58,6 @@ int Weather::calcEffect() {
         difficulty += windspeed/temp;
     }
 
-    //affect Bannermaen here
-
-
 }
 
 void Weather::setTemp(double t) {

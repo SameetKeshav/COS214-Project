@@ -18,7 +18,7 @@ public:
 
 	virtual void sendScout() = 0;
 
-    string decideVenue(Strategy*);
+    char decideVenue(Strategy*);
 };
 
 #endif
