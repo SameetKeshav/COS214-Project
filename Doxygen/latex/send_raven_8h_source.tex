@@ -1,0 +1,30 @@
+\hypertarget{send_raven_8h_source}{}\doxysection{send\+Raven.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SENDRAVEN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SENDRAVEN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}SupplyWagon.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Commander.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}MasterOfCoin.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Raven.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classsend_raven}{sendRaven}} : \mbox{\hyperlink{class_raven}{Raven}} \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} numFood;}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} numMedical;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} numWeapons;}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_supply_wagon}{SupplyWagon}}** supplies;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_bannerman}{Bannerman}}* subject;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{classsend_raven}{sendRaven}}(\mbox{\hyperlink{class_supply_wagon}{SupplyWagon}}** supplies, \mbox{\hyperlink{class_bannerman}{Bannerman}}* subject);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} update();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} checkSupplies();}
+\DoxyCodeLine{22     \mbox{\hyperlink{classsend_raven}{\string~sendRaven}}();}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

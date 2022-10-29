@@ -1,0 +1,68 @@
+\hypertarget{class_strategy}{}\doxysection{Strategy Class Reference}
+\label{class_strategy}\index{Strategy@{Strategy}}
+Inheritance diagram for Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}\label{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}} 
+{\bfseries Strategy} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)
+\item 
+virtual bool \mbox{\hyperlink{class_strategy_a88c2b80dba3f3cf003161d736e761f45}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)
+\item 
+\mbox{\Hypertarget{class_strategy_a310550043f6b81592cef05ea9241144f}\label{class_strategy_a310550043f6b81592cef05ea9241144f}} 
+string {\bfseries get\+Strategy\+Name} ()
+\item 
+\mbox{\Hypertarget{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}\label{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}} 
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries get\+My\+Bannerman} ()
+\item 
+\mbox{\Hypertarget{class_strategy_a88ed4a64031030f3a9a30652b01debe6}\label{class_strategy_a88ed4a64031030f3a9a30652b01debe6}} 
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries get\+Enemy\+Bannerman} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}\label{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}} 
+\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ {\bfseries my\+Kingdom}
+\item 
+\mbox{\Hypertarget{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}\label{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}} 
+\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ {\bfseries enemy\+Kingdom}
+\item 
+\mbox{\Hypertarget{class_strategy_a706cf037295e2bffabefb2eb226835a6}\label{class_strategy_a706cf037295e2bffabefb2eb226835a6}} 
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries my\+Bannerman}
+\item 
+\mbox{\Hypertarget{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}\label{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}} 
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries enemy\+Bannerman}
+\item 
+\mbox{\Hypertarget{class_strategy_a26297b731dd6b1bdc3a065863da69138}\label{class_strategy_a26297b731dd6b1bdc3a065863da69138}} 
+string {\bfseries strategy}
+\item 
+\mbox{\Hypertarget{class_strategy_ad0b294bb647e8e88cac038804d88acf7}\label{class_strategy_ad0b294bb647e8e88cac038804d88acf7}} 
+int {\bfseries min\+Favour}
+\item 
+\mbox{\Hypertarget{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}\label{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}} 
+int {\bfseries min\+Supplies}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_strategy_a88c2b80dba3f3cf003161d736e761f45}\label{class_strategy_a88c2b80dba3f3cf003161d736e761f45}} 
+\index{Strategy@{Strategy}!attack@{attack}}
+\index{attack@{attack}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily virtual bool Strategy\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{Ambush}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Strategy.\+h\item 
+Strategy.\+cpp\end{DoxyCompactItemize}

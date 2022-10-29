@@ -1,0 +1,30 @@
+\hypertarget{_economy_8h_source}{}\doxysection{Economy.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ECONOMY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ECONOMY\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}WarIndicators.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}State.h"{}}}
+\DoxyCodeLine{5 \textcolor{comment}{//circular dependency with state}}
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_economy}{Economy}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_war_indicators}{WarIndicators}} \{}
+\DoxyCodeLine{7     }
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_state}{State}}* state;}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} currency;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_economy}{Economy}}(\mbox{\hyperlink{class_state}{State}}* state,\textcolor{keywordtype}{int} currency);}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} SetState();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} decreaseCurrency();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} getCurrency();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} removeCurrency(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_economy}{\string~Economy}}();}
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\hypertarget{_strategy_8h_source}{}\doxysection{Strategy.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STRATEGY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STRATEGY\_H}}
+\DoxyCodeLine{3 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Bannerman.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}WarIndicators.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}MasterOfCoin.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Kingdom.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_strategy}{Strategy}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_war_indicators}{WarIndicators}}  \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{13     \textcolor{comment}{//modify kingdom to have a getter for bannerman list}}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_kingdom}{Kingdom}}* myKingdom;}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_kingdom}{Kingdom}}* enemyKingdom;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_bannerman}{Bannerman}}* myBannerman;}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_bannerman}{Bannerman}}* enemyBannerman;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{string} strategy;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} minFavour;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} minSupplies;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_strategy}{Strategy}}(\mbox{\hyperlink{class_kingdom}{Kingdom}}* myKingdom,\mbox{\hyperlink{class_kingdom}{Kingdom}}* enemyKingdom,\mbox{\hyperlink{class_bannerman}{Bannerman}}* myBannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}}* enemyBannerman,\textcolor{keywordtype}{string} name,\textcolor{keywordtype}{int} min,\textcolor{keywordtype}{int} minFavour);}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} attack(\mbox{\hyperlink{class_bannerman}{Bannerman}}* myBannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}}* enemyBannerman);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{string} getStrategyName();}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_bannerman}{Bannerman}}* getMyBannerman();}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_bannerman}{Bannerman}}* getEnemyBannerman();}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_strategy}{\string~Strategy}}();}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
