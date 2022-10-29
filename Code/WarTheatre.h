@@ -3,8 +3,8 @@
 
 using namespace std;
 
-/** @brief An Abstract Component class.
- * A class that represents the component that is to be decorated: the War venue
+/**@brief Abstract object.
+ * This is the Component participant in the decorator pattern.
  * @author Keabetswe Mothapo
  * @date October 2022
  */
@@ -41,6 +41,8 @@ public:
      * @return char variable of the location. options are a, b, c and d only
      */
     char decideVenue(Strategy* strategy);
+
+	WarTheatre(Strategy myStrat);
 };
 
 #endif
