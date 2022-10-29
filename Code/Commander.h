@@ -6,106 +6,144 @@
 #include <list>
 class Iterator;
 using namespace std;
+
+/** @brief A class that acts as a container/composite for bannerman objects as well as performing operations on and using various bannerman objects.
+    @inherit Bannerman
+    @author Thapelo Thoka
+    @date October 2022
+    */
 class Commander : public Bannerman {
 private:
+    /**@brief list of bannerman components.
+*/
     list<Bannerman*> groundForces;
 
 public:
 
-    Commander();//new function
+    /** @brief Default constructor.
+*/
+    Commander();
 
+    /**@brief creates a conIterator object, which is a means to traverse groundForces sequentially.
+*/
     Iterator* createIterator();
 
+    /**@brief removes a bannerman object from the groundforces list.
+*/
     void removeBannerman(Bannerman* x);
+
+    /**@brief uses strategy to make all troops in groundForces to attack another kingdom.
+     * @param myBannerman - The attacking bannerman object.
+     * @param enemyBannerman - The bannerman object being attacked.
+*/
     void attack(Bannerman* myBannerman, Bannerman* enemyBannerman) override;
 
+    /**@brief adds a bannerman object to the groundforces list.
+*/
     void addBannerman(Bannerman* b);
 
 
     /**
- * Returns the HP.
+ * @brief Accessor. Returns the HP.
  *
- * @return The total Bannermen HP.
+ * @return The total groundForces HP.
  */
     int getHP() override;
 
     /**
-* Returns the damage.
+* @brief Accessor. Returns the damage.
 *
-* @return The total Bannermen damage.
+* @return The total groundForces damage.
 */
     int getDamage() override;
-
+/**
+ * @brief Attaches a Raven observer to all the bannerman objects in the groundForces list
+ * @param o - the Raven observer object*/
     void attach(Raven* o) override;
 
+    /**
+ * @brief Detaches a Raven observer from all the bannerman objects in the groundForces list
+ * @param o - the Raven observer object*/
     void detach(Raven* o) override;
 
-    void receiveDamage(int) override;
-
+    /**
+     * @brief increases the damage variables of the groundForces by x
+     * @param x - the number by which to increase the damage variables of the bannerman objects in groundForces.
+     * */
+    void receiveDamage(int x) override;
+    /** @brief decreases the numWeapons variables of the bannerman objects in groundForces by 1.
+*/
     void decreaseWeapons() override;
+    /** @brief decreases the numFood variables of the bannerman objects in groundForces by 1.
+*/
     void decreaseFood() override;
+    /** @brief decreases the numMedical variables of the bannerman objects in groundForces by 1.
+*/
     void decreaseMedical() override;
 
+        /**@brief increases the damage variables of the bannerman objects in groundForces.
+@param boost - The number by which to increase the damage of the bannerman objects in groundForces.
+*/
     void increasePower(int boost) override;
 
     /**
-* Returns numWeapons.
+* @brief Accessor. Returns numWeapons.
 *
-* @return The total Bannermen number of Weapons.
+* @return The total groundForces number of Weapons.
 */
     int getWeapons() override;
 
     /**
-* Returns numFood.
+* @brief Accessor. Returns the total groundForces amount of food.
 *
-* @return The total Bannermen amount of food.
+* @return numFood.
 */
     int getFood() override;
 
     /**
-* Returns numMedical.
+* @brief Accessor. Returns the total groundForces amount of medical supplies
 *
-* @return The total Bannermen amount of medicals.
+* @return numMedical.
 */
     int getMedical() override;
 
 
-    /** increases the HP variables of the bannerman objects in groundForces.
+    /** @brief increases the HP variables of the bannerman objects in groundForces.
 @param boost - The number by which to increase the HPs of the bannerman objects in groundForces.
 */
     void increaseHP(int boost) override;
 
-    /** Changes the strategy variable of the bannerman objects in groundForces.
+    /** @brief Changes the attack strategy variable of the bannerman objects in groundForces.
 @param strategy - The new strategy bannerman objects in groundForces should have.
 */
     void changeStrategy(Strategy* strategy) override;
 
-    /** Increases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
+    /** @brief Increases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
 */
     void increaseFavour() override;
 
-    /** Decreases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
+    /** @brief Decreases the loyalty favour levels variable of the bannerman objects in groundForces by 1.
 */
     void decreaseFavour() override;
 
-    /** Sets the number of weapon supplies of the bannerman objects in groundForces.
+    /** @brief Sets the number of weapon supplies of the bannerman objects in groundForces.
 @param numWeapons - The new numWeapons bannerman objects in groundForces should have.
 */
     void setWeapons(int numWeapons) override;
 
-    /** Sets the number of food supplies of the bannerman objects in groundForces.
+    /** @brief Sets the number of food supplies of the bannerman objects in groundForces.
 @param numFood - The new numFood bannerman objects in groundForces should have.
 */
     void setFood(int numFood) override;
 
-    /** Sets the number of medical supplies of the bannerman objects in groundForces.
+    /** @brief Sets the number of medical supplies of the bannerman objects in groundForces.
 @param numMedical - The new numMedical bannerman objects in groundForces should have.
 */
     void setMedical(int numMedical) override;
 
-    /** Default destructor.
+    /** @brief Default destructor.
     */
-    ~Commander() override;
+    ~Commander() ;
 };
 
 #endif
