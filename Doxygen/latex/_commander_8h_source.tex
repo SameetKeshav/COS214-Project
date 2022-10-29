@@ -1,0 +1,70 @@
+\hypertarget{_commander_8h_source}{}\doxysection{Commander.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COMMANDER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COMMANDER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Bannerman.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}ConIterator.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_iterator}{Iterator}};}
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_commander}{Commander}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_bannerman}{Bannerman}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     list<Bannerman*> groundForces;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{25     \mbox{\hyperlink{class_commander_ac3fc4568a88c91cb4ab97de9f77698a9}{Commander}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_iterator}{Iterator}}* \mbox{\hyperlink{class_commander_ac2a70383e8f668e2e2010a2e2e90d74a}{createIterator}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a0ead17287a414ca9fdaeb70af9b38349}{removeBannerman}}(\mbox{\hyperlink{class_bannerman}{Bannerman}}* x);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a300d8f67fd54f96cdf086e24273f1616}{attack}}(\mbox{\hyperlink{class_bannerman}{Bannerman}}* myBannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}}* enemyBannerman) \textcolor{keyword}{override};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a5d71e73749507627c59431926ddc258e}{addBannerman}}(\mbox{\hyperlink{class_bannerman}{Bannerman}}* b);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_commander_a9ad0803e32cb9579ba1e2e58489c5084}{getHP}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_commander_a37405a7e4aa51f61f3fc389e7ef41e83}{getDamage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a720b7f1f7ff45286cb0d521eb6ea34fe}{attach}}(\mbox{\hyperlink{class_raven}{Raven}}* o) \textcolor{keyword}{override};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a107be5d45cb2c6fb15af6afa34a9ef9b}{detach}}(\mbox{\hyperlink{class_raven}{Raven}}* o) \textcolor{keyword}{override};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_af0b49dcd9981fce2c9ff62c5a6cbeee1}{receiveDamage}}(\textcolor{keywordtype}{int} x) \textcolor{keyword}{override};}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a7c790e93326eb33114317c0872e8679e}{decreaseWeapons}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_ae4b5cbfe0c1a493d6f467a03e2637de7}{decreaseFood}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a771aba983222f2551d51106a2771ff08}{decreaseMedical}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_acde2ffb64377d5384a2ac05d0c01bb69}{increasePower}}(\textcolor{keywordtype}{int} boost) \textcolor{keyword}{override};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_commander_a7c4bc666285ef6f1aeee228550458c4f}{getWeapons}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{101     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_commander_ae8e2f3a04ce76699eb5a23c27aa7d87e}{getFood}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_commander_a84be90292352deba343c994e89f826aa}{getMedical}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_abd12025acea19026bb38eece249363ce}{increaseHP}}(\textcolor{keywordtype}{int} boost) \textcolor{keyword}{override};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a189b537b6c66df5cdd29f3a720cd55c6}{changeStrategy}}(\mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_bannerman_a1e339f6c73c8a75da5d7e88c0dabb412}{strategy}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{123     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a152eeabd214d9745dd01e3a62743b3f3}{increaseFavour}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{127     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a09ae0bf59592876b0c408280dcb15417}{decreaseFavour}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{132     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a8326c6d14db39c3dd52b521dc4d23561}{setWeapons}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{numWeapons}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{137     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_aecff03645144e0d32094a4987df70145}{setFood}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{numFood}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commander_a05589c79c1b3ec05041c06016216f653}{setMedical}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{numMedical}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{146     \mbox{\hyperlink{class_commander_af16b5b1c2b22e5158ce822d1b9180b10}{\string~Commander}}() ;}
+\DoxyCodeLine{147 \};}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

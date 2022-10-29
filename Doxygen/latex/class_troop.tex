@@ -1,0 +1,457 @@
+\hypertarget{class_troop}{}\doxysection{Troop Class Reference}
+\label{class_troop}\index{Troop@{Troop}}
+
+
+A class that defines the primitive objects of the \mbox{\hyperlink{class_bannerman}{Bannerman}} composition.  
+
+
+
+
+{\ttfamily \#include $<$Troop.\+h$>$}
+
+Inheritance diagram for Troop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_troop}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_troop_ad9d1c39802d23d351a474aacb52b37c8}\label{class_troop_ad9d1c39802d23d351a474aacb52b37c8}} 
+{\bfseries Troop} (string \mbox{\hyperlink{class_bannerman_ad7c96e82b0a271e7bd042c0cdb9775fa}{name}}, int favor, int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}, int Medical, int \mbox{\hyperlink{class_bannerman_aa9c6fea3fb600df01d45560f5bf26185}{HP}}, \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$\mbox{\hyperlink{class_bannerman_a390074f520b1b0055424b482a807e6e0}{war\+Zone}}, \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$strategy, \mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}, bool \mbox{\hyperlink{class_bannerman_a36bfbb85d967236f058409fc60c5220c}{assassin}}, int size)
+\begin{DoxyCompactList}\small\item\em Constructor. Initializes the name; favour; num\+Food; Medical; HP; war\+Zone; strategy; m; assassin and size variables of the troop. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_a6c6a0b620d2a7cbd8d513cfb86833606}{get\+HP}} () override
+\begin{DoxyCompactList}\small\item\em Returns the troop\textquotesingle{}s HP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_a7ee3bae0157d2a83c3e5b396a2b5ee91}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the troop\textquotesingle{}s size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_ad42c92d248c19ab5943f757c36b8cb09}{attach}} (\mbox{\hyperlink{class_raven}{Raven}} $\ast$o) override
+\begin{DoxyCompactList}\small\item\em Attaches a \mbox{\hyperlink{class_raven}{Raven}} observer to the troop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a4906c277ef0a9b0de4f31e7c491d43c6}{detach}} (\mbox{\hyperlink{class_raven}{Raven}} $\ast$o) override
+\begin{DoxyCompactList}\small\item\em Detaches a \mbox{\hyperlink{class_raven}{Raven}} observer to the troop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a62bddf9b99cfd81cab5e1b19968eb403}{increase\+Power}} (int boost) override
+\begin{DoxyCompactList}\small\item\em increases the damage variables of the troop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_ac148ce121cd8014b5358259184b9a4ef}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman) override
+\begin{DoxyCompactList}\small\item\em uses strategy to make a troop attack another kingdom. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a75d0ac8a0a8de9bd95eb007d6e3f6c72}{decrease\+Weapons}} () override
+\begin{DoxyCompactList}\small\item\em decreases the num\+Weapons variable of the troop by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_ad0022500daf094b5f5ddb091765afc51}{decrease\+Food}} () override
+\begin{DoxyCompactList}\small\item\em decreases the num\+Food variable of the troop by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a7198e76633a1518f5fe6bdc2b52f3de6}{decrease\+Medical}} () override
+\begin{DoxyCompactList}\small\item\em decreases the num\+Medical variable of the troop by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_adfb55d584ebad08bd91447cbd08321c7}{change\+Strategy}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$strategy) override
+\begin{DoxyCompactList}\small\item\em Changes the attack strategy of the troop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a3d047fc61837848dc8c0724ff81a0eaa}{increase\+Favour}} () override
+\begin{DoxyCompactList}\small\item\em Increases the loyalty favour level of the troop by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a6a8b1b705728e982a51aa84c18f2561d}{decrease\+Favour}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the loyalty favour level of the troop by 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a7465cdfbb5500255ce5449d315d6a632}{increase\+HP}} (int boost) override
+\begin{DoxyCompactList}\small\item\em increases the HP of the troop. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_ab6c541f28f5221177c3b614dbcb341db}{get\+Damage}} () override
+\begin{DoxyCompactList}\small\item\em Accessor. Returns the damage capacity of the troop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_ac1619808c57222a36182994c43683a0f}{receive\+Damage}} (int X) override
+\begin{DoxyCompactList}\small\item\em increases the damage capacity of the troop. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_a05179a27fd117d09077708d7322b2493}{get\+Weapons}} () override
+\begin{DoxyCompactList}\small\item\em Accessor. Returns the number of weapons the troop has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_a99bd081c254958f7df3cb0733d341fd7}{get\+Food}} () override
+\begin{DoxyCompactList}\small\item\em Accessor. Returns the amount of food the troop has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_a7f6c6ef3bd3dfe1ffa4016c4b44e0db3}{get\+Medical}} () override
+\begin{DoxyCompactList}\small\item\em Accessor. Returns the number of medical supplies the troop has. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_acf950ac065019b0ca77847970a528636}{set\+Weapons}} (int \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{num\+Weapons}}) override
+\begin{DoxyCompactList}\small\item\em Sets the number of weapon supplies the troop has. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_ad90fb0d46884a81b7c4e32f84212814d}{set\+Food}} (int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}) override
+\begin{DoxyCompactList}\small\item\em Sets the number of food supplies the troop has. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_troop_a3713f9a30a83751311c1732ec2b90ecc}{set\+Medical}} (int \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{num\+Medical}}) override
+\begin{DoxyCompactList}\small\item\em Sets the number of medical supplies the troop has. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_troop_a812ffd2ac57069689116fdfa921aa1dd}{$\sim$\+Troop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that defines the primitive objects of the \mbox{\hyperlink{class_bannerman}{Bannerman}} composition. 
+
+\begin{DoxyAuthor}{Author}
+Thapelo Thoka 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_troop_a812ffd2ac57069689116fdfa921aa1dd}\label{class_troop_a812ffd2ac57069689116fdfa921aa1dd}} 
+\index{Troop@{Troop}!````~Troop@{$\sim$Troop}}
+\index{````~Troop@{$\sim$Troop}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{$\sim$Troop()}{~Troop()}}
+{\footnotesize\ttfamily Troop\+::$\sim$\+Troop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_troop_ad42c92d248c19ab5943f757c36b8cb09}\label{class_troop_ad42c92d248c19ab5943f757c36b8cb09}} 
+\index{Troop@{Troop}!attach@{attach}}
+\index{attach@{attach}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Troop\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raven}{Raven}} $\ast$}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attaches a \mbox{\hyperlink{class_raven}{Raven}} observer to the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & -\/ the \mbox{\hyperlink{class_raven}{Raven}} observer object to attach \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a1bc3abe5d8a4c9dda697829eef3fc7c4}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_ac148ce121cd8014b5358259184b9a4ef}\label{class_troop_ac148ce121cd8014b5358259184b9a4ef}} 
+\index{Troop@{Troop}!attack@{attack}}
+\index{attack@{attack}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Troop\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+uses strategy to make a troop attack another kingdom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Bannerman} & -\/ The attacking bannerman object. \\
+\hline
+{\em enemy\+Bannerman} & -\/ The bannerman object being attacked. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a0acd7a49687131331f594cb590a31fc4}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_adfb55d584ebad08bd91447cbd08321c7}\label{class_troop_adfb55d584ebad08bd91447cbd08321c7}} 
+\index{Troop@{Troop}!changeStrategy@{changeStrategy}}
+\index{changeStrategy@{changeStrategy}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{changeStrategy()}{changeStrategy()}}
+{\footnotesize\ttfamily void Troop\+::change\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$}]{strategy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the attack strategy of the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & -\/ The new strategy the troop should have. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a34f63b80fda395e2ae0e4c311056e364}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a6a8b1b705728e982a51aa84c18f2561d}\label{class_troop_a6a8b1b705728e982a51aa84c18f2561d}} 
+\index{Troop@{Troop}!decreaseFavour@{decreaseFavour}}
+\index{decreaseFavour@{decreaseFavour}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{decreaseFavour()}{decreaseFavour()}}
+{\footnotesize\ttfamily void Troop\+::decrease\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the loyalty favour level of the troop by 1. 
+
+
+
+Implements \mbox{\hyperlink{class_bannerman_a1af377efb06af229f9a25141e9bcc6d4}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_ad0022500daf094b5f5ddb091765afc51}\label{class_troop_ad0022500daf094b5f5ddb091765afc51}} 
+\index{Troop@{Troop}!decreaseFood@{decreaseFood}}
+\index{decreaseFood@{decreaseFood}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{decreaseFood()}{decreaseFood()}}
+{\footnotesize\ttfamily void Troop\+::decrease\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+decreases the num\+Food variable of the troop by 1. 
+
+
+
+Implements \mbox{\hyperlink{class_bannerman_aa8ea9f0f89233a5e7435c52772fc2b43}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a7198e76633a1518f5fe6bdc2b52f3de6}\label{class_troop_a7198e76633a1518f5fe6bdc2b52f3de6}} 
+\index{Troop@{Troop}!decreaseMedical@{decreaseMedical}}
+\index{decreaseMedical@{decreaseMedical}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{decreaseMedical()}{decreaseMedical()}}
+{\footnotesize\ttfamily void Troop\+::decrease\+Medical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+decreases the num\+Medical variable of the troop by 1. 
+
+
+
+Implements \mbox{\hyperlink{class_bannerman_a0f16bb2b3ab703469ec9f05e81d2cefa}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a75d0ac8a0a8de9bd95eb007d6e3f6c72}\label{class_troop_a75d0ac8a0a8de9bd95eb007d6e3f6c72}} 
+\index{Troop@{Troop}!decreaseWeapons@{decreaseWeapons}}
+\index{decreaseWeapons@{decreaseWeapons}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{decreaseWeapons()}{decreaseWeapons()}}
+{\footnotesize\ttfamily void Troop\+::decrease\+Weapons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+decreases the num\+Weapons variable of the troop by 1. 
+
+
+
+Implements \mbox{\hyperlink{class_bannerman_aa5035baa2661e9af63bae7914efb51bc}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a4906c277ef0a9b0de4f31e7c491d43c6}\label{class_troop_a4906c277ef0a9b0de4f31e7c491d43c6}} 
+\index{Troop@{Troop}!detach@{detach}}
+\index{detach@{detach}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Troop\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raven}{Raven}} $\ast$}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Detaches a \mbox{\hyperlink{class_raven}{Raven}} observer to the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & -\/ the \mbox{\hyperlink{class_raven}{Raven}} observer object to detach \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a205b64898be42c673c9f34a03b356d8d}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_ab6c541f28f5221177c3b614dbcb341db}\label{class_troop_ab6c541f28f5221177c3b614dbcb341db}} 
+\index{Troop@{Troop}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Troop\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accessor. Returns the damage capacity of the troop. 
+
+\begin{DoxyReturn}{Returns}
+damage. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a1a5d6adb57fcf51eb355cdef86b72cb7}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a99bd081c254958f7df3cb0733d341fd7}\label{class_troop_a99bd081c254958f7df3cb0733d341fd7}} 
+\index{Troop@{Troop}!getFood@{getFood}}
+\index{getFood@{getFood}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getFood()}{getFood()}}
+{\footnotesize\ttfamily int Troop\+::get\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accessor. Returns the amount of food the troop has. 
+
+\begin{DoxyReturn}{Returns}
+num\+Food. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_adc69abec1cfbdb0a1d9edd434bfc53ae}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a6c6a0b620d2a7cbd8d513cfb86833606}\label{class_troop_a6c6a0b620d2a7cbd8d513cfb86833606}} 
+\index{Troop@{Troop}!getHP@{getHP}}
+\index{getHP@{getHP}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily int Troop\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the troop\textquotesingle{}s HP. 
+
+\begin{DoxyReturn}{Returns}
+HP. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a8c99451818f71d15d15e0bf35d4b62d6}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a7f6c6ef3bd3dfe1ffa4016c4b44e0db3}\label{class_troop_a7f6c6ef3bd3dfe1ffa4016c4b44e0db3}} 
+\index{Troop@{Troop}!getMedical@{getMedical}}
+\index{getMedical@{getMedical}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getMedical()}{getMedical()}}
+{\footnotesize\ttfamily int Troop\+::get\+Medical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accessor. Returns the number of medical supplies the troop has. 
+
+\begin{DoxyReturn}{Returns}
+num\+Medical. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a9bc89447b53e38cd0e9d6b5962419587}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a7ee3bae0157d2a83c3e5b396a2b5ee91}\label{class_troop_a7ee3bae0157d2a83c3e5b396a2b5ee91}} 
+\index{Troop@{Troop}!getSize@{getSize}}
+\index{getSize@{getSize}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Troop\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the troop\textquotesingle{}s size. 
+
+\begin{DoxyReturn}{Returns}
+size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_troop_a05179a27fd117d09077708d7322b2493}\label{class_troop_a05179a27fd117d09077708d7322b2493}} 
+\index{Troop@{Troop}!getWeapons@{getWeapons}}
+\index{getWeapons@{getWeapons}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getWeapons()}{getWeapons()}}
+{\footnotesize\ttfamily int Troop\+::get\+Weapons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accessor. Returns the number of weapons the troop has. 
+
+\begin{DoxyReturn}{Returns}
+num\+Weapons. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_aa5c91236353408518cb3c4c28d47f4fe}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a3d047fc61837848dc8c0724ff81a0eaa}\label{class_troop_a3d047fc61837848dc8c0724ff81a0eaa}} 
+\index{Troop@{Troop}!increaseFavour@{increaseFavour}}
+\index{increaseFavour@{increaseFavour}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{increaseFavour()}{increaseFavour()}}
+{\footnotesize\ttfamily void Troop\+::increase\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the loyalty favour level of the troop by 1. 
+
+
+
+Implements \mbox{\hyperlink{class_bannerman_a87872034f7a5171f084d421eba81b6a5}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a7465cdfbb5500255ce5449d315d6a632}\label{class_troop_a7465cdfbb5500255ce5449d315d6a632}} 
+\index{Troop@{Troop}!increaseHP@{increaseHP}}
+\index{increaseHP@{increaseHP}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{increaseHP()}{increaseHP()}}
+{\footnotesize\ttfamily void Troop\+::increase\+HP (\begin{DoxyParamCaption}\item[{int}]{boost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+increases the HP of the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boost} & -\/ The number by which to increase the HP of the troop. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a414eed3d8e51c65cab88992092dc2e3f}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a62bddf9b99cfd81cab5e1b19968eb403}\label{class_troop_a62bddf9b99cfd81cab5e1b19968eb403}} 
+\index{Troop@{Troop}!increasePower@{increasePower}}
+\index{increasePower@{increasePower}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{increasePower()}{increasePower()}}
+{\footnotesize\ttfamily void Troop\+::increase\+Power (\begin{DoxyParamCaption}\item[{int}]{boost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+increases the damage variables of the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boost} & -\/ The number by which to increase the damage of the troop. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a1abcef28173e5b38ece6306be6b02148}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_ac1619808c57222a36182994c43683a0f}\label{class_troop_ac1619808c57222a36182994c43683a0f}} 
+\index{Troop@{Troop}!receiveDamage@{receiveDamage}}
+\index{receiveDamage@{receiveDamage}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{receiveDamage()}{receiveDamage()}}
+{\footnotesize\ttfamily void Troop\+::receive\+Damage (\begin{DoxyParamCaption}\item[{int}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+increases the damage capacity of the troop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & -\/ the number by which to increase the damage capacity of the troop. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a794eacd3816c899b12fde0ab1b672485}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_ad90fb0d46884a81b7c4e32f84212814d}\label{class_troop_ad90fb0d46884a81b7c4e32f84212814d}} 
+\index{Troop@{Troop}!setFood@{setFood}}
+\index{setFood@{setFood}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{setFood()}{setFood()}}
+{\footnotesize\ttfamily void Troop\+::set\+Food (\begin{DoxyParamCaption}\item[{int}]{num\+Food }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of food supplies the troop has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Food} & -\/ The new num\+Food the troop should have. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_ae820506437fc6806b77904186c7b3d10}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_a3713f9a30a83751311c1732ec2b90ecc}\label{class_troop_a3713f9a30a83751311c1732ec2b90ecc}} 
+\index{Troop@{Troop}!setMedical@{setMedical}}
+\index{setMedical@{setMedical}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{setMedical()}{setMedical()}}
+{\footnotesize\ttfamily void Troop\+::set\+Medical (\begin{DoxyParamCaption}\item[{int}]{num\+Medical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of medical supplies the troop has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Medical} & -\/ The new num\+Medical the troop should have. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a288a8a59848ff68be805b540cbe601ea}{Bannerman}}.
+
+\mbox{\Hypertarget{class_troop_acf950ac065019b0ca77847970a528636}\label{class_troop_acf950ac065019b0ca77847970a528636}} 
+\index{Troop@{Troop}!setWeapons@{setWeapons}}
+\index{setWeapons@{setWeapons}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{setWeapons()}{setWeapons()}}
+{\footnotesize\ttfamily void Troop\+::set\+Weapons (\begin{DoxyParamCaption}\item[{int}]{num\+Weapons }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of weapon supplies the troop has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Weapons} & -\/ The new num\+Weapons the troop should have. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_bannerman_abd90e4eaef5547c02da8f4f49186eb52}{Bannerman}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Troop.\+h\item 
+Troop.\+cpp\end{DoxyCompactItemize}

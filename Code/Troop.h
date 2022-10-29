@@ -24,7 +24,7 @@ private:
 
 public:
     /**
-     * @brief Constructor. Initializes the name; favour numFood;  Medical;
+     * @brief Constructor. Initializes the name; favour; numFood;  Medical;
      * HP; warZone; strategy; m; assassin and size variables of the troop.
      * */
     Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size);

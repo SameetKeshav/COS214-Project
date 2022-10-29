@@ -4,7 +4,7 @@
 #include "State.h"
 //circular dependency with state
 class Economy :public WarIndicators {
-
+	
 private:
 	State* state;
 	int currency;

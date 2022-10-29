@@ -1,0 +1,30 @@
+\hypertarget{_master_of_coin_8h_source}{}\doxysection{Master\+Of\+Coin.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MASTEROFCOIN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MASTEROFCOIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Economy.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Raven.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Factory.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Strategy.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Treasury.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}} : \mbox{\hyperlink{class_treasury}{Treasury}} \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_economy}{Economy}}* economy;}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_raven}{Raven}}* observer;}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_strategy}{Strategy}}* strategy;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}}(\mbox{\hyperlink{class_economy}{Economy}}* economy, \mbox{\hyperlink{class_raven}{Raven}}* observer, \mbox{\hyperlink{class_factory}{Factory}}* factory, \mbox{\hyperlink{class_strategy}{Strategy}} strategy);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} notify(\mbox{\hyperlink{class_war_indicators}{WarIndicators}} sender);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} decreaseCurrency();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} manufacture();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_master_of_coin}{\string~MasterOfCoin}}();}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
