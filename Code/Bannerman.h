@@ -49,9 +49,6 @@ protected:
     /**The attack strategy the bannerman uses */
     Strategy* strategy;
 
-    /**The war theatre at which the bannerman fights */
-    WarTheatre* warZone;
-
     /**The health points of the bannerman */
     int HP;
 
@@ -59,7 +56,7 @@ protected:
 public:
     /** @brief Default constructor.
 */
-    Bannerman();
+    Bannerman(string n);
 
     /** @brief Abstract. increases the favour of the bannerman.
         */
@@ -128,11 +125,6 @@ public:
 
     /**@brief Abstract. Decreases the number of medical supplies that the bannerman has */
     virtual void decreaseMedical() = 0;
-
-    /**@brief Accessor. that returns the WarTheatre where the bannerman engages in battle.
-* @return The WarTheatre of the bannerman.
-*/
-    WarTheatre* getWarZone(); // use createIterator to get this
 
     /**@brief Abstract. Accessor that returns the number of weapons of the bannerman.
 * @return The numWeapons of the bannerman.

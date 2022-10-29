@@ -8,7 +8,8 @@ class HealthyState :public State {
 
 
 public:
-	HealthyState(Economy* context);
+	HealthyState();
+	void setContext(Economy* context);
 
 	void decreaseCurrency();
 

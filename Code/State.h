@@ -8,7 +8,8 @@ protected:
 	Economy* context;
 
 public:
-	State(Economy* context);
+	State();
+	void setContext(Economy* context);
 	virtual void decreaseCurrency()=0;
 	virtual State* getDemotionState();
 	~State();

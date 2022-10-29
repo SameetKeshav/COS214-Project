@@ -8,7 +8,8 @@ class UnstableState :public State {
 
 
 public:
-	UnstableState(Economy* context);
+	UnstableState();
+	void setContext(Economy* context);
 
 	void decreaseCurrency();
 

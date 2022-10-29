@@ -2,6 +2,9 @@
 #include <iostream>
 #include <limits>
 #include <vector>
+#include <cstdlib>
+#include <time.h>
+#include <stdio.h>
 // #include <dos.h>
 
 using namespace std;
@@ -9,10 +12,16 @@ using namespace std;
 //file includes
 #include "Historian.h" //originator, has memento includeded
 #include "HistoryBook.h" //caretaker
+#include "Kingdom.h"
+#include "Economy.h"
+#include "HealthyState.h"
+#include "FailedState.h"
+#include "UnstableState.h"
+#include "Commander.h"
 
 //variables;
-vector<Bannerman*> Bannermen;
-vector<Bannerman*> EnemyBannermen;
+Kingdom* Dura;
+Kingdom* Preadora;
 
 
 /// @brief collapsable function for into text generation
@@ -44,17 +53,32 @@ void intro(){
 
 /// @brief populating the vectors of our and the enemy bannermen
 void populateVectors(){
-    //need to give values and names in constructor
-    Bannermen.push_back(new Bannerman());
-    Bannermen.push_back(new Bannerman());
-    Bannermen.push_back(new Bannerman());
-    Bannermen.push_back(new Bannerman());
-    Bannermen.push_back(new Bannerman());
-    EnemyBannermen.push_back(new Bannerman());
-    EnemyBannermen.push_back(new Bannerman());
-    EnemyBannermen.push_back(new Bannerman());
-    EnemyBannermen.push_back(new Bannerman());
-    EnemyBannermen.push_back(new Bannerman());
+    State* DuraState = new HealthyState();
+    State* PreadoraState = new HealthyState();
+
+    srand(time(0));
+    int DuraCurrency = 10000000 + (rand() % 1000000000);
+    srand(time(0));
+    int PreadoraCurrency = 10000000 + (rand() % 1000000000);
+
+    Economy* DuraEco = new Economy(DuraState, DuraCurrency);
+    Economy* PreadoraEco = new Economy(PreadoraState, PreadoraCurrency);
+
+    Dura = new Kingdom(DuraEco);
+    Preadora = new Kingdom(PreadoraEco);
+    
+    Dura->add(new Commander("Stratham"));
+    Dura->add(new Commander("Trudid"));
+    Dura->add(new Commander("Mirefield"));
+    Dura->add(new Commander("Saker's Keep"));
+    Dura->add(new Commander("Breachmarsh"));
+
+    Preadora->add(new Commander("Cirrane"));
+    Preadora->add(new Commander("Bagger's Valley"));
+    Preadora->add(new Commander("Marnmouth"));
+    Preadora->add(new Commander("Dry Gulch"));
+    Preadora->add(new Commander("Prin"));
+
 }
 
 /// @brief main functionality for simulation

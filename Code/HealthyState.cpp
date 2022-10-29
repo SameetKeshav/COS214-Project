@@ -1,7 +1,7 @@
 #include "HealthyState.h"
 
-HealthyState::HealthyState(Economy* context):State(context) {
-
+HealthyState::HealthyState(){
+	context = nullptr;
 }
 
 void HealthyState::decreaseCurrency() {
@@ -12,6 +12,12 @@ void HealthyState::decreaseCurrency() {
 	}
 }
 
+void State::setContext(Economy* context){
+	this->context=context;
+}
+
 State* HealthyState::getDemotionState(){
-	return new UnstableState(context);
+	State* h = new UnstableState();
+	h->setContext(context);
+	return h;
 }

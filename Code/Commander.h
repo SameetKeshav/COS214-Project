@@ -17,12 +17,13 @@ private:
     /**@brief list of bannerman components.
 */
     list<Bannerman*> groundForces;
+    string name;
 
 public:
 
     /** @brief Default constructor.
-*/
-    Commander();
+*/  //Julianna changed:
+    Commander(string name);
 
     /**@brief creates a conIterator object, which is a means to traverse groundForces sequentially.
 */
@@ -144,6 +145,12 @@ public:
     /** @brief Default destructor.
     */
     ~Commander() ;
+    
+
+    //Julianna added:
+    void setRaven(list<Raven*> r);
+    void setMaster(MasterOfCoin* m);
+    void setStrategy(Strategy* s);
 };
 
 #endif

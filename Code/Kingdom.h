@@ -12,7 +12,7 @@ private:
 	Economy* economy;
 
 public:
-	Kingdom(Economy* economy,vector<Bannerman*> bannerman);
+	Kingdom(Economy* economy);
 	void remove(Bannerman* b);
 	void add(Bannerman* b);
 	virtual ~Kingdom();

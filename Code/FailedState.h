@@ -7,7 +7,8 @@ class FailedState :public State {
 
 
 public:
-	FailedState(Economy* context);
+	FailedState();
+	void setContext(Economy* context);
 	void decreaseCurrency();
 };
 

@@ -1,8 +1,20 @@
 #include "Commander.h"
+#include "MasterOfCoin.h"
 
-Commander::Commander():groundForces() {
-
+//Julianna added and changed constructor
+Commander::Commander(string n) : Bannerman(n) {
+    name = n;
+    HP = 100;
+    srand(time(0));
+    damage = 7 + (rand() % 25);
+    favour = 15;
+    numWeapons = 50;
+    numFood = 50;
+    numMedical = 50;
+    assassin = true;
+    
 }
+
 Iterator* Commander::createIterator() {
     return new ConIterator(groundForces);
 }
@@ -139,4 +151,19 @@ void Commander::detach(Raven *o) {
 void Commander::increasePower(int boost) {
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
         (*it)->increasePower(boost);
+}
+
+
+//added functions:
+
+void Commander::setRaven(list<Raven*> r){
+    ravenList = r;
+}
+
+void Commander::setMaster(MasterOfCoin* m){
+    this->m = m;
+}
+
+void Commander::setStrategy(Strategy* s){
+    strategy = s;
 }
