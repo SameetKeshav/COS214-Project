@@ -1,11 +1,27 @@
 #include "Assassinate.h"
 
-Assassinate::Assassinate(int stealth, bool alive) {
-	// TODO - implement Assassinate::Assassinate
-	throw "Not yet implemented";
+Assassinate::Assassinate(int stealth, bool alive,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Assassinate",min,minFavour) {
+	this->alive=alive;
+	this->stealth=stealth;
 }
 
-void Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	// TODO - implement Assassinate::attack
-	throw "Not yet implemented";
+bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
+	if (alive)
+	{
+		if (stealth>60)
+		{
+			enemyKingdom->remove(enemyBannerman);
+			myBannerman->increaseHP(5);
+		}
+		else
+		{
+			alive=false;
+		}
+
+	}
+	return alive;
+}
+
+Assassinate::~Assassinate(){
+
 }
