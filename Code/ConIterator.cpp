@@ -1,16 +1,32 @@
 #include "ConIterator.h"
 
-Bannerman* ConIterator::next() {
-	// TODO - implement ConIterator::next
-	throw "Not yet implemented";
+ConIterator::ConIterator(list<Bannerman*> X) {
+    armyList = X;
+    it = X.begin();
 }
 
-bool ConIterator::hasNext() {
-	// TODO - implement ConIterator::hasNext
-	throw "Not yet implemented";
+Bannerman* ConIterator::Current() {
+    return (*it);
 }
 
-bool ConIterator::isActive() {
-	// TODO - implement ConIterator::isActive
-	throw "Not yet implemented";
+Bannerman* ConIterator::next() {///Test
+    if(hasNext()) {
+        ++it;
+        return *it;
+    }
+}
+
+bool ConIterator::hasNext() {///Test
+    if(it!= armyList.end())
+        return true;
+    else
+        return false;
+}
+
+bool ConIterator::isActive() {///Test
+
+    if((*it)->getHP()>0)
+        return true;
+    else
+        return false;
 }

@@ -1,11 +1,13 @@
 #ifndef BATTLEFIELD_H
 #define BATTLEFIELD_H
+#include "Strategy.h"
 
-class BattleField : Strategy {
-
+class BattleField :public Strategy {
 
 public:
-	void attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	BattleField(int min,int minFavour);
+	bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
+	~BattleField();
 };
 
 #endif

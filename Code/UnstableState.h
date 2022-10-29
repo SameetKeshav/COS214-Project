@@ -1,15 +1,21 @@
 #ifndef UNSTABLESTATE_H
 #define UNSTABLESTATE_H
+#include "State.h"
+#include "Economy.h"
+#include "FailedState.h"
 
-class UnstableState : State {
+class UnstableState :public State {
 
 
 public:
-	UnstableState(Economy* context, MasterOfCoin* m);
+	UnstableState();
+	void setContext(Economy* context);
 
 	void decreaseCurrency();
 
-	void increaseCurrency();
+	State* getDemotionState();
+
+	string getState();
 };
 
 #endif

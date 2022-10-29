@@ -1,15 +1,17 @@
 #ifndef FAILEDSTATE_H
 #define FAILEDSTATE_H
-
-class FailedState : State {
+#include "State.h"
+#include "Economy.h"
+using namespace std;
+#include <iostream>
+class FailedState :public State {
 
 
 public:
-	FailedState(Economy* context, MasterOfCoin* m);
-
+	FailedState();
+	void setContext(Economy* context);
 	void decreaseCurrency();
-
-	void increaseCurrency();
+	string getState();
 };
 
 #endif

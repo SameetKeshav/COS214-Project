@@ -1,15 +1,21 @@
 #ifndef HEALTHYSTATE_H
 #define HEALTHYSTATE_H
-
-class HealthyState : State {
+#include "State.h"
+#include "Economy.h"
+#include "UnstableState.h"
+#include <iostream>
+using namespace std;
+class HealthyState :public State {
 
 
 public:
-	HealthyState(Economy* context, MasterOfCoin* m);
+	HealthyState();
+	void setContext(Economy* context);
 
 	void decreaseCurrency();
 
-	void increaseCurrency();
+	virtual State* getDemotionState();
+	string getState();
 };
 
 #endif

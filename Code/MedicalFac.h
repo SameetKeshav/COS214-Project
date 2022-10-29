@@ -1,11 +1,16 @@
 #ifndef MEDICALFAC_H
 #define MEDICALFAC_H
-
+#include "Factory.h"
+#include "ArmySupplies.h"
+#include "MedicalSupp.h"
 class MedicalFac : Factory {
 
 
 public:
-	virtual ArmySupplies* make() = 0;
+    ArmySupplies* make() {
+        ArmySupplies supplies = new MedicalSupp();
+        return supplies;
+    }
 };
 
 #endif

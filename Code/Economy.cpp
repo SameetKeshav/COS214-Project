@@ -1,16 +1,30 @@
 #include "Economy.h"
 
-Economy::Economy(State* state, int currency) {
-	// TODO - implement Economy::Economy
-	throw "Not yet implemented";
+Economy::Economy(State* state,int currency) {
+	this->state=state;
+	this->currency=currency;
 }
 
-void Economy::decreaseCurrency() {
-	// TODO - implement Economy::decreaseCurrency
-	throw "Not yet implemented";
+void Economy::SetState(){
+	state=state->getDemotionState();
 }
 
-void Economy::increaseCurrency() {
-	// TODO - implement Economy::increaseCurrency
-	throw "Not yet implemented";
+void Economy::decreaseCurrency(){
+	state->decreaseCurrency();
+}
+
+int Economy::getCurrency(){
+	return currency;
+}
+
+void Economy::removeCurrency(int i){
+	currency-=i;
+}
+
+Economy::~Economy(){
+	delete state;
+}
+
+State* Economy::getState(){
+	return state;
 }

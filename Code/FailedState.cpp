@@ -1,16 +1,21 @@
 #include "FailedState.h"
 
-FailedState::FailedState(Economy* context, MasterOfCoin* m) {
-	// TODO - implement FailedState::FailedState
-	throw "Not yet implemented";
+FailedState::FailedState() {
+	context = nullptr;
 }
 
 void FailedState::decreaseCurrency() {
-	// TODO - implement FailedState::decreaseCurrency
-	throw "Not yet implemented";
+	context->removeCurrency(22);
+	if (context->getCurrency()<0)
+	{
+		context->SetState();
+	}
 }
 
-void FailedState::increaseCurrency() {
-	// TODO - implement FailedState::increaseCurrency
-	throw "Not yet implemented";
+void State::setContext(Economy* context){
+	this->context=context;
+}
+
+string FailedState::getState(){
+	return "Has Failed";
 }

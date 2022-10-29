@@ -1,51 +1,168 @@
 #include "Commander.h"
+#include "MasterOfCoin.h"
+
+//Julianna added and changed constructor
+Commander::Commander(string n) : Bannerman(n) {
+    name = n;
+    srand(time(0));
+    HP = 50 + (rand() % 100);
+    
+    int a = (40/100)*HP;
+    int b = (60/100)*HP;
+	groundForces.push_back(new Troop(a, "SquadrenA"));
+    groundForces.push_back(new Troop(b, "SquadrenB"));
+
+}
 
 Iterator* Commander::createIterator() {
-	// TODO - implement Commander::createIterator
-	throw "Not yet implemented";
+    return new ConIterator(groundForces);
 }
 
-void Commander::giveCommand() {
-	// TODO - implement Commander::giveCommand
-	throw "Not yet implemented";
+
+
+void Commander::addBannerman(Bannerman* b) {// TODO - Test
+    groundForces.push_back(b);
 }
 
-void Commander::attackKingdom(Kingdom* X) {
-	// TODO - implement Commander::attackKingdom
-	throw "Not yet implemented";
+void Commander::removeBannerman(Bannerman* x){
+    groundForces.remove(x);
 }
 
-void Commander::addBannerman(Bannerman* b) {
-	// TODO - implement Commander::addBannerman
-	throw "Not yet implemented";
+int Commander::getHP() {
+    int totalHP = 0;
+
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalHP+=(*it)->getHP();
+
+    return totalHP;
 }
 
-int Commander::getWeapons() {
-	// TODO - implement Commander::getWeapons
-	throw "Not yet implemented";
+void Commander::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->attack(myBannerman, enemyBannerman);
 }
 
-int Commander::getFood() {
-	// TODO - implement Commander::getFood
-	throw "Not yet implemented";
+int Commander::getDamage() {
+    int totalDamage = 0;
+
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalDamage+=(*it)->getDamage();
+
+    return totalDamage;
 }
 
-int Commander::getMedical() {
-	// TODO - implement Commander::getMedical
-	throw "Not yet implemented";
+void Commander::receiveDamage(int X){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->receiveDamage(X);
 }
 
-void Commander::setWeapons(int numWeapons) {
-	// TODO - implement Commander::setWeapons
-	throw "Not yet implemented";
+int Commander::getWeapons() {// TODO - Test
+    int totalWeapons = 0;
+
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalWeapons+=(*it)->getWeapons();
+
+    return totalWeapons;
 }
 
-void Commander::setFood(int numFood) {
-	// TODO - implement Commander::setFood
-	throw "Not yet implemented";
+void Commander::decreaseWeapons(){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->decreaseWeapons();
+}
+void Commander::decreaseFood(){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->decreaseFood();
+}
+void Commander::decreaseMedical(){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->decreaseMedical();
 }
 
-void Commander::setMedical(int numMedical) {
-	// TODO - implement Commander::setMedical
-	throw "Not yet implemented";
+void Commander::setWeapons(int numWeapons){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->setWeapons(numWeapons);
+}
+
+void Commander::setFood(int numFood){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->setFood(numFood);
+}
+
+void Commander::setMedical(int numMedical){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->setMedical(numMedical);
+}
+
+
+int Commander::getFood() {// TODO - Test
+    int totalFood = 0;
+
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalFood+=(*it)->getFood();
+
+    return totalFood;
+}
+
+int Commander::getMedical() {// TODO - Test
+    int totalMedical = 0;
+
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalMedical+=(*it)->getMedical();
+
+    return totalMedical;
+}
+
+void Commander::increaseHP(int boost){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->increaseHP(boost);
+}
+
+void Commander::changeStrategy(Strategy* strategy){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->changeStrategy(strategy);
+}
+void Commander::increaseFavour(){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->increaseFavour();
+}
+
+void Commander::decreaseFavour(){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->decreaseFavour();
+}
+
+
+Commander::~Commander() {// TODO - Test
+    for (std::list<Bannerman*>::iterator it = groundForces.begin();it != groundForces.end(); ++it)
+        delete *it;
+}
+
+void Commander::attach(Raven *o) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->attach(o);
+}
+
+void Commander::detach(Raven *o) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->detach(o);
+}
+
+void Commander::increasePower(int boost) {
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->increasePower(boost);
+}
+
+
+//added functions:
+
+void Commander::setRaven(list<Raven*> r){
+    ravenList = r;
+}
+
+void Commander::setMaster(MasterOfCoin* m){
+    this->m = m;
+}
+
+void Commander::setStrategy(Strategy* s){
+    strategy = s;
 }
