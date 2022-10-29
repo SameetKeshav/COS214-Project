@@ -13,7 +13,7 @@ Strategy* WarTheatre::getStrategy() {
     return strategy;
 }
 
-char decideVenue(Strategy*)
+char decideVenue(Strategy* strategy)
 {
    //TODO - implement decideVenue this way:
    if(strategy->getStrategyName() == "Battlefield") return  'a';
