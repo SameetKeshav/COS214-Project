@@ -83,7 +83,7 @@ Inheritance diagram for Factory:</div>
  <div class="center">
   <img src="class_factory.png" usemap="#Factory_map" alt=""/>
   <map id="Factory_map" name="Factory_map">
-<area href="class_war_indicators.html" alt="WarIndicators" shape="rect" coords="100,0,190,24"/>
+<area href="class_war_indicators.html" title="An interface class for all classes that communicate with each other through Treasury mediator." alt="WarIndicators" shape="rect" coords="100,0,190,24"/>
 <area href="class_food_fac.html" alt="FoodFac" shape="rect" coords="0,112,90,136"/>
 <area href="class_medical_fac.html" alt="MedicalFac" shape="rect" coords="100,112,190,136"/>
 <area href="class_weapons_fac.html" alt="WeaponsFac" shape="rect" coords="200,112,290,136"/>
@@ -92,21 +92,114 @@ Inheritance diagram for Factory:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b1c29e611333ec1b350b75cea18e43d"><td class="memItemLeft" align="right" valign="top"><a id="a1b1c29e611333ec1b350b75cea18e43d" name="a1b1c29e611333ec1b350b75cea18e43d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operation</b> ()</td></tr>
+<tr class="memitem:a1b1c29e611333ec1b350b75cea18e43d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a1b1c29e611333ec1b350b75cea18e43d">operation</a> ()</td></tr>
+<tr class="memdesc:a1b1c29e611333ec1b350b75cea18e43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the method needed to manufacture the supplies.  <a href="class_factory.html#a1b1c29e611333ec1b350b75cea18e43d">More...</a><br /></td></tr>
 <tr class="separator:a1b1c29e611333ec1b350b75cea18e43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d52979c980f3e841f4c759c03fcd61"><td class="memItemLeft" align="right" valign="top"><a id="a02d52979c980f3e841f4c759c03fcd61" name="a02d52979c980f3e841f4c759c03fcd61"></a>
-<a class="el" href="class_army_supplies.html">ArmySupplies</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSupply</b> ()</td></tr>
+<tr class="memitem:a02d52979c980f3e841f4c759c03fcd61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_army_supplies.html">ArmySupplies</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a02d52979c980f3e841f4c759c03fcd61">getSupply</a> ()</td></tr>
+<tr class="memdesc:a02d52979c980f3e841f4c759c03fcd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns supplies.  <a href="class_factory.html#a02d52979c980f3e841f4c759c03fcd61">More...</a><br /></td></tr>
 <tr class="separator:a02d52979c980f3e841f4c759c03fcd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f71456f48e4df402c778a44191ff40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a8f71456f48e4df402c778a44191ff40e">~Factory</a> ()</td></tr>
+<tr class="memdesc:a8f71456f48e4df402c778a44191ff40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes allocated memory to supply variable.  <a href="class_factory.html#a8f71456f48e4df402c778a44191ff40e">More...</a><br /></td></tr>
+<tr class="separator:a8f71456f48e4df402c778a44191ff40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad6810ce8fe545d508c3f0db8079f7727"><td class="memItemLeft" align="right" valign="top"><a id="ad6810ce8fe545d508c3f0db8079f7727" name="ad6810ce8fe545d508c3f0db8079f7727"></a>
-virtual <a class="el" href="class_army_supplies.html">ArmySupplies</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> ()=0</td></tr>
+<tr class="memitem:ad6810ce8fe545d508c3f0db8079f7727"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_army_supplies.html">ArmySupplies</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#ad6810ce8fe545d508c3f0db8079f7727">make</a> ()=0</td></tr>
 <tr class="separator:ad6810ce8fe545d508c3f0db8079f7727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8f71456f48e4df402c778a44191ff40e" name="a8f71456f48e4df402c778a44191ff40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f71456f48e4df402c778a44191ff40e">&#9670;&#160;</a></span>~Factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Factory::~Factory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes allocated memory to supply variable. </p>
+<dl class="section author"><dt>Author</dt><dd>Ronin Brookes 19069686 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a02d52979c980f3e841f4c759c03fcd61" name="a02d52979c980f3e841f4c759c03fcd61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d52979c980f3e841f4c759c03fcd61">&#9670;&#160;</a></span>getSupply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_army_supplies.html">ArmySupplies</a> * Factory::getSupply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns supplies. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the supplies the <a class="el" href="class_factory.html">Factory</a> manufactured </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Ronin Brookes 19069686 </dd></dl>
+
+</div>
+</div>
+<a id="ad6810ce8fe545d508c3f0db8079f7727" name="ad6810ce8fe545d508c3f0db8079f7727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6810ce8fe545d508c3f0db8079f7727">&#9670;&#160;</a></span>make()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_army_supplies.html">ArmySupplies</a> * Factory::make </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_food_fac.html#aefe22538ae07c92211f99521873db12c">FoodFac</a>, <a class="el" href="class_medical_fac.html#aadfa87f2e0de7a3ac66e291c561f3105">MedicalFac</a>, and <a class="el" href="class_weapons_fac.html#a47a43b9a99d4ace910a315ada5412177">WeaponsFac</a>.</p>
+
+</div>
+</div>
+<a id="a1b1c29e611333ec1b350b75cea18e43d" name="a1b1c29e611333ec1b350b75cea18e43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1c29e611333ec1b350b75cea18e43d">&#9670;&#160;</a></span>operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Factory::operation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls the method needed to manufacture the supplies. </p>
+<dl class="section author"><dt>Author</dt><dd>Ronin Brookes 19069686 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_factory_8h_source.html">Factory.h</a></li>
+<li>Factory.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

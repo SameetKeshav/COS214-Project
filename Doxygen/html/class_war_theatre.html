@@ -76,34 +76,150 @@ $(function() {
   <div class="headertitle"><div class="title">WarTheatre Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract object. This is the Component participant in the decorator pattern.  
+ <a href="class_war_theatre.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_war_theatre_8h_source.html">WarTheatre.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WarTheatre:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_war_theatre.png" usemap="#WarTheatre_map" alt=""/>
   <map id="WarTheatre_map" name="WarTheatre_map">
-<area href="class_conditions.html" alt="Conditions" shape="rect" coords="44,56,122,80"/>
-<area href="class_location.html" alt="Location" shape="rect" coords="132,56,210,80"/>
-<area href="class_topology.html" alt="Topology" shape="rect" coords="0,112,78,136"/>
-<area href="class_weather.html" alt="Weather" shape="rect" coords="88,112,166,136"/>
+<area href="class_conditions.html" title="decorator class. This is the class/object decorates the concreteComponent. Inherits from WarTheatre c..." alt="Conditions" shape="rect" coords="44,56,122,80"/>
+<area href="class_location.html" title="concrete object. This is the class/object that will be decorated. Inherits from WarTheatre class" alt="Location" shape="rect" coords="132,56,210,80"/>
+<area href="class_topology.html" title="concrete decorator B. This is class that decorates the topology of the venue. Inherits from Condition..." alt="Topology" shape="rect" coords="0,112,78,136"/>
+<area href="class_weather.html" title="concrete decorator A. This is the class implements climate effects to the war location...." alt="Weather" shape="rect" coords="88,112,166,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aeefb4818afe2da2e276989ca1f4445e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_theatre.html#aeefb4818afe2da2e276989ca1f4445e1">WarTheatre</a> (<a class="el" href="class_strategy.html">Strategy</a> *myStrat)</td></tr>
+<tr class="memdesc:aeefb4818afe2da2e276989ca1f4445e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_war_theatre.html#aeefb4818afe2da2e276989ca1f4445e1">More...</a><br /></td></tr>
+<tr class="separator:aeefb4818afe2da2e276989ca1f4445e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c389a4110d878a617486d8a02cd9b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_strategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_theatre.html#a13c389a4110d878a617486d8a02cd9b0">getStrategy</a> ()</td></tr>
+<tr class="memdesc:a13c389a4110d878a617486d8a02cd9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the strategy the location is based on  <a href="class_war_theatre.html#a13c389a4110d878a617486d8a02cd9b0">More...</a><br /></td></tr>
+<tr class="separator:a13c389a4110d878a617486d8a02cd9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec7bc16674dd5a818f8fd9f05c8bca5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_theatre.html#a1ec7bc16674dd5a818f8fd9f05c8bca5">sendScout</a> ()=0</td></tr>
+<tr class="memdesc:a1ec7bc16674dd5a818f8fd9f05c8bca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Decorates the location of the battle.  <a href="class_war_theatre.html#a1ec7bc16674dd5a818f8fd9f05c8bca5">More...</a><br /></td></tr>
+<tr class="separator:a1ec7bc16674dd5a818f8fd9f05c8bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4399abd6bdf199436d7cdff2d8c73bff"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_theatre.html#a4399abd6bdf199436d7cdff2d8c73bff">decideVenue</a> (<a class="el" href="class_strategy.html">Strategy</a> *strategy)</td></tr>
+<tr class="memdesc:a4399abd6bdf199436d7cdff2d8c73bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that uses the parameter to decide the venue of the war  <a href="class_war_theatre.html#a4399abd6bdf199436d7cdff2d8c73bff">More...</a><br /></td></tr>
+<tr class="separator:a4399abd6bdf199436d7cdff2d8c73bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03465cdc5a9fefbad9e2decb15152c45"><td class="memItemLeft" align="right" valign="top"><a id="a03465cdc5a9fefbad9e2decb15152c45" name="a03465cdc5a9fefbad9e2decb15152c45"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WarTheatre</b> (<a class="el" href="class_strategy.html">Strategy</a> myStrat)</td></tr>
 <tr class="separator:a03465cdc5a9fefbad9e2decb15152c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e887e703b97b15ca7c54eafa665bd4"><td class="memItemLeft" align="right" valign="top"><a id="a52e887e703b97b15ca7c54eafa665bd4" name="a52e887e703b97b15ca7c54eafa665bd4"></a>
-virtual <a class="el" href="class_strategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getStrategy</b> ()=0</td></tr>
-<tr class="separator:a52e887e703b97b15ca7c54eafa665bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d5850258f3bd9ce1f5c5817a44f17f4"><td class="memItemLeft" align="right" valign="top"><a id="a8d5850258f3bd9ce1f5c5817a44f17f4" name="a8d5850258f3bd9ce1f5c5817a44f17f4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendScout</b> ()</td></tr>
-<tr class="separator:a8d5850258f3bd9ce1f5c5817a44f17f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef438906acf05c22607cf73a07db5a9"><td class="memItemLeft" align="right" valign="top"><a id="a7ef438906acf05c22607cf73a07db5a9" name="a7ef438906acf05c22607cf73a07db5a9"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>decideVenue</b> (<a class="el" href="class_strategy.html">Strategy</a> *)</td></tr>
-<tr class="separator:a7ef438906acf05c22607cf73a07db5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Abstract object. This is the Component participant in the decorator pattern. </p>
+<dl class="section author"><dt>Author</dt><dd>Keabetswe Mothapo </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aeefb4818afe2da2e276989ca1f4445e1" name="aeefb4818afe2da2e276989ca1f4445e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefb4818afe2da2e276989ca1f4445e1">&#9670;&#160;</a></span>WarTheatre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WarTheatre::WarTheatre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_strategy.html">Strategy</a> *&#160;</td>
+          <td class="paramname"><em>myStrat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myStrat</td><td>- a pointer to te strategy object used in the battle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4399abd6bdf199436d7cdff2d8c73bff" name="a4399abd6bdf199436d7cdff2d8c73bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4399abd6bdf199436d7cdff2d8c73bff">&#9670;&#160;</a></span>decideVenue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char WarTheatre::decideVenue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_strategy.html">Strategy</a> *&#160;</td>
+          <td class="paramname"><em>strategy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function that uses the parameter to decide the venue of the war </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strategy</td><td>- a pointer to te strategy object used in the battle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char variable of the location. options are a, b, c and d only </dd></dl>
+
+</div>
+</div>
+<a id="a13c389a4110d878a617486d8a02cd9b0" name="a13c389a4110d878a617486d8a02cd9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c389a4110d878a617486d8a02cd9b0">&#9670;&#160;</a></span>getStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_strategy.html">Strategy</a> * WarTheatre::getStrategy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the strategy the location is based on </p>
+<dl class="section return"><dt>Returns</dt><dd>the strategy pointer </dd></dl>
+
+</div>
+</div>
+<a id="a1ec7bc16674dd5a818f8fd9f05c8bca5" name="a1ec7bc16674dd5a818f8fd9f05c8bca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec7bc16674dd5a818f8fd9f05c8bca5">&#9670;&#160;</a></span>sendScout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void WarTheatre::sendScout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abstract. Decorates the location of the battle. </p>
+
+<p>Implemented in <a class="el" href="class_conditions.html#a7951a7a384345f4c3ed4373ac41998d3">Conditions</a>, <a class="el" href="class_location.html#a807c0a9de641ada5fe575ee2a99629dc">Location</a>, and <a class="el" href="class_topology.html#a8fb43c69fd4853283f187f32359e038e">Topology</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_war_theatre_8h_source.html">WarTheatre.h</a></li>
 <li>WarTheatre.cpp</li>

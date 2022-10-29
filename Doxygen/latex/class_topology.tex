@@ -1,37 +1,74 @@
 \hypertarget{class_topology}{}\doxysection{Topology Class Reference}
 \label{class_topology}\index{Topology@{Topology}}
+
+
+concrete decorator B. This is class that decorates the topology of the venue. Inherits from \mbox{\hyperlink{class_conditions}{Conditions}} class  
+
+
+
+
+{\ttfamily \#include $<$Topology.\+h$>$}
+
 Inheritance diagram for Topology\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_topology}
+\includegraphics[height=3.000000cm]{class_topology}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_topology_aa710c10bd93c4caa99af3695b76face4}\label{class_topology_aa710c10bd93c4caa99af3695b76face4}} 
-\mbox{\hyperlink{class_topology}{Topology}} $\ast$ {\bfseries get\+Topology} ()
-\item 
-\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_topology_a69bc45eb361395f81a8b10c2eaeae6b3}{get\+Strategy}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{class_topology_a2a43c731cc6c3c6a26f03c471656732d}\label{class_topology_a2a43c731cc6c3c6a26f03c471656732d}} 
-char {\bfseries chosen}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_topology}{Topology}} $\ast$ \mbox{\hyperlink{class_topology_aa710c10bd93c4caa99af3695b76face4}{get\+Topology}} ()
+\begin{DoxyCompactList}\small\item\em getter for the \mbox{\hyperlink{class_topology}{Topology}} object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_topology_aa07647e7f20930cd63bfc09e6d9caf56}\label{class_topology_aa07647e7f20930cd63bfc09e6d9caf56}} 
+void {\bfseries set\+Topology} ()
+\begin{DoxyCompactList}\small\item\em setter for the topology of the war venue uses the inherited venue variable to adjust difficuty of teh terrian \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_topology_aa3336e10118cd76ab4b4c2ebc5062a9a}\label{class_topology_aa3336e10118cd76ab4b4c2ebc5062a9a}} 
+{\bfseries Topology} ()
+\begin{DoxyCompactList}\small\item\em default constructor that calls the decorator function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e038e}{send\+Scout}} ()
+\begin{DoxyCompactList}\small\item\em implements the decorator function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+concrete decorator B. This is class that decorates the topology of the venue. Inherits from \mbox{\hyperlink{class_conditions}{Conditions}} class 
+
+\begin{DoxyAuthor}{Author}
+Keabetswe Mothapo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_topology_a69bc45eb361395f81a8b10c2eaeae6b3}\label{class_topology_a69bc45eb361395f81a8b10c2eaeae6b3}} 
-\index{Topology@{Topology}!getStrategy@{getStrategy}}
-\index{getStrategy@{getStrategy}!Topology@{Topology}}
-\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ Topology\+::get\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_topology_aa710c10bd93c4caa99af3695b76face4}\label{class_topology_aa710c10bd93c4caa99af3695b76face4}} 
+\index{Topology@{Topology}!getTopology@{getTopology}}
+\index{getTopology@{getTopology}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{getTopology()}{getTopology()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_topology}{Topology}} $\ast$ Topology\+::get\+Topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{class_conditions}{Conditions}}.
+getter for the \mbox{\hyperlink{class_topology}{Topology}} object 
+
+\begin{DoxyReturn}{Returns}
+-\/ this topology object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_topology_a8fb43c69fd4853283f187f32359e038e}\label{class_topology_a8fb43c69fd4853283f187f32359e038e}} 
+\index{Topology@{Topology}!sendScout@{sendScout}}
+\index{sendScout@{sendScout}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{sendScout()}{sendScout()}}
+{\footnotesize\ttfamily void Topology\+::send\+Scout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+implements the decorator function 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}{Conditions}}.
 
 
 

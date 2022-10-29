@@ -4,24 +4,31 @@
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WARTHEATRE\_H}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define WARTHEATRE\_H}}
 \DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
+\DoxyCodeLine{4 \textcolor{keyword}{using namespace }std;}
 \DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{private}:}
-\DoxyCodeLine{7     \mbox{\hyperlink{class_strategy}{Strategy}}* strategy;}
-\DoxyCodeLine{8     \textcolor{keywordtype}{string} venue;}
-\DoxyCodeLine{9     \textcolor{keywordtype}{int} difficulty;}
-\DoxyCodeLine{10     \textcolor{keywordtype}{int} attribute;}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{keyword}{public}:}
-\DoxyCodeLine{13     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}(\mbox{\hyperlink{class_strategy}{Strategy}} myStrat);}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_strategy}{Strategy}}* getStrategy() = 0; \textcolor{comment}{//may need to make sendScout the virtual one instead}}
-\DoxyCodeLine{16 }
-\DoxyCodeLine{17     \textcolor{keywordtype}{void} sendScout();}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{19     \textcolor{keywordtype}{string} decideVenue(\mbox{\hyperlink{class_strategy}{Strategy}}*);}
-\DoxyCodeLine{20 \};}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_strategy}{Strategy}}* strategy;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{char} venue;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{string} location;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} difficulty;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}(\mbox{\hyperlink{class_strategy}{Strategy}}* myStrat);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{34     \mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a13c389a4110d878a617486d8a02cd9b0}{getStrategy}}(); \textcolor{comment}{//may need to make sendScout the virtual one instead}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}{sendScout}}() = 0;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_a4399abd6bdf199436d7cdff2d8c73bff}{decideVenue}}(\mbox{\hyperlink{class_strategy}{Strategy}}* strategy);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}(\mbox{\hyperlink{class_strategy}{Strategy}} myStrat);}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

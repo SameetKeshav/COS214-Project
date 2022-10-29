@@ -88,7 +88,7 @@ Inheritance diagram for BattleField:</div>
   <img src="class_battle_field.png" usemap="#BattleField_map" alt=""/>
   <map id="BattleField_map" name="BattleField_map">
 <area href="class_strategy.html" title="An Abstract strategy class. A class that provides an interface to the alternative concrete strategies..." alt="Strategy" shape="rect" coords="0,56,90,80"/>
-<area href="class_war_indicators.html" alt="WarIndicators" shape="rect" coords="0,0,90,24"/>
+<area href="class_war_indicators.html" title="An interface class for all classes that communicate with each other through Treasury mediator." alt="WarIndicators" shape="rect" coords="0,0,90,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -114,9 +114,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a37c0bbdd64fd7dfcdd91578784a64775 inherit pub_methods_class_strategy"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_strategy.html#a37c0bbdd64fd7dfcdd91578784a64775">~Strategy</a> ()</td></tr>
 <tr class="separator:a37c0bbdd64fd7dfcdd91578784a64775 inherit pub_methods_class_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_war_indicators"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_war_indicators')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_war_indicators.html">WarIndicators</a></td></tr>
-<tr class="memitem:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="ae412f0a5bb3bfc86ff6437d22e9407a5" name="ae412f0a5bb3bfc86ff6437d22e9407a5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WarIndicators</b> (<a class="el" href="class_treasury.html">Treasury</a> *m)</td></tr>
+<tr class="memitem:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="ae400c1e7a43a5751ac7aa62855a1e1a0" name="ae400c1e7a43a5751ac7aa62855a1e1a0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WarIndicators</b> ()</td></tr>
+<tr class="memdesc:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. initializes m to null. <br /></td></tr>
+<tr class="separator:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">WarIndicators</a> (<a class="el" href="class_treasury.html">Treasury</a> *<a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a>)</td></tr>
+<tr class="memdesc:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor. initializes m to the passed in <a class="el" href="class_treasury.html">Treasury</a> object.  <a href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">More...</a><br /></td></tr>
 <tr class="separator:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#aa8ee75ff5bf3d7bc1fb7f82a6527e582">~WarIndicators</a> ()</td></tr>
+<tr class="separator:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -136,8 +142,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a594bea77d5909198d7f92cd3b4d78efd inherit pro_attribs_class_strategy"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_strategy.html#a594bea77d5909198d7f92cd3b4d78efd">minSupplies</a></td></tr>
 <tr class="separator:a594bea77d5909198d7f92cd3b4d78efd inherit pro_attribs_class_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_war_indicators"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_war_indicators')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_war_indicators.html">WarIndicators</a></td></tr>
-<tr class="memitem:af473554ebc672a6253eb56d84c1bb891 inherit pro_attribs_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="af473554ebc672a6253eb56d84c1bb891" name="af473554ebc672a6253eb56d84c1bb891"></a>
-<a class="el" href="class_treasury.html">Treasury</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m</b></td></tr>
+<tr class="memitem:af473554ebc672a6253eb56d84c1bb891 inherit pro_attribs_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_treasury.html">Treasury</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a></td></tr>
 <tr class="separator:af473554ebc672a6253eb56d84c1bb891 inherit pro_attribs_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

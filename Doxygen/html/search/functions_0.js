@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['add_0',['add',['../class_history_book.html#a94c98deec8176f5ebc50ca9f267d6c5d',1,'HistoryBook']]],
+  ['add_0',['add',['../class_history_book.html#a94c98deec8176f5ebc50ca9f267d6c5d',1,'HistoryBook::add()'],['../class_kingdom.html#a594d72649f3d9f10f910f31bf6dbd81a',1,'Kingdom::add()']]],
   ['addbannerman_1',['addBannerman',['../class_commander.html#a5d71e73749507627c59431926ddc258e',1,'Commander']]],
   ['ambush_2',['Ambush',['../class_ambush.html#a31fe32d8eba8effd01382376f9aff1e0',1,'Ambush']]],
   ['assassinate_3',['Assassinate',['../class_assassinate.html#ae4a924a40a5433112ff206bc3becff90',1,'Assassinate']]],

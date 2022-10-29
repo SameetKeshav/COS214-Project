@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['sendraven_0',['sendRaven',['../classsend_raven.html',1,'']]],
-  ['setally_1',['setAlly',['../class_historian.html#a62e14ea0cf82e187826bafe9a7a07d62',1,'Historian']]],
-  ['setfood_2',['setFood',['../class_bannerman.html#ae820506437fc6806b77904186c7b3d10',1,'Bannerman::setFood()'],['../class_commander.html#aecff03645144e0d32094a4987df70145',1,'Commander::setFood()'],['../class_troop.html#ad90fb0d46884a81b7c4e32f84212814d',1,'Troop::setFood()']]],
-  ['setmedical_3',['setMedical',['../class_bannerman.html#a288a8a59848ff68be805b540cbe601ea',1,'Bannerman::setMedical()'],['../class_commander.html#a05589c79c1b3ec05041c06016216f653',1,'Commander::setMedical()'],['../class_troop.html#a3713f9a30a83751311c1732ec2b90ecc',1,'Troop::setMedical()']]],
-  ['setweapons_4',['setWeapons',['../class_bannerman.html#abd90e4eaef5547c02da8f4f49186eb52',1,'Bannerman::setWeapons()'],['../class_commander.html#a8326c6d14db39c3dd52b521dc4d23561',1,'Commander::setWeapons()'],['../class_troop.html#acf950ac065019b0ca77847970a528636',1,'Troop::setWeapons()']]],
-  ['siege_5',['Siege',['../class_siege.html',1,'Siege'],['../class_siege.html#a58bf6483aa888973ab9ead36635234fc',1,'Siege::Siege()']]],
-  ['state_6',['State',['../class_state.html',1,'']]],
-  ['strategy_7',['Strategy',['../class_strategy.html',1,'Strategy'],['../class_strategy.html#abf2f11a2d8b44147caf0ea37863c90e2',1,'Strategy::Strategy()']]],
-  ['strategy_8',['strategy',['../class_bannerman.html#a1e339f6c73c8a75da5d7e88c0dabb412',1,'Bannerman::strategy()'],['../class_strategy.html#a26297b731dd6b1bdc3a065863da69138',1,'Strategy::strategy()']]],
-  ['supplywagon_9',['SupplyWagon',['../class_supply_wagon.html',1,'']]]
+  ['raven_0',['Raven',['../class_raven.html',1,'']]],
+  ['ravenlist_1',['ravenList',['../class_bannerman.html#adcec90d90ed29a452314a3bd14a7e807',1,'Bannerman']]],
+  ['receivedamage_2',['receiveDamage',['../class_bannerman.html#a794eacd3816c899b12fde0ab1b672485',1,'Bannerman::receiveDamage()'],['../class_commander.html#af0b49dcd9981fce2c9ff62c5a6cbeee1',1,'Commander::receiveDamage()'],['../class_troop.html#ac1619808c57222a36182994c43683a0f',1,'Troop::receiveDamage()']]],
+  ['remove_3',['remove',['../class_kingdom.html#ada1b6abfa5d04a76ff3f966e394f5dbe',1,'Kingdom']]],
+  ['removebannerman_4',['removeBannerman',['../class_commander.html#a0ead17287a414ca9fdaeb70af9b38349',1,'Commander']]],
+  ['restoreally_5',['restoreAlly',['../class_historian.html#af232c57ba998520e35c869648f0ffdbf',1,'Historian::restoreAlly()'],['../class_history_book.html#a4021f7b650b77dc53b3fbe5bea2b7685',1,'HistoryBook::restoreAlly()']]]
 ];

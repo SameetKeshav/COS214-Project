@@ -3,17 +3,19 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONDITIONS\_H}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONDITIONS\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_conditions}{Conditions}} : \mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}WarTheatre.h"{}}}
 \DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{public}:}
-\DoxyCodeLine{7     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}* myVenue;}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9     \mbox{\hyperlink{class_strategy}{Strategy}}* getStrategy();}
-\DoxyCodeLine{10 }
-\DoxyCodeLine{11     \mbox{\hyperlink{class_conditions}{Conditions}}(\mbox{\hyperlink{class_war_theatre}{WarTheatre}}* myVenue);}
-\DoxyCodeLine{12 \};}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_conditions}{Conditions}} : \textcolor{keyword}{public}  \mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
 \DoxyCodeLine{13 }
-\DoxyCodeLine{14 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}* \mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{myVenue}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}{sendScout}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_conditions}{Conditions}}(\mbox{\hyperlink{class_war_theatre}{WarTheatre}}* \mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{myVenue}});}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
