@@ -1,0 +1,28 @@
+var class_commander =
+[
+    [ "Commander", "class_commander.html#a6124d55477cd8594fa9ad6126b77ab38", null ],
+    [ "~Commander", "class_commander.html#af16b5b1c2b22e5158ce822d1b9180b10", null ],
+    [ "addBannerman", "class_commander.html#a5d71e73749507627c59431926ddc258e", null ],
+    [ "attach", "class_commander.html#a720b7f1f7ff45286cb0d521eb6ea34fe", null ],
+    [ "attack", "class_commander.html#a300d8f67fd54f96cdf086e24273f1616", null ],
+    [ "changeStrategy", "class_commander.html#a189b537b6c66df5cdd29f3a720cd55c6", null ],
+    [ "createIterator", "class_commander.html#ac2a70383e8f668e2e2010a2e2e90d74a", null ],
+    [ "decreaseFavour", "class_commander.html#a09ae0bf59592876b0c408280dcb15417", null ],
+    [ "decreaseFood", "class_commander.html#ae4b5cbfe0c1a493d6f467a03e2637de7", null ],
+    [ "decreaseMedical", "class_commander.html#a771aba983222f2551d51106a2771ff08", null ],
+    [ "decreaseWeapons", "class_commander.html#a7c790e93326eb33114317c0872e8679e", null ],
+    [ "detach", "class_commander.html#a107be5d45cb2c6fb15af6afa34a9ef9b", null ],
+    [ "getDamage", "class_commander.html#a37405a7e4aa51f61f3fc389e7ef41e83", null ],
+    [ "getFood", "class_commander.html#ae8e2f3a04ce76699eb5a23c27aa7d87e", null ],
+    [ "getHP", "class_commander.html#a9ad0803e32cb9579ba1e2e58489c5084", null ],
+    [ "getMedical", "class_commander.html#a84be90292352deba343c994e89f826aa", null ],
+    [ "getWeapons", "class_commander.html#a7c4bc666285ef6f1aeee228550458c4f", null ],
+    [ "increaseFavour", "class_commander.html#a152eeabd214d9745dd01e3a62743b3f3", null ],
+    [ "increaseHP", "class_commander.html#abd12025acea19026bb38eece249363ce", null ],
+    [ "increasePower", "class_commander.html#acde2ffb64377d5384a2ac05d0c01bb69", null ],
+    [ "receiveDamage", "class_commander.html#af0b49dcd9981fce2c9ff62c5a6cbeee1", null ],
+    [ "removeBannerman", "class_commander.html#a0ead17287a414ca9fdaeb70af9b38349", null ],
+    [ "setFood", "class_commander.html#aecff03645144e0d32094a4987df70145", null ],
+    [ "setMedical", "class_commander.html#a05589c79c1b3ec05041c06016216f653", null ],
+    [ "setWeapons", "class_commander.html#a8326c6d14db39c3dd52b521dc4d23561", null ]
+];
