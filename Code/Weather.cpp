@@ -58,6 +58,8 @@ int Weather::calcEffect() {
         difficulty += windspeed/temp;
     }
 
+    return  difficulty;
+
 }
 
 void Weather::setTemp(double t) {
