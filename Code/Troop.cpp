@@ -19,13 +19,23 @@ int Troop::getHP() {
     return this->HP;
 }
 
+void Troop::attach(Raven* o){
+    this->ravenList.push_back(o);
+}
+
+void Troop::detach(Raven* o){
+    this->ravenList.remove(o);
+}
+
+void Troop::increasePower(int boost){
+    this->damage+= boost;
+}
+
 int Troop::getSize() {
     return this->size;
 }
-
-void Troop::attackKingdom(Kingdom* X) {
-    // TODO - implement Troop::attackKingdom
-    throw "Not yet implemented";
+void Troop::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
+    strategy->attack(myBannerman,enemyBannerman);
 }
 
 void Troop::increaseHP(int boost){

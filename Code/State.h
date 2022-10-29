@@ -1,15 +1,17 @@
 #ifndef STATE_H
 #define STATE_H
+class Economy;
 
 class State {
 
-private:
-	MasterOfCoin m;
+protected:
 	Economy* context;
 
 public:
-	void decreaseCurrency();
-	void increaseCurrency();
+	State(Economy* context);
+	virtual void decreaseCurrency()=0;
+	virtual State* getDemotionState();
+	~State();
 };
 
 #endif

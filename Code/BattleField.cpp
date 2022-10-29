@@ -6,20 +6,20 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		//getDamage is how much damage the bannerman can inflict
-		enemyBannerman->recieveDamage(myBannerman->getDamage());
+		enemyBannerman->receiveDamage(myBannerman->getDamage());
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
-			enemyBannerman->recieveDamage(myBannerman->getDamage());
+			enemyBannerman->receiveDamage(myBannerman->getDamage());
 		} else {
 			enemyBannerman->decreaseMedical();
 			enemyBannerman->decreaseFood();
 		}
 		myBannerman->decreaseWeapons();
 		
-		myBannerman->recieveDamage(enemyBannerman->getDamage());
+		myBannerman->receiveDamage(enemyBannerman->getDamage());
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
-			myBannerman->recieveDamage(enemyBannerman->getDamage());
+			myBannerman->receiveDamage(enemyBannerman->getDamage());
 		} else {
 			myBannerman->decreaseMedical();
 			myBannerman->decreaseFood();
@@ -69,5 +69,5 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 }
 
 BattleField::~BattleField(){
-
+	
 }

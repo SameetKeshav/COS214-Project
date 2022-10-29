@@ -6,21 +6,20 @@ Assassinate::Assassinate(int stealth, bool alive,int min,int minFavour):Strategy
 }
 
 bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	/*if (alive)
+	if (alive)
 	{
 		if (stealth>60)
 		{
-			enemyBannerman->recieveDamage(myBannerman->getDamage());
-			enemyBannerman->decreaseFavour();
+			enemyKingdom->remove(enemyBannerman);
+			myBannerman->increaseHP(5);
 		}
 		else
 		{
 			alive=false;
 		}
-		
+
 	}
-	return alive;*/
-	throw "Not yet implemented";
+	return alive;
 }
 
 Assassinate::~Assassinate(){

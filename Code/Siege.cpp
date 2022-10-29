@@ -9,7 +9,7 @@ Siege::~Siege(){
 }
 
 bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
-	/*if (stealth>60)
+	if (stealth>60)
 	{
 		//te
 		myBannerman->decreaseFood();
@@ -77,6 +77,5 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	else
 	{
 		return false;
-	}*/
-	throw "Not yet implemented";
+	}
 }
