@@ -127,6 +127,8 @@ public:
 */
     void decreaseFavour() override;
 
+    int getFavour();
+
     /** @brief Sets the number of weapon supplies of the bannerman objects in groundForces.
 @param numWeapons - The new numWeapons bannerman objects in groundForces should have.
 */
