@@ -7,14 +7,15 @@ WarTheatre::WarTheatre(Strategy myStrat) {
     venue = decideVenue(strategy);
 }
 
-void WarTheatre::sendScout() {
+Strategy* WarTheatre::getStrategy() {
 	// TODO - implement WarTheatre::sendScout
-	throw "Not yet implemented";
+	//throw "Not yet implemented";
+    return strategy;
 }
 
 string decideVenue(Strategy*)
 {
    //TODO - implement decideVenue this way:
-        //if strategy.getName == xx, then return yy
+        //if strategy.getName() == xx, then return yy
         //do for all available strategies.
 }

@@ -14,9 +14,9 @@ private:
 public:
 	WarTheatre(Strategy myStrat);
 
-	virtual Strategy* getStrategy() = 0; //may need to make sendScout the virtual one instead
+    Strategy* getStrategy(); //may need to make sendScout the virtual one instead
 
-	void sendScout();
+	virtual void sendScout() = 0;
 
     string decideVenue(Strategy*);
 };
