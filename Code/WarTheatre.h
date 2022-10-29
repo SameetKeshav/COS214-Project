@@ -1,22 +1,25 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
 
+using namespace std;
+
 class WarTheatre {
 
 private:
 	Strategy* strategy;
-	string venue;
+	char venue;
+    string location;
 	int difficulty;
 	int attribute;
 
 public:
 	WarTheatre(Strategy myStrat);
 
-	virtual Strategy* getStrategy() = 0; //may need to make sendScout the virtual one instead
+    Strategy* getStrategy(); //may need to make sendScout the virtual one instead
 
-	void sendScout();
+	virtual void sendScout() = 0;
 
-    string decideVenue(Strategy*);
+    char decideVenue(Strategy*);
 };
 
 #endif

@@ -1,7 +1,7 @@
 #ifndef WEATHER_H
 #define WEATHER_H
 
-class Weather : Conditions {
+class Weather : public Conditions {
 
 private:
 	double temp;
@@ -9,9 +9,14 @@ private:
 	int windspeed;
 
 public:
-	Weather();
+	Weather(int val);
 
 	int calcEffect();
+
+    void setTemp(double t);
+    void makeItRain();
+    void setWindSpeed(int SP);
+    //void weatherReport(); ask Jules
 };
 
 #endif

@@ -1,12 +1,13 @@
 #ifndef CONDITIONS_H
 #define CONDITIONS_H
+#include <cstdlib>
 
-class Conditions : WarTheatre {
+class Conditions : public  WarTheatre {
 
 public:
 	WarTheatre* myVenue;
 
-	Strategy* getStrategy();
+	void sendScout();
 
 	Conditions(WarTheatre* myVenue);
 };
