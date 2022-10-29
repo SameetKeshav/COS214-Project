@@ -21,3 +21,8 @@ char decideVenue(Strategy*)
    if (strategy->getStrategyName() == "Ambush") return 'c';
    if (strategy->getStrategyName() == "Assassination") return 'd';
 }
+
+WarTheatre::WarTheatre(Strategy myStrat) {
+	// TODO - implement WarTheatre::WarTheatre
+	throw "Not yet implemented";
+}

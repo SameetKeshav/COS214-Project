@@ -26,7 +26,7 @@ void Location::sendScout() {
 void Location::createVenue() {
 	// TODO - implement Location::createVenue
 	//throw "Not yet implemented";
-   Conditions myDecorator = new Conditions(this); //check the pointer passed
+   Conditions myDecorator = new Conditions(*this); //check the pointer passed
    //then decorate
    myDecorator.sendScout();
 }

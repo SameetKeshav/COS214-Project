@@ -23,7 +23,7 @@ Conditions::Conditions(WarTheatre* myVenue) {
 	throw "Not yet implemented";
     this->myVenue = myVenue;
 
-    myVenue->sendScout();
+   // myVenue->sendScout(); //what in the name is this - causes circulation!
    // cout << "Approaching war venue..." ;
 
 }
