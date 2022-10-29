@@ -77,19 +77,24 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SIEGE_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_siege.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_siege.html">Siege</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_strategy.html">Strategy</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">int</span> stealth;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="class_siege.html">Siege</a>(<span class="keywordtype">int</span> stealth,<span class="keywordtype">int</span> min,<span class="keywordtype">int</span> minFavour);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> attack(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* myBannerman, <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* enemyBannerman);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="class_siege.html">~Siege</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_siege.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_siege.html">Siege</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_strategy.html">Strategy</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span> stealth;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_siege.html">Siege</a>(<span class="keywordtype">int</span> stealth,<span class="keywordtype">int</span> min,<span class="keywordtype">int</span> <a class="code hl_variable" href="class_strategy.html#ad0b294bb647e8e88cac038804d88acf7">minFavour</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_siege.html#ae8e9de64c3a659bf32bb35ad4cbcbc2f">attack</a>(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_variable" href="class_strategy.html#a706cf037295e2bffabefb2eb226835a6">myBannerman</a>, <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_variable" href="class_strategy.html#a5473bae4c5a8c213e39c89ca176b444d">enemyBannerman</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_siege.html#aac2d09fe50a26b39865aad8c8c9486b9">~Siege</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_bannerman_html"><div class="ttname"><a href="class_bannerman.html">Bannerman</a></div><div class="ttdoc">An abstract component class. A class that provides the interface with which the client interacts with...</div><div class="ttdef"><b>Definition:</b> Bannerman.h:18</div></div>
-<div class="ttc" id="aclass_siege_html"><div class="ttname"><a href="class_siege.html">Siege</a></div><div class="ttdef"><b>Definition:</b> Siege.h:5</div></div>
-<div class="ttc" id="aclass_strategy_html"><div class="ttname"><a href="class_strategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> Strategy.h:10</div></div>
+<div class="ttc" id="aclass_siege_html"><div class="ttname"><a href="class_siege.html">Siege</a></div><div class="ttdoc">A concrete strategy class. A class that provides an alternative strategy for how Bannerman will fight...</div><div class="ttdef"><b>Definition:</b> Siege.h:10</div></div>
+<div class="ttc" id="aclass_siege_html_aac2d09fe50a26b39865aad8c8c9486b9"><div class="ttname"><a href="class_siege.html#aac2d09fe50a26b39865aad8c8c9486b9">Siege::~Siege</a></div><div class="ttdeci">~Siege()</div><div class="ttdef"><b>Definition:</b> Siege.cpp:7</div></div>
+<div class="ttc" id="aclass_siege_html_ae8e9de64c3a659bf32bb35ad4cbcbc2f"><div class="ttname"><a href="class_siege.html#ae8e9de64c3a659bf32bb35ad4cbcbc2f">Siege::attack</a></div><div class="ttdeci">bool attack(Bannerman *myBannerman, Bannerman *enemyBannerman)</div><div class="ttdef"><b>Definition:</b> Siege.cpp:11</div></div>
+<div class="ttc" id="aclass_strategy_html"><div class="ttname"><a href="class_strategy.html">Strategy</a></div><div class="ttdoc">An Abstract strategy class. A class that provides an interface to the alternative concrete strategies...</div><div class="ttdef"><b>Definition:</b> Strategy.h:16</div></div>
+<div class="ttc" id="aclass_strategy_html_a5473bae4c5a8c213e39c89ca176b444d"><div class="ttname"><a href="class_strategy.html#a5473bae4c5a8c213e39c89ca176b444d">Strategy::enemyBannerman</a></div><div class="ttdeci">Bannerman * enemyBannerman</div><div class="ttdef"><b>Definition:</b> Strategy.h:26</div></div>
+<div class="ttc" id="aclass_strategy_html_a706cf037295e2bffabefb2eb226835a6"><div class="ttname"><a href="class_strategy.html#a706cf037295e2bffabefb2eb226835a6">Strategy::myBannerman</a></div><div class="ttdeci">Bannerman * myBannerman</div><div class="ttdef"><b>Definition:</b> Strategy.h:24</div></div>
+<div class="ttc" id="aclass_strategy_html_ad0b294bb647e8e88cac038804d88acf7"><div class="ttname"><a href="class_strategy.html#ad0b294bb647e8e88cac038804d88acf7">Strategy::minFavour</a></div><div class="ttdeci">int minFavour</div><div class="ttdef"><b>Definition:</b> Strategy.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

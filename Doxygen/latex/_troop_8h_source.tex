@@ -18,7 +18,7 @@
 \DoxyCodeLine{23     \textcolor{keywordtype}{int} damage;}
 \DoxyCodeLine{24 }
 \DoxyCodeLine{25 \textcolor{keyword}{public}:}
-\DoxyCodeLine{30     \mbox{\hyperlink{class_troop}{Troop}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_bannerman_ad7c96e82b0a271e7bd042c0cdb9775fa}{name}}, \textcolor{keywordtype}{int} favor, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{numFood}}, \textcolor{keywordtype}{int} Medical, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_aa9c6fea3fb600df01d45560f5bf26185}{HP}},\mbox{\hyperlink{class_war_theatre}{WarTheatre}}*\mbox{\hyperlink{class_bannerman_a390074f520b1b0055424b482a807e6e0}{warZone}},\mbox{\hyperlink{class_strategy}{Strategy}}*strategy,\mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}}* \mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bannerman_a36bfbb85d967236f058409fc60c5220c}{assassin}}, \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_troop}{Troop}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_bannerman_ad7c96e82b0a271e7bd042c0cdb9775fa}{name}}, \textcolor{keywordtype}{int} favor, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{numFood}}, \textcolor{keywordtype}{int} Medical, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_aa9c6fea3fb600df01d45560f5bf26185}{HP}},\mbox{\hyperlink{class_war_theatre}{WarTheatre}}*warZone,\mbox{\hyperlink{class_strategy}{Strategy}}*strategy,\mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}}* m, \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bannerman_a36bfbb85d967236f058409fc60c5220c}{assassin}}, \textcolor{keywordtype}{int} size);}
 \DoxyCodeLine{31 }
 \DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a6c6a0b620d2a7cbd8d513cfb86833606}{getHP}}() \textcolor{keyword}{override};}
 \DoxyCodeLine{38 }
@@ -44,26 +44,28 @@
 \DoxyCodeLine{87 }
 \DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_a6a8b1b705728e982a51aa84c18f2561d}{decreaseFavour}}() \textcolor{keyword}{override};}
 \DoxyCodeLine{91 }
-\DoxyCodeLine{95     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_a7465cdfbb5500255ce5449d315d6a632}{increaseHP}}(\textcolor{keywordtype}{int} boost) \textcolor{keyword}{override};}
-\DoxyCodeLine{101     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_ab6c541f28f5221177c3b614dbcb341db}{getDamage}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{102 }
-\DoxyCodeLine{107     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_ac1619808c57222a36182994c43683a0f}{receiveDamage}}(\textcolor{keywordtype}{int} X) \textcolor{keyword}{override};}
-\DoxyCodeLine{108 }
-\DoxyCodeLine{114     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a05179a27fd117d09077708d7322b2493}{getWeapons}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{115 }
-\DoxyCodeLine{121     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a99bd081c254958f7df3cb0733d341fd7}{getFood}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{122 }
-\DoxyCodeLine{128     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a7f6c6ef3bd3dfe1ffa4016c4b44e0db3}{getMedical}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{129 }
-\DoxyCodeLine{133     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_acf950ac065019b0ca77847970a528636}{setWeapons}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{numWeapons}}) \textcolor{keyword}{override};}
-\DoxyCodeLine{134 }
-\DoxyCodeLine{138     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_ad90fb0d46884a81b7c4e32f84212814d}{setFood}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{numFood}}) \textcolor{keyword}{override};}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{143     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_a3713f9a30a83751311c1732ec2b90ecc}{setMedical}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{numMedical}}) \textcolor{keyword}{override};}
-\DoxyCodeLine{144 }
-\DoxyCodeLine{147     \mbox{\hyperlink{class_troop_a812ffd2ac57069689116fdfa921aa1dd}{\string~Troop}}();}
-\DoxyCodeLine{148 \};}
-\DoxyCodeLine{149 }
-\DoxyCodeLine{150 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{92     \textcolor{keywordtype}{int} getFavour();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_a7465cdfbb5500255ce5449d315d6a632}{increaseHP}}(\textcolor{keywordtype}{int} boost) \textcolor{keyword}{override};}
+\DoxyCodeLine{103     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_ab6c541f28f5221177c3b614dbcb341db}{getDamage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{109     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_ac1619808c57222a36182994c43683a0f}{receiveDamage}}(\textcolor{keywordtype}{int} X) \textcolor{keyword}{override};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{116     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a05179a27fd117d09077708d7322b2493}{getWeapons}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a99bd081c254958f7df3cb0733d341fd7}{getFood}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{130     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_troop_a7f6c6ef3bd3dfe1ffa4016c4b44e0db3}{getMedical}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{135     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_acf950ac065019b0ca77847970a528636}{setWeapons}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{numWeapons}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_ad90fb0d46884a81b7c4e32f84212814d}{setFood}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{numFood}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{145     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_troop_a3713f9a30a83751311c1732ec2b90ecc}{setMedical}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{numMedical}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{149     \mbox{\hyperlink{class_troop_a812ffd2ac57069689116fdfa921aa1dd}{\string~Troop}}();}
+\DoxyCodeLine{150 \};}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -76,21 +76,27 @@ $(function() {
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ASSASSINATE_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ASSASSINATE_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_assassinate.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_assassinate.html">Assassinate</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_strategy.html">Strategy</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">int</span> stealth;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> alive;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="class_assassinate.html">Assassinate</a>(<span class="keywordtype">int</span> stealth, <span class="keywordtype">bool</span> alive,<span class="keywordtype">int</span> min,<span class="keywordtype">int</span> minFavour);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">bool</span> attack(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* myBannerman, <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* enemyBannerman);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_assassinate.html">~Assassinate</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_assassinate_html"><div class="ttname"><a href="class_assassinate.html">Assassinate</a></div><div class="ttdef"><b>Definition:</b> Assassinate.h:4</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_assassinate.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_assassinate.html">Assassinate</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_strategy.html">Strategy</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> stealth;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> alive;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_assassinate.html">Assassinate</a>(<span class="keywordtype">int</span> stealth, <span class="keywordtype">bool</span> alive,<span class="keywordtype">int</span> min,<span class="keywordtype">int</span> <a class="code hl_variable" href="class_strategy.html#ad0b294bb647e8e88cac038804d88acf7">minFavour</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_assassinate.html#aa650bb6fb68529914922728d6cc9cb07">attack</a>(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_variable" href="class_strategy.html#a706cf037295e2bffabefb2eb226835a6">myBannerman</a>, <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_variable" href="class_strategy.html#a5473bae4c5a8c213e39c89ca176b444d">enemyBannerman</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_assassinate.html#a3f7d6fa4b38fb46cb63fbcc9509c0730">~Assassinate</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_assassinate_html"><div class="ttname"><a href="class_assassinate.html">Assassinate</a></div><div class="ttdoc">A concrete strategy class. A class that provides an alternative strategy for how Bannerman will fight...</div><div class="ttdef"><b>Definition:</b> Assassinate.h:10</div></div>
+<div class="ttc" id="aclass_assassinate_html_a3f7d6fa4b38fb46cb63fbcc9509c0730"><div class="ttname"><a href="class_assassinate.html#a3f7d6fa4b38fb46cb63fbcc9509c0730">Assassinate::~Assassinate</a></div><div class="ttdeci">~Assassinate()</div><div class="ttdef"><b>Definition:</b> Assassinate.cpp:25</div></div>
+<div class="ttc" id="aclass_assassinate_html_aa650bb6fb68529914922728d6cc9cb07"><div class="ttname"><a href="class_assassinate.html#aa650bb6fb68529914922728d6cc9cb07">Assassinate::attack</a></div><div class="ttdeci">bool attack(Bannerman *myBannerman, Bannerman *enemyBannerman)</div><div class="ttdef"><b>Definition:</b> Assassinate.cpp:8</div></div>
 <div class="ttc" id="aclass_bannerman_html"><div class="ttname"><a href="class_bannerman.html">Bannerman</a></div><div class="ttdoc">An abstract component class. A class that provides the interface with which the client interacts with...</div><div class="ttdef"><b>Definition:</b> Bannerman.h:18</div></div>
-<div class="ttc" id="aclass_strategy_html"><div class="ttname"><a href="class_strategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> Strategy.h:10</div></div>
+<div class="ttc" id="aclass_strategy_html"><div class="ttname"><a href="class_strategy.html">Strategy</a></div><div class="ttdoc">An Abstract strategy class. A class that provides an interface to the alternative concrete strategies...</div><div class="ttdef"><b>Definition:</b> Strategy.h:16</div></div>
+<div class="ttc" id="aclass_strategy_html_a5473bae4c5a8c213e39c89ca176b444d"><div class="ttname"><a href="class_strategy.html#a5473bae4c5a8c213e39c89ca176b444d">Strategy::enemyBannerman</a></div><div class="ttdeci">Bannerman * enemyBannerman</div><div class="ttdef"><b>Definition:</b> Strategy.h:26</div></div>
+<div class="ttc" id="aclass_strategy_html_a706cf037295e2bffabefb2eb226835a6"><div class="ttname"><a href="class_strategy.html#a706cf037295e2bffabefb2eb226835a6">Strategy::myBannerman</a></div><div class="ttdeci">Bannerman * myBannerman</div><div class="ttdef"><b>Definition:</b> Strategy.h:24</div></div>
+<div class="ttc" id="aclass_strategy_html_ad0b294bb647e8e88cac038804d88acf7"><div class="ttname"><a href="class_strategy.html#ad0b294bb647e8e88cac038804d88acf7">Strategy::minFavour</a></div><div class="ttdeci">int minFavour</div><div class="ttdef"><b>Definition:</b> Strategy.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

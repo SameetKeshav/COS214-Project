@@ -2,7 +2,7 @@
 \begin{DoxyRefList}
 \item[Member \mbox{\hyperlink{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}{Ambush\+::Ambush}} (int stealth, int min, int min\+Favour)]\label{todo__todo000001}%
 \Hypertarget{todo__todo000001}%
-constructor. initializes stealth and calls base class constructor to initialize min and min\+Favour.  
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
 \item[Member \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{Ambush\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000002}%
 \Hypertarget{todo__todo000002}%
 makes two bannerman from enemy kingdoms fight each other until one loses  
@@ -11,74 +11,47 @@ makes two bannerman from enemy kingdoms fight each other until one loses
 destructor.  
 \item[Member \mbox{\hyperlink{class_assassinate_ae4a924a40a5433112ff206bc3becff90}{Assassinate\+::Assassinate}} (int stealth, bool alive, int min, int min\+Favour)]\label{todo__todo000004}%
 \Hypertarget{todo__todo000004}%
-constructor. initializes stealth and calls base class constructor to initialize min and min\+Favour.  
-\item[Member \mbox{\hyperlink{class_bannerman_a1bc3abe5d8a4c9dda697829eef3fc7c4}{Bannerman\+::attach}} (\mbox{\hyperlink{class_raven}{Raven}} $\ast$o)=0]\label{todo__todo000007}%
-\Hypertarget{todo__todo000007}%
-Abstract. Attaches a \mbox{\hyperlink{class_raven}{Raven}} Observer on the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a0acd7a49687131331f594cb590a31fc4}{Bannerman\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)=0]\label{todo__todo000011}%
-\Hypertarget{todo__todo000011}%
-Abstract. uses strategy to attack another kingdom.  
-\item[Member \mbox{\hyperlink{class_bannerman_a34f63b80fda395e2ae0e4c311056e364}{Bannerman\+::change\+Strategy}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$strategy)=0]\label{todo__todo000010}%
-\Hypertarget{todo__todo000010}%
-Abstract. changes the attack strategy of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a1af377efb06af229f9a25141e9bcc6d4}{Bannerman\+::decrease\+Favour}} ()=0]\label{todo__todo000006}%
-\Hypertarget{todo__todo000006}%
-Abstract. decreases the favour of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_aa8ea9f0f89233a5e7435c52772fc2b43}{Bannerman\+::decrease\+Food}} ()=0]\label{todo__todo000018}%
-\Hypertarget{todo__todo000018}%
-Abstract. Decreases the number of food supplies that the bannerman has  
-\item[Member \mbox{\hyperlink{class_bannerman_a0f16bb2b3ab703469ec9f05e81d2cefa}{Bannerman\+::decrease\+Medical}} ()=0]\label{todo__todo000019}%
-\Hypertarget{todo__todo000019}%
-Abstract. Decreases the number of medical supplies that the bannerman has  
-\item[Member \mbox{\hyperlink{class_bannerman_aa5035baa2661e9af63bae7914efb51bc}{Bannerman\+::decrease\+Weapons}} ()=0]\label{todo__todo000017}%
-\Hypertarget{todo__todo000017}%
-Abstract. Decreases the number of weapons that the bannerman has  
-\item[Member \mbox{\hyperlink{class_bannerman_a205b64898be42c673c9f34a03b356d8d}{Bannerman\+::detach}} (\mbox{\hyperlink{class_raven}{Raven}} $\ast$o)=0]\label{todo__todo000008}%
-\Hypertarget{todo__todo000008}%
-Abstract. detaches a \mbox{\hyperlink{class_raven}{Raven}} Observer from the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a1a5d6adb57fcf51eb355cdef86b72cb7}{Bannerman\+::get\+Damage}} ()=0]\label{todo__todo000015}%
-\Hypertarget{todo__todo000015}%
-Abstract. Accessor that returns the damage capability of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_adc69abec1cfbdb0a1d9edd434bfc53ae}{Bannerman\+::get\+Food}} ()=0]\label{todo__todo000022}%
-\Hypertarget{todo__todo000022}%
-Abstract. Accessor that returns number of food supplies that the bannerman has.  
-\item[Member \mbox{\hyperlink{class_bannerman_a8c99451818f71d15d15e0bf35d4b62d6}{Bannerman\+::get\+HP}} ()=0]\label{todo__todo000014}%
-\Hypertarget{todo__todo000014}%
-Abstract. Accessor that returns the name of the component.  
-\item[Member \mbox{\hyperlink{class_bannerman_a9bc89447b53e38cd0e9d6b5962419587}{Bannerman\+::get\+Medical}} ()=0]\label{todo__todo000023}%
-\Hypertarget{todo__todo000023}%
-Abstract. Accessor that returns the number of medical supplies that the bannerman has.  
-\item[Member \mbox{\hyperlink{class_bannerman_ac34f077972ae84ad34b77bf6f174a0ce}{Bannerman\+::get\+Name}} ()]\label{todo__todo000013}%
-\Hypertarget{todo__todo000013}%
-Accessor that returns the name of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a60ee23b181d1c0ae692fe86c028c65a2}{Bannerman\+::get\+War\+Zone}} ()]\label{todo__todo000020}%
-\Hypertarget{todo__todo000020}%
-Accessor. that returns the \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} where the bannerman engages in battle.  
-\item[Member \mbox{\hyperlink{class_bannerman_aa5c91236353408518cb3c4c28d47f4fe}{Bannerman\+::get\+Weapons}} ()=0]\label{todo__todo000021}%
-\Hypertarget{todo__todo000021}%
-Abstract. Accessor that returns the number of weapons of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a87872034f7a5171f084d421eba81b6a5}{Bannerman\+::increase\+Favour}} ()=0]\label{todo__todo000005}%
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}{Assassinate\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000005}%
 \Hypertarget{todo__todo000005}%
-Abstract. increases the favour of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a414eed3d8e51c65cab88992092dc2e3f}{Bannerman\+::increase\+HP}} (int boost)=0]\label{todo__todo000009}%
+makes assassin of attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} try to kill enemy\+Bannerman  
+\item[Member \mbox{\hyperlink{class_assassinate_a3f7d6fa4b38fb46cb63fbcc9509c0730}{Assassinate\+::$\sim$\+Assassinate}} ()]\label{todo__todo000006}%
+\Hypertarget{todo__todo000006}%
+destructor.  
+\item[Member \mbox{\hyperlink{class_battle_field_a0a0ea58914a59f8d385041f454ffe6d0}{Battle\+Field\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000008}%
+\Hypertarget{todo__todo000008}%
+makes two bannerman from enemy kingdoms fight each other until one loses  
+\item[Member \mbox{\hyperlink{class_battle_field_a55cdd1fe446cff45e718103ce14d3085}{Battle\+Field\+::Battle\+Field}} (int min, int min\+Favour)]\label{todo__todo000007}%
+\Hypertarget{todo__todo000007}%
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_battle_field_adf5797b1520be6502b828196690b9348}{Battle\+Field\+::$\sim$\+Battle\+Field}} ()]\label{todo__todo000009}%
 \Hypertarget{todo__todo000009}%
-Abstract. increases the health points(\+HP) of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a1abcef28173e5b38ece6306be6b02148}{Bannerman\+::increase\+Power}} (int boost)=0]\label{todo__todo000012}%
+destructor.  
+\item[Member \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{Siege\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000011}%
+\Hypertarget{todo__todo000011}%
+makes two bannerman from enemy kingdoms fight each other until one loses  
+\item[Member \mbox{\hyperlink{class_siege_a58bf6483aa888973ab9ead36635234fc}{Siege\+::Siege}} (int stealth, int min, int min\+Favour)]\label{todo__todo000010}%
+\Hypertarget{todo__todo000010}%
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}{Siege\+::$\sim$\+Siege}} ()]\label{todo__todo000012}%
 \Hypertarget{todo__todo000012}%
-Abstract. increases the damage capability of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_a794eacd3816c899b12fde0ab1b672485}{Bannerman\+::receive\+Damage}} (int boost)=0]\label{todo__todo000016}%
+destructor.  
+\item[Member \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)=0]\label{todo__todo000014}%
+\Hypertarget{todo__todo000014}%
+Abstract method  
+\item[Member \mbox{\hyperlink{class_strategy_a88ed4a64031030f3a9a30652b01debe6}{Strategy\+::get\+Enemy\+Bannerman}} ()]\label{todo__todo000017}%
+\Hypertarget{todo__todo000017}%
+gets \mbox{\hyperlink{class_bannerman}{Bannerman}} being attacked  
+\item[Member \mbox{\hyperlink{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}{Strategy\+::get\+My\+Bannerman}} ()]\label{todo__todo000016}%
 \Hypertarget{todo__todo000016}%
-Abstract. Increases the damage capability of the bannerman.  
-\item[Member \mbox{\hyperlink{class_bannerman_ae820506437fc6806b77904186c7b3d10}{Bannerman\+::set\+Food}} (int num\+Food)=0]\label{todo__todo000025}%
-\Hypertarget{todo__todo000025}%
-Abstract. Sets the number of food supplies that the bannerman has.  
-\item[Member \mbox{\hyperlink{class_bannerman_a288a8a59848ff68be805b540cbe601ea}{Bannerman\+::set\+Medical}} (int num\+Medical)=0]\label{todo__todo000026}%
-\Hypertarget{todo__todo000026}%
-Abstract. Sets the number of medical supplies that the bannerman has.  
-\item[Member \mbox{\hyperlink{class_bannerman_abd90e4eaef5547c02da8f4f49186eb52}{Bannerman\+::set\+Weapons}} (int num\+Weapons)=0]\label{todo__todo000024}%
-\Hypertarget{todo__todo000024}%
-Abstract. Sets the number of weapons of the bannerman  
-\item[Member \mbox{\hyperlink{class_bannerman_add811865a500b84e9baa7fff28230115}{Bannerman\+::$\sim$\+Bannerman}} ()]\label{todo__todo000027}%
-\Hypertarget{todo__todo000027}%
-Default destructor. 
+gets attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}  
+\item[Member \mbox{\hyperlink{class_strategy_a310550043f6b81592cef05ea9241144f}{Strategy\+::get\+Strategy\+Name}} ()]\label{todo__todo000015}%
+\Hypertarget{todo__todo000015}%
+gets strategy variable  
+\item[Member \mbox{\hyperlink{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}{Strategy\+::Strategy}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000013}%
+\Hypertarget{todo__todo000013}%
+constructor. initializes my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min\+Supplies and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}{Strategy\+::$\sim$\+Strategy}} ()]\label{todo__todo000018}%
+\Hypertarget{todo__todo000018}%
+destructor. deallocates all pointers of this class 
 \end{DoxyRefList}

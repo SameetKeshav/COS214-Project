@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warzone_0',['warZone',['../class_bannerman.html#a390074f520b1b0055424b482a807e6e0',1,'Bannerman']]]
+  ['strategy_0',['strategy',['../class_bannerman.html#a1e339f6c73c8a75da5d7e88c0dabb412',1,'Bannerman::strategy()'],['../class_strategy.html#a26297b731dd6b1bdc3a065863da69138',1,'Strategy::strategy()']]]
 ];

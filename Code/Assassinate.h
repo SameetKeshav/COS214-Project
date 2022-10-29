@@ -16,7 +16,7 @@ private:
 	bool alive;
 public:
 	/** @todo  constructor. initializes stealth and calls base class constructor to
-	 * initialize min and minFavour.
+	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
 	 * @param stealth - skill level of Bannerman's assassin.
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which Bannerman change allegiances

@@ -1,5 +1,14 @@
 \hypertarget{class_strategy}{}\doxysection{Strategy Class Reference}
 \label{class_strategy}\index{Strategy@{Strategy}}
+
+
+An Abstract strategy class. A class that provides an interface to the alternative concrete strategies for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman.  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
 Inheritance diagram for Strategy\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,58 +18,178 @@ Inheritance diagram for Strategy\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}\label{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}} 
-{\bfseries Strategy} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)
+\mbox{\hyperlink{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}{Strategy}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
-virtual bool \mbox{\hyperlink{class_strategy_a88c2b80dba3f3cf003161d736e761f45}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)
+virtual bool \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})=0
 \item 
-\mbox{\Hypertarget{class_strategy_a310550043f6b81592cef05ea9241144f}\label{class_strategy_a310550043f6b81592cef05ea9241144f}} 
-string {\bfseries get\+Strategy\+Name} ()
+virtual string \mbox{\hyperlink{class_strategy_a310550043f6b81592cef05ea9241144f}{get\+Strategy\+Name}} ()
 \item 
-\mbox{\Hypertarget{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}\label{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}} 
-\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries get\+My\+Bannerman} ()
+virtual \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}{get\+My\+Bannerman}} ()
 \item 
-\mbox{\Hypertarget{class_strategy_a88ed4a64031030f3a9a30652b01debe6}\label{class_strategy_a88ed4a64031030f3a9a30652b01debe6}} 
-\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries get\+Enemy\+Bannerman} ()
+virtual \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_strategy_a88ed4a64031030f3a9a30652b01debe6}{get\+Enemy\+Bannerman}} ()
+\item 
+virtual \mbox{\hyperlink{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}{$\sim$\+Strategy}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}\label{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}} 
-\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ {\bfseries my\+Kingdom}
+\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ \mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}
 \item 
-\mbox{\Hypertarget{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}\label{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}} 
-\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ {\bfseries enemy\+Kingdom}
+\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$ \mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}
 \item 
-\mbox{\Hypertarget{class_strategy_a706cf037295e2bffabefb2eb226835a6}\label{class_strategy_a706cf037295e2bffabefb2eb226835a6}} 
-\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries my\+Bannerman}
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}
 \item 
-\mbox{\Hypertarget{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}\label{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}} 
-\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries enemy\+Bannerman}
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}
 \item 
-\mbox{\Hypertarget{class_strategy_a26297b731dd6b1bdc3a065863da69138}\label{class_strategy_a26297b731dd6b1bdc3a065863da69138}} 
-string {\bfseries strategy}
+string \mbox{\hyperlink{class_strategy_a26297b731dd6b1bdc3a065863da69138}{strategy}}
 \item 
-\mbox{\Hypertarget{class_strategy_ad0b294bb647e8e88cac038804d88acf7}\label{class_strategy_ad0b294bb647e8e88cac038804d88acf7}} 
-int {\bfseries min\+Favour}
+int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}}
 \item 
-\mbox{\Hypertarget{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}\label{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}} 
-int {\bfseries min\+Supplies}
+int \mbox{\hyperlink{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}{min\+Supplies}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+An Abstract strategy class. A class that provides an interface to the alternative concrete strategies for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}\label{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}} 
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{Strategy()}{Strategy()}}
+{\footnotesize\ttfamily Strategy\+::\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]constructor. initializes my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min\+Supplies and min\+Favour. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em min} & -\/ minimum supplies for food,weapons and medicine \\
+\hline
+{\em min\+Favour} & -\/ minimum favour below which bannerman change allegiances \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}\label{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}} 
+\index{Strategy@{Strategy}!````~Strategy@{$\sim$Strategy}}
+\index{````~Strategy@{$\sim$Strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Strategy()}{~Strategy()}}
+{\footnotesize\ttfamily Strategy\+::$\sim$\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000018}{Todo}}]destructor. deallocates all pointers of this class \end{DoxyRefDesc}
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_strategy_a88c2b80dba3f3cf003161d736e761f45}\label{class_strategy_a88c2b80dba3f3cf003161d736e761f45}} 
+\mbox{\Hypertarget{class_strategy_adecf5b4398ec2dd89bd280441f674de3}\label{class_strategy_adecf5b4398ec2dd89bd280441f674de3}} 
 \index{Strategy@{Strategy}!attack@{attack}}
 \index{attack@{attack}!Strategy@{Strategy}}
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
-{\footnotesize\ttfamily virtual bool Strategy\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual bool Strategy\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]Abstract method \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Bannerman} & -\/ attacking bannerman object. \\
+\hline
+{\em enemy\+Bannerman} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} object being attacked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+battle result as a boolean with true implying the attacking bannerman object won and false implying the opposite 
+\end{DoxyReturn}
 
 
+Implemented in \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{Ambush}}, \mbox{\hyperlink{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}{Assassinate}}, \mbox{\hyperlink{class_battle_field_a0a0ea58914a59f8d385041f454ffe6d0}{Battle\+Field}}, and \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{Siege}}.
 
-Reimplemented in \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{Ambush}}.
+\mbox{\Hypertarget{class_strategy_a88ed4a64031030f3a9a30652b01debe6}\label{class_strategy_a88ed4a64031030f3a9a30652b01debe6}} 
+\index{Strategy@{Strategy}!getEnemyBannerman@{getEnemyBannerman}}
+\index{getEnemyBannerman@{getEnemyBannerman}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{getEnemyBannerman()}{getEnemyBannerman()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ Strategy\+::get\+Enemy\+Bannerman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]gets \mbox{\hyperlink{class_bannerman}{Bannerman}} being attacked \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+enemy\+Bannerman pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}\label{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}} 
+\index{Strategy@{Strategy}!getMyBannerman@{getMyBannerman}}
+\index{getMyBannerman@{getMyBannerman}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{getMyBannerman()}{getMyBannerman()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ Strategy\+::get\+My\+Bannerman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]gets attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+my\+Bannerman pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_strategy_a310550043f6b81592cef05ea9241144f}\label{class_strategy_a310550043f6b81592cef05ea9241144f}} 
+\index{Strategy@{Strategy}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily string Strategy\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]gets strategy variable \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+strategy variable 
+\end{DoxyReturn}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}\label{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}} 
+\index{Strategy@{Strategy}!enemyBannerman@{enemyBannerman}}
+\index{enemyBannerman@{enemyBannerman}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{enemyBannerman}{enemyBannerman}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}}$\ast$ Strategy\+::enemy\+Bannerman\hspace{0.3cm}{\ttfamily [protected]}}
+
+defending \mbox{\hyperlink{class_bannerman}{Bannerman}} \mbox{\Hypertarget{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}\label{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}} 
+\index{Strategy@{Strategy}!enemyKingdom@{enemyKingdom}}
+\index{enemyKingdom@{enemyKingdom}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{enemyKingdom}{enemyKingdom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kingdom}{Kingdom}}$\ast$ Strategy\+::enemy\+Kingdom\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_kingdom}{Kingdom}} pointer of enemy\+Bannerman\textquotesingle{}s \mbox{\hyperlink{class_kingdom}{Kingdom}} \mbox{\Hypertarget{class_strategy_ad0b294bb647e8e88cac038804d88acf7}\label{class_strategy_ad0b294bb647e8e88cac038804d88acf7}} 
+\index{Strategy@{Strategy}!minFavour@{minFavour}}
+\index{minFavour@{minFavour}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{minFavour}{minFavour}}
+{\footnotesize\ttfamily int Strategy\+::min\+Favour\hspace{0.3cm}{\ttfamily [protected]}}
+
+minimum favour below which \mbox{\hyperlink{class_bannerman}{Bannerman}} change allegiances \mbox{\Hypertarget{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}\label{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}} 
+\index{Strategy@{Strategy}!minSupplies@{minSupplies}}
+\index{minSupplies@{minSupplies}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{minSupplies}{minSupplies}}
+{\footnotesize\ttfamily int Strategy\+::min\+Supplies\hspace{0.3cm}{\ttfamily [protected]}}
+
+minimum supplies for food,weapons and medicine \mbox{\Hypertarget{class_strategy_a706cf037295e2bffabefb2eb226835a6}\label{class_strategy_a706cf037295e2bffabefb2eb226835a6}} 
+\index{Strategy@{Strategy}!myBannerman@{myBannerman}}
+\index{myBannerman@{myBannerman}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{myBannerman}{myBannerman}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}}$\ast$ Strategy\+::my\+Bannerman\hspace{0.3cm}{\ttfamily [protected]}}
+
+attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} \mbox{\Hypertarget{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}\label{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}} 
+\index{Strategy@{Strategy}!myKingdom@{myKingdom}}
+\index{myKingdom@{myKingdom}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{myKingdom}{myKingdom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kingdom}{Kingdom}}$\ast$ Strategy\+::my\+Kingdom\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_kingdom}{Kingdom}} pointer of attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}\textquotesingle{}s \mbox{\hyperlink{class_kingdom}{Kingdom}} \mbox{\Hypertarget{class_strategy_a26297b731dd6b1bdc3a065863da69138}\label{class_strategy_a26297b731dd6b1bdc3a065863da69138}} 
+\index{Strategy@{Strategy}!strategy@{strategy}}
+\index{strategy@{strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily string Strategy\+::strategy\hspace{0.3cm}{\ttfamily [protected]}}
+
+name of concrete strategy 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
