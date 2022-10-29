@@ -7,10 +7,10 @@ class MedicalFac : Factory {
 
 
 public:
-    ArmySupplies* make() {
-        ArmySupplies supplies = new MedicalSupp();
-        return supplies;
-    }
+    /// @brief Medical Factory makes Medical supplies.
+    /// @return returns the supplies the Medical Factory just manufactured
+    /// @author Ronin Brookes 19069686
+    ArmySupplies* make() ;
 };
 
 #endif

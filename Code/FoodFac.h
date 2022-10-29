@@ -7,10 +7,10 @@ class FoodFac : Factory {
 
 
 public:
-	 ArmySupplies* make() {
-         ArmySupplies supplies = new FoodSupp();
-         return supplies;
-     }
+    /// @brief Food Factory makes Food supplies.
+    /// @return returns the supplies the Food Factory just manufactured
+    /// @author Ronin Brookes 19069686
+	 ArmySupplies* make();
 };
 
 #endif
