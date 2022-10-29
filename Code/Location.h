@@ -8,11 +8,11 @@ class Location : public WarTheatre {
 
 
 public:
-	Location(string);
+	Location();
 
 	void sendScout();
 
-	void createVenue(string venue);
+	void createVenue();
 
 	void ~Location();
 };

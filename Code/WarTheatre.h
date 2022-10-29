@@ -7,7 +7,8 @@ class WarTheatre {
 
 private:
 	Strategy* strategy;
-	string venue;
+	char venue;
+    string location;
 	int difficulty;
 	int attribute;
 
