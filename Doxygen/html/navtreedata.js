@@ -45,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ambush_8h_source.html",
-"class_weapons_fac.html"
+"class_unstable_state.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

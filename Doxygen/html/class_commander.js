@@ -10,6 +10,7 @@ var class_commander =
     [ "decreaseFavour", "class_commander.html#a09ae0bf59592876b0c408280dcb15417", null ],
     [ "decreaseFood", "class_commander.html#ae4b5cbfe0c1a493d6f467a03e2637de7", null ],
     [ "decreaseMedical", "class_commander.html#a771aba983222f2551d51106a2771ff08", null ],
+    [ "decreasePower", "class_commander.html#aa2af8732b5293ada0415b092f592fdaa", null ],
     [ "decreaseWeapons", "class_commander.html#a7c790e93326eb33114317c0872e8679e", null ],
     [ "detach", "class_commander.html#a107be5d45cb2c6fb15af6afa34a9ef9b", null ],
     [ "getDamage", "class_commander.html#a37405a7e4aa51f61f3fc389e7ef41e83", null ],
@@ -23,6 +24,9 @@ var class_commander =
     [ "receiveDamage", "class_commander.html#af0b49dcd9981fce2c9ff62c5a6cbeee1", null ],
     [ "removeBannerman", "class_commander.html#a0ead17287a414ca9fdaeb70af9b38349", null ],
     [ "setFood", "class_commander.html#aecff03645144e0d32094a4987df70145", null ],
+    [ "setMaster", "class_commander.html#a3bb5849eee29e0feac6a13b4a3894f4d", null ],
     [ "setMedical", "class_commander.html#a05589c79c1b3ec05041c06016216f653", null ],
+    [ "setRaven", "class_commander.html#a288ea64d4383e3e1976e7d1f2a08302b", null ],
+    [ "setStrategy", "class_commander.html#a0a6fb5bffc586c56ee3284b3357e126d", null ],
     [ "setWeapons", "class_commander.html#a8326c6d14db39c3dd52b521dc4d23561", null ]
 ];

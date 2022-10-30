@@ -1,5 +1,9 @@
 \hypertarget{class_con_iterator}{}\doxysection{Con\+Iterator Class Reference}
 \label{class_con_iterator}\index{ConIterator@{ConIterator}}
+
+
+{\ttfamily \#include $<$Con\+Iterator.\+h$>$}
+
 Inheritance diagram for Con\+Iterator\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,17 +13,39 @@ Inheritance diagram for Con\+Iterator\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}\label{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}} 
-{\bfseries Con\+Iterator} (list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ X)
+\mbox{\hyperlink{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}{Con\+Iterator}} (list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ X)
 \item 
 \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_con_iterator_a0d222acec8e723def980a98c5cd822aa}{Current}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract. Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_con_iterator_af5dd2fc8813b5dd00594dcf9ff749cd3}{next}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the ($\ast$it) pointer to the next bannerman object in ground\+Forces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_con_iterator_a2b5169fea3ec59662f32f3938d5ab787}{has\+Next}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Determines whether or not the current bannerman object which ($\ast$it) currently points to is the last element in the list or not. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}{is\+Active}} ()
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@\+Brief Concrete iterator class Implements the interface for accessing and traversing bannerman elements in ground\+Forces. Keeps track of the current position in the traversal of the aggregate(ground\+Forces list). \begin{DoxyAuthor}{Author}
+Thapelo Thoka 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}\label{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}} 
+\index{ConIterator@{ConIterator}!ConIterator@{ConIterator}}
+\index{ConIterator@{ConIterator}!ConIterator@{ConIterator}}
+\doxysubsubsection{\texorpdfstring{ConIterator()}{ConIterator()}}
+{\footnotesize\ttfamily Con\+Iterator\+::\+Con\+Iterator (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$}]{X }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_con_iterator}{Con\+Iterator}} Constructor which takes in a list of bannerman objects. 
+\begin{DoxyParams}{Parameters}
+{\em X} & -\/ the ground\+Forces list which will be accessed sequentially. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -31,7 +57,14 @@ bool \mbox{\hyperlink{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}{is\+
 
 
 
-Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
+Abstract. Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. 
+
+\begin{DoxyReturn}{Returns}
+Bannerman$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_iterator_aaebd6fcd615a4e67626fe6651736fcf4}{Iterator}}.
 
 \mbox{\Hypertarget{class_con_iterator_a2b5169fea3ec59662f32f3938d5ab787}\label{class_con_iterator_a2b5169fea3ec59662f32f3938d5ab787}} 
 \index{ConIterator@{ConIterator}!hasNext@{hasNext}}
@@ -39,9 +72,18 @@ Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
 \doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
 {\footnotesize\ttfamily bool Con\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Determines whether or not the current bannerman object which ($\ast$it) currently points to is the last element in the list or not. 
+
+\begin{DoxyReturn}{Returns}
+false 
+
+true 
+\end{DoxyReturn}
 Test
 
-Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
+Implements \mbox{\hyperlink{class_iterator_ac3a1f5cb124b2b89e4cc41900ffd83f6}{Iterator}}.
 
 \mbox{\Hypertarget{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}\label{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}} 
 \index{ConIterator@{ConIterator}!isActive@{isActive}}
@@ -49,9 +91,14 @@ Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
 \doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
 {\footnotesize\ttfamily bool Con\+Iterator\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+@\+Brief Returns whether or not the current item is active or not by determining whether HP\texorpdfstring{$>$}{>}0 or not \begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
 Test
 
-Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
+Implements \mbox{\hyperlink{class_iterator_a66527143108f6a24547394d807922e7b}{Iterator}}.
 
 \mbox{\Hypertarget{class_con_iterator_af5dd2fc8813b5dd00594dcf9ff749cd3}\label{class_con_iterator_af5dd2fc8813b5dd00594dcf9ff749cd3}} 
 \index{ConIterator@{ConIterator}!next@{next}}
@@ -59,9 +106,16 @@ Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
 \doxysubsubsection{\texorpdfstring{next()}{next()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ Con\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Sets the ($\ast$it) pointer to the next bannerman object in ground\+Forces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object. 
+
+\begin{DoxyReturn}{Returns}
+Bannerman$\ast$ 
+\end{DoxyReturn}
 Test
 
-Implements \mbox{\hyperlink{class_iterator}{Iterator}}.
+Implements \mbox{\hyperlink{class_iterator_acb76c46e8d0339274cb2917e14b1cd9b}{Iterator}}.
 
 
 
