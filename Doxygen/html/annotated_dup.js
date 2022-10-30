@@ -19,7 +19,7 @@ var annotated_dup =
     [ "Historian", "class_historian.html", "class_historian" ],
     [ "History", "class_history.html", "class_history" ],
     [ "HistoryBook", "class_history_book.html", "class_history_book" ],
-    [ "Iterator", "class_iterator.html", null ],
+    [ "Iterator", "class_iterator.html", "class_iterator" ],
     [ "Kingdom", "class_kingdom.html", "class_kingdom" ],
     [ "Location", "class_location.html", "class_location" ],
     [ "MasterOfCoin", "class_master_of_coin.html", "class_master_of_coin" ],
