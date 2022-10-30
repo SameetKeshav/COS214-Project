@@ -113,6 +113,7 @@ public:
     */
     virtual int getDamage() = 0;
 
+
     /**@brief Abstract. Increases the damage capability of the bannerman.
 * @param boost - the number by which to increase damage
      * */

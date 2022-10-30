@@ -146,6 +146,7 @@ public:
 */
     void decreasePower(int x);
 
+
     /** @brief Sets the number of medical supplies the troop has.
 @param numMedical - The new numMedical the troop should have.
 */

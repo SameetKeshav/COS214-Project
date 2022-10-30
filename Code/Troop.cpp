@@ -99,7 +99,6 @@ int Troop::getMedical(){
     return this->numMedical;
 }
 
-
 void Troop::setRaven(list<Raven*> r){
     this->ravenList = r;
 }
