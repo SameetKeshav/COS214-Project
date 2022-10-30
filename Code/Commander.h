@@ -153,7 +153,6 @@ public:
     /** @brief Default destructor.
     */
     ~Commander() ;
-    
 
     //Julianna added:
 

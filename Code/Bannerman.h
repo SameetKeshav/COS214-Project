@@ -116,6 +116,7 @@ public:
     /**@brief Abstract. Increases the damage capability of the bannerman.
 * @param boost - the number by which to increase damage
      * */
+
     virtual void receiveDamage(int boost) = 0;
 
     /** @brief Abstract. decreases the damage capability of the bannerman.

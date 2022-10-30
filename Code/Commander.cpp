@@ -156,6 +156,7 @@ void Commander::decreasePower(int x){
 }
 
 //added functions:
+
 //fixed
 void Commander::setRaven(list<Raven*> r){
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
