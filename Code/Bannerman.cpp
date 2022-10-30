@@ -1,8 +1,7 @@
 #include "Bannerman.h"
 
 
-Bannerman::Bannerman(string n) {
-    name = n;
+Bannerman::Bannerman() {
 }
 
 string Bannerman::getName() {

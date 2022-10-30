@@ -99,6 +99,16 @@ int Troop::getMedical(){
     return this->numMedical;
 }
 
+void Troop::setRaven(list<Raven*> r){
+    this->ravenList = r;
+}
+void Troop::setMaster(MasterOfCoin* m){
+    this->m = m;
+}
+
+void Troop::decreasePower(int x){
+    this->damage -= x;
+}
 Troop::~Troop() {
 
 }
