@@ -6,16 +6,12 @@ SupplyWagon* FoodWagon::clone() {
     SupplyWagon* wagon = new FoodWagon();
     wagon->setSup(supp);
     return wagon;
-}
 
+}
 void FoodWagon::setSup(ArmySupplies* sup){
     supp=sup;
 }
 
 ArmySupplies* FoodWagon::getSupplies() {
     return supp;
-}
-
-FoodWagon::~FoodWagon() {
-    delete supp;
 }

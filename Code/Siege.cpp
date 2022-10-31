@@ -19,20 +19,20 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		//getDamage is how much damage the bannerman can inflict
-		enemyBannerman->receiveDamage(myBannerman->getDamage());
+		enemyBannerman->recieveDamage(myBannerman->getDamage());
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
-			enemyBannerman->receiveDamage(myBannerman->getDamage());
+			enemyBannerman->recieveDamage(myBannerman->getDamage());
 		} else {
 			enemyBannerman->decreaseMedical();
 			enemyBannerman->decreaseFood();
 		}
 		myBannerman->decreaseWeapons();
 		
-		myBannerman->receiveDamage(enemyBannerman->getDamage());
+		myBannerman->recieveDamage(enemyBannerman->getDamage());
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
-			myBannerman->receiveDamage(enemyBannerman->getDamage());
+			myBannerman->recieveDamage(enemyBannerman->getDamage());
 		} else {
 			myBannerman->decreaseMedical();
 			myBannerman->decreaseFood();

@@ -1,32 +1,28 @@
 #ifndef LOCATION_H
 #define LOCATION_H
+<<<<<<< Updated upstream
+=======
 #include <iostream>
+#include "WarTheatre.h"
 //#include "Conditions.h" causes circular dependency?
+>>>>>>> Stashed changes
 
-using namespace std;
-
-/** @brief concrete object.
- * This is the class/object that will be decorated. Inherits from WarTheatre class
- *  @author Keabetswe Mothapo
- * @date October 2022
- */
-
-class Location : public WarTheatre {
+class Location : WarTheatre {
 
 
 public:
-
-    /** @brief Default constructor.*/
 	Location();
 
-    /** @brief the function that will be called to decorate the war venue*/
-	void sendScout();
+	Strategy* getStrategy();
 
-    /** @brief creates default war theatre and calls the decorating function*/
-	void createVenue();
+	void createVenue(string venue);
 
-    /** @brief fress memory used in the pattern*/
+<<<<<<< Updated upstream
 	void ~Location();
+=======
+    /** @brief fress memory used in the pattern*/
+	~Location();
+>>>>>>> Stashed changes
 };
 
 #endif

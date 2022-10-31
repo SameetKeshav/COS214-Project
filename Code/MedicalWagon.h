@@ -7,9 +7,10 @@
 class MedicalWagon : SupplyWagon {
 
 public:
-    /// @brief Deletes the alocated memory
-    /// @author Ronin Brookes 19069686
-    ~MedicalWagon()
+    ArmySupplies* supp;
+    ~MedicalWagon(){
+        delete supp;
+    }
 };
 
 #endif

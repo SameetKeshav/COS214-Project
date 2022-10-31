@@ -1,19 +1,25 @@
 #include "Troop.h"
 
-Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
-
+<<<<<<< Updated upstream
+Troop::Troop(int size, string n): Bannerman(n){
+    name = n;
     this->size = size;
-
-    this->name =name;
-    this->favour =favor;
-    this->numFood =numFood;
-    this->numMedical =Medical;
-    this->HP =HP;
-    this->warZone =warZone;
-    this->strategy =strategy;
-    this->m =m;
-
-    this->assassin = assassin;
+    name = n;
+    srand(time(0));
+    HP = 50 + (rand() % 100);
+=======
+Troop::Troop(string n, int size): Bannerman(n){
+    name = n;
+    srand(time(0));
+    HP = size;
+>>>>>>> Stashed changes
+    srand(time(0));
+    damage = 7 + (rand() % 25);
+    favour = 15;
+    numWeapons = 50;
+    numFood = 50;
+    numMedical = 50;
+    assassin = true;
 }
 int Troop::getHP() {
     return this->HP;
@@ -24,7 +30,11 @@ void Troop::attach(Raven* o){
 }
 
 void Troop::detach(Raven* o){
-    this->ravenList.remove(o);
+    for (std::vector<Raven*>::iterator it = ravenList.begin(); it != ravenList.end(); ++it){
+        if (*it == o){
+            ravenList.erase(it);
+        }
+    }
 }
 
 void Troop::increasePower(int boost){
@@ -32,7 +42,7 @@ void Troop::increasePower(int boost){
 }
 
 int Troop::getSize() {
-    return this->size;
+    return this->HP;
 }
 void Troop::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
     strategy->attack(myBannerman,enemyBannerman);
@@ -56,10 +66,6 @@ void Troop::increaseFavour() {
 
 void Troop::decreaseFavour() {
     this->favour -=1;
-}
-
-int Troop::getFavour(){
-    return favour;
 }
 
 void Troop::decreaseWeapons(){
@@ -99,16 +105,6 @@ int Troop::getMedical(){
     return this->numMedical;
 }
 
-void Troop::setRaven(list<Raven*> r){
-    this->ravenList = r;
-}
-void Troop::setMaster(MasterOfCoin* m){
-    this->m = m;
-}
-
-void Troop::decreasePower(int x){
-    this->damage -= x;
-}
 Troop::~Troop() {
 
 }

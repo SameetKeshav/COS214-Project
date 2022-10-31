@@ -4,7 +4,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	if (stealth>60)
 	{
 		//tell Thapelo we must decide on power or damage
-		myBannerman->increasePower(5);
+		myBannerman->increasePower();
 		//tell thapelo to implement decrease power
 		enemyBannerman->decreasePower();
 	}
@@ -12,20 +12,20 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		//getDamage is how much damage the bannerman can inflict
-		enemyBannerman->receiveDamage(myBannerman->getDamage());
+		enemyBannerman->recieveDamage(myBannerman->getDamage());
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
-			enemyBannerman->receiveDamage(myBannerman->getDamage());
+			enemyBannerman->recieveDamage(myBannerman->getDamage());
 		} else {
 			enemyBannerman->decreaseMedical();
 			enemyBannerman->decreaseFood();
 		}
 		myBannerman->decreaseWeapons();
 		
-		myBannerman->receiveDamage(enemyBannerman->getDamage());
+		myBannerman->recieveDamage(enemyBannerman->getDamage());
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
-			myBannerman->receiveDamage(enemyBannerman->getDamage());
+			myBannerman->recieveDamage(enemyBannerman->getDamage());
 		} else {
 			myBannerman->decreaseMedical();
 			myBannerman->decreaseFood();

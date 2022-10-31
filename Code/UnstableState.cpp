@@ -1,4 +1,6 @@
 #include "UnstableState.h"
+using namespace std;
+#include <iostream>
 
 UnstableState::UnstableState() {
 	context = nullptr;
@@ -21,3 +23,11 @@ State* UnstableState::getDemotionState(){
 	h->setContext(context);
 	return h;
 }
+
+string UnstableState::getState(){
+	return "is Unstable";
+<<<<<<< Updated upstream
+}
+=======
+}
+>>>>>>> Stashed changes

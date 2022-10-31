@@ -1,9 +1,10 @@
 #ifndef BANNERMAN_H
 #define BANNERMAN_H
 #include "Strategy.h"
+#include "Iterator.h"
 #include "MasterOfCoin.h"
-#include "Raven.h"
 #include "WarIndicators.h"
+#include "Raven.h"
 #include "WarTheatre.h"
 #include <string>
 #include <list>
@@ -14,9 +15,7 @@
     @author Thapelo Thoka
     @date October 2022
     */
-
-class Strategy;
-class Bannerman: public WarIndicators {
+class Bannerman{
 
 protected:
 
@@ -39,7 +38,7 @@ protected:
     int numMedical;
 
     /**A list of Raven observers that have been attached to the bannerman object */
-    list<Raven*> ravenList;
+    vector<Raven*> ravenList;
 
     /**Indicates whether or not the bannerman is an assassin */
     bool assassin;
@@ -57,7 +56,7 @@ protected:
 public:
     /** @brief Default constructor.
 */
-    Bannerman();
+    Bannerman(string n);
 
     /** @brief Abstract. increases the favour of the bannerman.
         */
@@ -113,17 +112,10 @@ public:
     */
     virtual int getDamage() = 0;
 
-
     /**@brief Abstract. Increases the damage capability of the bannerman.
 * @param boost - the number by which to increase damage
      * */
-
     virtual void receiveDamage(int boost) = 0;
-
-    /** @brief Abstract. decreases the damage capability of the bannerman.
- * @param x - the number by which to decrease damage.
-*/
-    virtual void decreasePower(int x) = 0;
 
     /**@brief Abstract. Decreases the number of weapons that the bannerman has */
     virtual void decreaseWeapons() = 0;
@@ -164,16 +156,6 @@ public:
     @param numMedical - The new numMedical the component should have
     */
     virtual void setMedical(int numMedical) = 0;
-
-    /** @brief Abstract. Assigns a list of Raven Observers to the bannerman's ravenList.
- * @param r - the list of Raven Observer to attach.
-*/
-    virtual void setRaven(list<Raven*> r) = 0;
-
-    /** @brief Abstract. Assigns a MasterofCoin mediator to ensure that the army has the supplies it needs.
-* @param m - the new MasterOfCoin mediator.
-*/
-    virtual void setMaster(MasterOfCoin* m) = 0;
 
     /**@brief Default destructor.
 */

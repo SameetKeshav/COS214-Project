@@ -7,10 +7,10 @@
 class WeaponsFac : Factory {
 
 public:
-    /// @brief Weapon Factory makes Weapon supplies.
-    /// @return returns the supplies the Weapon Factory just manufactured
-    /// @author Ronin Brookes 19069686
-    ArmySupplies* make() ;
+    ArmySupplies* make() {
+        ArmySupplies supplies = new WeaponSupp();
+        return supplies;
+    }
 };
 
 #endif

@@ -1,6 +1,7 @@
 #include "State.h"
 
 State::State(){
+
 }
 
 void State::setContext(Economy* context){
