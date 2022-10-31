@@ -8,12 +8,22 @@
 #include "WarIndicators.h"
 
 
-///@author Sameet Keshav u21479373
+/** @brief The Concrete class for the Mediator
+    A class that allows for other classes to talk to when key changes are made
+    @author Sameet Keshav u21479373
+    @date October 2022
+    */
+
 class MasterOfCoin : Treasury {
 
 private:
+    /// The Economy that the mediator uses
 	Economy* economy;
+
+    /// The Observer that the mediator uses
 	Raven* observer;
+
+    /// The Strategy the mediator uses
 	Strategy* strategy;
 
 public:

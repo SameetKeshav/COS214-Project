@@ -8,14 +8,28 @@
 #include "Bannerman.h"
 
 
-///@author Sameet Keshav, u21479373
+/** @brief The Concrete class for the Observer
+    A class that watches the Bannerman for any changes that are made
+    @author Sameet Keshav u21479373
+    @date October 2022
+    */
 class sendRaven : Raven {
 
 private:
+
+    /// Amount of food the bannerman has
 	int numFood;
+
+    /// Amount of medical supplies the bannerman has
 	int numMedical;
+
+    /// Amount of medical supplies the bannerman has
 	int numWeapons;
+
+    /// The array of SupplyWagon's used to hold the different types of supplies
 	SupplyWagon** supplies;
+
+    /// The Bannerman subject the Observer watches
 	Bannerman* subject;
 
 public:
