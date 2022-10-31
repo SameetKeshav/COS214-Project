@@ -1,7 +1,7 @@
 #include "Bannerman.h"
 
 
-Bannerman::Bannerman() {
+Bannerman::Bannerman():ravenList() {
 }
 
 string Bannerman::getName() {
