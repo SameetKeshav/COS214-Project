@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['m_0',['m',['../class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891',1,'WarIndicators']]],
+  ['m_0',['m',['../class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b',1,'Bannerman::m()'],['../class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891',1,'WarIndicators::m()']]],
   ['minfavour_1',['minFavour',['../class_strategy.html#ad0b294bb647e8e88cac038804d88acf7',1,'Strategy']]],
   ['minsupplies_2',['minSupplies',['../class_strategy.html#a594bea77d5909198d7f92cd3b4d78efd',1,'Strategy']]],
   ['mybannerman_3',['myBannerman',['../class_strategy.html#a706cf037295e2bffabefb2eb226835a6',1,'Strategy']]],
