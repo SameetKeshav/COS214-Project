@@ -41,7 +41,6 @@ protected:
     /**A list of Raven observers that have been attached to the bannerman object */
     list<Raven*> ravenList;
 
-
     /**Indicates whether or not the bannerman is an assassin */
     bool assassin;
 

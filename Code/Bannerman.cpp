@@ -9,5 +9,4 @@ string Bannerman::getName() {
 }
 
 Bannerman::~Bannerman() {
-
 }
