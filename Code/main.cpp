@@ -14,21 +14,13 @@ using namespace std;
 #include "HistoryBook.h" //caretaker
 #include "Kingdom.h"
 #include "Economy.h"
-#include "Strategy.h"
-#include "BattleField.h"
-#include "Siege.h"
-#include "Assassinate.h"
-#include "Ambush.h"
-#include "State.h"
 #include "HealthyState.h"
 #include "FailedState.h"
 #include "UnstableState.h"
-#include "Bannerman.h"
-#include "Troop.h"
 #include "Commander.h"
 
 //variables;
-/*Kingdom* Dura;
+Kingdom* Dura;
 Kingdom* Preadora;
 
 
@@ -74,7 +66,7 @@ void populateVectors(){
 
     Dura = new Kingdom(DuraEco);
     Preadora = new Kingdom(PreadoraEco);
-    
+
     Dura->add(new Commander("Stratham"));
     Dura->add(new Commander("Trudid"));
     Dura->add(new Commander("Mirefield"));
@@ -87,15 +79,15 @@ void populateVectors(){
     Preadora->add(new Commander("Dry Gulch"));
     Preadora->add(new Commander("Prin"));
 
-} */
+}
 
 /// @brief main functionality for simulation
 /// @return no complications in compilation
 int main(){
 
-    //intro();
-    //populateVectors();
-    
+    intro();
+    populateVectors();
+
 
 
     return 0;
