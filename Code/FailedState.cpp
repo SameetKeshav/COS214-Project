@@ -1,6 +1,7 @@
 #include "FailedState.h"
 
-FailedState::FailedState(Economy* context):State(context) {
+FailedState::FailedState() {
+	context = nullptr;
 }
 
 void FailedState::decreaseCurrency() {
@@ -9,5 +10,9 @@ void FailedState::decreaseCurrency() {
 	{
 		context->SetState();
 	}
+}
+
+void State::setContext(Economy* context){
+	this->context=context;
 }
 

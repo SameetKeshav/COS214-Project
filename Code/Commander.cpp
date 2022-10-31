@@ -1,15 +1,18 @@
 #include "Commander.h"
+#include "MasterOfCoin.h"
 
-Commander::Commander():groundForces() {
-
+//Julianna added and changed constructor
+Commander::Commander(string n) :groundForces() {
+    name = n;
 }
+
 Iterator* Commander::createIterator() {
     return new ConIterator(groundForces);
 }
 
 
 
-void Commander::addBannerman(Bannerman* b) {// TODO - Test
+void Commander::addBannerman(Bannerman* b) {
     groundForces.push_back(b);
 }
 
@@ -45,7 +48,7 @@ void Commander::receiveDamage(int X){
         (*it)->receiveDamage(X);
 }
 
-int Commander::getWeapons() {// TODO - Test
+int Commander::getWeapons() {
     int totalWeapons = 0;
 
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
@@ -83,7 +86,7 @@ void Commander::setMedical(int numMedical){
 }
 
 
-int Commander::getFood() {// TODO - Test
+int Commander::getFood() {
     int totalFood = 0;
 
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
@@ -92,7 +95,7 @@ int Commander::getFood() {// TODO - Test
     return totalFood;
 }
 
-int Commander::getMedical() {// TODO - Test
+int Commander::getMedical() {
     int totalMedical = 0;
 
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
@@ -120,8 +123,14 @@ void Commander::decreaseFavour(){
         (*it)->decreaseFavour();
 }
 
+int Commander::getFavour(){
+    int sum=0;
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        sum+=(*it)->getFavour();
+    return sum;
+}
 
-Commander::~Commander() {// TODO - Test
+Commander::~Commander() {
     for (std::list<Bannerman*>::iterator it = groundForces.begin();it != groundForces.end(); ++it)
         delete *it;
 }
@@ -140,3 +149,27 @@ void Commander::increasePower(int boost) {
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
         (*it)->increasePower(boost);
 }
+
+void Commander::decreasePower(int x){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->decreasePower(x);
+}
+
+//added functions:
+//fixed
+void Commander::setRaven(list<Raven*> r){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->setRaven(r);
+}
+
+//fixed
+void Commander::setMaster(MasterOfCoin* m){
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        (*it)->setMaster(m);
+}
+
+//fixed.
+void Commander::setStrategy(Strategy* s){
+    this->changeStrategy(s);
+}
+

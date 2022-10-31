@@ -1,0 +1,35 @@
+\hypertarget{_master_of_coin_8h_source}{}\doxysection{Master\+Of\+Coin.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MASTEROFCOIN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MASTEROFCOIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Economy.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Raven.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Strategy.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Treasury.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}WarIndicators.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}} : \mbox{\hyperlink{class_treasury}{Treasury}} \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_economy}{Economy}}* economy;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_raven}{Raven}}* observer;}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_strategy}{Strategy}}* strategy;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_master_of_coin}{MasterOfCoin}}(\mbox{\hyperlink{class_economy}{Economy}}* economy, \mbox{\hyperlink{class_raven}{Raven}}* observer, \mbox{\hyperlink{class_strategy}{Strategy}} strategy);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}{notify}}(\mbox{\hyperlink{class_war_indicators}{WarIndicators}} sender);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_master_of_coin_ab90a80f0004b5abdc4a2d632e61a462e}{decreaseCurrency}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_master_of_coin_aebac61b7c8474aa34c5ab24d0a286d99}{manufacture}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37     \mbox{\hyperlink{class_master_of_coin_a250eb3154300bc63cba4261b5e76446b}{\string~MasterOfCoin}}();}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

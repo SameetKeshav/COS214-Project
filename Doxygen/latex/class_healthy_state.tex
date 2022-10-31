@@ -1,0 +1,94 @@
+\hypertarget{class_healthy_state}{}\doxysection{Healthy\+State Class Reference}
+\label{class_healthy_state}\index{HealthyState@{HealthyState}}
+
+
+A concrete state class. A class that is one of the alternative concrete states for \mbox{\hyperlink{class_economy}{Economy}} of \mbox{\hyperlink{class_kingdom}{Kingdom}}.  
+
+
+
+
+{\ttfamily \#include $<$Healthy\+State.\+h$>$}
+
+Inheritance diagram for Healthy\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_healthy_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_healthy_state_a290f38ea1ce2f6fcd54a549a4a890f42}\label{class_healthy_state_a290f38ea1ce2f6fcd54a549a4a890f42}} 
+{\bfseries Healthy\+State} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. initializes context to null. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_healthy_state_abdfa8ce236a9766bac7dd8ed3bf316e2}{set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$\mbox{\hyperlink{class_state_a00fd56d8caa101c7ef2488b914ddffc9}{context}})
+\item 
+void \mbox{\hyperlink{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}{decrease\+Currency}} ()
+\item 
+virtual \mbox{\hyperlink{class_state}{State}} $\ast$ \mbox{\hyperlink{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}{get\+Demotion\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A concrete state class. A class that is one of the alternative concrete states for \mbox{\hyperlink{class_economy}{Economy}} of \mbox{\hyperlink{class_kingdom}{Kingdom}}. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}\label{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}} 
+\index{HealthyState@{HealthyState}!decreaseCurrency@{decreaseCurrency}}
+\index{decreaseCurrency@{decreaseCurrency}!HealthyState@{HealthyState}}
+\doxysubsubsection{\texorpdfstring{decreaseCurrency()}{decreaseCurrency()}}
+{\footnotesize\ttfamily void Healthy\+State\+::decrease\+Currency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state \end{DoxyRefDesc}
+
+
+Implements \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State}}.
+
+\mbox{\Hypertarget{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}\label{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}} 
+\index{HealthyState@{HealthyState}!getDemotionState@{getDemotionState}}
+\index{getDemotionState@{getDemotionState}!HealthyState@{HealthyState}}
+\doxysubsubsection{\texorpdfstring{getDemotionState()}{getDemotionState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_state}{State}} $\ast$ Healthy\+State\+::get\+Demotion\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]gets lower level state of economy \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+concrete \mbox{\hyperlink{class_state}{State}} of \mbox{\hyperlink{class_economy}{Economy}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_state_aa901c36d20da2a396e4fa27bf8576eec}{State}}.
+
+\mbox{\Hypertarget{class_healthy_state_abdfa8ce236a9766bac7dd8ed3bf316e2}\label{class_healthy_state_abdfa8ce236a9766bac7dd8ed3bf316e2}} 
+\index{HealthyState@{HealthyState}!setContext@{setContext}}
+\index{setContext@{setContext}!HealthyState@{HealthyState}}
+\doxysubsubsection{\texorpdfstring{setContext()}{setContext()}}
+{\footnotesize\ttfamily void Healthy\+State\+::set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_economy}{Economy}} $\ast$}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]sets context variable. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em context} & -\/ \mbox{\hyperlink{class_economy}{Economy}} pointer to player\textquotesingle{}s \mbox{\hyperlink{class_economy}{Economy}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_state_ae8c1972e00c66761620cf9c3d4d8cb49}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Healthy\+State.\+h\item 
+Healthy\+State.\+cpp\end{DoxyCompactItemize}

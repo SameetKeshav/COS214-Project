@@ -1,0 +1,33 @@
+\hypertarget{_strategy_8h_source}{}\doxysection{Strategy.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STRATEGY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STRATEGY\_H}}
+\DoxyCodeLine{3 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Bannerman.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}WarIndicators.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}MasterOfCoin.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Kingdom.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_strategy}{Strategy}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_war_indicators}{WarIndicators}}  \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_kingdom}{Kingdom}}* \mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{myKingdom}};}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_kingdom}{Kingdom}}* \mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemyKingdom}};}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{myBannerman}};}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemyBannerman}};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_strategy_a26297b731dd6b1bdc3a065863da69138}{strategy}};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{minFavour}};}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_strategy_a594bea77d5909198d7f92cd3b4d78efd}{minSupplies}};}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_strategy}{Strategy}}(\mbox{\hyperlink{class_kingdom}{Kingdom}}* \mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{myKingdom}},\mbox{\hyperlink{class_kingdom}{Kingdom}}* \mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemyKingdom}},\mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{myBannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemyBannerman}},\textcolor{keywordtype}{string} name,\textcolor{keywordtype}{int} min,\textcolor{keywordtype}{int} \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{minFavour}});}
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{attack}}(\mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{myBannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemyBannerman}})=0;}
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_strategy_a310550043f6b81592cef05ea9241144f}{getStrategyName}}();}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}{getMyBannerman}}();}
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_bannerman}{Bannerman}}* \mbox{\hyperlink{class_strategy_a88ed4a64031030f3a9a30652b01debe6}{getEnemyBannerman}}();}
+\DoxyCodeLine{57     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}{\string~Strategy}}();}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

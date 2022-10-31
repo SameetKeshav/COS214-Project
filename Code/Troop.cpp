@@ -58,6 +58,10 @@ void Troop::decreaseFavour() {
     this->favour -=1;
 }
 
+int Troop::getFavour(){
+    return favour;
+}
+
 void Troop::decreaseWeapons(){
     this->numWeapons-=1;
 }
@@ -95,6 +99,16 @@ int Troop::getMedical(){
     return this->numMedical;
 }
 
+void Troop::setRaven(list<Raven*> r){
+    this->ravenList = r;
+}
+void Troop::setMaster(MasterOfCoin* m){
+    this->m = m;
+}
+
+void Troop::decreasePower(int x){
+    this->damage -= x;
+}
 Troop::~Troop() {
 
 }

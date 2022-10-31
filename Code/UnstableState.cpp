@@ -1,6 +1,7 @@
 #include "UnstableState.h"
 
-UnstableState::UnstableState(Economy* context):State(context) {
+UnstableState::UnstableState() {
+	context = nullptr;
 }
 
 void UnstableState::decreaseCurrency() {
@@ -11,6 +12,12 @@ void UnstableState::decreaseCurrency() {
 	}
 }
 
+void State::setContext(Economy* context){
+	this->context=context;
+}
+
 State* UnstableState::getDemotionState(){
-	return new FailedState(context);
+	State* h = new FailedState();
+	h->setContext(context);
+	return h;
 }

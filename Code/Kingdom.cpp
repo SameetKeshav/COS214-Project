@@ -11,7 +11,7 @@ void Kingdom::remove(Bannerman* b){
 		for (vector<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
 		{
 			//fix this, add unique IDs to Bannerman, should be initialized to -1
-			if ((*it)->getID()==b->getID())
+			if ((*it)->getName()==b->getName())
 			{
 				bannerman.erase(it);
 			}

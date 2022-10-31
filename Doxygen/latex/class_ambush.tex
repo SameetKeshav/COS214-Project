@@ -1,0 +1,97 @@
+\hypertarget{class_ambush}{}\doxysection{Ambush Class Reference}
+\label{class_ambush}\index{Ambush@{Ambush}}
+
+
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman.  
+
+
+
+
+{\ttfamily \#include $<$Ambush.\+h$>$}
+
+Inheritance diagram for Ambush\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ambush}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}{Ambush}} (int stealth, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
+\item 
+bool \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
+\item 
+\mbox{\hyperlink{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}{$\sim$\+Ambush}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}\label{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}} 
+\index{Ambush@{Ambush}!Ambush@{Ambush}}
+\index{Ambush@{Ambush}!Ambush@{Ambush}}
+\doxysubsubsection{\texorpdfstring{Ambush()}{Ambush()}}
+{\footnotesize\ttfamily Ambush\+::\+Ambush (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em min} & -\/ minimum supplies for food,weapons and medicine \\
+\hline
+{\em min\+Favour} & -\/ minimum favour below which bannerman change allegiances \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}\label{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}} 
+\index{Ambush@{Ambush}!````~Ambush@{$\sim$Ambush}}
+\index{````~Ambush@{$\sim$Ambush}!Ambush@{Ambush}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ambush()}{~Ambush()}}
+{\footnotesize\ttfamily Ambush\+::$\sim$\+Ambush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]destructor. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ambush_a51193e1b97edc379fb3c79918132ea15}\label{class_ambush_a51193e1b97edc379fb3c79918132ea15}} 
+\index{Ambush@{Ambush}!attack@{attack}}
+\index{attack@{attack}!Ambush@{Ambush}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily bool Ambush\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Bannerman} & -\/ attacking bannerman object. \\
+\hline
+{\em enemy\+Bannerman} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} object being attacked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+battle result as a boolean with true implying the attacking bannerman object won and false implying the opposite 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ambush.\+h\item 
+Ambush.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{class_kingdom}{}\doxysection{Kingdom Class Reference}
+\label{class_kingdom}\index{Kingdom@{Kingdom}}
+
+
+A \mbox{\hyperlink{class_kingdom}{Kingdom}} class that has all the fighting \mbox{\hyperlink{class_bannerman}{Bannerman}} and \mbox{\hyperlink{class_economy}{Economy}}.  
+
+
+
+
+{\ttfamily \#include $<$Kingdom.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kingdom_a3dd1e0d8bd27b686643638ca1788aa7d}{Kingdom}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$economy, vector$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ bannerman)
+\begin{DoxyCompactList}\small\item\em Constructor. initializes \mbox{\hyperlink{class_economy}{Economy}} pointer and vector list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kingdom_ada1b6abfa5d04a76ff3f966e394f5dbe}{remove}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em removes specified \mbox{\hyperlink{class_bannerman}{Bannerman}} from vector list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kingdom_a594d72649f3d9f10f910f31bf6dbd81a}{add}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em adds specified \mbox{\hyperlink{class_bannerman}{Bannerman}} into vector list. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_kingdom_a434e87f15f449ee199ab3a1ddfe2f0f6}{$\sim$\+Kingdom}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_kingdom}{Kingdom}} class that has all the fighting \mbox{\hyperlink{class_bannerman}{Bannerman}} and \mbox{\hyperlink{class_economy}{Economy}}. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kingdom_a3dd1e0d8bd27b686643638ca1788aa7d}\label{class_kingdom_a3dd1e0d8bd27b686643638ca1788aa7d}} 
+\index{Kingdom@{Kingdom}!Kingdom@{Kingdom}}
+\index{Kingdom@{Kingdom}!Kingdom@{Kingdom}}
+\doxysubsubsection{\texorpdfstring{Kingdom()}{Kingdom()}}
+{\footnotesize\ttfamily Kingdom\+::\+Kingdom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_economy}{Economy}} $\ast$}]{economy,  }\item[{vector$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$}]{bannerman }\end{DoxyParamCaption})}
+
+
+
+Constructor. initializes \mbox{\hyperlink{class_economy}{Economy}} pointer and vector list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em economy} & -\/ \mbox{\hyperlink{class_economy}{Economy}} pointer to player\textquotesingle{}s \mbox{\hyperlink{class_economy}{Economy}} object. \\
+\hline
+{\em bannerman} & -\/ vector list of \mbox{\hyperlink{class_bannerman}{Bannerman}} objects. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_kingdom_a434e87f15f449ee199ab3a1ddfe2f0f6}\label{class_kingdom_a434e87f15f449ee199ab3a1ddfe2f0f6}} 
+\index{Kingdom@{Kingdom}!````~Kingdom@{$\sim$Kingdom}}
+\index{````~Kingdom@{$\sim$Kingdom}!Kingdom@{Kingdom}}
+\doxysubsubsection{\texorpdfstring{$\sim$Kingdom()}{~Kingdom()}}
+{\footnotesize\ttfamily Kingdom\+::$\sim$\+Kingdom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]destructor. deallocates all pointers of this class \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kingdom_a594d72649f3d9f10f910f31bf6dbd81a}\label{class_kingdom_a594d72649f3d9f10f910f31bf6dbd81a}} 
+\index{Kingdom@{Kingdom}!add@{add}}
+\index{add@{add}!Kingdom@{Kingdom}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Kingdom\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+adds specified \mbox{\hyperlink{class_bannerman}{Bannerman}} into vector list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} that has defected from enemy\+Kingdom \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_kingdom_ada1b6abfa5d04a76ff3f966e394f5dbe}\label{class_kingdom_ada1b6abfa5d04a76ff3f966e394f5dbe}} 
+\index{Kingdom@{Kingdom}!remove@{remove}}
+\index{remove@{remove}!Kingdom@{Kingdom}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Kingdom\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+removes specified \mbox{\hyperlink{class_bannerman}{Bannerman}} from vector list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} that has lost a fight or defected to enemy\+Kingdom. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kingdom.\+h\item 
+Kingdom.\+cpp\end{DoxyCompactItemize}

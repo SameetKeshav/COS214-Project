@@ -1,10 +1,9 @@
 #ifndef BANNERMAN_H
 #define BANNERMAN_H
 #include "Strategy.h"
-#include "Iterator.h"
 #include "MasterOfCoin.h"
-#include "WarIndicators.h"
 #include "Raven.h"
+#include "WarIndicators.h"
 #include "WarTheatre.h"
 #include <string>
 #include <list>
@@ -15,7 +14,9 @@
     @author Thapelo Thoka
     @date October 2022
     */
-class Bannerman{
+
+class Strategy;
+class Bannerman: public WarIndicators {
 
 protected:
 
@@ -48,9 +49,6 @@ protected:
 
     /**The attack strategy the bannerman uses */
     Strategy* strategy;
-
-    /**The war theatre at which the bannerman fights */
-    WarTheatre* warZone;
 
     /**The health points of the bannerman */
     int HP;
@@ -115,10 +113,17 @@ public:
     */
     virtual int getDamage() = 0;
 
+
     /**@brief Abstract. Increases the damage capability of the bannerman.
 * @param boost - the number by which to increase damage
      * */
+
     virtual void receiveDamage(int boost) = 0;
+
+    /** @brief Abstract. decreases the damage capability of the bannerman.
+ * @param x - the number by which to decrease damage.
+*/
+    virtual void decreasePower(int x) = 0;
 
     /**@brief Abstract. Decreases the number of weapons that the bannerman has */
     virtual void decreaseWeapons() = 0;
@@ -128,11 +133,6 @@ public:
 
     /**@brief Abstract. Decreases the number of medical supplies that the bannerman has */
     virtual void decreaseMedical() = 0;
-
-    /**@brief Accessor. that returns the WarTheatre where the bannerman engages in battle.
-* @return The WarTheatre of the bannerman.
-*/
-    WarTheatre* getWarZone(); // use createIterator to get this
 
     /**@brief Abstract. Accessor that returns the number of weapons of the bannerman.
 * @return The numWeapons of the bannerman.
@@ -164,6 +164,16 @@ public:
     @param numMedical - The new numMedical the component should have
     */
     virtual void setMedical(int numMedical) = 0;
+
+    /** @brief Abstract. Assigns a list of Raven Observers to the bannerman's ravenList.
+ * @param r - the list of Raven Observer to attach.
+*/
+    virtual void setRaven(list<Raven*> r) = 0;
+
+    /** @brief Abstract. Assigns a MasterofCoin mediator to ensure that the army has the supplies it needs.
+* @param m - the new MasterOfCoin mediator.
+*/
+    virtual void setMaster(MasterOfCoin* m) = 0;
 
     /**@brief Default destructor.
 */

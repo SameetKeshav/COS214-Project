@@ -1,0 +1,77 @@
+\hypertarget{class_failed_state}{}\doxysection{Failed\+State Class Reference}
+\label{class_failed_state}\index{FailedState@{FailedState}}
+
+
+A concrete state class. A class that is one of the alternative concrete states for \mbox{\hyperlink{class_economy}{Economy}} of \mbox{\hyperlink{class_kingdom}{Kingdom}}.  
+
+
+
+
+{\ttfamily \#include $<$Failed\+State.\+h$>$}
+
+Inheritance diagram for Failed\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_failed_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_failed_state_a7bfe4fc02a6e47edf07e0d721a03a3ea}\label{class_failed_state_a7bfe4fc02a6e47edf07e0d721a03a3ea}} 
+{\bfseries Failed\+State} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. initializes context to null. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_failed_state_acc9cac035280bef2ba36d7049b422956}{set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$\mbox{\hyperlink{class_state_a00fd56d8caa101c7ef2488b914ddffc9}{context}})
+\item 
+void \mbox{\hyperlink{class_failed_state_afaaef228a607bb585a980642985d18a2}{decrease\+Currency}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A concrete state class. A class that is one of the alternative concrete states for \mbox{\hyperlink{class_economy}{Economy}} of \mbox{\hyperlink{class_kingdom}{Kingdom}}. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_failed_state_afaaef228a607bb585a980642985d18a2}\label{class_failed_state_afaaef228a607bb585a980642985d18a2}} 
+\index{FailedState@{FailedState}!decreaseCurrency@{decreaseCurrency}}
+\index{decreaseCurrency@{decreaseCurrency}!FailedState@{FailedState}}
+\doxysubsubsection{\texorpdfstring{decreaseCurrency()}{decreaseCurrency()}}
+{\footnotesize\ttfamily void Failed\+State\+::decrease\+Currency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state \end{DoxyRefDesc}
+
+
+Implements \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State}}.
+
+\mbox{\Hypertarget{class_failed_state_acc9cac035280bef2ba36d7049b422956}\label{class_failed_state_acc9cac035280bef2ba36d7049b422956}} 
+\index{FailedState@{FailedState}!setContext@{setContext}}
+\index{setContext@{setContext}!FailedState@{FailedState}}
+\doxysubsubsection{\texorpdfstring{setContext()}{setContext()}}
+{\footnotesize\ttfamily void Failed\+State\+::set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_economy}{Economy}} $\ast$}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000010}{Todo}}]sets context variable. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em context} & -\/ \mbox{\hyperlink{class_economy}{Economy}} pointer to player\textquotesingle{}s \mbox{\hyperlink{class_economy}{Economy}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_state_ae8c1972e00c66761620cf9c3d4d8cb49}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Failed\+State.\+h\item 
+Failed\+State.\+cpp\end{DoxyCompactItemize}

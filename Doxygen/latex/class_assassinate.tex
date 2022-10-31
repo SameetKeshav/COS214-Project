@@ -1,0 +1,97 @@
+\hypertarget{class_assassinate}{}\doxysection{Assassinate Class Reference}
+\label{class_assassinate}\index{Assassinate@{Assassinate}}
+
+
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman.  
+
+
+
+
+{\ttfamily \#include $<$Assassinate.\+h$>$}
+
+Inheritance diagram for Assassinate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_assassinate}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_assassinate_ae4a924a40a5433112ff206bc3becff90}{Assassinate}} (int stealth, bool alive, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
+\item 
+bool \mbox{\hyperlink{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
+\item 
+\mbox{\hyperlink{class_assassinate_a3f7d6fa4b38fb46cb63fbcc9509c0730}{$\sim$\+Assassinate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A concrete strategy class. A class that provides an alternative strategy for how \mbox{\hyperlink{class_bannerman}{Bannerman}} will fight enemy\+Bannerman. 
+
+\begin{DoxyAuthor}{Author}
+Morgan Bentley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_assassinate_ae4a924a40a5433112ff206bc3becff90}\label{class_assassinate_ae4a924a40a5433112ff206bc3becff90}} 
+\index{Assassinate@{Assassinate}!Assassinate@{Assassinate}}
+\index{Assassinate@{Assassinate}!Assassinate@{Assassinate}}
+\doxysubsubsection{\texorpdfstring{Assassinate()}{Assassinate()}}
+{\footnotesize\ttfamily Assassinate\+::\+Assassinate (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{bool}]{alive,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}\textquotesingle{}s assassin. \\
+\hline
+{\em min} & -\/ minimum supplies for food,weapons and medicine \\
+\hline
+{\em min\+Favour} & -\/ minimum favour below which \mbox{\hyperlink{class_bannerman}{Bannerman}} change allegiances \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_assassinate_a3f7d6fa4b38fb46cb63fbcc9509c0730}\label{class_assassinate_a3f7d6fa4b38fb46cb63fbcc9509c0730}} 
+\index{Assassinate@{Assassinate}!````~Assassinate@{$\sim$Assassinate}}
+\index{````~Assassinate@{$\sim$Assassinate}!Assassinate@{Assassinate}}
+\doxysubsubsection{\texorpdfstring{$\sim$Assassinate()}{~Assassinate()}}
+{\footnotesize\ttfamily Assassinate\+::$\sim$\+Assassinate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]destructor. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}\label{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}} 
+\index{Assassinate@{Assassinate}!attack@{attack}}
+\index{attack@{attack}!Assassinate@{Assassinate}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily bool Assassinate\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]makes assassin of attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} try to kill enemy\+Bannerman \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Bannerman} & -\/ attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} object. \\
+\hline
+{\em enemy\+Bannerman} & -\/ \mbox{\hyperlink{class_bannerman}{Bannerman}} object being attacked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+battle result as a boolean with true implying the attacking \mbox{\hyperlink{class_bannerman}{Bannerman}} object won and false implying the opposite 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Assassinate.\+h\item 
+Assassinate.\+cpp\end{DoxyCompactItemize}
