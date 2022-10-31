@@ -9,8 +9,7 @@
 #include <list>
 
 
-/** @brief An abstract component class.
-    A class that provides the interface with which the client interacts with the country's army.
+/** @brief An abstract component class. A class that provides the interface with which the client interacts with the country's army.
     @author Thapelo Thoka
     @date October 2022
     */
