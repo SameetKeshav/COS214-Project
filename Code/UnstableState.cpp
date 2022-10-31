@@ -26,4 +26,8 @@ State* UnstableState::getDemotionState(){
 
 string UnstableState::getState(){
 	return "is Unstable";
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

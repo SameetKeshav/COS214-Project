@@ -1,11 +1,18 @@
 #include "Troop.h"
 
+<<<<<<< Updated upstream
 Troop::Troop(int size, string n): Bannerman(n){
     name = n;
     this->size = size;
     name = n;
     srand(time(0));
     HP = 50 + (rand() % 100);
+=======
+Troop::Troop(string n, int size): Bannerman(n){
+    name = n;
+    srand(time(0));
+    HP = size;
+>>>>>>> Stashed changes
     srand(time(0));
     damage = 7 + (rand() % 25);
     favour = 15;
@@ -23,7 +30,11 @@ void Troop::attach(Raven* o){
 }
 
 void Troop::detach(Raven* o){
-    this->ravenList.remove(o);
+    for (std::vector<Raven*>::iterator it = ravenList.begin(); it != ravenList.end(); ++it){
+        if (*it == o){
+            ravenList.erase(it);
+        }
+    }
 }
 
 void Troop::increasePower(int boost){
@@ -31,7 +42,7 @@ void Troop::increasePower(int boost){
 }
 
 int Troop::getSize() {
-    return this->size;
+    return this->HP;
 }
 void Troop::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
     strategy->attack(myBannerman,enemyBannerman);

@@ -1,6 +1,6 @@
 #include "ConIterator.h"
 
-ConIterator::ConIterator(list<Bannerman*> X) {
+ConIterator::ConIterator(vector<Bannerman*> X) {
     armyList = X;
     it = X.begin();
 }

@@ -38,7 +38,7 @@ protected:
     int numMedical;
 
     /**A list of Raven observers that have been attached to the bannerman object */
-    list<Raven*> ravenList;
+    vector<Raven*> ravenList;
 
     /**Indicates whether or not the bannerman is an assassin */
     bool assassin;

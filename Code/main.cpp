@@ -19,6 +19,14 @@ using namespace std;
 #include "UnstableState.h"
 #include "Commander.h"
 #include "Troop.h"
+<<<<<<< Updated upstream
+=======
+#include "Ambush.h"
+#include "BattleField.h"
+#include "Siege.h"
+#include "Assassinate.h"
+#include "Location.h"
+>>>>>>> Stashed changes
 
 //variables;
 Kingdom* Dura;
@@ -26,6 +34,13 @@ Economy* DuraEco;
 Kingdom* Preadora;
 Economy* PreadoraEco;
 bool attack = true;
+<<<<<<< Updated upstream
+=======
+Bannerman* enemy;
+Bannerman* fighter;
+string strategy;
+Strategy* strat;
+>>>>>>> Stashed changes
 
 
 /// @brief collapsable function for into text generation
@@ -89,6 +104,92 @@ void surrender(){
     cout<<"You have raised the white flag. Preadora is victorious."<<endl;
 }
 
+<<<<<<< Updated upstream
+=======
+void chooseEnemy(){
+    vector<Bannerman*> PreadoraBannermen = Preadora->getKingdom();
+    cout<<"Chose which enemy you would like to attack:"<<endl;
+    for (int i=0; i<PreadoraBannermen.size(); i++){
+        cout<< i + ": " + PreadoraBannermen[i]->getName()<<endl;
+        cout<<"HP: " + PreadoraBannermen[i]->getHP()<<endl;
+        vector<Bannerman*> PreadoraTroops = PreadoraBannermen[i]->getTroops();
+        cout<<"HP of Squadren 1: " + PreadoraTroops[0]->getHP()<<endl;
+        cout<<"HP of Squadren 2: " + PreadoraTroops[1]->getHP()<<endl;
+        cout<<"Damage that this Bannerman can inflict: "<<PreadoraBannermen[i]->getDamage()<<endl<<endl;
+    }
+    int c;
+    cin>>c;
+    if (c > PreadoraBannermen.size() || c < 0){
+        chooseEnemy();
+    }
+    enemy = PreadoraBannermen[c];
+}
+
+void chooseFighter(){
+    vector<Bannerman*> DuraBannermen = Dura->getKingdom();
+    cout<<"Chose your fighter"<<endl;
+    for (int i=0; i<DuraBannermen.size(); i++){
+        cout<< i + ": " + DuraBannermen[i]->getName()<<endl;
+        cout<<"HP: " + DuraBannermen[i]->getHP<<endl;
+        vector<Bannerman*> DuraTroops = DuraBannermen[i].getTroops();
+        cout<<"HP of Squadren 1: " + DuraTroops[0]->getHP()<<endl;
+        cout<<"HP of Squadren 2: " + DuraTroops[1]->getHP()<<endl;
+        cout<<"Damage that this Bannerman can inflict: "<<DuraBannermen[i]->getDamage()<<endl<<endl;
+    }
+    int a;
+    cin>>a;
+    if (a > DuraBannermen.size() || a < 0){
+        chooseFighter();
+    }
+    fighter = DuraBannermen[a];
+}
+
+
+
+void goAttack(){
+    cout<<"Choose your strategy of attack: "<<endl;
+    cout<<"1: Battle Field      2: Seige      3: Ambush      4: Send Assassin"<<endl;
+    int b;
+    cin>>b;
+
+    switch (b)
+    {
+    case 1:
+        strategy = " go to the Battle Field";
+        strat = new BattleField(10, 5);
+        break;
+
+    case 2:
+        strategy = " stage a Seige";
+        srand(time(0));
+        int stealth = 10 + (rand() % 100);
+        strat = new Siege(stealth, 10, 5);
+        break;
+
+    case 3:
+        strategy = " Ambush the enemy";
+        srand(time(0));
+        int stealth = 10 + (rand() % 100);
+        strat = new Ambush(stealth, 10, 5);
+        break;
+
+    case 4:
+        strategy = " send an Assassin";
+        srand(time(0));
+        int stealth = 10 + (rand() % 100);
+        strat = new Assassinate(stealth, true, 10, 5);
+        break;
+
+    default:
+        goAttack();
+    }
+
+    WarTheatre* loc = new Location();
+    loc->sendScout();
+
+}
+
+>>>>>>> Stashed changes
 void WarLoop(){
     while (attack){
         cout<<"Here is the latest news from your council:"<<endl;
@@ -100,7 +201,13 @@ void WarLoop(){
         char choice;
         cin>>choice;
         if (choice == 'y'){
+<<<<<<< Updated upstream
 
+=======
+            chooseEnemy();
+            chooseFighter();
+            goAttack();
+>>>>>>> Stashed changes
         }if (choice == 'n'){
             cout<<"By choosing not to attack Preadora you will have to raise the white flag of surender."<<endl<<"Do you agree?(y/n)"<<endl;
             char surr;
@@ -119,10 +226,17 @@ void WarLoop(){
 /// @return no complications in compilation
 int main(){
 
+<<<<<<< Updated upstream
     intro();
     populateVectors();
     WarLoop();
 
+=======
+    // intro();
+    // populateVectors();
+    // WarLoop();
+    cout<<"success"<<endl;
+>>>>>>> Stashed changes
 
     return 0;
 }

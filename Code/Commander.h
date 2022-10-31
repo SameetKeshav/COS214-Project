@@ -17,7 +17,7 @@ class Commander : public Bannerman {
 private:
     /**@brief list of bannerman components.
 */
-    list<Bannerman*> groundForces;
+    vector<Bannerman*> groundForces;
     string name;
 
 public:
@@ -149,9 +149,16 @@ public:
     
 
     //Julianna added:
+<<<<<<< Updated upstream
     void setRaven(list<Raven*> r);
+=======
+    void setRaven(vector<Raven*> r);
+>>>>>>> Stashed changes
     void setMaster(MasterOfCoin* m);
     void setStrategy(Strategy* s);
+    vector<Bannerman*> getTroops();
+    int getHP();
+    void testing();
 };
 
 #endif

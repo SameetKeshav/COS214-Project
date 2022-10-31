@@ -24,4 +24,8 @@ State* HealthyState::getDemotionState(){
 
 string HealthyState::getState(){
 	return "is Healthy";
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

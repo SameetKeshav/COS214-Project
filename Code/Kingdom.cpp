@@ -31,6 +31,7 @@ Kingdom::~Kingdom(){
 }
 
 vector<Bannerman*> Kingdom::getKingdom(){
+<<<<<<< Updated upstream
 	return bannermen;
 }
 
@@ -42,6 +43,19 @@ Bannerman* Kingdom::getAlly(string n){
 	if (bannermen.size()>0)
 	{
 		for (vector<Bannerman*>::iterator it = bannermen.begin(); it !=bannermen.end(); it++)
+=======
+	return bannerman;
+}
+
+int Kingdom::getSize(){
+	return bannerman.size();
+}
+
+Bannerman* Kingdom::getAlly(string n){
+	if (bannerman.size()>0)
+	{
+		for (vector<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
+>>>>>>> Stashed changes
 		{
 			if ((*it)->getName()==n)
 			{
@@ -49,5 +63,9 @@ Bannerman* Kingdom::getAlly(string n){
 			}
 		}
 	}
+<<<<<<< Updated upstream
 }
 
+=======
+}
+>>>>>>> Stashed changes
