@@ -1,5 +1,5 @@
 #include "Factory.h"
-
+using namespace std;
 void Factory::operation() {
     supply=make();
 }
@@ -9,5 +9,9 @@ ArmySupplies* Factory::getSupply() {
 }
 
 Factory::~Factory() {
-    delete supply;
+    if(supply){
+        delete supply;
+        supply=NULL;
+        cout<<"Deleted!!!"<<endl;
+    }
 }

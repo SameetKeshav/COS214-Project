@@ -2,13 +2,11 @@
 #define MEDICALSUPP_H
 #include "ArmySupplies.h"
 
-class MedicalSupp : ArmySupplies {
+class MedicalSupp : public ArmySupplies {
 
 
 public:
-    int getAmount() {
-        return 50;
-    }
+    int getAmount();
 };
 
 #endif

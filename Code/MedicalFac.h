@@ -3,14 +3,12 @@
 #include "Factory.h"
 #include "ArmySupplies.h"
 #include "MedicalSupp.h"
-class MedicalFac : Factory {
-
+class MedicalFac : public Factory {
 
 public:
-    /// @brief Medical Factory makes Medical supplies.
-    /// @return returns the supplies the Medical Factory just manufactured
-    /// @author Ronin Brookes 19069686
-    ArmySupplies* make() ;
+    ArmySupplies* make();
+    ~MedicalFac();
 };
 
 #endif
+

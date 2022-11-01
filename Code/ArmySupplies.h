@@ -3,9 +3,8 @@
 
 class ArmySupplies {
 
-
 public:
-	virtual int getAmount() = 0;
+    virtual int getAmount() = 0;
 };
 
 #endif

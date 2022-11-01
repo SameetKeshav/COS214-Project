@@ -1,6 +1,9 @@
 #include "FoodFac.h"
 
 ArmySupplies* FoodFac::make() {
-    ArmySupplies supplies = new FoodSupp();
+    cout<<"Food is being Manufactured"<<endl;
+    ArmySupplies* supplies = new FoodSupp();
     return supplies;
+}
+FoodFac::~FoodFac(){
 }

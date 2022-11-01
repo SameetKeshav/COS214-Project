@@ -2,13 +2,10 @@
 #define FOODSUPP_H
 #include "ArmySupplies.h"
 
-class FoodSupp : ArmySupplies {
+class FoodSupp : public ArmySupplies {
 
-
-public:
-	 int getAmount() {
-        return 50;
-    }
+    int getAmount();
 };
 
 #endif
+

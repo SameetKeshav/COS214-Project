@@ -4,12 +4,14 @@
 #include "SupplyWagon.h"
 #include "ArmySupplies.h"
 #include "MedicalSupp.h"
-class MedicalWagon : SupplyWagon {
+class MedicalWagon : public SupplyWagon {
 
 public:
-    /// @brief Deletes the alocated memory
-    /// @author Ronin Brookes 19069686
-    ~MedicalWagon()
+    void setSup(ArmySupplies* sup);
+    SupplyWagon* clone();
+    ArmySupplies* getSupplies();
+    ArmySupplies* supp;
+    ~MedicalWagon();
 };
 
 #endif
