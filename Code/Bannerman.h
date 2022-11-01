@@ -180,6 +180,7 @@ public:
     virtual int getFavour() = 0;
     /**@brief Default destructor.
 */
+
     ~Bannerman();
 };
 
