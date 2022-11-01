@@ -15,3 +15,12 @@ void MedicalWagon::setSup(ArmySupplies* sup){
 ArmySupplies* MedicalWagon::getSupplies() {
     return supp;
 }
+
+MedicalWagon::~MedicalWagon() {
+    //cout<<supp<<endl;
+    if(supp!=NULL){
+        delete supp;
+        supp=NULL;
+        //cout<<"Deleted Medical Wagon"<<endl;
+    }
+}

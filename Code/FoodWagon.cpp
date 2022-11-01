@@ -16,9 +16,10 @@ ArmySupplies* FoodWagon::getSupplies() {
     return supp;
 }
 FoodWagon::~FoodWagon() {
+    //cout<<supp<<endl;
     if(supp!=NULL){
         delete supp;
-        cout<<"Deleted Supplies"<<endl;
+        supp=NULL;
+        //cout<<"Deleted Food Wagon"<<endl;
     }
-    cout<<"Destructor called"<<endl;
 }

@@ -16,3 +16,11 @@ ArmySupplies* WeaponWagon::getSupplies() {
     return supp;
 }
 
+WeaponWagon::~WeaponWagon() {
+    //cout<<supp<<endl;
+    if(supp!=NULL){
+        delete supp;
+        supp=NULL;
+       // cout<<"Deleted Weapon Wagon"<<endl;
+    }
+}

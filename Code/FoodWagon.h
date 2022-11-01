@@ -11,7 +11,7 @@ public:
     void setSup(ArmySupplies* sup);
     SupplyWagon* clone();
     ArmySupplies* getSupplies();
-    ArmySupplies* supp;
+    ArmySupplies* supp=NULL;
     ~FoodWagon();
 };
 
