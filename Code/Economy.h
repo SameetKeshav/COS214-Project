@@ -6,6 +6,7 @@
 class Economy :public WarIndicators {
 	
 private:
+	/**state of economy**/
 	State* state;
 	int currency;
 
