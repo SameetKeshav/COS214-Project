@@ -1,6 +1,6 @@
 #ifndef BANNERMAN_H
 #define BANNERMAN_H
-#include "Strategy.h"
+
 #include "MasterOfCoin.h"
 #include "Raven.h"
 #include "WarIndicators.h"
