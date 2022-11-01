@@ -13,6 +13,11 @@ void Economy::SetState(){
 
 void Economy::decreaseCurrency(){
 	state->decreaseCurrency();
+	if (currency>0)
+	{
+		m->notify(this);
+	}
+	
 }
 
 int Economy::getCurrency(){
