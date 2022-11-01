@@ -6,7 +6,7 @@ using namespace std;
 #include "State.h"
 class State;
 //circular dependency with state
-class Economy {//:public WarIndicators {
+class Economy :public WarIndicators {
 	
 private:
 	/**state of economy**/
