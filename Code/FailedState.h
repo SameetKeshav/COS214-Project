@@ -8,7 +8,7 @@
     @author Morgan Bentley
     @date October 2022
     */
-class FailedState : public State {
+class FailedState :public State {
 
 
 public:

@@ -13,3 +13,5 @@ public:
     /// The Pure Virtual function for the update method that the concrete class uses
 	virtual void update() = 0;
 };
+
+#endif
