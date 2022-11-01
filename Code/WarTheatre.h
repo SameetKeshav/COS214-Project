@@ -1,6 +1,7 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
 
+#include "Strategy.h"
 using namespace std;
 
 /**@brief Abstract object.

@@ -6,7 +6,7 @@
     @author Sameet Keshav u21479373
     @date October 2022
     */
-
+#include "WarIndicators.h"
 class Treasury {
 
 
