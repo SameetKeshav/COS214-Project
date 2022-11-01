@@ -18,6 +18,9 @@ public:
 	/** @todo decreases Economy currency and then checks if the conditions are sufficient for
 	 * the economy to downgrade to a lower state**/
 	void decreaseCurrency();
+	/// @brief tells what the state of the economy is
+	/// @return returns a string that says in text what the state is
+	string getState();
 };
 
 #endif

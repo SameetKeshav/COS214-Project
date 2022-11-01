@@ -1,14 +1,13 @@
 #include "Kingdom.h"
 
-Kingdom::Kingdom(Economy* economy,vector<Bannerman*> bannerman){
-	this->bannerman=bannerman;
+Kingdom::Kingdom(Economy* economy){
 	this->economy=economy;
 }
 
 void Kingdom::remove(Bannerman* b){
 	if (bannerman.size()>0)
 	{
-		for (vector<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
+		for (list<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
 		{
 			//fix this, add unique IDs to Bannerman, should be initialized to -1
 			if ((*it)->getName()==b->getName())
@@ -27,6 +26,30 @@ Kingdom::~Kingdom(){
 	delete economy;
 	for (int i = 0; i < bannerman.size(); i++)
 	{
-		delete bannerman[i];
+		list<Bannerman*>::iterator it = bannerman.begin();
+        advance(it, i);
+		delete *it;
+	}
+}
+
+list<Bannerman *> Kingdom::getKingdom(){
+	return bannerman;
+}
+
+int Kingdom::getSize(){
+	int s = bannerman.size();
+	return s;
+}
+
+Bannerman* Kingdom::getAlly(string n){
+	if (bannerman.size()>0)
+	{
+		for (list<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
+		{
+			if ((*it)->getName()==n)
+			{
+				return *it;
+			}
+		}
 	}
 }

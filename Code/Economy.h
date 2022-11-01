@@ -18,6 +18,8 @@ public:
 
 	void SetState();
 
+	State* getState();
+
 	void decreaseCurrency();
 
 	int getCurrency();

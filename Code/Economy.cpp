@@ -11,6 +11,10 @@ void Economy::SetState(){
 	state=state->getDemotionState();
 }
 
+State* Economy::getState(){
+	return state;
+}
+
 void Economy::decreaseCurrency(){
 	state->decreaseCurrency();
 	if (currency>0)

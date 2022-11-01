@@ -182,6 +182,10 @@ public:
 */
 
     ~Bannerman();
+
+    /// @brief gets the list of troops under the commander (not abstract, but just inherited)
+    /// @return the list of troops varaible
+    list<Bannerman*> getTroops();
 };
 
 #endif
