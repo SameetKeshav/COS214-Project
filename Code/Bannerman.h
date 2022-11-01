@@ -1,6 +1,6 @@
 #ifndef BANNERMAN_H
 #define BANNERMAN_H
-
+#include "Strategy.h"
 #include "MasterOfCoin.h"
 #include "Raven.h"
 #include "WarIndicators.h"
@@ -175,8 +175,12 @@ public:
 */
     virtual void setMaster(MasterOfCoin* m) = 0;
 
+    /** @brief Abstract. returns the favour of the bannerman.
+    */
+    virtual int getFavour() = 0;
     /**@brief Default destructor.
 */
+
     ~Bannerman();
 };
 
