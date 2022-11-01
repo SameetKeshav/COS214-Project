@@ -16,6 +16,3 @@ void State::setContext(Economy* context){
 	this->context=context;
 }
 
-string FailedState::getState(){
-	return "Has Failed";
-}

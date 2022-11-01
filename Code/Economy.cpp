@@ -13,18 +13,14 @@ void Economy::decreaseCurrency(){
 	state->decreaseCurrency();
 }
 
-int Economy::getCurrency(){
+int getCurrency(){
 	return currency;
 }
 
-void Economy::removeCurrency(int i){
+void removeCurrency(int i){
 	currency-=i;
 }
 
 Economy::~Economy(){
 	delete state;
-}
-
-State* Economy::getState(){
-	return state;
 }

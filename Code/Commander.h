@@ -3,7 +3,6 @@
 
 #include "Bannerman.h"
 #include "ConIterator.h"
-#include "Troop.h"
 #include <list>
 class Iterator;
 using namespace std;
@@ -17,13 +16,14 @@ class Commander : public Bannerman {
 private:
     /**@brief list of bannerman components.
 */
-    vector<Bannerman*> groundForces;
+    list<Bannerman*> groundForces;
     string name;
 
 public:
 
-    /** @brief Default constructor.
-*/  //Julianna changed:
+    /** @brief Commander Constructor which takes in the name of a commander.
+     * @param name - name of commander
+*/
     Commander(string name);
 
     /**@brief creates a conIterator object, which is a means to traverse groundForces sequentially.
@@ -128,6 +128,8 @@ public:
 */
     void decreaseFavour() override;
 
+    int getFavour();
+
     /** @brief Sets the number of weapon supplies of the bannerman objects in groundForces.
 @param numWeapons - The new numWeapons bannerman objects in groundForces should have.
 */
@@ -143,22 +145,33 @@ public:
 */
     void setMedical(int numMedical) override;
 
+    /** @brief Decreases the damage capability of all the bannerman objects in groundForces.
+* @param x - the number by which to decrease damage.
+*/
+    void decreasePower(int x);
+
     /** @brief Default destructor.
     */
     ~Commander() ;
-    
+
 
     //Julianna added:
-<<<<<<< Updated upstream
+
+    /**
+ * @brief Assigns a Raven observer list to all the bannerman objects in the groundForces list
+ * @param r - the Raven observer list to attach*/
     void setRaven(list<Raven*> r);
-=======
-    void setRaven(vector<Raven*> r);
->>>>>>> Stashed changes
+
+    /** @brief Assigns a MasterofCoin mediator all the bannerman objects in
+     * the groundForces list to ensure that the army has the supplies it needs.
+* @param m - the new MasterOfCoin mediator.
+*/
     void setMaster(MasterOfCoin* m);
+
+    /** @brief Sets the attack strategy variable of the bannerman objects in groundForces.
+@param strategy - The new strategy bannerman objects in groundForces should have.
+*/
     void setStrategy(Strategy* s);
-    vector<Bannerman*> getTroops();
-    int getHP();
-    void testing();
 };
 
 #endif

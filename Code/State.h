@@ -1,27 +1,32 @@
 #ifndef STATE_H
 #define STATE_H
 class Economy;
-using namespace std;
-#include <iostream>
 
+/** @brief An Abstract state class.
+    A class that provides an interface to the alternative concrete states for Economy of Kingdom.
+    @author Morgan Bentley
+    @date October 2022
+    */
 class State {
 
 protected:
+	/** Economy pointer of player's Kingdom**/
 	Economy* context;
 
 public:
+	/** @brief Default constructor.
+	*/
 	State();
-	void setContext(Economy* context);
+	/** @todo sets context variable.
+	 * @param context - Economy pointer to player's Economy object.**/
+	virtual void setContext(Economy* context);
+	/** @todo Abstract method.**/
 	virtual void decreaseCurrency()=0;
+	/** @todo gets lower level state of economy with null being returned if no lower state is possible
+	 * @return concrete State of Economy **/
 	virtual State* getDemotionState();
-<<<<<<< Updated upstream
-	~State();
-	virtual string getState()=0;
-=======
 	/** @todo destructor. deallocates context**/
-	virtual string getState()=0;
 	virtual ~State();
->>>>>>> Stashed changes
 };
 
 #endif

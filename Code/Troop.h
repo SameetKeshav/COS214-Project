@@ -13,6 +13,9 @@ class Troop : public Bannerman {
 
 private:
 
+    /**The number of soldiers in the troop*/
+    int size;
+
     /**The attack strategy used by the troop in battle*/
     Strategy* strategy;
 
@@ -21,14 +24,10 @@ private:
 
 public:
     /**
-     * @brief Constructor. Initializes the name; favour numFood;  Medical;
+     * @brief Constructor. Initializes the name; favour; numFood;  Medical;
      * HP; warZone; strategy; m; assassin and size variables of the troop.
      * */
-<<<<<<< Updated upstream
-    Troop(int size, string n);
-=======
-    Troop(string n, int size);
->>>>>>> Stashed changes
+    Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size);
 
     /**
 * @brief Returns the troop's HP.
@@ -90,6 +89,8 @@ public:
 */
     void decreaseFavour() override;
 
+    int getFavour();
+
     /** @brief increases the HP of the troop.
 @param boost - The number by which to increase the HP of the troop.
 */
@@ -138,10 +139,28 @@ public:
 */
     void setFood(int numFood) override;
 
+
+
+    /** @brief Decreases the damage capability of the troop.
+ * @param x - the number by which to decrease damage.
+*/
+    void decreasePower(int x);
+
+
     /** @brief Sets the number of medical supplies the troop has.
 @param numMedical - The new numMedical the troop should have.
 */
     void setMedical(int numMedical) override;
+
+/** @brief Assigns a list of Raven Observers to the troop's ravenList.
+* @param r - the list of Raven Observers to attach to the troop.
+*/
+    void setRaven(list<Raven*> r);
+
+    /** @brief Assigns a MasterofCoin mediator to ensure that the troop has the supplies it needs.
+* @param m - the new MasterOfCoin mediator to assign to the troop.
+*/
+    void setMaster(MasterOfCoin* m);
 
     /** Default destructor.
 */
