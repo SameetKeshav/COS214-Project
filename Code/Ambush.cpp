@@ -73,7 +73,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	}
 }
 
-Ambush::Ambush(int stealth,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Ambush",min,minFavour)  {
+Ambush::Ambush(int stealth,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Ambush",min,minFavour)  {
 	this->stealth=stealth;
 }
 

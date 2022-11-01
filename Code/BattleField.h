@@ -12,11 +12,10 @@ class BattleField :public Strategy {
 public:
 	/** @todo  constructor. initializes stealth and calls base class constructor to
 	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
-	 * @param stealth - skill level of Bannerman.
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which bannerman change allegiances
 	*/
-	BattleField(int min,int minFavour);
+	BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour);
 	/** @todo makes two bannerman from enemy kingdoms fight each other until one loses
 	 * @param myBannerman - attacking bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.

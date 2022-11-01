@@ -16,9 +16,6 @@ public:
 	/** @brief Default constructor. initializes context to null.
 	*/
 	UnstableState();
-	/** @todo sets context variable.
-	 * @param context - Economy pointer to player's Economy object.**/
-	void setContext(Economy* context);
 	/** @todo decreases Economy currency and then checks if the conditions are sufficient for
 	 * the economy to downgrade to a lower state**/
 	void decreaseCurrency();

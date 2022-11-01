@@ -53,31 +53,35 @@ void intro(){
 
 /// @brief populating the vectors of our and the enemy bannermen
 void populateVectors(){
-    State* DuraState = new HealthyState();
-    State* PreadoraState = new HealthyState();
+/// @brief populating the vectors of our and the enemy bannermen
+    void populateVectors(){
+        State* DuraState = new HealthyState();
+        State* PreadoraState = new HealthyState();
 
-    srand(time(0));
-    int DuraCurrency = 10000000 + (rand() % 1000000000);
-    srand(time(0));
-    int PreadoraCurrency = 10000000 + (rand() % 1000000000);
+        srand(time(0));
+        int DuraCurrency = 10000000 + (rand() % 1000000000);
+        srand(time(0));
+        int PreadoraCurrency = 10000000 + (rand() % 1000000000);
 
-    Economy* DuraEco = new Economy(DuraState, DuraCurrency);
-    Economy* PreadoraEco = new Economy(PreadoraState, PreadoraCurrency);
+        Economy* DuraEco = new Economy(DuraState, DuraCurrency);
+        Economy* PreadoraEco = new Economy(PreadoraState, PreadoraCurrency);
 
-    Dura = new Kingdom(DuraEco);
-    Preadora = new Kingdom(PreadoraEco);
+        Dura = new Kingdom(DuraEco);
+        Preadora = new Kingdom(PreadoraEco);
 
-    Dura->add(new Commander("Stratham"));
-    Dura->add(new Commander("Trudid"));
-    Dura->add(new Commander("Mirefield"));
-    Dura->add(new Commander("Saker's Keep"));
-    Dura->add(new Commander("Breachmarsh"));
+        Dura->add(new Commander("Stratham"));
+        Dura->add(new Commander("Trudid"));
+        Dura->add(new Commander("Mirefield"));
+        Dura->add(new Commander("Saker's Keep"));
+        Dura->add(new Commander("Breachmarsh"));
 
-    Preadora->add(new Commander("Cirrane"));
-    Preadora->add(new Commander("Bagger's Valley"));
-    Preadora->add(new Commander("Marnmouth"));
-    Preadora->add(new Commander("Dry Gulch"));
-    Preadora->add(new Commander("Prin"));
+        Preadora->add(new Commander("Cirrane"));
+        Preadora->add(new Commander("Bagger's Valley"));
+        Preadora->add(new Commander("Marnmouth"));
+        Preadora->add(new Commander("Dry Gulch"));
+        Preadora->add(new Commander("Prin"));
+
+    }
 
 }
 
@@ -87,7 +91,17 @@ int main(){
 
     intro();
     populateVectors();
-
+    //State design pattern test
+    //rules: comment out public inheritance of economy and m->notify(this)
+    //State* good=new HealthyState();
+    //Economy* SA=new Economy(good,53);
+    //SA->decreaseCurrency();
+    //while (SA->getCurrency()>0)
+    //{
+        //SA->decreaseCurrency();
+    //}
+    //delete SA;
+    //------------------------------//
 
 
     return 0;

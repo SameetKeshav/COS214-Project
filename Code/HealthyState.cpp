@@ -1,6 +1,7 @@
 #include "HealthyState.h"
 
 HealthyState::HealthyState(){
+	cout<<"Economy entered healthy state"<<endl;
 	context = nullptr;
 }
 
@@ -10,10 +11,6 @@ void HealthyState::decreaseCurrency() {
 	{
 		context->SetState();
 	}
-}
-
-void State::setContext(Economy* context){
-	this->context=context;
 }
 
 State* HealthyState::getDemotionState(){

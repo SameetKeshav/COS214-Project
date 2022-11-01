@@ -21,7 +21,7 @@ public:
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which Bannerman change allegiances
 	*/
-	Assassinate(int stealth, bool alive,int min,int minFavour);
+	Assassinate(int stealth, bool alive,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour);
 	/** @todo makes assassin of attacking Bannerman try to kill enemyBannerman
 	 * @param myBannerman - attacking Bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.

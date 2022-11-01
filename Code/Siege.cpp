@@ -1,6 +1,6 @@
 #include "Siege.h"
 
-Siege::Siege(int stealth,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Siege",min,minFavour){
+Siege::Siege(int stealth,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Siege",min,minFavour){
 	this->stealth=stealth;
 }
 
