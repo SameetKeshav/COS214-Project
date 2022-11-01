@@ -29,6 +29,10 @@ int Commander::getHP() {
     return totalHP;
 }
 
+list<Bannerman*> Commander::getTroops(){
+    return groundForces;
+}
+
 void Commander::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
         (*it)->attack(myBannerman, enemyBannerman);
@@ -117,7 +121,6 @@ void Commander::increaseFavour(){
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
         (*it)->increaseFavour();
 }
-
 void Commander::decreaseFavour(){
     for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
         (*it)->decreaseFavour();
