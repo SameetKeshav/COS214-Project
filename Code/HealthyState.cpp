@@ -18,3 +18,7 @@ State* HealthyState::getDemotionState(){
 	h->setContext(context);
 	return h;
 }
+
+string HealthyState::getState(){
+	return "is healthy";
+}

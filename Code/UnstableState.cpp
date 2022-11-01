@@ -18,3 +18,7 @@ State* UnstableState::getDemotionState(){
 	h->setContext(context);
 	return h;
 }
+
+string UnstableState::getState(){
+	return "is unstable";
+}

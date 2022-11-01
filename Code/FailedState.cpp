@@ -13,3 +13,6 @@ void FailedState::decreaseCurrency() {
 	}
 }
 
+string FailedState::getState(){
+	return "has failed";
+}

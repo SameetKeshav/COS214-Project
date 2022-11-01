@@ -29,6 +29,7 @@ public:
 	virtual State* getDemotionState();
 	/** @todo destructor. deallocates context**/
 	virtual ~State();
+	virtual string getState()=0;
 };
 
 #endif
