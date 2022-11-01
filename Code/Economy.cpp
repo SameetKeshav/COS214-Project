@@ -1,6 +1,8 @@
 #include "Economy.h"
 
 Economy::Economy(State* state,int currency) {
+	cout<<"Economy constructor works"<<endl;
+	state->setContext(this);
 	this->state=state;
 	this->currency=currency;
 }
@@ -13,11 +15,11 @@ void Economy::decreaseCurrency(){
 	state->decreaseCurrency();
 }
 
-int getCurrency(){
+int Economy::getCurrency(){
 	return currency;
 }
 
-void removeCurrency(int i){
+void Economy::removeCurrency(int i){
 	currency-=i;
 }
 

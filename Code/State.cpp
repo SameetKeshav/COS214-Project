@@ -12,5 +12,5 @@ State* State::getDemotionState(){
 }
 
 State::~State(){
-	delete context;
+	//delete context;
 }

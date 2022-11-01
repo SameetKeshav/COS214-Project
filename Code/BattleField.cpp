@@ -1,6 +1,6 @@
 #include "BattleField.h"
 
-BattleField::BattleField(int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"BattleField",min,minFavour){}
+BattleField::BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"BattleField",min,minFavour){}
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)

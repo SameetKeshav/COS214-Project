@@ -1,6 +1,7 @@
 #include "FailedState.h"
 
 FailedState::FailedState() {
+	cout<<"Economy is a failed state"<<endl;
 	context = nullptr;
 }
 
@@ -10,9 +11,5 @@ void FailedState::decreaseCurrency() {
 	{
 		context->SetState();
 	}
-}
-
-void State::setContext(Economy* context){
-	this->context=context;
 }
 

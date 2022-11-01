@@ -87,7 +87,16 @@ int main(){
 
     intro();
     populateVectors();
-
+    //State design pattern test
+    //State* good=new HealthyState();
+    //Economy* SA=new Economy(good,53);
+    //SA->decreaseCurrency();
+    //while (SA->getCurrency()>0)
+    //{
+        //SA->decreaseCurrency();
+    //}
+    //delete SA;
+    //------------------------------//
 
 
     return 0;

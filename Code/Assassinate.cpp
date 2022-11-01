@@ -1,6 +1,6 @@
 #include "Assassinate.h"
 
-Assassinate::Assassinate(int stealth, bool alive,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Assassinate",min,minFavour) {
+Assassinate::Assassinate(int stealth, bool alive,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Assassinate",min,minFavour) {
 	this->alive=alive;
 	this->stealth=stealth;
 }

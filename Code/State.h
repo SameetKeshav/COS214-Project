@@ -1,6 +1,8 @@
 #ifndef STATE_H
 #define STATE_H
+#include "Economy.h"
 class Economy;
+using namespace std;
 
 /** @brief An Abstract state class.
     A class that provides an interface to the alternative concrete states for Economy of Kingdom.
