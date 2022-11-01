@@ -88,6 +88,7 @@ int main(){
     intro();
     populateVectors();
     //State design pattern test
+    //rules: comment out public inheritance of economy and m->notify(this)
     //State* good=new HealthyState();
     //Economy* SA=new Economy(good,53);
     //SA->decreaseCurrency();
