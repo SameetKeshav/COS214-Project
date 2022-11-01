@@ -66,7 +66,7 @@ void populateVectors(){
 
     Dura = new Kingdom(DuraEco);
     Preadora = new Kingdom(PreadoraEco);
-    
+
     Dura->add(new Commander("Stratham"));
     Dura->add(new Commander("Trudid"));
     Dura->add(new Commander("Mirefield"));
@@ -87,7 +87,7 @@ int main(){
 
     intro();
     populateVectors();
-    
+
 
 
     return 0;

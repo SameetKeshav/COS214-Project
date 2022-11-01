@@ -18,7 +18,6 @@ private:
 */
     list<Bannerman*> groundForces;
     string name;
-
 public:
 
     /** @brief Commander Constructor which takes in the name of a commander.
@@ -44,6 +43,8 @@ public:
 */
     void addBannerman(Bannerman* b);
 
+    /**Returns the groundForces bannerman list */
+    list<Bannerman*> getTroops();
 
     /**
  * @brief Accessor. Returns the HP.
