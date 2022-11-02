@@ -1,11 +1,8 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
-<<<<<<< Updated upstream
-=======
 //#include "Strategy.h"
 #include <string>
 #include <iostream>
->>>>>>> Stashed changes
 
 using namespace std;
 
@@ -20,10 +17,7 @@ class WarTheatre {
 private:
     /**Name of Strategy as it determines the venue of the battle*/
 	Strategy* strategy;
-<<<<<<< Updated upstream
-=======
 	
->>>>>>> Stashed changes
     /**Char representing the venue. options a to d only*/
 	char venue;
 
@@ -31,22 +25,12 @@ private:
     string location;
 
     /**Integer representing the difficulty of the battle at the decorated venue*/
-<<<<<<< Updated upstream
-	int difficulty;
-
-
-public:
-    /**@brief Constructor
-     * @param myStrat - a pointer to te strategy object used in the battle*/
-	WarTheatre(Strategy* myStrat);
-=======
 	int difficulty = 1;
 
 
 public:
     /**@brief Constructor */
 	WarTheatre();
->>>>>>> Stashed changes
 
     /**@brief returns the strategy the location is based on
      * @return the strategy pointer*/
@@ -59,11 +43,6 @@ public:
      * @param strategy - a pointer to te strategy object used in the battle
      * @return char variable of the location. options are a, b, c and d only
      */
-<<<<<<< Updated upstream
-    char decideVenue(Strategy* strategy);
-
-	WarTheatre(Strategy myStrat);
-=======
     char decideVenue(string* strategy);
 	
 	/**@brief returns the venue the battle is based in
@@ -82,7 +61,6 @@ public:
 	/**@brief returns the difficulty value of the theatre
      * @return the difficulty value*/
 	int getDifficulty();
->>>>>>> Stashed changes
 };
 
 #endif
