@@ -1,12 +1,16 @@
 #ifndef STRATEGY_H
 #define STRATEGY_H
-using namespace std;
+
 #include <string>
 #include "Bannerman.h"
 #include "WarIndicators.h"
 #include "MasterOfCoin.h"
 #include "Kingdom.h"
 
+using namespace std;
+
+class Bannerman;
+class Kingdom;
 /** @brief An Abstract strategy class.
     A class that provides an interface to the alternative concrete strategies for how Bannerman
 	 will fight enemyBannerman.

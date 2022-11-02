@@ -22,6 +22,7 @@ private:
     /**The damage capability which the troop has*/
     int damage;
 
+    WarTheatre* warZone;
 public:
     /**
      * @brief Constructor. Initializes the name; favour; numFood;  Medical;
@@ -89,7 +90,7 @@ public:
 */
     void decreaseFavour() override;
 
-    int getFavour();
+    int getFavour() override;
 
     /** @brief increases the HP of the troop.
 @param boost - The number by which to increase the HP of the troop.
@@ -144,7 +145,7 @@ public:
     /** @brief Decreases the damage capability of the troop.
  * @param x - the number by which to decrease damage.
 */
-    void decreasePower(int x);
+    void decreasePower(int x) override;
 
 
     /** @brief Sets the number of medical supplies the troop has.
@@ -155,12 +156,12 @@ public:
 /** @brief Assigns a list of Raven Observers to the troop's ravenList.
 * @param r - the list of Raven Observers to attach to the troop.
 */
-    void setRaven(list<Raven*> r);
+    void setRaven(list<Raven*> r) override;
 
     /** @brief Assigns a MasterofCoin mediator to ensure that the troop has the supplies it needs.
 * @param m - the new MasterOfCoin mediator to assign to the troop.
 */
-    void setMaster(MasterOfCoin* m);
+    void setMaster(MasterOfCoin* m) override;
 
     /** Default destructor.
 */

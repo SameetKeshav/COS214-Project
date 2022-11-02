@@ -1,6 +1,11 @@
 #include "MedicalFac.h"
 
 ArmySupplies* MedicalFac::make() {
-    ArmySupplies supplies = new FoodSupp();
+    cout<<"Medicine is being Manufactured"<<endl;
+    ArmySupplies* supplies = new MedicalSupp();
     return supplies;
+}
+
+MedicalFac::~MedicalFac() {
+
 }

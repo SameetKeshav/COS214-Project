@@ -29,6 +29,7 @@ add_executable(Code
         FailedState.h
         FoodFac.h
         FoodSupp.h
+        FoodSupp.cpp
         FoodWagon.cpp
         FoodWagon.h
         HealthyState.cpp
@@ -44,10 +45,12 @@ add_executable(Code
         Kingdom.h
         Location.cpp
         Location.h
+        main.cpp
         MasterOfCoin.cpp
         MasterOfCoin.h
         MedicalFac.h
         MedicalSupp.h
+        MedicalSupp.cpp
         MedicalWagon.cpp
         MedicalWagon.h
         Raven.h
@@ -72,6 +75,7 @@ add_executable(Code
         WarTheatre.h
         WeaponsFac.h
         WeaponSupp.h
+        WeaponSupp.cpp
         WeaponWagon.cpp
         WeaponWagon.h
         Weather.cpp

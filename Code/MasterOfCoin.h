@@ -7,7 +7,7 @@
 #include "Treasury.h"
 #include "WarIndicators.h"
 
-
+class Strategy;
 /** @brief The Concrete class for the Mediator
     A class that allows for other classes to talk to when key changes are made
     @author Sameet Keshav u21479373
@@ -31,11 +31,11 @@ public:
     ///@param economy holds the Economy that will be using the mediator
     ///@param observer holds the observer that will use the mediator
     ///@param strategy holds the strategy object that will use the mediator
-    MasterOfCoin(Economy* economy, Raven* observer, Strategy strategy);
+    MasterOfCoin(Economy* economy, Raven* observer, Strategy* strategy);
 
     ///@brief This is the method that all objects will use to call the mediator when a change is made
     ///@param sender is the variable that holds the object who sent the notify request
-	void notify(WarIndicators sender);
+	void notify(WarIndicators* sender);
 
     ///@brief Will call the decreaseCurrency method of the Economy
 	void decreaseCurrency();
