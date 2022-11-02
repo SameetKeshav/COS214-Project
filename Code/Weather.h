@@ -22,7 +22,11 @@ private:
 public:
     /**@brief Costructor of the weather object
      * @param val - recieves a generated value which will be used for setters in this class*/
+<<<<<<< Updated upstream
 	Weather(int val);
+=======
+	Weather(WarTheatre* myTheatre);
+>>>>>>> Stashed changes
 
     /**@brief the function that uses the weather components to create a wholistc effect on bannermen
      *@returns returns the adjusted difficulty value*/
@@ -39,7 +43,16 @@ public:
     /**@brief setter for the windspeed variable
      * @param SP - the value used to set the wind speed*/
     void setWindSpeed(int SP);
+<<<<<<< Updated upstream
     //void weatherReport(); ask Jules
+=======
+    
+    /**@brief displays the weather conditions of the location*/
+	void weatherReport(); //ask Jules
+    
+    /**@brief calls the calEffect function and affects bannermen*/
+    void sendScout();
+>>>>>>> Stashed changes
 };
 
 #endif

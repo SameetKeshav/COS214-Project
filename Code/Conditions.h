@@ -11,17 +11,33 @@
 
 class Conditions : public  WarTheatre {
 
+private:
+	/**Pointer to the decorated component*/
+	WarTheatre* myVenue;
+	
 public:
+<<<<<<< Updated upstream
     /**Pointer to the decorated component*/
 	WarTheatre* myVenue;
 
 	void sendScout();
+=======
+
+	/**@brief decorator function for thr pattern*/
+	void sendScout() ;
+>>>>>>> Stashed changes
 
     /**@brief constructor for the decorator class.
      * merely used to assign variables and call the decorator function
      * @param myVenue - pointer to the object that is to be decoraed
      */
 	Conditions(WarTheatre* myVenue);
+<<<<<<< Updated upstream
+=======
+	
+	/**@brief destructor to delete the WarTheatre pointer*/
+	virtual ~Conditions();
+>>>>>>> Stashed changes
 };
 
 #endif

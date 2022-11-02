@@ -3,6 +3,7 @@
 void Conditions::sendScout() {
 	// TODO - implement Conditions::sendScout
 	//throw "Not yet implemented";
+<<<<<<< Updated upstream
 
     //create weather here.
     //generate random value between -10 and 50
@@ -25,5 +26,17 @@ Conditions::Conditions(WarTheatre* myVenue) {
 
    // myVenue->sendScout(); //what in the name is this - causes circulation!
    // cout << "Approaching war venue..." ;
+=======
+    
+}
 
+Conditions::Conditions(WarTheatre* myVenue_) {
+    myVenue = myVenue_;
+}
+
+>>>>>>> Stashed changes
+
+Conditions:: ~Conditions()
+{
+	delete myVenue;
 }

@@ -16,6 +16,7 @@ class Location : public WarTheatre {
 
 public:
 
+<<<<<<< Updated upstream
     /**@brief Default constructor.*/
 	Location();
 
@@ -27,6 +28,15 @@ public:
 
     /**@brief fress memory used in the pattern*/
 	void ~Location();
+=======
+    /** @brief Default constructor.*/
+	Location();
+
+    /** @brief the function that will be called to decorate the war venue*/
+	void sendScout();
+
+
+>>>>>>> Stashed changes
 };
 
 #endif

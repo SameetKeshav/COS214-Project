@@ -1,5 +1,6 @@
 #include "Topology.h"
 
+<<<<<<< Updated upstream
 Topology* Topology::getTopology() {
 	// TODO - implement Topology::getTopology
 	//throw "Not yet implemented";
@@ -10,6 +11,10 @@ Topology::Topology() {
 	// TODO - implement Topology::Topology
 	//throw "Not yet implemented";
     sendScout();
+=======
+
+Topology::Topology(WarTheatre* myTheatre) : Conditions(myTheatre) {
+>>>>>>> Stashed changes
 }
 
 void topology::setTopology()
@@ -36,7 +41,10 @@ void topology::setTopology()
 }
 
 void Topology::sendScout()  {
+<<<<<<< Updated upstream
 	// TODO - implement Topology::getStrategy
 	//throw "Not yet implemented";
+=======
+>>>>>>> Stashed changes
     setTopology();
 }
