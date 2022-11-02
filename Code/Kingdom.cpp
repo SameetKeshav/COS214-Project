@@ -51,5 +51,7 @@ Bannerman* Kingdom::getAlly(string n){
 				return *it;
 			}
 		}
+	}else{
+		return nullptr;
 	}
 }

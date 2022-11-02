@@ -17,7 +17,7 @@ public:
 	/** @brief Default constructor. initializes m to null.
 	*/
 	WarIndicators(){
-		m=nullptr;
+		m = nullptr;
 	}
 
 	/** @brief constructor. initializes m to the passed in Treasury object.
