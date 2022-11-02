@@ -1,5 +1,6 @@
+#include <algorithm>
 #include "HistoryBook.h"
-#include<bits/stdc++.h>
+//#include<bits/stdc++.h>
 
 /// @brief add memento object to the list of defecetded allies
 /// @param h the memento object added
@@ -18,5 +19,6 @@ History* HistoryBook::restoreAlly(History* h) {
 		return *it;
 	}else{
 		cout<<"This kingdom is not an ally of yours"<<endl;
+		return nullptr;
 	}
 }

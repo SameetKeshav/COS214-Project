@@ -2,12 +2,11 @@
 #define WEAPONSUPP_H
 #include "ArmySupplies.h"
 
-class WeaponSupp : ArmySupplies {
+class WeaponSupp : public ArmySupplies {
 
 public:
-    int getAmount() {
-        return 50;
-    }
+
+    int getAmount();
 };
 
 #endif

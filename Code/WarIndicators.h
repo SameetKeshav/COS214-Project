@@ -1,7 +1,7 @@
 #ifndef WARINDICATORS_H
 #define WARINDICATORS_H
 #include "Treasury.h"
-
+class Treasury;
 /** @brief An interface class for all classes that communicate 
  * with each other through Treasury mediator.
     @author Morgan Bentley
@@ -17,7 +17,7 @@ public:
 	/** @brief Default constructor. initializes m to null.
 	*/
 	WarIndicators(){
-		m=nullptr;
+		m = nullptr;
 	}
 
 	/** @brief constructor. initializes m to the passed in Treasury object.
@@ -29,7 +29,7 @@ public:
 
 	/** @todo destructor. deallocates Treasury pointer of this class**/
 	virtual ~WarIndicators(){
-		delete m;
+		//delete m;
 	}
 };
 

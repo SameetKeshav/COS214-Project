@@ -8,7 +8,7 @@
 #include <string>
 #include <list>
 
-
+class MasterOfCoin;
 /** @brief An abstract component class. A class that provides the interface with which the client interacts with the country's army.
     @author Thapelo Thoka
     @date October 2022
@@ -182,6 +182,10 @@ public:
 */
 
     ~Bannerman();
+
+    /// @brief gets the list of troops under the commander (not abstract, but just inherited)
+    /// @return the list of troops varaible
+    list<Bannerman*> getTroops();
 };
 
 #endif

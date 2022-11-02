@@ -22,6 +22,10 @@ public:
 	/** @todo gets lower level state of economy
 	 * @return concrete State of Economy **/
 	State* getDemotionState();
+
+	/// @brief tells what the state of the economy is
+	/// @return returns a string that says in text what the state is
+	string getState();
 };
 
 #endif

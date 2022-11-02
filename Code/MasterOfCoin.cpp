@@ -1,13 +1,13 @@
 #include "MasterOfCoin.h"
 
-MasterOfCoin::MasterOfCoin(Economy *economy, Raven *observer, Strategy strategy)
+MasterOfCoin::MasterOfCoin(Economy *economy, Raven *observer, Strategy* strategy)
 {
     this->economy = economy;
     this->observer = observer;
     this->strategy = strategy;
 }
 
-void MasterOfCoin::notify(WarIndicators sender)
+void MasterOfCoin::notify(WarIndicators* sender)
 {
 
     if(sender == strategy)

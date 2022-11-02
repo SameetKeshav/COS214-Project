@@ -13,6 +13,8 @@ Bannerman* ConIterator::next() {///Test
     if(hasNext()) {
         ++it;
         return *it;
+    }else{
+        return *it;
     }
 }
 

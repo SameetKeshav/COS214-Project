@@ -5,10 +5,14 @@
 #include "ArmySupplies.h"
 #include "FoodSupp.h"
 
-class FoodWagon : SupplyWagon {
+class FoodWagon : public SupplyWagon {
 
 public:
-    ~FoodWagon()
+    void setSup(ArmySupplies* sup);
+    SupplyWagon* clone();
+    ArmySupplies* getSupplies();
+    ArmySupplies* supp=NULL;
+    ~FoodWagon();
 };
 
 #endif

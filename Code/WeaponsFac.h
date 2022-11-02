@@ -4,13 +4,11 @@
 #include "ArmySupplies.h"
 #include "WeaponSupp.h"
 
-class WeaponsFac : Factory {
+class WeaponsFac : public Factory {
 
 public:
-    /// @brief Weapon Factory makes Weapon supplies.
-    /// @return returns the supplies the Weapon Factory just manufactured
-    /// @author Ronin Brookes 19069686
-    ArmySupplies* make() ;
+    ArmySupplies* make();
+    ~WeaponsFac();
 };
 
 #endif

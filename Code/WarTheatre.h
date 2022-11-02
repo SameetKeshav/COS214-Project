@@ -1,8 +1,12 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
+#include "Strategy.h"
+#include <string>
+#include <iostream>
 
 using namespace std;
 
+class Strategy;
 /**@brief Abstract object.
  * This is the Component participant in the decorator pattern.
  * @author Keabetswe Mothapo
@@ -14,6 +18,7 @@ class WarTheatre {
 private:
     /**Name of Strategy as it determines the venue of the battle*/
 	Strategy* strategy;
+	
     /**Char representing the venue. options a to d only*/
 	char venue;
 
@@ -21,13 +26,12 @@ private:
     string location;
 
     /**Integer representing the difficulty of the battle at the decorated venue*/
-	int difficulty;
+	int difficulty = 1;
 
 
 public:
-    /**@brief Constructor
-     * @param myStrat - a pointer to te strategy object used in the battle*/
-	WarTheatre(Strategy* myStrat);
+    /**@brief Constructor */
+	WarTheatre();
 
     /**@brief returns the strategy the location is based on
      * @return the strategy pointer*/
@@ -41,8 +45,23 @@ public:
      * @return char variable of the location. options are a, b, c and d only
      */
     char decideVenue(Strategy* strategy);
-
-	WarTheatre(Strategy myStrat);
+	
+	/**@brief returns the venue the battle is based in
+     * @return the venue variable*/
+	char getVenue();
+	
+	/**@brief sets the strategy the location is based on*/
+	void setStrategy(Strategy* myStrat);
+	
+	/**@brief sets the location of the battle*/
+	void setLocation(string loc);
+	
+	/**@brief sets the difficulty variable*/
+	void setDifficulty(int num);
+	
+	/**@brief returns the difficulty value of the theatre
+     * @return the difficulty value*/
+	int getDifficulty();
 };
 
 #endif
