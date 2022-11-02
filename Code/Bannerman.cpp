@@ -11,3 +11,8 @@ string Bannerman::getName() {
 Bannerman::~Bannerman() {
 
 }
+
+list<Bannerman*> Bannerman::getTroops(){
+    list<Bannerman*> empty;
+    return empty;
+}
