@@ -2,6 +2,7 @@
 #define WARINDICATORS_H
 #include "Treasury.h"
 
+class Treasury;
 /** @brief An interface class for all classes that communicate 
  * with each other through Treasury mediator.
     @author Morgan Bentley
