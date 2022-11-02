@@ -1,15 +1,7 @@
 #include "Topology.h"
 
-Topology* Topology::getTopology() {
-    // TODO - implement Topology::getTopology
-    //throw "Not yet implemented";
-    return this;
-}
 
-Topology::Topology(WarTheatre* myTheatre) : Conditions() {
-    // TODO - implement Topology::Topology
-    //throw "Not yet implemented";
-    sendScout();
+Topology::Topology(WarTheatre* myTheatre) : Conditions(myTheatre) {
 }
 
 void Topology::setTopology()
@@ -36,7 +28,5 @@ void Topology::setTopology()
 }
 
 void Topology::sendScout()  {
-    // TODO - implement Topology::getStrategy
-    //throw "Not yet implemented";
     setTopology();
 }

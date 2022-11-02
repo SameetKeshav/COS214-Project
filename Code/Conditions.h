@@ -14,19 +14,23 @@
 
 class Conditions : public  WarTheatre {
 
+private:
+	/**Pointer to the decorated component*/
+	WarTheatre* myVenue;
+	
 public:
-    /**Pointer to the decorated component*/
-    WarTheatre* myVenue;
 
-    Conditions();
-
-    void sendScout() override ;
+	/**@brief decorator function for thr pattern*/
+	void sendScout() ;
 
     /**@brief constructor for the decorator class.
      * merely used to assign variables and call the decorator function
      * @param myVenue - pointer to the object that is to be decoraed
      */
-    Conditions(WarTheatre* myVenue);
+	Conditions(WarTheatre* myVenue);
+	
+	/**@brief destructor to delete the WarTheatre pointer*/
+	virtual ~Conditions();
 };
 
 #endif
