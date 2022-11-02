@@ -1,20 +1,20 @@
 #include "Location.h"
 
 Location::Location() {
-	// TODO - implement Location::Location
-	//throw "Not yet implemented";
-    if(venue == 'a') location =  "Open war field";
-    if(venue == 'b') location =  "Fortress";
-    if(venue == 'c') location =  "Campsite";
-    if(venue == 'd') location =  "Castle";
+    // TODO - implement Location::Location
+    //throw "Not yet implemented";
+    if(getVenue() == 'a') setLocation("Open war field")  ;
+    if(getVenue() == 'b') setLocation("Fortress")  ;
+    if(getVenue() == 'c') setLocation("Campsite")  ;
+    if(getVenue() == 'd') setLocation("Castle")   ;
 
-    difficulty = 1;
+    setDifficulty(1);
     createVenue();
 }
 
 void Location::sendScout() {
-	// TODO - implement Location::sendScout
-	//throw "Not yet implemented";
+    // TODO - implement Location::sendScout
+    //throw "Not yet implemented";
     //update conditions and all
     //the function jules will call
     cout << "waiting for conditions to update..." << endl;
@@ -24,14 +24,14 @@ void Location::sendScout() {
 }
 
 void Location::createVenue() {
-	// TODO - implement Location::createVenue
-	//throw "Not yet implemented";
-   Conditions myDecorator = new Conditions(*this); //check the pointer passed
-   //then decorate
-   myDecorator.sendScout();
+    // TODO - implement Location::createVenue
+    //throw "Not yet implemented";
+    Conditions myDecorator = new Conditions(this); //check the pointer passed
+    //then decorate
+    myDecorator.sendScout();
 }
 
 Location::~Location() {
-    delete strategy;
-    cout << venue  << " destroyed.";
+    //delete strategy;
+    // cout << venue  << " destroyed.";
 }

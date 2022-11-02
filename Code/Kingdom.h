@@ -1,9 +1,13 @@
 #ifndef KINGDOM_H
 #define KINGDOM_H
-using namespace std;
-#include <vector>
+
+#include <list>
 #include "Bannerman.h"
 #include "Economy.h"
+
+using namespace std;
+
+class Bannerman;
 
 /** @brief A Kingdom class that has all the fighting Bannerman and Economy.
     @author Morgan Bentley

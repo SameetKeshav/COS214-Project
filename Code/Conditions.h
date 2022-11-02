@@ -2,6 +2,9 @@
 #define CONDITIONS_H
 #include <cstdlib>
 #include "WarTheatre.h"
+//#include "Weather.h"
+//#include "Topology.h"
+#include "Location.h"
 
 /**@brief decorator class.
  * This is the class/object decorates the concreteComponent. Inherits from WarTheatre class.
@@ -13,15 +16,17 @@ class Conditions : public  WarTheatre {
 
 public:
     /**Pointer to the decorated component*/
-	WarTheatre* myVenue;
+    WarTheatre* myVenue;
 
-	void sendScout();
+    Conditions();
+
+    void sendScout() override ;
 
     /**@brief constructor for the decorator class.
      * merely used to assign variables and call the decorator function
      * @param myVenue - pointer to the object that is to be decoraed
      */
-	Conditions(WarTheatre* myVenue);
+    Conditions(WarTheatre* myVenue);
 };
 
 #endif

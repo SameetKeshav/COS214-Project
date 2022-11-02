@@ -5,6 +5,7 @@
 class SupplyWagon {
 
 public:
+
     /// @brief initialize the supp variable.
     /// @param sup is used to set the supp variable,
     /// @author Ronin Brookes 19069686
@@ -18,7 +19,7 @@ public:
     /// @author Ronin Brookes 19069686
     virtual ArmySupplies* getSupplies()=0;
     ArmySupplies* supp;
-    virtual ~SupplyWagon();
+    //virtual ~SupplyWagon();
 
 };
 

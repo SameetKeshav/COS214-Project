@@ -131,7 +131,7 @@ public:
      */
     void decreaseFavour() override;
 
-    int getFavour();
+    int getFavour() override;
 
     /** @brief Sets the number of weapon supplies of the bannerman objects in groundForces.
 @param numWeapons - The new numWeapons bannerman objects in groundForces should have.
@@ -151,7 +151,7 @@ public:
     /** @brief Decreases the damage capability of all the bannerman objects in groundForces.
      * @param x - the number by which to decrease damage.
      */
-    void decreasePower(int x);
+    void decreasePower(int x) override;
 
     /** @brief Default destructor.
      */
@@ -162,13 +162,13 @@ public:
     /**
      * @brief Assigns a Raven observer list to all the bannerman objects in the groundForces list
      * @param r - the Raven observer list to attach*/
-    void setRaven(list<Raven *> r);
+    void setRaven(list<Raven *> r) override;
 
     /** @brief Assigns a MasterofCoin mediator all the bannerman objects in
      * the groundForces list to ensure that the army has the supplies it needs.
      * @param m - the new MasterOfCoin mediator.
      */
-    void setMaster(MasterOfCoin *m);
+    void setMaster(MasterOfCoin *m) override;
 
     /** @brief Sets the attack strategy variable of the bannerman objects in groundForces.
 @param strategy - The new strategy bannerman objects in groundForces should have.

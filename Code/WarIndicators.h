@@ -29,7 +29,7 @@ public:
 
 	/** @todo destructor. deallocates Treasury pointer of this class**/
 	virtual ~WarIndicators(){
-		delete m;
+		//delete m;
 	}
 };
 

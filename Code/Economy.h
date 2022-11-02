@@ -1,9 +1,12 @@
 #ifndef ECONOMY_H
 #define ECONOMY_H
 #include "WarIndicators.h"
-using namespace std;
+
 #include <iostream>
 #include "State.h"
+
+using namespace std;
+
 class State;
 //circular dependency with state
 class Economy :public WarIndicators {

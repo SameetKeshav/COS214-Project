@@ -109,8 +109,8 @@ void chooseEnemy(){
         advance(it, i);
         Bannerman* curr = *it; //curr = bannerman
 
-        cout<< i + ": " + curr->getName() <<endl;
-        cout<<"HP: " + curr->getHP() <<endl;
+        cout<< i << ": " << curr->getName() <<endl;
+        cout<<"HP: " << curr->getHP() <<endl;
 
         list<Bannerman*> PreadoraTroops = curr->getTroops();
         list<Bannerman*>::iterator a = PreadoraTroops.begin();
@@ -119,8 +119,8 @@ void chooseEnemy(){
         Bannerman* troop1 = *a;
         Bannerman* troop2 = *b;
         
-        cout<<"HP of Squadren 1: " + troop1->getHP() <<endl;
-        cout<<"HP of Squadren 2: " + troop2->getHP() <<endl;
+        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
+        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
     }
@@ -146,8 +146,8 @@ void chooseFighter(){
         advance(it, i);
         Bannerman* curr = *it; //curr = bannerman
 
-        cout<< i + ": " + curr->getName() <<endl;
-        cout<<"HP: " + curr->getHP() <<endl;
+        cout<< i << ": " << curr->getName() <<endl;
+        cout<<"HP: " << curr->getHP() <<endl;
 
         list<Bannerman*> DuraTroops = curr->getTroops();
         list<Bannerman*>::iterator a = DuraTroops.begin();
@@ -156,8 +156,8 @@ void chooseFighter(){
         Bannerman* troop1 = *a;
         Bannerman* troop2 = *b;
         
-        cout<<"HP of Squadren 1: " + troop1->getHP() <<endl;
-        cout<<"HP of Squadren 2: " + troop2->getHP() <<endl;
+        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
+        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
     }
@@ -174,6 +174,8 @@ void chooseFighter(){
 }
 
 void goAttack(){
+    int stealth;
+
     cout<<"Choose your strategy of attack: "<<endl;
     cout<<"1: Battle Field      2: Seige      3: Ambush      4: Send Assassin"<<endl;
     int b;
@@ -189,21 +191,21 @@ void goAttack(){
     case 2:
         strategy = " stage a Seige";
         srand(time(0));
-        int stealth = 10 + (rand() % 100);
+        stealth = 10 + (rand() % 100);
         strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
         break;
 
     case 3:
         strategy = " Ambush the enemy";
         srand(time(0));
-        int stealth = 10 + (rand() % 100);
+        stealth = 10 + (rand() % 100);
         strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
         break;
 
     case 4:
         strategy = " send an Assassin";
         srand(time(0));
-        int stealth = 10 + (rand() % 100);
+        stealth = 10 + (rand() % 100);
         strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
         break;
 

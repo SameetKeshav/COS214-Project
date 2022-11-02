@@ -4,6 +4,7 @@
 
 class FoodSupp : public ArmySupplies {
 
+public:
     int getAmount();
 };
 

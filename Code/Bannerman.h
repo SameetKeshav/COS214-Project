@@ -8,7 +8,7 @@
 #include <string>
 #include <list>
 
-
+class MasterOfCoin;
 /** @brief An abstract component class. A class that provides the interface with which the client interacts with the country's army.
     @author Thapelo Thoka
     @date October 2022

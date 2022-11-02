@@ -1,8 +1,14 @@
 #include "Weather.h"
 
-Weather::Weather(int val) {
-	// TODO - implement Weather::Weather
-	//throw "Not yet implemented";
+Weather::Weather(WarTheatre* myTheatre) : Conditions(){
+    // TODO - implement Weather::Weather
+    //throw "Not yet implemented";
+
+    srand(time(0));
+    int val = rand() % 60 + 1; //between 1 and 60
+    val -= 10;
+
+    // cout<< "val: " << val << endl;
 
     //deciding on rain
     if (val%2 != 0)
@@ -19,46 +25,48 @@ Weather::Weather(int val) {
 }
 
 int Weather::calcEffect() {
-	// TODO - implement Weather::calcEffect
-	throw "Not yet implemented";
+    // TODO - implement Weather::calcEffect
+    throw "Not yet implemented";
     //NOTE: Come back for bannerman changes.
 
     //rain
     if(rain)
     {
-        difficulty += 10;
+        setDifficulty(getDifficulty()+10);
     }
 
     //temp
     if(temp > -10 || temp <= 10)
     {
-        difficulty += 5;
+        setDifficulty(getDifficulty()+5);
     }
     else if(temp > 10 || temp <= 20)
     {
-        difficulty += 3;
+        setDifficulty(getDifficulty()+3);
     }
     else if(temp > 20 || temp < 30)
     {
-        difficulty += 5;
+        setDifficulty(getDifficulty()+5);
     }
     else
     {
-        difficulty += 7;
+        setDifficulty(getDifficulty()+7);
     }
 
     //windspeed
     if(rain)
     {
         int rVAL = 10;
-        difficulty += (windspeed + rVaL)/temp;
+        setDifficulty(getDifficulty()+((windspeed + rVAL)/temp)) ;
+        cout<< "val: " << getDifficulty() << endl;
     }
     else
     {
-        difficulty += windspeed/temp;
+        setDifficulty(getDifficulty()+(windspeed/temp)) ;
+        cout<< "val: " << getDifficulty() << endl;
     }
 
-    return  difficulty;
+    return  getDifficulty();
 
 }
 
@@ -70,8 +78,13 @@ void Weather::makeItRain() {
     rain = true;
 }
 
-void Weather::setWindSpeed() {
+void Weather::setWindSpeed(int WP) {
     windspeed = WP;
+}
+
+void Weather::sendScout()
+{
+    calcEffect();
 }
 
 //void Weather::weatherReport() {

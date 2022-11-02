@@ -5,6 +5,7 @@
 class WeaponSupp : public ArmySupplies {
 
 public:
+
     int getAmount();
 };
 

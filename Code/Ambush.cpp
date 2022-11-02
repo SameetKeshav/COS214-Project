@@ -6,7 +6,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 		//tell Thapelo we must decide on power or damage
 		myBannerman->increasePower(5);
 		//tell thapelo to implement decrease power
-		enemyBannerman->decreasePower();
+		enemyBannerman->decreasePower(5);
 	}
 	 
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)

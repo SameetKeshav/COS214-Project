@@ -6,6 +6,7 @@ class MedicalSupp : public ArmySupplies {
 
 
 public:
+
     int getAmount();
 };
 
