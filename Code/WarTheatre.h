@@ -1,11 +1,12 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
-//#include "Strategy.h"
+#include "Strategy.h"
 #include <string>
 #include <iostream>
 
 using namespace std;
 
+class Strategy;
 /**@brief Abstract object.
  * This is the Component participant in the decorator pattern.
  * @author Keabetswe Mothapo
@@ -43,14 +44,14 @@ public:
      * @param strategy - a pointer to te strategy object used in the battle
      * @return char variable of the location. options are a, b, c and d only
      */
-    char decideVenue(string* strategy);
+    char decideVenue(Strategy* strategy);
 	
 	/**@brief returns the venue the battle is based in
      * @return the venue variable*/
 	char getVenue();
 	
 	/**@brief sets the strategy the location is based on*/
-	void setStrategy(string* myStrat);
+	void setStrategy(Strategy* myStrat);
 	
 	/**@brief sets the location of the battle*/
 	void setLocation(string loc);
