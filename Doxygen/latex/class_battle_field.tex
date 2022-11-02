@@ -18,7 +18,7 @@ Inheritance diagram for Battle\+Field\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_battle_field_a55cdd1fe446cff45e718103ce14d3085}{Battle\+Field}} (int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
+\mbox{\hyperlink{class_battle_field_a602131021b381a1c83e11635491ecfa5}{Battle\+Field}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
 bool \mbox{\hyperlink{class_battle_field_a0a0ea58914a59f8d385041f454ffe6d0}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
 \item 
@@ -39,18 +39,16 @@ October 2022
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_battle_field_a55cdd1fe446cff45e718103ce14d3085}\label{class_battle_field_a55cdd1fe446cff45e718103ce14d3085}} 
+\mbox{\Hypertarget{class_battle_field_a602131021b381a1c83e11635491ecfa5}\label{class_battle_field_a602131021b381a1c83e11635491ecfa5}} 
 \index{BattleField@{BattleField}!BattleField@{BattleField}}
 \index{BattleField@{BattleField}!BattleField@{BattleField}}
 \doxysubsubsection{\texorpdfstring{BattleField()}{BattleField()}}
-{\footnotesize\ttfamily Battle\+Field\+::\+Battle\+Field (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Battle\+Field\+::\+Battle\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000007}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
 
 \begin{DoxyParams}{Parameters}
-{\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
-\hline
 {\em min} & -\/ minimum supplies for food,weapons and medicine \\
 \hline
 {\em min\+Favour} & -\/ minimum favour below which bannerman change allegiances \\

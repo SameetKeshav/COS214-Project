@@ -12,6 +12,7 @@ var class_troop =
     [ "decreaseWeapons", "class_troop.html#a75d0ac8a0a8de9bd95eb007d6e3f6c72", null ],
     [ "detach", "class_troop.html#a4906c277ef0a9b0de4f31e7c491d43c6", null ],
     [ "getDamage", "class_troop.html#ab6c541f28f5221177c3b614dbcb341db", null ],
+    [ "getFavour", "class_troop.html#a18d453e63faf087978514658361a5e78", null ],
     [ "getFood", "class_troop.html#a99bd081c254958f7df3cb0733d341fd7", null ],
     [ "getHP", "class_troop.html#a6c6a0b620d2a7cbd8d513cfb86833606", null ],
     [ "getMedical", "class_troop.html#a7f6c6ef3bd3dfe1ffa4016c4b44e0db3", null ],
@@ -25,5 +26,8 @@ var class_troop =
     [ "setMaster", "class_troop.html#ad9a0a33641d779f0e58bbecd771e5baf", null ],
     [ "setMedical", "class_troop.html#a3713f9a30a83751311c1732ec2b90ecc", null ],
     [ "setRaven", "class_troop.html#ad4c96d68362f0220d29d5e156eedafba", null ],
-    [ "setWeapons", "class_troop.html#acf950ac065019b0ca77847970a528636", null ]
+    [ "setWeapons", "class_troop.html#acf950ac065019b0ca77847970a528636", null ],
+    [ "damage", "class_troop.html#af0f4a70511ca8a64c6e7d032e15145b5", null ],
+    [ "size", "class_troop.html#a96abe8484c1eb6531d973bf3162dced9", null ],
+    [ "strategy", "class_troop.html#ac023212ca342925a19179031a4aab8ee", null ]
 ];

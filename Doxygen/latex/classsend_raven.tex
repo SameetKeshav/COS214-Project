@@ -2,6 +2,11 @@
 \label{classsend_raven}\index{sendRaven@{sendRaven}}
 
 
+The Concrete class for the Observer A class that watches the \mbox{\hyperlink{class_bannerman}{Bannerman}} for any changes that are made.  
+
+
+
+
 {\ttfamily \#include $<$send\+Raven.\+h$>$}
 
 Inheritance diagram for send\+Raven\+:\begin{figure}[H]
@@ -13,7 +18,7 @@ Inheritance diagram for send\+Raven\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classsend_raven_aba59cba498ba47ef028ea18697a40633}{send\+Raven}} (\mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} $\ast$$\ast$supplies, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$subject)
+\mbox{\hyperlink{classsend_raven_aba59cba498ba47ef028ea18697a40633}{send\+Raven}} (\mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} $\ast$$\ast$\mbox{\hyperlink{classsend_raven_a366eb34973a6a2c209a7073957a7cda9}{supplies}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{classsend_raven_a91a3b832d5c42bd354a8713bed6a1a69}{subject}})
 \begin{DoxyCompactList}\small\item\em constructor for the concrete \mbox{\hyperlink{class_raven}{Raven}} class \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classsend_raven_a97ce79bbfbbf0fa7798f80bf6d707c43}{update}} ()
 \begin{DoxyCompactList}\small\item\em This method will be called from outside the class, this method will get the amount of resources the subject has, then call the check method. \end{DoxyCompactList}\item 
@@ -23,12 +28,36 @@ void {\bfseries check\+Supplies} ()
 \mbox{\Hypertarget{classsend_raven_a5ae649aa7e798d6ea6fe148fb2acc144}\label{classsend_raven_a5ae649aa7e798d6ea6fe148fb2acc144}} 
 {\bfseries $\sim$send\+Raven} ()
 \begin{DoxyCompactList}\small\item\em The Destructor will be used to deference all pointer variables used by this class to stop all memory leaks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsend_raven_a8db0a12549dd3af8cfed1b75bd4c25a8}\label{classsend_raven_a8db0a12549dd3af8cfed1b75bd4c25a8}} 
+int {\bfseries num\+Food}
+\begin{DoxyCompactList}\small\item\em Amount of food the bannerman has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsend_raven_ada76e17a7a00b70bf31f1453591b8748}\label{classsend_raven_ada76e17a7a00b70bf31f1453591b8748}} 
+int {\bfseries num\+Medical}
+\begin{DoxyCompactList}\small\item\em Amount of medical supplies the bannerman has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsend_raven_a143ce0d976159d380e73c6c761992598}\label{classsend_raven_a143ce0d976159d380e73c6c761992598}} 
+int {\bfseries num\+Weapons}
+\begin{DoxyCompactList}\small\item\em Amount of medical supplies the bannerman has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsend_raven_a366eb34973a6a2c209a7073957a7cda9}\label{classsend_raven_a366eb34973a6a2c209a7073957a7cda9}} 
+\mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} $\ast$$\ast$ {\bfseries supplies}
+\begin{DoxyCompactList}\small\item\em The array of \mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}}\textquotesingle{}s used to hold the different types of supplies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsend_raven_a91a3b832d5c42bd354a8713bed6a1a69}\label{classsend_raven_a91a3b832d5c42bd354a8713bed6a1a69}} 
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries subject}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_bannerman}{Bannerman}} subject the Observer watches. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+The Concrete class for the Observer A class that watches the \mbox{\hyperlink{class_bannerman}{Bannerman}} for any changes that are made. 
+
 \begin{DoxyAuthor}{Author}
-Sameet Keshav, u21479373 
+Sameet Keshav u21479373 
 \end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -64,7 +93,7 @@ This method will be called from outside the class, this method will get the amou
 
 
 
-Implements \mbox{\hyperlink{class_raven}{Raven}}.
+Implements \mbox{\hyperlink{class_raven_a41ebf6a7b05e1e05520b7f48dde90834}{Raven}}.
 
 
 

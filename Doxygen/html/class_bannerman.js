@@ -12,6 +12,7 @@ var class_bannerman =
     [ "decreaseWeapons", "class_bannerman.html#aa5035baa2661e9af63bae7914efb51bc", null ],
     [ "detach", "class_bannerman.html#a205b64898be42c673c9f34a03b356d8d", null ],
     [ "getDamage", "class_bannerman.html#a1a5d6adb57fcf51eb355cdef86b72cb7", null ],
+    [ "getFavour", "class_bannerman.html#ad643991fd0fde3e08a5fd66054acf87e", null ],
     [ "getFood", "class_bannerman.html#adc69abec1cfbdb0a1d9edd434bfc53ae", null ],
     [ "getHP", "class_bannerman.html#a8c99451818f71d15d15e0bf35d4b62d6", null ],
     [ "getMedical", "class_bannerman.html#a9bc89447b53e38cd0e9d6b5962419587", null ],

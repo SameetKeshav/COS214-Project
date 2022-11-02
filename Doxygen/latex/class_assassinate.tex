@@ -18,11 +18,18 @@ Inheritance diagram for Assassinate\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_assassinate_ae4a924a40a5433112ff206bc3becff90}{Assassinate}} (int stealth, bool alive, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
+\mbox{\hyperlink{class_assassinate_aa27aab043fa4046d8468203b0e88fa13}{Assassinate}} (int \mbox{\hyperlink{class_assassinate_a9e9494971b33773628754b4f58496b17}{stealth}}, bool \mbox{\hyperlink{class_assassinate_a92d50c8dc40b1fa091c71b6820fd255c}{alive}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
 bool \mbox{\hyperlink{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
 \item 
 \mbox{\hyperlink{class_assassinate_a3f7d6fa4b38fb46cb63fbcc9509c0730}{$\sim$\+Assassinate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_assassinate_a9e9494971b33773628754b4f58496b17}{stealth}}
+\item 
+bool \mbox{\hyperlink{class_assassinate_a92d50c8dc40b1fa091c71b6820fd255c}{alive}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -39,11 +46,11 @@ October 2022
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_assassinate_ae4a924a40a5433112ff206bc3becff90}\label{class_assassinate_ae4a924a40a5433112ff206bc3becff90}} 
+\mbox{\Hypertarget{class_assassinate_aa27aab043fa4046d8468203b0e88fa13}\label{class_assassinate_aa27aab043fa4046d8468203b0e88fa13}} 
 \index{Assassinate@{Assassinate}!Assassinate@{Assassinate}}
 \index{Assassinate@{Assassinate}!Assassinate@{Assassinate}}
 \doxysubsubsection{\texorpdfstring{Assassinate()}{Assassinate()}}
-{\footnotesize\ttfamily Assassinate\+::\+Assassinate (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{bool}]{alive,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Assassinate\+::\+Assassinate (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{bool}]{alive,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000004}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
@@ -90,6 +97,21 @@ battle result as a boolean with true implying the attacking \mbox{\hyperlink{cla
 Implements \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy}}.
 
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_assassinate_a92d50c8dc40b1fa091c71b6820fd255c}\label{class_assassinate_a92d50c8dc40b1fa091c71b6820fd255c}} 
+\index{Assassinate@{Assassinate}!alive@{alive}}
+\index{alive@{alive}!Assassinate@{Assassinate}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily bool Assassinate\+::alive\hspace{0.3cm}{\ttfamily [private]}}
+
+life state of \mbox{\hyperlink{class_bannerman}{Bannerman}}\textquotesingle{}s assassin, is false if assassin was killed \mbox{\Hypertarget{class_assassinate_a9e9494971b33773628754b4f58496b17}\label{class_assassinate_a9e9494971b33773628754b4f58496b17}} 
+\index{Assassinate@{Assassinate}!stealth@{stealth}}
+\index{stealth@{stealth}!Assassinate@{Assassinate}}
+\doxysubsubsection{\texorpdfstring{stealth}{stealth}}
+{\footnotesize\ttfamily int Assassinate\+::stealth\hspace{0.3cm}{\ttfamily [private]}}
+
+skill level of Assassin from \mbox{\hyperlink{class_bannerman}{Bannerman}} using this strategy 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

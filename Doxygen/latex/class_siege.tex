@@ -18,11 +18,17 @@ Inheritance diagram for Siege\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_siege_a58bf6483aa888973ab9ead36635234fc}{Siege}} (int stealth, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
+\mbox{\hyperlink{class_siege_a618c82966756a5e32deb56ccd39b0f41}{Siege}} (int stealth, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
 \item 
 bool \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
 \item 
 \mbox{\hyperlink{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}{$\sim$\+Siege}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_siege_a69248708f7af9fee779719dd889f9d4a}\label{class_siege_a69248708f7af9fee779719dd889f9d4a}} 
+int {\bfseries stealth}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -39,14 +45,14 @@ October 2022
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_siege_a58bf6483aa888973ab9ead36635234fc}\label{class_siege_a58bf6483aa888973ab9ead36635234fc}} 
+\mbox{\Hypertarget{class_siege_a618c82966756a5e32deb56ccd39b0f41}\label{class_siege_a618c82966756a5e32deb56ccd39b0f41}} 
 \index{Siege@{Siege}!Siege@{Siege}}
 \index{Siege@{Siege}!Siege@{Siege}}
 \doxysubsubsection{\texorpdfstring{Siege()}{Siege()}}
-{\footnotesize\ttfamily Siege\+::\+Siege (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Siege\+::\+Siege (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
 
 \begin{DoxyParams}{Parameters}
 {\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
@@ -63,7 +69,7 @@ October 2022
 {\footnotesize\ttfamily Siege\+::$\sim$\+Siege (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000018}{Todo}}]destructor. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]destructor. \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -74,7 +80,7 @@ October 2022
 {\footnotesize\ttfamily bool Siege\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyRefDesc}
 
 \begin{DoxyParams}{Parameters}
 {\em my\+Bannerman} & -\/ attacking bannerman object. \\
