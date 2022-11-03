@@ -5,11 +5,7 @@ FailedState::FailedState() {
 }
 
 void FailedState::decreaseCurrency() {
-	context->removeCurrency(22);
-	if (context->getCurrency()<0)
-	{
-		context->SetState();
-	}
+	context->removeCurrency(22);	
 }
 
 string FailedState::getState(){
