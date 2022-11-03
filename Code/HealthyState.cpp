@@ -1,7 +1,6 @@
 #include "HealthyState.h"
 
 HealthyState::HealthyState(){
-	cout<<"Economy entered healthy state"<<endl;
 	context = nullptr;
 }
 

@@ -1,7 +1,6 @@
 #include "FailedState.h"
 
 FailedState::FailedState() {
-	cout<<"Economy is a failed state"<<endl;
 	context = nullptr;
 }
 
