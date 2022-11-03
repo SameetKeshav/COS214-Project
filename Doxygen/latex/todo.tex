@@ -1,6 +1,6 @@
 
 \begin{DoxyRefList}
-\item[Member \mbox{\hyperlink{class_ambush_a31fe32d8eba8effd01382376f9aff1e0}{Ambush\+::Ambush}} (int stealth, int min, int min\+Favour)]\label{todo__todo000001}%
+\item[Member \mbox{\hyperlink{class_ambush_aec9d5a1a757133058df754172f98a128}{Ambush\+::Ambush}} (int stealth, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000001}%
 \Hypertarget{todo__todo000001}%
 constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
 \item[Member \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{Ambush\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000002}%
@@ -9,7 +9,7 @@ makes two bannerman from enemy kingdoms fight each other until one loses
 \item[Member \mbox{\hyperlink{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}{Ambush\+::$\sim$\+Ambush}} ()]\label{todo__todo000003}%
 \Hypertarget{todo__todo000003}%
 destructor.  
-\item[Member \mbox{\hyperlink{class_assassinate_ae4a924a40a5433112ff206bc3becff90}{Assassinate\+::Assassinate}} (int stealth, bool alive, int min, int min\+Favour)]\label{todo__todo000004}%
+\item[Member \mbox{\hyperlink{class_assassinate_aa27aab043fa4046d8468203b0e88fa13}{Assassinate\+::Assassinate}} (int stealth, bool alive, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000004}%
 \Hypertarget{todo__todo000004}%
 constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
 \item[Member \mbox{\hyperlink{class_assassinate_aa650bb6fb68529914922728d6cc9cb07}{Assassinate\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000005}%
@@ -21,79 +21,70 @@ destructor.
 \item[Member \mbox{\hyperlink{class_battle_field_a0a0ea58914a59f8d385041f454ffe6d0}{Battle\+Field\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000008}%
 \Hypertarget{todo__todo000008}%
 makes two bannerman from enemy kingdoms fight each other until one loses  
-\item[Member \mbox{\hyperlink{class_battle_field_a55cdd1fe446cff45e718103ce14d3085}{Battle\+Field\+::Battle\+Field}} (int min, int min\+Favour)]\label{todo__todo000007}%
+\item[Member \mbox{\hyperlink{class_battle_field_a602131021b381a1c83e11635491ecfa5}{Battle\+Field\+::Battle\+Field}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000007}%
 \Hypertarget{todo__todo000007}%
 constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
 \item[Member \mbox{\hyperlink{class_battle_field_adf5797b1520be6502b828196690b9348}{Battle\+Field\+::$\sim$\+Battle\+Field}} ()]\label{todo__todo000009}%
 \Hypertarget{todo__todo000009}%
 destructor.  
-\item[Member \mbox{\hyperlink{class_failed_state_afaaef228a607bb585a980642985d18a2}{Failed\+State\+::decrease\+Currency}} ()]\label{todo__todo000011}%
+\item[Member \mbox{\hyperlink{class_failed_state_afaaef228a607bb585a980642985d18a2}{Failed\+State\+::decrease\+Currency}} ()]\label{todo__todo000010}%
+\Hypertarget{todo__todo000010}%
+decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  
+\item[Member \mbox{\hyperlink{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}{Healthy\+State\+::decrease\+Currency}} ()]\label{todo__todo000011}%
 \Hypertarget{todo__todo000011}%
 decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  
-\item[Member \mbox{\hyperlink{class_failed_state_acc9cac035280bef2ba36d7049b422956}{Failed\+State\+::set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$context)]\label{todo__todo000010}%
-\Hypertarget{todo__todo000010}%
-sets context variable.  
-\item[Member \mbox{\hyperlink{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}{Healthy\+State\+::decrease\+Currency}} ()]\label{todo__todo000013}%
-\Hypertarget{todo__todo000013}%
-decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  
-\item[Member \mbox{\hyperlink{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}{Healthy\+State\+::get\+Demotion\+State}} ()]\label{todo__todo000014}%
-\Hypertarget{todo__todo000014}%
-gets lower level state of economy  
-\item[Member \mbox{\hyperlink{class_healthy_state_abdfa8ce236a9766bac7dd8ed3bf316e2}{Healthy\+State\+::set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$context)]\label{todo__todo000012}%
+\item[Member \mbox{\hyperlink{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}{Healthy\+State\+::get\+Demotion\+State}} ()]\label{todo__todo000012}%
 \Hypertarget{todo__todo000012}%
-sets context variable.  
-\item[Member \mbox{\hyperlink{class_kingdom_a434e87f15f449ee199ab3a1ddfe2f0f6}{Kingdom\+::$\sim$\+Kingdom}} ()]\label{todo__todo000015}%
-\Hypertarget{todo__todo000015}%
-destructor. deallocates all pointers of this class  
-\item[Member \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{Siege\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000017}%
-\Hypertarget{todo__todo000017}%
-makes two bannerman from enemy kingdoms fight each other until one loses  
-\item[Member \mbox{\hyperlink{class_siege_a58bf6483aa888973ab9ead36635234fc}{Siege\+::Siege}} (int stealth, int min, int min\+Favour)]\label{todo__todo000016}%
-\Hypertarget{todo__todo000016}%
-constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
-\item[Member \mbox{\hyperlink{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}{Siege\+::$\sim$\+Siege}} ()]\label{todo__todo000018}%
-\Hypertarget{todo__todo000018}%
-destructor.  
-\item[Member \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State\+::decrease\+Currency}} ()=0]\label{todo__todo000020}%
-\Hypertarget{todo__todo000020}%
-Abstract method.  
-\item[Member \mbox{\hyperlink{class_state_aa901c36d20da2a396e4fa27bf8576eec}{State\+::get\+Demotion\+State}} ()]\label{todo__todo000021}%
-\Hypertarget{todo__todo000021}%
-gets lower level state of economy with null being returned if no lower state is possible  
-\item[Member \mbox{\hyperlink{class_state_ae8c1972e00c66761620cf9c3d4d8cb49}{State\+::set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$context)]\label{todo__todo000019}%
-\Hypertarget{todo__todo000019}%
-sets context variable.  
-\item[Member \mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{State\+::$\sim$\+State}} ()]\label{todo__todo000022}%
-\Hypertarget{todo__todo000022}%
-destructor. deallocates context  
-\item[Member \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)=0]\label{todo__todo000024}%
-\Hypertarget{todo__todo000024}%
-Abstract method  
-\item[Member \mbox{\hyperlink{class_strategy_a88ed4a64031030f3a9a30652b01debe6}{Strategy\+::get\+Enemy\+Bannerman}} ()]\label{todo__todo000027}%
-\Hypertarget{todo__todo000027}%
-gets \mbox{\hyperlink{class_bannerman}{Bannerman}} being attacked  
-\item[Member \mbox{\hyperlink{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}{Strategy\+::get\+My\+Bannerman}} ()]\label{todo__todo000026}%
-\Hypertarget{todo__todo000026}%
-gets attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}  
-\item[Member \mbox{\hyperlink{class_strategy_a310550043f6b81592cef05ea9241144f}{Strategy\+::get\+Strategy\+Name}} ()]\label{todo__todo000025}%
-\Hypertarget{todo__todo000025}%
-gets strategy variable  
-\item[Member \mbox{\hyperlink{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}{Strategy\+::Strategy}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000023}%
-\Hypertarget{todo__todo000023}%
-constructor. initializes my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min\+Supplies and min\+Favour.  
-\item[Member \mbox{\hyperlink{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}{Strategy\+::$\sim$\+Strategy}} ()]\label{todo__todo000028}%
-\Hypertarget{todo__todo000028}%
-destructor. deallocates all pointers of this class  
-\item[Member \mbox{\hyperlink{class_unstable_state_a4e134532fc0e3f2471e06ad0996ae161}{Unstable\+State\+::decrease\+Currency}} ()]\label{todo__todo000030}%
-\Hypertarget{todo__todo000030}%
-decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  
-\item[Member \mbox{\hyperlink{class_unstable_state_a655d00d68c7c2e08da6b4db0df14a600}{Unstable\+State\+::get\+Demotion\+State}} ()]\label{todo__todo000031}%
-\Hypertarget{todo__todo000031}%
 gets lower level state of economy  
-\item[Member \mbox{\hyperlink{class_unstable_state_adaff0187ed507f9d0b3ae25e8a901a17}{Unstable\+State\+::set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$context)]\label{todo__todo000029}%
-\Hypertarget{todo__todo000029}%
+\item[Member \mbox{\hyperlink{class_kingdom_a434e87f15f449ee199ab3a1ddfe2f0f6}{Kingdom\+::$\sim$\+Kingdom}} ()]\label{todo__todo000013}%
+\Hypertarget{todo__todo000013}%
+destructor. deallocates all pointers of this class  
+\item[Member \mbox{\hyperlink{class_siege_ae8e9de64c3a659bf32bb35ad4cbcbc2f}{Siege\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)]\label{todo__todo000015}%
+\Hypertarget{todo__todo000015}%
+makes two bannerman from enemy kingdoms fight each other until one loses  
+\item[Member \mbox{\hyperlink{class_siege_a618c82966756a5e32deb56ccd39b0f41}{Siege\+::Siege}} (int stealth, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000014}%
+\Hypertarget{todo__todo000014}%
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_siege_aac2d09fe50a26b39865aad8c8c9486b9}{Siege\+::$\sim$\+Siege}} ()]\label{todo__todo000016}%
+\Hypertarget{todo__todo000016}%
+destructor.  
+\item[Member \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State\+::decrease\+Currency}} ()=0]\label{todo__todo000018}%
+\Hypertarget{todo__todo000018}%
+Abstract method.  
+\item[Member \mbox{\hyperlink{class_state_aa901c36d20da2a396e4fa27bf8576eec}{State\+::get\+Demotion\+State}} ()]\label{todo__todo000019}%
+\Hypertarget{todo__todo000019}%
+gets lower level state of economy with null being returned if no lower state is possible  
+\item[Member \mbox{\hyperlink{class_state_ae8c1972e00c66761620cf9c3d4d8cb49}{State\+::set\+Context}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$context)]\label{todo__todo000017}%
+\Hypertarget{todo__todo000017}%
 sets context variable.  
-\item[Member \mbox{\hyperlink{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}{War\+Indicators\+::$\sim$\+War\+Indicators}} ()]\label{todo__todo000032}%
-\Hypertarget{todo__todo000032}%
+\item[Member \mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{State\+::$\sim$\+State}} ()]\label{todo__todo000020}%
+\Hypertarget{todo__todo000020}%
+destructor. deallocates context  
+\item[Member \mbox{\hyperlink{class_strategy_adecf5b4398ec2dd89bd280441f674de3}{Strategy\+::attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman)=0]\label{todo__todo000022}%
+\Hypertarget{todo__todo000022}%
+Abstract method  
+\item[Member \mbox{\hyperlink{class_strategy_a88ed4a64031030f3a9a30652b01debe6}{Strategy\+::get\+Enemy\+Bannerman}} ()]\label{todo__todo000025}%
+\Hypertarget{todo__todo000025}%
+gets \mbox{\hyperlink{class_bannerman}{Bannerman}} being attacked  
+\item[Member \mbox{\hyperlink{class_strategy_a0931adab8a2fe9b3cf68bbd626e10b3a}{Strategy\+::get\+My\+Bannerman}} ()]\label{todo__todo000024}%
+\Hypertarget{todo__todo000024}%
+gets attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}  
+\item[Member \mbox{\hyperlink{class_strategy_a310550043f6b81592cef05ea9241144f}{Strategy\+::get\+Strategy\+Name}} ()]\label{todo__todo000023}%
+\Hypertarget{todo__todo000023}%
+gets strategy variable  
+\item[Member \mbox{\hyperlink{class_strategy_abf2f11a2d8b44147caf0ea37863c90e2}{Strategy\+::Strategy}} (\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$my\+Kingdom, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$enemy\+Kingdom, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$my\+Bannerman, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$enemy\+Bannerman, string name, int min, int min\+Favour)]\label{todo__todo000021}%
+\Hypertarget{todo__todo000021}%
+constructor. initializes my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min\+Supplies and min\+Favour.  
+\item[Member \mbox{\hyperlink{class_strategy_a37c0bbdd64fd7dfcdd91578784a64775}{Strategy\+::$\sim$\+Strategy}} ()]\label{todo__todo000026}%
+\Hypertarget{todo__todo000026}%
+destructor. deallocates all pointers of this class  
+\item[Member \mbox{\hyperlink{class_unstable_state_a4e134532fc0e3f2471e06ad0996ae161}{Unstable\+State\+::decrease\+Currency}} ()]\label{todo__todo000027}%
+\Hypertarget{todo__todo000027}%
+decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  
+\item[Member \mbox{\hyperlink{class_unstable_state_a655d00d68c7c2e08da6b4db0df14a600}{Unstable\+State\+::get\+Demotion\+State}} ()]\label{todo__todo000028}%
+\Hypertarget{todo__todo000028}%
+gets lower level state of economy  
+\item[Member \mbox{\hyperlink{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}{War\+Indicators\+::$\sim$\+War\+Indicators}} ()]\label{todo__todo000029}%
+\Hypertarget{todo__todo000029}%
 destructor. deallocates \mbox{\hyperlink{class_treasury}{Treasury}} pointer of this class 
 \end{DoxyRefList}

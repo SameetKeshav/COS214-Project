@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hp_0',['HP',['../class_bannerman.html#aa9c6fea3fb600df01d45560f5bf26185',1,'Bannerman']]]
+  ['favour_0',['favour',['../class_bannerman.html#ad4d01bdfd330c24d420a860c1805fabc',1,'Bannerman']]]
 ];

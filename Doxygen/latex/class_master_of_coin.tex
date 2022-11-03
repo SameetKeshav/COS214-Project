@@ -2,6 +2,11 @@
 \label{class_master_of_coin}\index{MasterOfCoin@{MasterOfCoin}}
 
 
+The Concrete class for the Mediator A class that allows for other classes to talk to when key changes are made.  
+
+
+
+
 {\ttfamily \#include $<$Master\+Of\+Coin.\+h$>$}
 
 Inheritance diagram for Master\+Of\+Coin\+:\begin{figure}[H]
@@ -13,7 +18,7 @@ Inheritance diagram for Master\+Of\+Coin\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_master_of_coin_a937c30ac28a57ff502d9b6ec93fcceb3}{Master\+Of\+Coin}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$economy, \mbox{\hyperlink{class_raven}{Raven}} $\ast$observer, \mbox{\hyperlink{class_strategy}{Strategy}} strategy)
+\mbox{\hyperlink{class_master_of_coin_a937c30ac28a57ff502d9b6ec93fcceb3}{Master\+Of\+Coin}} (\mbox{\hyperlink{class_economy}{Economy}} $\ast$\mbox{\hyperlink{class_master_of_coin_aea63e3d11bf269d74c097dc8419775e9}{economy}}, \mbox{\hyperlink{class_raven}{Raven}} $\ast$\mbox{\hyperlink{class_master_of_coin_a83cc000717e77faa433686989a3adc02}{observer}}, \mbox{\hyperlink{class_strategy}{Strategy}} \mbox{\hyperlink{class_master_of_coin_a558b12138aceca89f7f1b12cae2bebd7}{strategy}})
 \begin{DoxyCompactList}\small\item\em Constructor to set the variables in this class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_master_of_coin_aaf0a509b1fd95a2811199bd59835943a}{notify}} (\mbox{\hyperlink{class_war_indicators}{War\+Indicators}} sender)
 \begin{DoxyCompactList}\small\item\em This is the method that all objects will use to call the mediator when a change is made. \end{DoxyCompactList}\item 
@@ -26,12 +31,30 @@ void {\bfseries manufacture} ()
 \mbox{\Hypertarget{class_master_of_coin_a250eb3154300bc63cba4261b5e76446b}\label{class_master_of_coin_a250eb3154300bc63cba4261b5e76446b}} 
 {\bfseries $\sim$\+Master\+Of\+Coin} ()
 \begin{DoxyCompactList}\small\item\em This is the destructer used to deallocate all memory used in this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_master_of_coin_aea63e3d11bf269d74c097dc8419775e9}\label{class_master_of_coin_aea63e3d11bf269d74c097dc8419775e9}} 
+\mbox{\hyperlink{class_economy}{Economy}} $\ast$ {\bfseries economy}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_economy}{Economy}} that the mediator uses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_master_of_coin_a83cc000717e77faa433686989a3adc02}\label{class_master_of_coin_a83cc000717e77faa433686989a3adc02}} 
+\mbox{\hyperlink{class_raven}{Raven}} $\ast$ {\bfseries observer}
+\begin{DoxyCompactList}\small\item\em The Observer that the mediator uses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_master_of_coin_a558b12138aceca89f7f1b12cae2bebd7}\label{class_master_of_coin_a558b12138aceca89f7f1b12cae2bebd7}} 
+\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ {\bfseries strategy}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_strategy}{Strategy}} the mediator uses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+The Concrete class for the Mediator A class that allows for other classes to talk to when key changes are made. 
+
 \begin{DoxyAuthor}{Author}
 Sameet Keshav u21479373 
 \end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2022 
+\end{DoxyDate}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}

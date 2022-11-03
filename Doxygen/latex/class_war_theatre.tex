@@ -24,10 +24,21 @@ Inheritance diagram for War\+Theatre\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em returns the strategy the location is based on \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}{send\+Scout}} ()=0
 \begin{DoxyCompactList}\small\item\em Abstract. Decorates the location of the battle. \end{DoxyCompactList}\item 
-char \mbox{\hyperlink{class_war_theatre_a4399abd6bdf199436d7cdff2d8c73bff}{decide\+Venue}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$strategy)
+char \mbox{\hyperlink{class_war_theatre_a4399abd6bdf199436d7cdff2d8c73bff}{decide\+Venue}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$\mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}})
 \begin{DoxyCompactList}\small\item\em function that uses the parameter to decide the venue of the war \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_war_theatre_a03465cdc5a9fefbad9e2decb15152c45}\label{class_war_theatre_a03465cdc5a9fefbad9e2decb15152c45}} 
 {\bfseries War\+Theatre} (\mbox{\hyperlink{class_strategy}{Strategy}} my\+Strat)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}}
+\item 
+char \mbox{\hyperlink{class_war_theatre_ac4ea86c245fdad602fe85f6b62021cb9}{venue}}
+\item 
+string \mbox{\hyperlink{class_war_theatre_afd8f31c3b35b4560e50407da71d6ab41}{location}}
+\item 
+int \mbox{\hyperlink{class_war_theatre_a96237b9b1916bd84b5cbee90ce88d702}{difficulty}}
 \end{DoxyCompactItemize}
 
 
@@ -107,6 +118,33 @@ Abstract. Decorates the location of the battle.
 Implemented in \mbox{\hyperlink{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}{Conditions}}, \mbox{\hyperlink{class_location_a807c0a9de641ada5fe575ee2a99629dc}{Location}}, and \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e038e}{Topology}}.
 
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_war_theatre_a96237b9b1916bd84b5cbee90ce88d702}\label{class_war_theatre_a96237b9b1916bd84b5cbee90ce88d702}} 
+\index{WarTheatre@{WarTheatre}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily int War\+Theatre\+::difficulty\hspace{0.3cm}{\ttfamily [private]}}
+
+Integer representing the difficulty of the battle at the decorated venue \mbox{\Hypertarget{class_war_theatre_afd8f31c3b35b4560e50407da71d6ab41}\label{class_war_theatre_afd8f31c3b35b4560e50407da71d6ab41}} 
+\index{WarTheatre@{WarTheatre}!location@{location}}
+\index{location@{location}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily string War\+Theatre\+::location\hspace{0.3cm}{\ttfamily [private]}}
+
+The location of the venue as a string \mbox{\Hypertarget{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}\label{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}} 
+\index{WarTheatre@{WarTheatre}!strategy@{strategy}}
+\index{strategy@{strategy}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}}$\ast$ War\+Theatre\+::strategy\hspace{0.3cm}{\ttfamily [private]}}
+
+Name of \mbox{\hyperlink{class_strategy}{Strategy}} as it determines the venue of the battle \mbox{\Hypertarget{class_war_theatre_ac4ea86c245fdad602fe85f6b62021cb9}\label{class_war_theatre_ac4ea86c245fdad602fe85f6b62021cb9}} 
+\index{WarTheatre@{WarTheatre}!venue@{venue}}
+\index{venue@{venue}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{venue}{venue}}
+{\footnotesize\ttfamily char War\+Theatre\+::venue\hspace{0.3cm}{\ttfamily [private]}}
+
+Char representing the venue. options a to d only 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

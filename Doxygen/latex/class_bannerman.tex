@@ -60,6 +60,8 @@ virtual void \mbox{\hyperlink{class_bannerman_af8270f911b620c33df9b86536c95267f}
 \begin{DoxyCompactList}\small\item\em Abstract. Assigns a list of \mbox{\hyperlink{class_raven}{Raven}} Observers to the bannerman\textquotesingle{}s raven\+List. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_bannerman_afbd7285dd438c57eb41e589433c66b9e}{set\+Master}} (\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}})=0
 \begin{DoxyCompactList}\small\item\em Abstract. Assigns a Masterof\+Coin mediator to ensure that the army has the supplies it needs. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_bannerman_ad643991fd0fde3e08a5fd66054acf87e}{get\+Favour}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract. returns the favour of the bannerman. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_bannerman_add811865a500b84e9baa7fff28230115}\label{class_bannerman_add811865a500b84e9baa7fff28230115}} 
 {\bfseries $\sim$\+Bannerman} ()
 \begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -260,6 +262,20 @@ The damage of the bannerman.
 
 
 Implemented in \mbox{\hyperlink{class_commander_a37405a7e4aa51f61f3fc389e7ef41e83}{Commander}}, and \mbox{\hyperlink{class_troop_ab6c541f28f5221177c3b614dbcb341db}{Troop}}.
+
+\mbox{\Hypertarget{class_bannerman_ad643991fd0fde3e08a5fd66054acf87e}\label{class_bannerman_ad643991fd0fde3e08a5fd66054acf87e}} 
+\index{Bannerman@{Bannerman}!getFavour@{getFavour}}
+\index{getFavour@{getFavour}!Bannerman@{Bannerman}}
+\doxysubsubsection{\texorpdfstring{getFavour()}{getFavour()}}
+{\footnotesize\ttfamily virtual int Bannerman\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract. returns the favour of the bannerman. 
+
+
+
+Implemented in \mbox{\hyperlink{class_commander_a6273d07255e979e8957247af66b7f635}{Commander}}, and \mbox{\hyperlink{class_troop_a18d453e63faf087978514658361a5e78}{Troop}}.
 
 \mbox{\Hypertarget{class_bannerman_adc69abec1cfbdb0a1d9edd434bfc53ae}\label{class_bannerman_adc69abec1cfbdb0a1d9edd434bfc53ae}} 
 \index{Bannerman@{Bannerman}!getFood@{getFood}}

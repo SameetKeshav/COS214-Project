@@ -27,6 +27,10 @@ public:
 		this->m=m;
 	}
 
+	void setTreasury(Treasury* m){
+		this->m=m;
+	}
+
 	/** @todo destructor. deallocates Treasury pointer of this class**/
 	virtual ~WarIndicators(){
 		//delete m;
