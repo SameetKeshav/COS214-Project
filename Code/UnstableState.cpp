@@ -1,7 +1,6 @@
 #include "UnstableState.h"
 
 UnstableState::UnstableState() {
-	cout<<"Economy entered unstable state"<<endl;
 	context = nullptr;
 }
 

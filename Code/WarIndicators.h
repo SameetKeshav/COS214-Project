@@ -31,6 +31,8 @@ public:
 	virtual ~WarIndicators(){
 		//delete m;
 	}
+
+	
 };
 
 #endif

@@ -1,7 +1,6 @@
 #include "Economy.h"
 
 Economy::Economy(State* state,int currency) {
-	cout<<"Economy constructor works"<<endl;
 	state->setContext(this);
 	this->state=state;
 	this->currency=currency;
