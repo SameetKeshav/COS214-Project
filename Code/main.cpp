@@ -40,6 +40,8 @@ Strategy* strat;
 State* DuraState;
 State* PreadoraState;
 WarIndicators* warind = new WarIndicators();
+Historian* Greg = new Historian();
+HistoryBook* BookOfDura = new HistoryBook();
 
 /// @brief collapsable function for into text generation
 void intro(){
@@ -199,28 +201,28 @@ void goAttack(){
     {
     case 1:
         strategy = " go to the Battle Field";
-        strat = new BattleField(Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
+        strat = new BattleField(Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
         break;
 
     case 2:
         strategy = " stage a Seige";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
+        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
         break;
 
     case 3:
         strategy = " Ambush the enemy";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
+        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
         break;
 
     case 4:
         strategy = " send an Assassin";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "BattleField", 10, 5);
+        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
         break;
 
     default:

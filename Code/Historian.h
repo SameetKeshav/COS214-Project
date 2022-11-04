@@ -2,17 +2,17 @@
 #define HISTORIAN_H
 #include "Bannerman.h"
 #include "History.h"
-class Historian {
+class Historian { //originator
 
 private:
 	Bannerman* bannerman;
 
-public:
-	Historian(Bannerman* b);
+ public:
+	void setAlly(Bannerman* b);
 
-	History* setAlly();
+	History* Store();
 
-	Bannerman* restoreAlly(History* h);
+	Bannerman* restoreAlly(History* h); 
 
 	~Historian(){delete bannerman;};
 };

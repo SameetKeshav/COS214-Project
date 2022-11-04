@@ -15,7 +15,7 @@ public:
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which bannerman change allegiances
 	*/
-	BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour);
+	BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
 	/** @todo makes two bannerman from enemy kingdoms fight each other until one loses
 	 * @param myBannerman - attacking bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.

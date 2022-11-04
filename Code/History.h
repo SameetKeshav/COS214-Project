@@ -3,7 +3,7 @@
 #include "Bannerman.h"
 #include <iostream>
 using namespace std;
-class History {
+class History { //memento
 
 private:
 	Bannerman* bannerman;
@@ -12,6 +12,8 @@ public:
 	History(Bannerman* b);
 
 	Bannerman* getBannerman();
+
+	string getName();
 
 	~History(){delete bannerman;};
 };

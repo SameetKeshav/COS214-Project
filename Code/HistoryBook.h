@@ -10,7 +10,7 @@ private:
 public:
 	void add(History* h);
 
-	History* restoreAlly(History* h);  
+	History* getAlly();  
 };
 
 #endif
