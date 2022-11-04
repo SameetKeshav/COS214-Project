@@ -1,3 +1,13 @@
+/** @brief The main text-based interface for the application
+ * @author Julianna Venter
+ * @date November 2022
+ * TO-DO:
+ * 1. Filler text in other classes for story-building
+ * 2. Final debug-run
+ * 3. deleting dynamic objects + text for that
+ */
+
+
 //functionality includes
 #include <iostream>
 #include <limits>
@@ -10,7 +20,7 @@
 using namespace std;
 
 //file includes
-#include "Historian.h" //originator, has memento includeded
+#include "Historian.h" //originator, has memento included
 #include "HistoryBook.h" //caretaker
 #include "Kingdom.h"
 #include "Economy.h"
@@ -18,7 +28,6 @@ using namespace std;
 #include "FailedState.h"
 #include "UnstableState.h"
 #include "Commander.h"
-#include "Troop.h"
 #include "Ambush.h"
 #include "BattleField.h"
 #include "Siege.h"
@@ -26,6 +35,8 @@ using namespace std;
 #include "Location.h"
 #include "Weather.h"
 #include "Topology.h"
+#include "MasterOfCoin.h"
+#include "sendRaven.h"
 
 //variables;
 Kingdom* Dura;
@@ -42,8 +53,12 @@ State* PreadoraState;
 WarIndicators* warind = new WarIndicators();
 Historian* Greg = new Historian();
 HistoryBook* BookOfDura = new HistoryBook();
+Treasury* t;
+Raven* r;
 
-/// @brief collapsable function for into text generation
+/**
+ * @brief the text introduction to the simulator's story
+ */
 void intro(){
     cout<<"A new dawn arrives and brings with it a red sky."<<endl;
     cout<<"You rule the great kingdom of Dura, which is in the midst of a great battle for the western"<<endl;
@@ -71,7 +86,9 @@ void intro(){
 }
 
 
-/// @brief populating the vectors of our and the enemy bannermen
+/**
+ * @brief creating the state, economy, kingdom and bannerman objects
+ */
 void populateVectors(){
     DuraState = new HealthyState();
     PreadoraState = new HealthyState();
@@ -99,14 +116,20 @@ void populateVectors(){
     Preadora->add(new Commander("Dry Gulch"));
     Preadora->add(new Commander("Prin"));
 
-    // cout<<"populate vectors successful"<<endl;
+
 
 }
 
+/**
+ * @brief text for if the user chooses to surrender
+ */
 void surrender(){
     cout<<"You have raised the white flag. Preadora is victorious."<<endl;
 }
 
+/**
+ * @brief displays all enemy bannermen and lets the user choose which to fight
+ */
 void chooseEnemy(){
     list<Bannerman*> PreadoraBannermen = Preadora->getKingdom();
     cout<<"Chose which enemy you would like to attack:"<<endl;
@@ -145,6 +168,9 @@ void chooseEnemy(){
     cout<<"chooseEnemy success"<<endl;
 }
 
+/**
+ * @brief displays all bannermen and lets the user choose which will fight
+ */
 void chooseFighter(){
     list<Bannerman*> DuraBannermen = Dura->getKingdom();
     cout<<"Chose which enemy you would like to attack:"<<endl;
@@ -183,12 +209,18 @@ void chooseFighter(){
     cout<<"chooseFighter success"<<endl;
 }
 
+/**
+ * @brief helper code for creating the location/wartheater/topology objects
+ */
 void DecoratorClientCode(WarTheatre* component) {
  
   component->sendScout();
   
 }
 
+/**
+ * @brief lets the user choose the strategy and calls the attack method
+ */
 void goAttack(){
     int stealth;
 
@@ -241,17 +273,23 @@ void goAttack(){
 
 }
 
-
-
+/**
+ * @brief text for if user won the war
+ */
 void WarWon(){
-
+    cout<<"The enemy has been defeated! All the land under the Kingdoms of Preadora are now under your rule! Long live Dura!"<<endl;
 }
 
+/**
+ * @brief text for if user lost the war
+ */
 void WarLost(){
-    
+    cout<<"Preadora's bannermen have overwhelmed your forces and have been crowned victorious after these long battles. Dura is under her rule."<<endl;
 }
 
-
+/**
+ * @brief loop that checks the status of the battle, updates the user of the kingdom's state and initiates attacks
+ */
 void WarLoop(){
     while (attack){
         State* state = DuraState;
@@ -287,6 +325,7 @@ void WarLoop(){
             cin>>surr;
             if (surr == 'y'){
                 surrender();
+                attack = false;
                 break;
             }
             if (surr == 'n'){
@@ -301,14 +340,16 @@ void WarLoop(){
     }
 
 }
-/// @brief main functionality for simulation
-/// @return no complications in compilation
+
+/**
+ * @brief main function, calls other functions
+ * @return no compilation errors
+ */
 int main(){
 
     intro();
     populateVectors();
     WarLoop();
-
 
     return 0;
 }
