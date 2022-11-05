@@ -11,6 +11,8 @@ public:
     SupplyWagon* clone();
     ArmySupplies* getSupplies();
     ArmySupplies* supp;
+    ///@brief destructor for the Medical Wagon class to delete and free the supply variable.
+///@author Ronin Brookes 19069686
     ~MedicalWagon();
 };
 
