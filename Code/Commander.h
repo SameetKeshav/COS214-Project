@@ -56,6 +56,7 @@ public:
      */
     int getHP() override;
 
+    string getName() override;
     /**
      * @brief Accessor. Returns the damage.
      *

@@ -1,19 +1,16 @@
 #include "Troop.h"
 
-Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
-
-    this->size = size;
-
-    this->name =name;
-    this->favour =favor;
-    this->numFood =numFood;
-    this->numMedical =Medical;
-    this->HP =HP;
-    this->warZone =warZone;
-    this->strategy =strategy;
-    this->m =m;
-
-    this->assassin = assassin;
+Troop::Troop(string n, int size): Bannerman(){
+    name = n;
+    srand(time(0));
+    HP = size;
+    srand(time(0));
+    damage = 7 + (rand() % 25);
+    favour = 15;
+    numWeapons = 50;
+    numFood = 50;
+    numMedical = 50;
+    assassin = true;
 }
 int Troop::getHP() {
     return this->HP;
@@ -111,4 +108,8 @@ void Troop::decreasePower(int x){
 }
 Troop::~Troop() {
 
+}
+
+string Troop::getName() {
+    return name;
 }

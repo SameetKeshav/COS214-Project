@@ -28,7 +28,7 @@ public:
      * @brief Constructor. Initializes the name; favour; numFood;  Medical;
      * HP; warZone; strategy; m; assassin and size variables of the troop.
      * */
-    Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size);
+    Troop(string n, int size);
 
     /**
 * @brief Returns the troop's HP.
@@ -140,7 +140,7 @@ public:
 */
     void setFood(int numFood) override;
 
-
+    string getName() override;
 
     /** @brief Decreases the damage capability of the troop.
  * @param x - the number by which to decrease damage.

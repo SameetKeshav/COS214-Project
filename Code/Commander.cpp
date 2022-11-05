@@ -1,9 +1,16 @@
 #include "Commander.h"
 #include "MasterOfCoin.h"
-
+#include "Troop.h"
 //Julianna added and changed constructor
 Commander::Commander(string n) :groundForces() {
     name = n;
+    srand(time(0));
+    HP = 150 + (rand() % 500);
+    cout<<"HP: "<<HP<<endl;
+    int a = (40/100)*HP;
+    int b = (60/100)*HP;
+    groundForces.push_back(new Troop("SquadrenA", a));
+    groundForces.push_back(new Troop("SquadrenB", b));
 }
 
 Iterator* Commander::createIterator() {
@@ -26,7 +33,7 @@ int Commander::getHP() {
 
 //    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
 //        totalHP+=(*it)->getHP();
-//
+
         Iterator* IT = createIterator();
 
         IT->Current();
@@ -38,7 +45,7 @@ int Commander::getHP() {
         }
 
         return totalHP;
-    }
+}
 
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
@@ -185,4 +192,8 @@ void Commander::setMaster(MasterOfCoin* m){
 //fixed.
 void Commander::setStrategy(Strategy* s){
     this->changeStrategy(s);
+}
+
+string Commander::getName() {
+    return name;
 }

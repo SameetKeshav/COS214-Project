@@ -223,7 +223,8 @@ void surrender(){
 void chooseEnemy(){
     list<Bannerman*> PreadoraBannermen = Preadora->getKingdom();
     cout<<"Chose which enemy you would like to attack:"<<endl;
-    
+
+
     for (int i=0; i<PreadoraBannermen.size(); i++){
 
         list<Bannerman*>::iterator it = PreadoraBannermen.begin();
@@ -231,19 +232,19 @@ void chooseEnemy(){
         Bannerman* curr = *it; //curr = bannerman
 
         cout<< i << ": " << curr->getName() <<endl;
-        cout<<"HP: " << curr->getHP() <<endl;
+//        cout<<"HP: " << curr->getHP() <<endl;
 
-        list<Bannerman*> PreadoraTroops = curr->getTroops();
-        list<Bannerman*>::iterator a = PreadoraTroops.begin();
-        list<Bannerman*>::iterator b = PreadoraTroops.begin();
-        advance(b, 1);
-        Bannerman* troop1 = *a;
-        Bannerman* troop2 = *b;
-        
-        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
-        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
+//        list<Bannerman*> PreadoraTroops = curr->getTroops();
+//        list<Bannerman*>::iterator a = PreadoraTroops.begin();
+//        list<Bannerman*>::iterator b = PreadoraTroops.begin();
+//        advance(b, 1);
+//        Bannerman* troop1 = *a;
+//        Bannerman* troop2 = *b;
+//
+//        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
+//        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
 
-        cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
+//        cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
     }
     int c;
     cin>>c;
@@ -253,7 +254,7 @@ void chooseEnemy(){
 
     list<Bannerman*>::iterator itr = PreadoraBannermen.begin();
     advance(itr, c-1);
-    
+
     enemy = *itr;
     cout<<"chooseEnemy success"<<endl;
 }
@@ -354,21 +355,21 @@ void goAttack(){
         strategy = " stage a Seige";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
+        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "Siege", 10, 5, Greg, BookOfDura);
         break;
 
     case 3:
         strategy = " Ambush the enemy";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
+        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "Ambush", 10, 5, Greg, BookOfDura);
         break;
 
     case 4:
         strategy = " send an Assassin";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
+        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassination", 10, 5, Greg, BookOfDura);
         break;
 
     default:
@@ -480,8 +481,9 @@ int main(){
 
     intro();
     populateVectors();
-    WarLoop();
+//    WarLoop();
 
+    chooseEnemy();
 //    RoninUnitTesting();
 //    KeaUnitTesting();
 //    SameetUnitTesting();

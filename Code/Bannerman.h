@@ -98,10 +98,10 @@ public:
 */
     virtual void increasePower(int boost) = 0;
 
-    /** @brief Accessor that returns the name of the bannerman.
+    /** @brief Abstract. Accessor that returns the name of the bannerman.
      * @return The name of the bannerman.
         */
-    string getName();
+    virtual string getName() = 0;
 
     /**@brief Abstract. Accessor that returns the name of the component.
      * @return The name of the bannerman.
