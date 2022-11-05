@@ -14,7 +14,7 @@ class Strategy;
     @date October 2022
     */
 
-class MasterOfCoin : Treasury {
+class MasterOfCoin : public Treasury {
 
 private:
     /// The Economy that the mediator uses

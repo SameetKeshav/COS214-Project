@@ -18,16 +18,12 @@ class Location : public WarTheatre {
 public:
 
     /** @brief Default constructor.*/
-    Location();
+	Location();
 
     /** @brief the function that will be called to decorate the war venue*/
-    void sendScout();
+	void sendScout();
 
-    /** @brief creates default war theatre and calls the decorating function*/
-    void createVenue();
 
-    /** @brief fress memory used in the pattern*/
-    ~Location();
 };
 
 #endif

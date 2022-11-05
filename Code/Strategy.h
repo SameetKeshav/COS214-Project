@@ -6,9 +6,12 @@
 #include "WarIndicators.h"
 #include "MasterOfCoin.h"
 #include "Kingdom.h"
+#include "HistoryBook.h"
+#include "Historian.h"
 
 using namespace std;
-
+class Historian;
+class HistoryBook;
 class Bannerman;
 class Kingdom;
 /** @brief An Abstract strategy class.
@@ -34,6 +37,12 @@ protected:
 	int minFavour;
 	/**minimum supplies for food,weapons and medicine**/
 	int minSupplies;
+	//Caretaker for memento implementation
+	HistoryBook* BookOfDura;
+	//Historian (originator) to save defected bannemen
+	Historian* Greg;
+	//amount of defected allies
+	int defectedAllies;
 public:
 	/** @todo  constructor. initializes myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, minSupplies
 	 *  and minFavour.
@@ -41,7 +50,7 @@ public:
 	 * @param min - minimum supplies for food,weapons and medicine
 	 * @param minFavour - minimum favour below which bannerman change allegiances
 	*/
-	Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour);
+	Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
 	/** @todo Abstract method
 	 * @param myBannerman - attacking Bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.

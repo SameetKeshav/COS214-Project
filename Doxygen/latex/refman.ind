@@ -1,0 +1,586 @@
+\begin{theindex}
+
+  \item {$\sim$Ambush}
+    \subitem {Ambush}, \hyperpage{10}
+  \item {$\sim$Assassinate}
+    \subitem {Assassinate}, \hyperpage{13}
+  \item {$\sim$BattleField}
+    \subitem {BattleField}, \hyperpage{26}
+  \item {$\sim$Factory}
+    \subitem {Factory}, \hyperpage{43}
+  \item {$\sim$Kingdom}
+    \subitem {Kingdom}, \hyperpage{55}
+  \item {$\sim$Siege}
+    \subitem {Siege}, \hyperpage{65}
+  \item {$\sim$State}
+    \subitem {State}, \hyperpage{67}
+  \item {$\sim$Strategy}
+    \subitem {Strategy}, \hyperpage{70}
+  \item {$\sim$Troop}
+    \subitem {Troop}, \hyperpage{78}
+  \item {$\sim$WarIndicators}
+    \subitem {WarIndicators}, \hyperpage{88}
+
+  \indexspace
+
+  \item {add}
+    \subitem {HistoryBook}, \hyperpage{51}
+    \subitem {Kingdom}, \hyperpage{55}
+  \item {alive}
+    \subitem {Assassinate}, \hyperpage{14}
+  \item {Ambush}, \hyperpage{9}
+    \subitem {$\sim$Ambush}, \hyperpage{10}
+    \subitem {Ambush}, \hyperpage{10}
+    \subitem {attack}, \hyperpage{11}
+    \subitem {stealth}, \hyperpage{11}
+  \item {armyList}
+    \subitem {ConIterator}, \hyperpage{41}
+  \item {ArmySupplies}, \hyperpage{11}
+  \item {assassin}
+    \subitem {Bannerman}, \hyperpage{24}
+  \item {Assassinate}, \hyperpage{12}
+    \subitem {$\sim$Assassinate}, \hyperpage{13}
+    \subitem {alive}, \hyperpage{14}
+    \subitem {Assassinate}, \hyperpage{13}
+    \subitem {attack}, \hyperpage{13}
+    \subitem {stealth}, \hyperpage{14}
+  \item {attach}
+    \subitem {Bannerman}, \hyperpage{16}
+    \subitem {Commander}, \hyperpage{30}
+    \subitem {Troop}, \hyperpage{78}
+  \item {attack}
+    \subitem {Ambush}, \hyperpage{11}
+    \subitem {Assassinate}, \hyperpage{13}
+    \subitem {Bannerman}, \hyperpage{16}
+    \subitem {BattleField}, \hyperpage{27}
+    \subitem {Commander}, \hyperpage{30}
+    \subitem {Siege}, \hyperpage{66}
+    \subitem {Strategy}, \hyperpage{70}
+    \subitem {Troop}, \hyperpage{79}
+
+  \indexspace
+
+  \item {Bannerman}, \hyperpage{14}
+    \subitem {assassin}, \hyperpage{24}
+    \subitem {attach}, \hyperpage{16}
+    \subitem {attack}, \hyperpage{16}
+    \subitem {changeStrategy}, \hyperpage{17}
+    \subitem {damage}, \hyperpage{24}
+    \subitem {decreaseFavour}, \hyperpage{17}
+    \subitem {decreaseFood}, \hyperpage{17}
+    \subitem {decreaseMedical}, \hyperpage{17}
+    \subitem {decreasePower}, \hyperpage{17}
+    \subitem {decreaseWeapons}, \hyperpage{18}
+    \subitem {detach}, \hyperpage{18}
+    \subitem {favour}, \hyperpage{24}
+    \subitem {getDamage}, \hyperpage{18}
+    \subitem {getFavour}, \hyperpage{18}
+    \subitem {getFood}, \hyperpage{19}
+    \subitem {getHP}, \hyperpage{19}
+    \subitem {getMedical}, \hyperpage{19}
+    \subitem {getName}, \hyperpage{19}
+    \subitem {getWeapons}, \hyperpage{20}
+    \subitem {HP}, \hyperpage{24}
+    \subitem {increaseFavour}, \hyperpage{20}
+    \subitem {increaseHP}, \hyperpage{20}
+    \subitem {increasePower}, \hyperpage{21}
+    \subitem {m}, \hyperpage{24}
+    \subitem {name}, \hyperpage{24}
+    \subitem {numFood}, \hyperpage{24}
+    \subitem {numMedical}, \hyperpage{25}
+    \subitem {numWeapons}, \hyperpage{25}
+    \subitem {ravenList}, \hyperpage{25}
+    \subitem {receiveDamage}, \hyperpage{21}
+    \subitem {setFood}, \hyperpage{21}
+    \subitem {setMaster}, \hyperpage{21}
+    \subitem {setMedical}, \hyperpage{22}
+    \subitem {setRaven}, \hyperpage{22}
+    \subitem {setWeapons}, \hyperpage{22}
+    \subitem {strategy}, \hyperpage{25}
+  \item {bannerman}
+    \subitem {Kingdom}, \hyperpage{56}
+  \item {BattleField}, \hyperpage{25}
+    \subitem {$\sim$BattleField}, \hyperpage{26}
+    \subitem {attack}, \hyperpage{27}
+    \subitem {BattleField}, \hyperpage{26}
+
+  \indexspace
+
+  \item {calcEffect}
+    \subitem {Weather}, \hyperpage{95}
+  \item {changeStrategy}
+    \subitem {Bannerman}, \hyperpage{17}
+    \subitem {Commander}, \hyperpage{31}
+    \subitem {Troop}, \hyperpage{79}
+  \item {Class}, \hyperpage{27}
+  \item {clone}
+    \subitem {SupplyWagon}, \hyperpage{73}
+  \item {Commander}, \hyperpage{28}
+    \subitem {attach}, \hyperpage{30}
+    \subitem {attack}, \hyperpage{30}
+    \subitem {changeStrategy}, \hyperpage{31}
+    \subitem {Commander}, \hyperpage{30}
+    \subitem {decreaseFavour}, \hyperpage{31}
+    \subitem {decreaseFood}, \hyperpage{31}
+    \subitem {decreaseMedical}, \hyperpage{31}
+    \subitem {decreasePower}, \hyperpage{31}
+    \subitem {decreaseWeapons}, \hyperpage{32}
+    \subitem {detach}, \hyperpage{32}
+    \subitem {getDamage}, \hyperpage{32}
+    \subitem {getFavour}, \hyperpage{32}
+    \subitem {getFood}, \hyperpage{33}
+    \subitem {getHP}, \hyperpage{33}
+    \subitem {getMedical}, \hyperpage{33}
+    \subitem {getTroops}, \hyperpage{33}
+    \subitem {getWeapons}, \hyperpage{34}
+    \subitem {increaseFavour}, \hyperpage{34}
+    \subitem {increaseHP}, \hyperpage{34}
+    \subitem {increasePower}, \hyperpage{34}
+    \subitem {receiveDamage}, \hyperpage{35}
+    \subitem {setFood}, \hyperpage{35}
+    \subitem {setMaster}, \hyperpage{35}
+    \subitem {setMedical}, \hyperpage{36}
+    \subitem {setRaven}, \hyperpage{36}
+    \subitem {setStrategy}, \hyperpage{36}
+    \subitem {setWeapons}, \hyperpage{37}
+  \item {Conditions}, \hyperpage{37}
+    \subitem {Conditions}, \hyperpage{38}
+    \subitem {myVenue}, \hyperpage{38}
+    \subitem {sendScout}, \hyperpage{38}
+  \item {ConIterator}, \hyperpage{39}
+    \subitem {armyList}, \hyperpage{41}
+    \subitem {ConIterator}, \hyperpage{40}
+    \subitem {Current}, \hyperpage{40}
+    \subitem {hasNext}, \hyperpage{40}
+    \subitem {isActive}, \hyperpage{40}
+    \subitem {it}, \hyperpage{41}
+    \subitem {next}, \hyperpage{41}
+  \item {context}
+    \subitem {State}, \hyperpage{68}
+  \item {Current}
+    \subitem {ConIterator}, \hyperpage{40}
+    \subitem {Iterator}, \hyperpage{53}
+
+  \indexspace
+
+  \item {damage}
+    \subitem {Bannerman}, \hyperpage{24}
+    \subitem {Troop}, \hyperpage{85}
+  \item {decideVenue}
+    \subitem {WarTheatre}, \hyperpage{90}
+  \item {decreaseCurrency}
+    \subitem {FailedState}, \hyperpage{45}
+    \subitem {HealthyState}, \hyperpage{48}
+    \subitem {State}, \hyperpage{67}
+    \subitem {UnstableState}, \hyperpage{87}
+  \item {decreaseFavour}
+    \subitem {Bannerman}, \hyperpage{17}
+    \subitem {Commander}, \hyperpage{31}
+    \subitem {Troop}, \hyperpage{79}
+  \item {decreaseFood}
+    \subitem {Bannerman}, \hyperpage{17}
+    \subitem {Commander}, \hyperpage{31}
+    \subitem {Troop}, \hyperpage{79}
+  \item {decreaseMedical}
+    \subitem {Bannerman}, \hyperpage{17}
+    \subitem {Commander}, \hyperpage{31}
+    \subitem {Troop}, \hyperpage{80}
+  \item {decreasePower}
+    \subitem {Bannerman}, \hyperpage{17}
+    \subitem {Commander}, \hyperpage{31}
+    \subitem {Troop}, \hyperpage{80}
+  \item {decreaseWeapons}
+    \subitem {Bannerman}, \hyperpage{18}
+    \subitem {Commander}, \hyperpage{32}
+    \subitem {Troop}, \hyperpage{80}
+  \item {detach}
+    \subitem {Bannerman}, \hyperpage{18}
+    \subitem {Commander}, \hyperpage{32}
+    \subitem {Troop}, \hyperpage{80}
+  \item {difficulty}
+    \subitem {WarTheatre}, \hyperpage{91}
+
+  \indexspace
+
+  \item {Economy}, \hyperpage{42}
+    \subitem {state}, \hyperpage{42}
+  \item {economy}
+    \subitem {Kingdom}, \hyperpage{56}
+  \item {enemyBannerman}
+    \subitem {Strategy}, \hyperpage{72}
+  \item {enemyKingdom}
+    \subitem {Strategy}, \hyperpage{72}
+
+  \indexspace
+
+  \item {Factory}, \hyperpage{42}
+    \subitem {$\sim$Factory}, \hyperpage{43}
+    \subitem {getSupply}, \hyperpage{43}
+    \subitem {make}, \hyperpage{43}
+    \subitem {operation}, \hyperpage{44}
+  \item {FailedState}, \hyperpage{44}
+    \subitem {decreaseCurrency}, \hyperpage{45}
+  \item {favour}
+    \subitem {Bannerman}, \hyperpage{24}
+  \item {FoodFac}, \hyperpage{45}
+    \subitem {make}, \hyperpage{46}
+  \item {FoodSupp}, \hyperpage{46}
+    \subitem {getAmount}, \hyperpage{46}
+  \item {FoodWagon}, \hyperpage{47}
+
+  \indexspace
+
+  \item {getAmount}
+    \subitem {FoodSupp}, \hyperpage{46}
+    \subitem {MedicalSupp}, \hyperpage{61}
+    \subitem {WeaponSupp}, \hyperpage{93}
+  \item {getBannerman}
+    \subitem {History}, \hyperpage{51}
+  \item {getDamage}
+    \subitem {Bannerman}, \hyperpage{18}
+    \subitem {Commander}, \hyperpage{32}
+    \subitem {Troop}, \hyperpage{81}
+  \item {getDemotionState}
+    \subitem {HealthyState}, \hyperpage{48}
+    \subitem {State}, \hyperpage{67}
+    \subitem {UnstableState}, \hyperpage{87}
+  \item {getEnemyBannerman}
+    \subitem {Strategy}, \hyperpage{71}
+  \item {getFavour}
+    \subitem {Bannerman}, \hyperpage{18}
+    \subitem {Commander}, \hyperpage{32}
+    \subitem {Troop}, \hyperpage{81}
+  \item {getFood}
+    \subitem {Bannerman}, \hyperpage{19}
+    \subitem {Commander}, \hyperpage{33}
+    \subitem {Troop}, \hyperpage{81}
+  \item {getHP}
+    \subitem {Bannerman}, \hyperpage{19}
+    \subitem {Commander}, \hyperpage{33}
+    \subitem {Troop}, \hyperpage{81}
+  \item {getMedical}
+    \subitem {Bannerman}, \hyperpage{19}
+    \subitem {Commander}, \hyperpage{33}
+    \subitem {Troop}, \hyperpage{82}
+  \item {getMyBannerman}
+    \subitem {Strategy}, \hyperpage{71}
+  \item {getName}
+    \subitem {Bannerman}, \hyperpage{19}
+  \item {getSize}
+    \subitem {Troop}, \hyperpage{82}
+  \item {getStrategy}
+    \subitem {WarTheatre}, \hyperpage{90}
+  \item {getStrategyName}
+    \subitem {Strategy}, \hyperpage{71}
+  \item {getSupplies}
+    \subitem {SupplyWagon}, \hyperpage{73}
+  \item {getSupply}
+    \subitem {Factory}, \hyperpage{43}
+  \item {getTopology}
+    \subitem {Topology}, \hyperpage{75}
+  \item {getTroops}
+    \subitem {Commander}, \hyperpage{33}
+  \item {getWeapons}
+    \subitem {Bannerman}, \hyperpage{20}
+    \subitem {Commander}, \hyperpage{34}
+    \subitem {Troop}, \hyperpage{82}
+
+  \indexspace
+
+  \item {hasNext}
+    \subitem {ConIterator}, \hyperpage{40}
+    \subitem {Iterator}, \hyperpage{53}
+  \item {HealthyState}, \hyperpage{47}
+    \subitem {decreaseCurrency}, \hyperpage{48}
+    \subitem {getDemotionState}, \hyperpage{48}
+  \item {Historian}, \hyperpage{49}
+    \subitem {Historian}, \hyperpage{49}
+    \subitem {restoreAlly}, \hyperpage{49}
+    \subitem {setAlly}, \hyperpage{50}
+  \item {History}, \hyperpage{50}
+    \subitem {getBannerman}, \hyperpage{51}
+    \subitem {History}, \hyperpage{50}
+  \item {HistoryBook}, \hyperpage{51}
+    \subitem {add}, \hyperpage{51}
+    \subitem {restoreAlly}, \hyperpage{52}
+  \item {HP}
+    \subitem {Bannerman}, \hyperpage{24}
+
+  \indexspace
+
+  \item {increaseFavour}
+    \subitem {Bannerman}, \hyperpage{20}
+    \subitem {Commander}, \hyperpage{34}
+    \subitem {Troop}, \hyperpage{82}
+  \item {increaseHP}
+    \subitem {Bannerman}, \hyperpage{20}
+    \subitem {Commander}, \hyperpage{34}
+    \subitem {Troop}, \hyperpage{83}
+  \item {increasePower}
+    \subitem {Bannerman}, \hyperpage{21}
+    \subitem {Commander}, \hyperpage{34}
+    \subitem {Troop}, \hyperpage{83}
+  \item {isActive}
+    \subitem {ConIterator}, \hyperpage{40}
+    \subitem {Iterator}, \hyperpage{53}
+  \item {it}
+    \subitem {ConIterator}, \hyperpage{41}
+  \item {Iterator}, \hyperpage{52}
+    \subitem {Current}, \hyperpage{53}
+    \subitem {hasNext}, \hyperpage{53}
+    \subitem {isActive}, \hyperpage{53}
+    \subitem {next}, \hyperpage{54}
+
+  \indexspace
+
+  \item {Kingdom}, \hyperpage{54}
+    \subitem {$\sim$Kingdom}, \hyperpage{55}
+    \subitem {add}, \hyperpage{55}
+    \subitem {bannerman}, \hyperpage{56}
+    \subitem {economy}, \hyperpage{56}
+    \subitem {Kingdom}, \hyperpage{55}
+    \subitem {remove}, \hyperpage{56}
+
+  \indexspace
+
+  \item {Location}, \hyperpage{57}
+    \subitem {sendScout}, \hyperpage{57}
+  \item {location}
+    \subitem {WarTheatre}, \hyperpage{91}
+
+  \indexspace
+
+  \item {m}
+    \subitem {Bannerman}, \hyperpage{24}
+    \subitem {WarIndicators}, \hyperpage{89}
+  \item {make}
+    \subitem {Factory}, \hyperpage{43}
+    \subitem {FoodFac}, \hyperpage{46}
+    \subitem {MedicalFac}, \hyperpage{60}
+    \subitem {WeaponsFac}, \hyperpage{92}
+  \item {MasterOfCoin}, \hyperpage{58}
+    \subitem {MasterOfCoin}, \hyperpage{59}
+    \subitem {notify}, \hyperpage{59}
+  \item {MedicalFac}, \hyperpage{59}
+    \subitem {make}, \hyperpage{60}
+  \item {MedicalSupp}, \hyperpage{60}
+    \subitem {getAmount}, \hyperpage{61}
+  \item {MedicalWagon}, \hyperpage{61}
+  \item {minFavour}
+    \subitem {Strategy}, \hyperpage{72}
+  \item {minSupplies}
+    \subitem {Strategy}, \hyperpage{72}
+  \item {myBannerman}
+    \subitem {Strategy}, \hyperpage{72}
+  \item {myKingdom}
+    \subitem {Strategy}, \hyperpage{72}
+  \item {myVenue}
+    \subitem {Conditions}, \hyperpage{38}
+
+  \indexspace
+
+  \item {name}
+    \subitem {Bannerman}, \hyperpage{24}
+  \item {next}
+    \subitem {ConIterator}, \hyperpage{41}
+    \subitem {Iterator}, \hyperpage{54}
+  \item {notify}
+    \subitem {MasterOfCoin}, \hyperpage{59}
+  \item {numFood}
+    \subitem {Bannerman}, \hyperpage{24}
+  \item {numMedical}
+    \subitem {Bannerman}, \hyperpage{25}
+  \item {numWeapons}
+    \subitem {Bannerman}, \hyperpage{25}
+
+  \indexspace
+
+  \item {operation}
+    \subitem {Factory}, \hyperpage{44}
+
+  \indexspace
+
+  \item {rain}
+    \subitem {Weather}, \hyperpage{96}
+  \item {Raven}, \hyperpage{61}
+    \subitem {update}, \hyperpage{62}
+  \item {ravenList}
+    \subitem {Bannerman}, \hyperpage{25}
+  \item {receiveDamage}
+    \subitem {Bannerman}, \hyperpage{21}
+    \subitem {Commander}, \hyperpage{35}
+    \subitem {Troop}, \hyperpage{83}
+  \item {remove}
+    \subitem {Kingdom}, \hyperpage{56}
+  \item {restoreAlly}
+    \subitem {Historian}, \hyperpage{49}
+    \subitem {HistoryBook}, \hyperpage{52}
+
+  \indexspace
+
+  \item {sendRaven}, \hyperpage{62}
+    \subitem {sendRaven}, \hyperpage{63}
+    \subitem {update}, \hyperpage{64}
+  \item {sendScout}
+    \subitem {Conditions}, \hyperpage{38}
+    \subitem {Location}, \hyperpage{57}
+    \subitem {Topology}, \hyperpage{75}
+    \subitem {WarTheatre}, \hyperpage{91}
+  \item {setAlly}
+    \subitem {Historian}, \hyperpage{50}
+  \item {setContext}
+    \subitem {State}, \hyperpage{68}
+  \item {setFood}
+    \subitem {Bannerman}, \hyperpage{21}
+    \subitem {Commander}, \hyperpage{35}
+    \subitem {Troop}, \hyperpage{84}
+  \item {setMaster}
+    \subitem {Bannerman}, \hyperpage{21}
+    \subitem {Commander}, \hyperpage{35}
+    \subitem {Troop}, \hyperpage{84}
+  \item {setMedical}
+    \subitem {Bannerman}, \hyperpage{22}
+    \subitem {Commander}, \hyperpage{36}
+    \subitem {Troop}, \hyperpage{84}
+  \item {setRaven}
+    \subitem {Bannerman}, \hyperpage{22}
+    \subitem {Commander}, \hyperpage{36}
+    \subitem {Troop}, \hyperpage{85}
+  \item {setStrategy}
+    \subitem {Commander}, \hyperpage{36}
+  \item {setSup}
+    \subitem {SupplyWagon}, \hyperpage{74}
+  \item {setTemp}
+    \subitem {Weather}, \hyperpage{95}
+  \item {setWeapons}
+    \subitem {Bannerman}, \hyperpage{22}
+    \subitem {Commander}, \hyperpage{37}
+    \subitem {Troop}, \hyperpage{85}
+  \item {setWindSpeed}
+    \subitem {Weather}, \hyperpage{95}
+  \item {Siege}, \hyperpage{64}
+    \subitem {$\sim$Siege}, \hyperpage{65}
+    \subitem {attack}, \hyperpage{66}
+    \subitem {Siege}, \hyperpage{65}
+  \item {size}
+    \subitem {Troop}, \hyperpage{85}
+  \item {State}, \hyperpage{66}
+    \subitem {$\sim$State}, \hyperpage{67}
+    \subitem {context}, \hyperpage{68}
+    \subitem {decreaseCurrency}, \hyperpage{67}
+    \subitem {getDemotionState}, \hyperpage{67}
+    \subitem {setContext}, \hyperpage{68}
+  \item {state}
+    \subitem {Economy}, \hyperpage{42}
+  \item {stealth}
+    \subitem {Ambush}, \hyperpage{11}
+    \subitem {Assassinate}, \hyperpage{14}
+  \item {Strategy}, \hyperpage{69}
+    \subitem {$\sim$Strategy}, \hyperpage{70}
+    \subitem {attack}, \hyperpage{70}
+    \subitem {enemyBannerman}, \hyperpage{72}
+    \subitem {enemyKingdom}, \hyperpage{72}
+    \subitem {getEnemyBannerman}, \hyperpage{71}
+    \subitem {getMyBannerman}, \hyperpage{71}
+    \subitem {getStrategyName}, \hyperpage{71}
+    \subitem {minFavour}, \hyperpage{72}
+    \subitem {minSupplies}, \hyperpage{72}
+    \subitem {myBannerman}, \hyperpage{72}
+    \subitem {myKingdom}, \hyperpage{72}
+    \subitem {Strategy}, \hyperpage{70}
+    \subitem {strategy}, \hyperpage{72}
+  \item {strategy}
+    \subitem {Bannerman}, \hyperpage{25}
+    \subitem {Strategy}, \hyperpage{72}
+    \subitem {Troop}, \hyperpage{85}
+    \subitem {WarTheatre}, \hyperpage{91}
+  \item {SupplyWagon}, \hyperpage{73}
+    \subitem {clone}, \hyperpage{73}
+    \subitem {getSupplies}, \hyperpage{73}
+    \subitem {setSup}, \hyperpage{74}
+
+  \indexspace
+
+  \item {temp}
+    \subitem {Weather}, \hyperpage{96}
+  \item {Topology}, \hyperpage{74}
+    \subitem {getTopology}, \hyperpage{75}
+    \subitem {sendScout}, \hyperpage{75}
+  \item {Treasury}, \hyperpage{76}
+  \item {Troop}, \hyperpage{76}
+    \subitem {$\sim$Troop}, \hyperpage{78}
+    \subitem {attach}, \hyperpage{78}
+    \subitem {attack}, \hyperpage{79}
+    \subitem {changeStrategy}, \hyperpage{79}
+    \subitem {damage}, \hyperpage{85}
+    \subitem {decreaseFavour}, \hyperpage{79}
+    \subitem {decreaseFood}, \hyperpage{79}
+    \subitem {decreaseMedical}, \hyperpage{80}
+    \subitem {decreasePower}, \hyperpage{80}
+    \subitem {decreaseWeapons}, \hyperpage{80}
+    \subitem {detach}, \hyperpage{80}
+    \subitem {getDamage}, \hyperpage{81}
+    \subitem {getFavour}, \hyperpage{81}
+    \subitem {getFood}, \hyperpage{81}
+    \subitem {getHP}, \hyperpage{81}
+    \subitem {getMedical}, \hyperpage{82}
+    \subitem {getSize}, \hyperpage{82}
+    \subitem {getWeapons}, \hyperpage{82}
+    \subitem {increaseFavour}, \hyperpage{82}
+    \subitem {increaseHP}, \hyperpage{83}
+    \subitem {increasePower}, \hyperpage{83}
+    \subitem {receiveDamage}, \hyperpage{83}
+    \subitem {setFood}, \hyperpage{84}
+    \subitem {setMaster}, \hyperpage{84}
+    \subitem {setMedical}, \hyperpage{84}
+    \subitem {setRaven}, \hyperpage{85}
+    \subitem {setWeapons}, \hyperpage{85}
+    \subitem {size}, \hyperpage{85}
+    \subitem {strategy}, \hyperpage{85}
+
+  \indexspace
+
+  \item {UnstableState}, \hyperpage{86}
+    \subitem {decreaseCurrency}, \hyperpage{87}
+    \subitem {getDemotionState}, \hyperpage{87}
+  \item {update}
+    \subitem {Raven}, \hyperpage{62}
+    \subitem {sendRaven}, \hyperpage{64}
+
+  \indexspace
+
+  \item {venue}
+    \subitem {WarTheatre}, \hyperpage{91}
+
+  \indexspace
+
+  \item {WarIndicators}, \hyperpage{87}
+    \subitem {$\sim$WarIndicators}, \hyperpage{88}
+    \subitem {m}, \hyperpage{89}
+    \subitem {WarIndicators}, \hyperpage{88}
+  \item {WarTheatre}, \hyperpage{89}
+    \subitem {decideVenue}, \hyperpage{90}
+    \subitem {difficulty}, \hyperpage{91}
+    \subitem {getStrategy}, \hyperpage{90}
+    \subitem {location}, \hyperpage{91}
+    \subitem {sendScout}, \hyperpage{91}
+    \subitem {strategy}, \hyperpage{91}
+    \subitem {venue}, \hyperpage{91}
+    \subitem {WarTheatre}, \hyperpage{90}
+  \item {WeaponsFac}, \hyperpage{92}
+    \subitem {make}, \hyperpage{92}
+  \item {WeaponSupp}, \hyperpage{93}
+    \subitem {getAmount}, \hyperpage{93}
+  \item {WeaponWagon}, \hyperpage{93}
+  \item {Weather}, \hyperpage{94}
+    \subitem {calcEffect}, \hyperpage{95}
+    \subitem {rain}, \hyperpage{96}
+    \subitem {setTemp}, \hyperpage{95}
+    \subitem {setWindSpeed}, \hyperpage{95}
+    \subitem {temp}, \hyperpage{96}
+    \subitem {Weather}, \hyperpage{95}
+    \subitem {windspeed}, \hyperpage{96}
+  \item {windspeed}
+    \subitem {Weather}, \hyperpage{96}
+
+\end{theindex}

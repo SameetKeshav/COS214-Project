@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('class_con_iterator.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_con_iterator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ConIterator Class Reference</div></div>
 </div><!--header-->
@@ -140,6 +141,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb76c46e8d0339274cb2917e14b1cd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66527143108f6a24547394d807922e7b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iterator.html#a66527143108f6a24547394d807922e7b">isActive</a> ()=0</td></tr>
 <tr class="separator:a66527143108f6a24547394d807922e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af40b1d79fc82df333a56240845bc15aa"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#af40b1d79fc82df333a56240845bc15aa">armyList</a></td></tr>
+<tr class="separator:af40b1d79fc82df333a56240845bc15aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab965c2f2499316ad3631de8eff5f37d6"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#ab965c2f2499316ad3631de8eff5f37d6">it</a></td></tr>
+<tr class="separator:ab965c2f2499316ad3631de8eff5f37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >@Brief Concrete iterator class Implements the interface for accessing and traversing bannerman elements in groundForces. Keeps track of the current position in the traversal of the aggregate(groundForces list). </p><dl class="section author"><dt>Author</dt><dd>Thapelo Thoka </dd></dl>
@@ -292,6 +300,53 @@ false </dd></dl>
 <p >Test</p>
 
 <p>Implements <a class="el" href="class_iterator.html#acb76c46e8d0339274cb2917e14b1cd9b">Iterator</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af40b1d79fc82df333a56240845bc15aa" name="af40b1d79fc82df333a56240845bc15aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af40b1d79fc82df333a56240845bc15aa">&#9670;&#160;</a></span>armyList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="class_bannerman.html">Bannerman</a>*&gt; ConIterator::armyList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >The list of bannerman objects to traverse </p>
+
+</div>
+</div>
+<a id="ab965c2f2499316ad3631de8eff5f37d6" name="ab965c2f2499316ad3631de8eff5f37d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab965c2f2499316ad3631de8eff5f37d6">&#9670;&#160;</a></span>it</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="class_bannerman.html">Bannerman</a>*&gt;::iterator ConIterator::it</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >An iterator which is a pointer to the current bannerman object in <a class="el" href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ...">Commander</a>'s groundForces being accessed, primative operations can be performed using this pointer. </p>
 
 </div>
 </div>

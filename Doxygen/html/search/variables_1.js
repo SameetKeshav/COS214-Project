@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['context_0',['context',['../class_state.html#a00fd56d8caa101c7ef2488b914ddffc9',1,'State']]]
+  ['bannerman_0',['bannerman',['../class_kingdom.html#a1df0c75de27f29f3d306f6fb1ef4d218',1,'Kingdom']]]
 ];

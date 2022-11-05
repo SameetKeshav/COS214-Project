@@ -98,10 +98,14 @@ $(document).ready(function(){initNavTree('class_master_of_coin.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_master_of_coin-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MasterOfCoin Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The Concrete class for the Mediator A class that allows for other classes to talk to when key changes are made.  
+ <a href="class_master_of_coin.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_master_of_coin_8h_source.html">MasterOfCoin.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -110,13 +114,13 @@ Inheritance diagram for MasterOfCoin:</div>
  <div class="center">
   <img src="class_master_of_coin.png" usemap="#MasterOfCoin_map" alt=""/>
   <map id="MasterOfCoin_map" name="MasterOfCoin_map">
-<area href="class_treasury.html" alt="Treasury" shape="rect" coords="0,0,91,24"/>
+<area href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from." alt="Treasury" shape="rect" coords="0,0,91,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a937c30ac28a57ff502d9b6ec93fcceb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_master_of_coin.html#a937c30ac28a57ff502d9b6ec93fcceb3">MasterOfCoin</a> (<a class="el" href="class_economy.html">Economy</a> *economy, <a class="el" href="class_raven.html">Raven</a> *observer, <a class="el" href="class_strategy.html">Strategy</a> strategy)</td></tr>
+<tr class="memitem:a937c30ac28a57ff502d9b6ec93fcceb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_master_of_coin.html#a937c30ac28a57ff502d9b6ec93fcceb3">MasterOfCoin</a> (<a class="el" href="class_economy.html">Economy</a> *<a class="el" href="class_master_of_coin.html#aea63e3d11bf269d74c097dc8419775e9">economy</a>, <a class="el" href="class_raven.html">Raven</a> *<a class="el" href="class_master_of_coin.html#a83cc000717e77faa433686989a3adc02">observer</a>, <a class="el" href="class_strategy.html">Strategy</a> <a class="el" href="class_master_of_coin.html#a558b12138aceca89f7f1b12cae2bebd7">strategy</a>)</td></tr>
 <tr class="memdesc:a937c30ac28a57ff502d9b6ec93fcceb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to set the variables in this class.  <a href="class_master_of_coin.html#a937c30ac28a57ff502d9b6ec93fcceb3">More...</a><br /></td></tr>
 <tr class="separator:a937c30ac28a57ff502d9b6ec93fcceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0a509b1fd95a2811199bd59835943a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_master_of_coin.html#aaf0a509b1fd95a2811199bd59835943a">notify</a> (<a class="el" href="class_war_indicators.html">WarIndicators</a> sender)</td></tr>
@@ -134,9 +138,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>manufacture</b> ()</t
 &#160;</td><td class="memItemRight" valign="bottom"><b>~MasterOfCoin</b> ()</td></tr>
 <tr class="memdesc:a250eb3154300bc63cba4261b5e76446b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the destructer used to deallocate all memory used in this class. <br /></td></tr>
 <tr class="separator:a250eb3154300bc63cba4261b5e76446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aea63e3d11bf269d74c097dc8419775e9"><td class="memItemLeft" align="right" valign="top"><a id="aea63e3d11bf269d74c097dc8419775e9" name="aea63e3d11bf269d74c097dc8419775e9"></a>
+<a class="el" href="class_economy.html">Economy</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>economy</b></td></tr>
+<tr class="memdesc:aea63e3d11bf269d74c097dc8419775e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_economy.html">Economy</a> that the mediator uses. <br /></td></tr>
+<tr class="separator:aea63e3d11bf269d74c097dc8419775e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cc000717e77faa433686989a3adc02"><td class="memItemLeft" align="right" valign="top"><a id="a83cc000717e77faa433686989a3adc02" name="a83cc000717e77faa433686989a3adc02"></a>
+<a class="el" href="class_raven.html">Raven</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>observer</b></td></tr>
+<tr class="memdesc:a83cc000717e77faa433686989a3adc02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Observer that the mediator uses. <br /></td></tr>
+<tr class="separator:a83cc000717e77faa433686989a3adc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558b12138aceca89f7f1b12cae2bebd7"><td class="memItemLeft" align="right" valign="top"><a id="a558b12138aceca89f7f1b12cae2bebd7" name="a558b12138aceca89f7f1b12cae2bebd7"></a>
+<a class="el" href="class_strategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>strategy</b></td></tr>
+<tr class="memdesc:a558b12138aceca89f7f1b12cae2bebd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_strategy.html" title="An Abstract strategy class. A class that provides an interface to the alternative concrete strategies...">Strategy</a> the mediator uses. <br /></td></tr>
+<tr class="separator:a558b12138aceca89f7f1b12cae2bebd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_class_treasury"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_treasury')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_treasury.html">Treasury</a></td></tr>
+<tr class="memitem:af91e45fb514b8922dd5896fd402455a5 inherit pub_methods_class_treasury"><td class="memItemLeft" align="right" valign="top"><a id="af91e45fb514b8922dd5896fd402455a5" name="af91e45fb514b8922dd5896fd402455a5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> (<a class="el" href="class_war_indicators.html">WarIndicators</a> *sender)=0</td></tr>
+<tr class="memdesc:af91e45fb514b8922dd5896fd402455a5 inherit pub_methods_class_treasury"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pure virtual function for the notify function. <br /></td></tr>
+<tr class="separator:af91e45fb514b8922dd5896fd402455a5 inherit pub_methods_class_treasury"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Sameet Keshav u21479373 </dd></dl>
+<div class="textblock"><p >The Concrete class for the Mediator A class that allows for other classes to talk to when key changes are made. </p>
+<dl class="section author"><dt>Author</dt><dd>Sameet Keshav u21479373 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a937c30ac28a57ff502d9b6ec93fcceb3" name="a937c30ac28a57ff502d9b6ec93fcceb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a937c30ac28a57ff502d9b6ec93fcceb3">&#9670;&#160;</a></span>MasterOfCoin()</h2>

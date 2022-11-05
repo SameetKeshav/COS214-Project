@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Member <a class="el" href="class_ambush.html#a31fe32d8eba8effd01382376f9aff1e0">Ambush::Ambush</a>  (int stealth, int min, int minFavour)</dt>
+<dt>Member <a class="el" href="class_ambush.html#aec9d5a1a757133058df754172f98a128">Ambush::Ambush</a>  (int stealth, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *myKingdom, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *enemyKingdom, <a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman, string name, int min, int minFavour)</dt>
 <dd><a class="anchor" id="_todo000001"></a>constructor. initializes stealth and calls base class constructor to initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.  </dd>
 <dt>Member <a class="el" href="class_ambush.html#a51193e1b97edc379fb3c79918132ea15">Ambush::attack</a>  (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)</dt>
 <dd><a class="anchor" id="_todo000002"></a>makes two bannerman from enemy kingdoms fight each other until one loses  </dd>
 <dt>Member <a class="el" href="class_ambush.html#a36a5798e6b3b4493e5e1c925d57d6a39">Ambush::~Ambush</a>  ()</dt>
 <dd><a class="anchor" id="_todo000003"></a>destructor.  </dd>
-<dt>Member <a class="el" href="class_assassinate.html#ae4a924a40a5433112ff206bc3becff90">Assassinate::Assassinate</a>  (int stealth, bool alive, int min, int minFavour)</dt>
+<dt>Member <a class="el" href="class_assassinate.html#aa27aab043fa4046d8468203b0e88fa13">Assassinate::Assassinate</a>  (int stealth, bool alive, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *myKingdom, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *enemyKingdom, <a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman, string name, int min, int minFavour)</dt>
 <dd><a class="anchor" id="_todo000004"></a>constructor. initializes stealth and calls base class constructor to initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.  </dd>
 <dt>Member <a class="el" href="class_assassinate.html#aa650bb6fb68529914922728d6cc9cb07">Assassinate::attack</a>  (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)</dt>
 <dd><a class="anchor" id="_todo000005"></a>makes assassin of attacking <a class="el" href="class_bannerman.html">Bannerman</a> try to kill enemyBannerman  </dd>
@@ -114,56 +114,50 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dd><a class="anchor" id="_todo000006"></a>destructor.  </dd>
 <dt>Member <a class="el" href="class_battle_field.html#a0a0ea58914a59f8d385041f454ffe6d0">BattleField::attack</a>  (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)</dt>
 <dd><a class="anchor" id="_todo000008"></a>makes two bannerman from enemy kingdoms fight each other until one loses  </dd>
-<dt>Member <a class="el" href="class_battle_field.html#a55cdd1fe446cff45e718103ce14d3085">BattleField::BattleField</a>  (int min, int minFavour)</dt>
+<dt>Member <a class="el" href="class_battle_field.html#a602131021b381a1c83e11635491ecfa5">BattleField::BattleField</a>  (<a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *myKingdom, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *enemyKingdom, <a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman, string name, int min, int minFavour)</dt>
 <dd><a class="anchor" id="_todo000007"></a>constructor. initializes stealth and calls base class constructor to initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.  </dd>
 <dt>Member <a class="el" href="class_battle_field.html#adf5797b1520be6502b828196690b9348">BattleField::~BattleField</a>  ()</dt>
 <dd><a class="anchor" id="_todo000009"></a>destructor.  </dd>
 <dt>Member <a class="el" href="class_failed_state.html#afaaef228a607bb585a980642985d18a2">FailedState::decreaseCurrency</a>  ()</dt>
-<dd><a class="anchor" id="_todo000011"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
-<dt>Member <a class="el" href="class_failed_state.html#acc9cac035280bef2ba36d7049b422956">FailedState::setContext</a>  (<a class="el" href="class_economy.html">Economy</a> *context)</dt>
-<dd><a class="anchor" id="_todo000010"></a>sets context variable.  </dd>
+<dd><a class="anchor" id="_todo000010"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
 <dt>Member <a class="el" href="class_healthy_state.html#a5f75e1935e20ed34b73d259a2324e4f9">HealthyState::decreaseCurrency</a>  ()</dt>
-<dd><a class="anchor" id="_todo000013"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
+<dd><a class="anchor" id="_todo000011"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
 <dt>Member <a class="el" href="class_healthy_state.html#a97583e0f477b87971b3a586ef1ba89e6">HealthyState::getDemotionState</a>  ()</dt>
-<dd><a class="anchor" id="_todo000014"></a>gets lower level state of economy  </dd>
-<dt>Member <a class="el" href="class_healthy_state.html#abdfa8ce236a9766bac7dd8ed3bf316e2">HealthyState::setContext</a>  (<a class="el" href="class_economy.html">Economy</a> *context)</dt>
-<dd><a class="anchor" id="_todo000012"></a>sets context variable.  </dd>
+<dd><a class="anchor" id="_todo000012"></a>gets lower level state of economy  </dd>
 <dt>Member <a class="el" href="class_kingdom.html#a434e87f15f449ee199ab3a1ddfe2f0f6">Kingdom::~Kingdom</a>  ()</dt>
-<dd><a class="anchor" id="_todo000015"></a>destructor. deallocates all pointers of this class  </dd>
+<dd><a class="anchor" id="_todo000013"></a>destructor. deallocates all pointers of this class  </dd>
 <dt>Member <a class="el" href="class_siege.html#ae8e9de64c3a659bf32bb35ad4cbcbc2f">Siege::attack</a>  (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)</dt>
-<dd><a class="anchor" id="_todo000017"></a>makes two bannerman from enemy kingdoms fight each other until one loses  </dd>
-<dt>Member <a class="el" href="class_siege.html#a58bf6483aa888973ab9ead36635234fc">Siege::Siege</a>  (int stealth, int min, int minFavour)</dt>
-<dd><a class="anchor" id="_todo000016"></a>constructor. initializes stealth and calls base class constructor to initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.  </dd>
+<dd><a class="anchor" id="_todo000015"></a>makes two bannerman from enemy kingdoms fight each other until one loses  </dd>
+<dt>Member <a class="el" href="class_siege.html#a618c82966756a5e32deb56ccd39b0f41">Siege::Siege</a>  (int stealth, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *myKingdom, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *enemyKingdom, <a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman, string name, int min, int minFavour)</dt>
+<dd><a class="anchor" id="_todo000014"></a>constructor. initializes stealth and calls base class constructor to initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.  </dd>
 <dt>Member <a class="el" href="class_siege.html#aac2d09fe50a26b39865aad8c8c9486b9">Siege::~Siege</a>  ()</dt>
-<dd><a class="anchor" id="_todo000018"></a>destructor.  </dd>
+<dd><a class="anchor" id="_todo000016"></a>destructor.  </dd>
 <dt>Member <a class="el" href="class_state.html#a5773daf54efd2c1e6723950d4e44b5a7">State::decreaseCurrency</a>  ()=0</dt>
-<dd><a class="anchor" id="_todo000020"></a>Abstract method.  </dd>
+<dd><a class="anchor" id="_todo000018"></a>Abstract method.  </dd>
 <dt>Member <a class="el" href="class_state.html#aa901c36d20da2a396e4fa27bf8576eec">State::getDemotionState</a>  ()</dt>
-<dd><a class="anchor" id="_todo000021"></a>gets lower level state of economy with null being returned if no lower state is possible  </dd>
+<dd><a class="anchor" id="_todo000019"></a>gets lower level state of economy with null being returned if no lower state is possible  </dd>
 <dt>Member <a class="el" href="class_state.html#ae8c1972e00c66761620cf9c3d4d8cb49">State::setContext</a>  (<a class="el" href="class_economy.html">Economy</a> *context)</dt>
-<dd><a class="anchor" id="_todo000019"></a>sets context variable.  </dd>
+<dd><a class="anchor" id="_todo000017"></a>sets context variable.  </dd>
 <dt>Member <a class="el" href="class_state.html#afab438d92b90dc18d194dbd9c9c8bab3">State::~State</a>  ()</dt>
-<dd><a class="anchor" id="_todo000022"></a>destructor. deallocates context  </dd>
+<dd><a class="anchor" id="_todo000020"></a>destructor. deallocates context  </dd>
 <dt>Member <a class="el" href="class_strategy.html#adecf5b4398ec2dd89bd280441f674de3">Strategy::attack</a>  (<a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman)=0</dt>
-<dd><a class="anchor" id="_todo000024"></a>Abstract method  </dd>
+<dd><a class="anchor" id="_todo000022"></a>Abstract method  </dd>
 <dt>Member <a class="el" href="class_strategy.html#a88ed4a64031030f3a9a30652b01debe6">Strategy::getEnemyBannerman</a>  ()</dt>
-<dd><a class="anchor" id="_todo000027"></a>gets <a class="el" href="class_bannerman.html">Bannerman</a> being attacked  </dd>
+<dd><a class="anchor" id="_todo000025"></a>gets <a class="el" href="class_bannerman.html">Bannerman</a> being attacked  </dd>
 <dt>Member <a class="el" href="class_strategy.html#a0931adab8a2fe9b3cf68bbd626e10b3a">Strategy::getMyBannerman</a>  ()</dt>
-<dd><a class="anchor" id="_todo000026"></a>gets attacking <a class="el" href="class_bannerman.html">Bannerman</a>  </dd>
+<dd><a class="anchor" id="_todo000024"></a>gets attacking <a class="el" href="class_bannerman.html">Bannerman</a>  </dd>
 <dt>Member <a class="el" href="class_strategy.html#a310550043f6b81592cef05ea9241144f">Strategy::getStrategyName</a>  ()</dt>
-<dd><a class="anchor" id="_todo000025"></a>gets strategy variable  </dd>
+<dd><a class="anchor" id="_todo000023"></a>gets strategy variable  </dd>
 <dt>Member <a class="el" href="class_strategy.html#abf2f11a2d8b44147caf0ea37863c90e2">Strategy::Strategy</a>  (<a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *myKingdom, <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a> *enemyKingdom, <a class="el" href="class_bannerman.html">Bannerman</a> *myBannerman, <a class="el" href="class_bannerman.html">Bannerman</a> *enemyBannerman, string name, int min, int minFavour)</dt>
-<dd><a class="anchor" id="_todo000023"></a>constructor. initializes myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, minSupplies and minFavour.  </dd>
+<dd><a class="anchor" id="_todo000021"></a>constructor. initializes myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, minSupplies and minFavour.  </dd>
 <dt>Member <a class="el" href="class_strategy.html#a37c0bbdd64fd7dfcdd91578784a64775">Strategy::~Strategy</a>  ()</dt>
-<dd><a class="anchor" id="_todo000028"></a>destructor. deallocates all pointers of this class  </dd>
+<dd><a class="anchor" id="_todo000026"></a>destructor. deallocates all pointers of this class  </dd>
 <dt>Member <a class="el" href="class_unstable_state.html#a4e134532fc0e3f2471e06ad0996ae161">UnstableState::decreaseCurrency</a>  ()</dt>
-<dd><a class="anchor" id="_todo000030"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
+<dd><a class="anchor" id="_todo000027"></a>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  </dd>
 <dt>Member <a class="el" href="class_unstable_state.html#a655d00d68c7c2e08da6b4db0df14a600">UnstableState::getDemotionState</a>  ()</dt>
-<dd><a class="anchor" id="_todo000031"></a>gets lower level state of economy  </dd>
-<dt>Member <a class="el" href="class_unstable_state.html#adaff0187ed507f9d0b3ae25e8a901a17">UnstableState::setContext</a>  (<a class="el" href="class_economy.html">Economy</a> *context)</dt>
-<dd><a class="anchor" id="_todo000029"></a>sets context variable.  </dd>
+<dd><a class="anchor" id="_todo000028"></a>gets lower level state of economy  </dd>
 <dt>Member <a class="el" href="class_war_indicators.html#aa8ee75ff5bf3d7bc1fb7f82a6527e582">WarIndicators::~WarIndicators</a>  ()</dt>
-<dd><a class="anchor" id="_todo000032"></a>destructor. deallocates <a class="el" href="class_treasury.html">Treasury</a> pointer of this class </dd>
+<dd><a class="anchor" id="_todo000029"></a>destructor. deallocates <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> pointer of this class </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

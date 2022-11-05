@@ -1,13 +1,12 @@
 #include "UnstableState.h"
 
 UnstableState::UnstableState() {
-	cout<<"Economy entered unstable state"<<endl;
 	context = nullptr;
 }
 
 void UnstableState::decreaseCurrency() {
 	context->removeCurrency(10);
-	if (context->getCurrency()<30)
+	if (context->getCurrency()<15)
 	{
 		context->SetState();
 	}

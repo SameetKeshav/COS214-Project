@@ -41,7 +41,7 @@ int main(){
     SupplyWagon* Foodwagons[5];
     SupplyWagon* Medicalwagons[5];
     SupplyWagon* Weaponwagons[5];
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
     for(int i =0; i<5;i++){
         Foodwagons[i]=OriginalFoodWagon->clone();
     }

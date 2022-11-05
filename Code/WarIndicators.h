@@ -1,7 +1,6 @@
 #ifndef WARINDICATORS_H
 #define WARINDICATORS_H
 #include "Treasury.h"
-
 class Treasury;
 /** @brief An interface class for all classes that communicate 
  * with each other through Treasury mediator.
@@ -28,10 +27,16 @@ public:
 		this->m=m;
 	}
 
+	void setTreasury(Treasury* m){
+		this->m=m;
+	}
+
 	/** @todo destructor. deallocates Treasury pointer of this class**/
 	virtual ~WarIndicators(){
 		//delete m;
 	}
+
+	
 };
 
 #endif

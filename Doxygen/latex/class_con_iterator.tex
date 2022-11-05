@@ -23,6 +23,13 @@ bool \mbox{\hyperlink{class_con_iterator_a2b5169fea3ec59662f32f3938d5ab787}{has\
 \begin{DoxyCompactList}\small\item\em Determines whether or not the current bannerman object which ($\ast$it) currently points to is the last element in the list or not. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}{is\+Active}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ \mbox{\hyperlink{class_con_iterator_af40b1d79fc82df333a56240845bc15aa}{army\+List}}
+\item 
+list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_con_iterator_ab965c2f2499316ad3631de8eff5f37d6}{it}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -118,6 +125,21 @@ Test
 Implements \mbox{\hyperlink{class_iterator_acb76c46e8d0339274cb2917e14b1cd9b}{Iterator}}.
 
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_con_iterator_af40b1d79fc82df333a56240845bc15aa}\label{class_con_iterator_af40b1d79fc82df333a56240845bc15aa}} 
+\index{ConIterator@{ConIterator}!armyList@{armyList}}
+\index{armyList@{armyList}!ConIterator@{ConIterator}}
+\doxysubsubsection{\texorpdfstring{armyList}{armyList}}
+{\footnotesize\ttfamily list$<$\mbox{\hyperlink{class_bannerman}{Bannerman}}$\ast$$>$ Con\+Iterator\+::army\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of bannerman objects to traverse \mbox{\Hypertarget{class_con_iterator_ab965c2f2499316ad3631de8eff5f37d6}\label{class_con_iterator_ab965c2f2499316ad3631de8eff5f37d6}} 
+\index{ConIterator@{ConIterator}!it@{it}}
+\index{it@{it}!ConIterator@{ConIterator}}
+\doxysubsubsection{\texorpdfstring{it}{it}}
+{\footnotesize\ttfamily list$<$\mbox{\hyperlink{class_bannerman}{Bannerman}}$\ast$$>$\+::iterator Con\+Iterator\+::it\hspace{0.3cm}{\ttfamily [private]}}
+
+An iterator which is a pointer to the current bannerman object in \mbox{\hyperlink{class_commander}{Commander}}\textquotesingle{}s ground\+Forces being accessed, primative operations can be performed using this pointer. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

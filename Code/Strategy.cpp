@@ -1,6 +1,6 @@
 #include "Strategy.h"
 
-Strategy::Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour){
+Strategy::Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb){
 	strategy=name;
 	minSupplies=min;
 	this->minFavour=minFavour;
@@ -8,6 +8,9 @@ Strategy::Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerm
 	this->enemyBannerman=enemyBannerman;
 	this->enemyKingdom=enemyKingdom;
 	this->myKingdom=myKingdom;
+	Greg = h;
+	BookOfDura = hb;
+	defectedAllies=0;
 }
 
 
