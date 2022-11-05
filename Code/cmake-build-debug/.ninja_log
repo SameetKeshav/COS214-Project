@@ -1,0 +1,21 @@
+# ninja log v5
+119	1719	6893483104797460	CMakeFiles/Code.dir/Economy.cpp.obj	4cf2fd15c66138f5
+145	1726	6893483104847311	CMakeFiles/Code.dir/FailedState.cpp.obj	282f533408c89ab9
+75	1729	6893483104857279	CMakeFiles/Code.dir/Conditions.cpp.obj	695ffa017a9b88ff
+51	1733	6893483104947048	CMakeFiles/Code.dir/Bannerman.cpp.obj	3d779e58eae50e7b
+62	1809	6893483105734940	CMakeFiles/Code.dir/ConIterator.cpp.obj	50abb4eb30c1f67c
+41	1876	6893483106373234	CMakeFiles/Code.dir/Commander.cpp.obj	2ff8f94eaf84c5a4
+89	241	6893484624383685	CMakeFiles/Code.dir/FoodSupp.cpp.obj	3000f11c7a4dbbe6
+102	751	6893484629490028	CMakeFiles/Code.dir/FoodWagon.cpp.obj	6674851b64d9fe30
+74	774	6893484629709466	CMakeFiles/Code.dir/Conditions.cpp.obj	695ffa017a9b88ff
+11	791	6893484629729384	CMakeFiles/Code.dir/Ambush.cpp.obj	27efad28c7c39d87
+31	806	6893484629759306	CMakeFiles/Code.dir/Bannerman.cpp.obj	3d779e58eae50e7b
+22	824	6893484629769274	CMakeFiles/Code.dir/Assassinate.cpp.obj	109f9e457f39406d
+51	844	6893484630407574	CMakeFiles/Code.dir/BattleField.cpp.obj	f9f28cf91d4c9cee
+242	882	6893484630776598	CMakeFiles/Code.dir/HealthyState.cpp.obj	a34ece709691ee50
+63	909	6893484631055833	CMakeFiles/Code.dir/ConIterator.cpp.obj	50abb4eb30c1f67c
+40	1016	6893484632113024	CMakeFiles/Code.dir/Commander.cpp.obj	2ff8f94eaf84c5a4
+883	1041	6893484632362355	CMakeFiles/Code.dir/MedicalSupp.cpp.obj	87ced00171afabf3
+844	1522	6893484637209412	CMakeFiles/Code.dir/Location.cpp.obj	40d2d525fa30cc33
+909	1578	6893484637777866	CMakeFiles/Code.dir/MasterOfCoin.cpp.obj	fb8b50ccca07bd14
+1017	1609	6893484638106979	CMakeFiles/Code.dir/MedicalWagon.cpp.obj	bbc78e8064abb7d3

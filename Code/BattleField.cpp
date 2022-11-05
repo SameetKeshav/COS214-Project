@@ -37,7 +37,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		if(myBannerman->getFood()>enemyBannerman->getFood()){
 			myBannerman->increaseFavour();
             list<Bannerman*> s = myKingdom->getKingdom();
-            bool winning = false;
+            bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
                 Bannerman* a = *it;
                 if (a->getFavour() >= 10){

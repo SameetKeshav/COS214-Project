@@ -8,7 +8,7 @@ Location::Location() {
 }
 
 void Location::sendScout() {
-    cout << "waiting for conditions to update..." << endl;
+    cout << "Gathering weather report..." << endl;
 }
 
 

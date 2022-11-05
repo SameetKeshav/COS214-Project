@@ -28,7 +28,7 @@ public:
     /**
      * @brief the destructor
      */
-	~History(){delete bannerman;};
+	~History(){};
 };
 
 #endif

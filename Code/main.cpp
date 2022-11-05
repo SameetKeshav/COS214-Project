@@ -2,9 +2,10 @@
  * @author Julianna Venter
  * @date November 2022
  * TO-DO:
- * 1. Filler text in other classes for story-building
+ * 1. Filler text in other classes for story-building (Done for now)
  * 2. Final debug-run
- * 3. deleting dynamic objects + text for that
+ * 3. deleting dynamic objects + text for that (Done)
+ * 4. unit testing
  */
 
 
@@ -15,7 +16,7 @@
 #include <cstdlib>
 #include <time.h>
 #include <stdio.h>
-// #include <dos.h>
+ #include <dos.h>
 
 using namespace std;
 
@@ -56,6 +57,37 @@ HistoryBook* BookOfDura = new HistoryBook();
 Treasury* t;
 Raven* r;
 
+//======================Unit testing===================================================
+
+void RoninUnitTesting(){
+
+}
+
+void KeaUnitTesting(){
+
+}
+
+void SameetUnitTesting(){
+
+}
+
+void ThapeloUnitTesting(){
+
+}
+
+void MorganUnitTesting(){
+
+}
+
+void JuliannaUnitTesting(){
+
+}
+
+
+//=========================================================================================
+
+
+
 /**
  * @brief the text introduction to the simulator's story
  */
@@ -71,7 +103,7 @@ void intro(){
     cout<<"└─┘┴ ┴ ┴  ┴ ┴─┘└─┘  └  └─┘┴└─   ┴ ┴ ┴└─┘"<<endl;
 
     cout<<"██     ██ ███████ ███████ ████████ ███████ ██████  ███    ██     ██ ███████ ██      ███████ ███████ "<<endl;
-    // delay(2);
+//     delay(2);
     cout<<"██     ██ ██      ██         ██    ██      ██   ██ ████   ██     ██ ██      ██      ██      ██      "<<endl;
     // delay(2);
     cout<<"██  █  ██ █████   ███████    ██    █████   ██████  ██ ██  ██     ██ ███████ ██      █████   ███████ "<<endl;
@@ -213,9 +245,7 @@ void chooseFighter(){
  * @brief helper code for creating the location/wartheater/topology objects
  */
 void DecoratorClientCode(WarTheatre* component) {
- 
   component->sendScout();
-  
 }
 
 /**
@@ -262,7 +292,18 @@ void goAttack(){
     }
 
     //send scout
-    WarTheatre* OriginalWarTheatre = new Location;
+    cout<<"A scout has been sent to the enemies location. We await news."<<endl;
+    delay(1);
+    cout<<".";
+    delay(1);
+    cout<<".";
+    delay(1);
+    cout<<"."<<endl;
+    delay(1);
+    cout<<"A raven from the scout has returned! Here is the news: "<<endl;
+
+
+    WarTheatre* OriginalWarTheatre = new Location();
     DecoratorClientCode(OriginalWarTheatre);
     WarTheatre* weatherEffect= new Weather(OriginalWarTheatre);
     DecoratorClientCode(weatherEffect);
@@ -350,6 +391,29 @@ int main(){
     intro();
     populateVectors();
     WarLoop();
+
+//    RoninUnitTesting();
+//    KeaUnitTesting();
+//    SameetUnitTesting();
+//    ThapeloUnitTesting();
+//    MorganUnitTesting();
+//    JuliannaUnitTesting();
+
+    //deletes
+//    delete Dura;
+//    delete DuraEco;
+//    delete Preadora;
+//    delete PreadoraEco;
+//    delete enemy;
+//    delete fighter;
+//    delete strat;
+//    delete DuraState;
+//    delete PreadoraState;
+//    delete warind;
+//    delete Greg;
+//    delete BookOfDura;
+//    delete t;
+//    delete r;
 
     return 0;
 }

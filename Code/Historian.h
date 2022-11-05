@@ -32,7 +32,7 @@ private:
     /**
      * @brief the destructor
      */
-	~Historian(){delete bannerman;};
+	~Historian(){};
 };
 
 #endif
