@@ -2,6 +2,7 @@
 #define HISTORYBOOK_H
 #include "History.h"
 #include <list>
+class History;
 class HistoryBook {
 /** @brief The caretaker class in the memento design pattern
  * @author Julianna Venter

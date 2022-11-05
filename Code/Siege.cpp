@@ -1,4 +1,3 @@
-@ -1,81 +0,0 @@
 #include "Siege.h"
 
 Siege::Siege(int stealth,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Siege",min,minFavour, h, hb){
@@ -54,7 +53,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         if(myBannerman->getFood()>enemyBannerman->getFood()){
             myBannerman->increaseFavour();
             list<Bannerman*> s = myKingdom->getKingdom();
-            bool winning = false;
+            bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
                 Bannerman* a = *it;
                 if (a->getFavour() >= 10){

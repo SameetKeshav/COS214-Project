@@ -98,23 +98,23 @@ void intro(){
     // cout<<"press Enter to continue...";
     // cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
-    cout<<"┌┐ ┌─┐┌┬┐┌┬┐┬  ┌─┐  ┌─┐┌─┐┬─┐  ┌┬┐┬ ┬┌─┐"<<endl;
-    cout<<"├┴┐├─┤ │  │ │  ├┤   ├┤ │ │├┬┘   │ ├─┤├┤ "<<endl;
-    cout<<"└─┘┴ ┴ ┴  ┴ ┴─┘└─┘  └  └─┘┴└─   ┴ ┴ ┴└─┘"<<endl;
+//    cout<<"┌┐ ┌─┐┌┬┐┌┬┐┬  ┌─┐  ┌─┐┌─┐┬─┐  ┌┬┐┬ ┬┌─┐"<<endl;
+//    cout<<"├┴┐├─┤ │  │ │  ├┤   ├┤ │ │├┬┘   │ ├─┤├┤ "<<endl;
+//    cout<<"└─┘┴ ┴ ┴  ┴ ┴─┘└─┘  └  └─┘┴└─   ┴ ┴ ┴└─┘"<<endl;
+//
+//    cout<<"██     ██ ███████ ███████ ████████ ███████ ██████  ███    ██     ██ ███████ ██      ███████ ███████ "<<endl;
+////     delay(2);
+//    cout<<"██     ██ ██      ██         ██    ██      ██   ██ ████   ██     ██ ██      ██      ██      ██      "<<endl;
+//    // delay(2);
+//    cout<<"██  █  ██ █████   ███████    ██    █████   ██████  ██ ██  ██     ██ ███████ ██      █████   ███████ "<<endl;
+//    // delay(2);
+//    cout<<"██ ███ ██ ██           ██    ██    ██      ██   ██ ██  ██ ██     ██      ██ ██      ██           ██ "<<endl;
+//    // delay(2);
+//    cout<<" ███ ███  ███████ ███████    ██    ███████ ██   ██ ██   ████     ██ ███████ ███████ ███████ ███████ "<<endl;
 
-    cout<<"██     ██ ███████ ███████ ████████ ███████ ██████  ███    ██     ██ ███████ ██      ███████ ███████ "<<endl;
-//     delay(2);
-    cout<<"██     ██ ██      ██         ██    ██      ██   ██ ████   ██     ██ ██      ██      ██      ██      "<<endl;
-    // delay(2);
-    cout<<"██  █  ██ █████   ███████    ██    █████   ██████  ██ ██  ██     ██ ███████ ██      █████   ███████ "<<endl;
-    // delay(2);
-    cout<<"██ ███ ██ ██           ██    ██    ██      ██   ██ ██  ██ ██     ██      ██ ██      ██           ██ "<<endl;
-    // delay(2);
-    cout<<" ███ ███  ███████ ███████    ██    ███████ ██   ██ ██   ████     ██ ███████ ███████ ███████ ███████ "<<endl;
 
-
-    // cout<<"press Enter to continue...";
-    // cin.ignore(numeric_limits<streamsize>::max(),'\n');
+//     cout<<"press Enter to continue...";
+//     cin.ignore(numeric_limits<streamsize>::max(),'\n');
 }
 
 
@@ -293,13 +293,13 @@ void goAttack(){
 
     //send scout
     cout<<"A scout has been sent to the enemies location. We await news."<<endl;
-    delay(1);
+//    delay(1);
     cout<<".";
-    delay(1);
+//    delay(1);
     cout<<".";
-    delay(1);
+//    delay(1);
     cout<<"."<<endl;
-    delay(1);
+//    delay(1);
     cout<<"A raven from the scout has returned! Here is the news: "<<endl;
 
 
@@ -355,11 +355,11 @@ void WarLoop(){
         char choice;
         cin>>choice;
         if (choice == 'y'){
-            chooseEnemy();
-            chooseFighter();
-            goAttack();
-            // cout<<"WarLoop successful"<<endl;
-            // attack = false;
+//            chooseEnemy();
+//            chooseFighter();
+//            goAttack();
+             cout<<"WarLoop successful"<<endl;
+             attack = false;
         }if (choice == 'n'){
             cout<<"By choosing not to attack Preadora you will have to raise the white flag of surender."<<endl<<"Do you agree?(y/n)"<<endl;
             char surr;
@@ -389,8 +389,8 @@ void WarLoop(){
 int main(){
 
     intro();
-    populateVectors();
-    WarLoop();
+//    populateVectors();
+//    WarLoop();
 
 //    RoninUnitTesting();
 //    KeaUnitTesting();

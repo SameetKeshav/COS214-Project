@@ -3,6 +3,7 @@
 #include "Bannerman.h"
 #include <iostream>
 using namespace std;
+class Bannerman;
 class History { //memento
 /** @brief The memento class in the memento design pattern
  * @author Julianna Venter

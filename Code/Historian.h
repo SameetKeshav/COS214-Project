@@ -2,6 +2,7 @@
 #define HISTORIAN_H
 #include "Bannerman.h"
 #include "History.h"
+class History;
 class Historian { //originator
 /** @brief The originator class in the memento design pattern
  * @author Julianna Venter

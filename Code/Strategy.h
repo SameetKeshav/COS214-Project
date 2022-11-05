@@ -10,7 +10,8 @@
 #include "Historian.h"
 
 using namespace std;
-
+class Historian;
+class HistoryBook;
 class Bannerman;
 class Kingdom;
 /** @brief An Abstract strategy class.
