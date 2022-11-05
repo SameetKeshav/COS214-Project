@@ -38,12 +38,14 @@ using namespace std;
 #include "Topology.h"
 #include "MasterOfCoin.h"
 #include "sendRaven.h"
+#include "Factory.h"
 #include "FoodFac.h"
-#include "WeaponsFac.h"
 #include "MedicalFac.h"
+#include "WeaponsFac.h"
+#include "SupplyWagon.h"
+#include "FoodWagon.h"
 #include "MedicalWagon.h"
 #include "WeaponWagon.h"
-#include "FoodWagon.h"
 
 //variables;
 Kingdom* Dura;
@@ -60,8 +62,8 @@ State* PreadoraState;
 WarIndicators* warind = new WarIndicators();
 Historian* Greg = new Historian();
 HistoryBook* BookOfDura = new HistoryBook();
-Treasury* t;
-Raven* r;
+Treasury* tres;
+Raven* myRaven;
 
 //======================Unit testing===================================================
 
@@ -287,7 +289,7 @@ void chooseFighter(){
     int c;
     cin>>c;
     if (c > DuraBannermen.size() || c < 0){
-        chooseEnemy();
+        chooseFighter();
     }
     
     list<Bannerman*>::iterator itr = DuraBannermen.begin();
@@ -296,6 +298,30 @@ void chooseFighter(){
     fighter = *itr;
     cout<<"chooseFighter success"<<endl;
 
+    Factory* myFactory1 = new FoodFac();
+    Factory* myFactory2 = new MedicalFac();
+    Factory* myFactory3 = new WeaponsFac();
+
+    myFactory1->operation();
+    myFactory2->operation();
+    myFactory3->operation();
+
+    SupplyWagon* OriginalFoodWagon = new FoodWagon();
+    SupplyWagon* OriginalMedicalWagon = new MedicalWagon();
+    SupplyWagon* OriginalWeaponWagon = new WeaponWagon();
+
+    OriginalFoodWagon->setSup(myFactory1->getSupply());
+    OriginalMedicalWagon->setSup(myFactory2->getSupply());
+    OriginalWeaponWagon->setSup(myFactory3->getSupply());
+
+    SupplyWagon* Foodwagons[5];
+    SupplyWagon* Medicalwagons[5];
+    SupplyWagon* Weaponwagons[5];
+
+    SupplyWagon** supplies = new SupplyWagon * [3];
+    //make 2d array food weapons medical
+
+    myRaven = new sendRaven(supplies, fighter);
 
 }
 
@@ -360,6 +386,11 @@ void goAttack(){
 //    delay(1);
     cout<<"A raven from the scout has returned! Here is the news: "<<endl;
 
+    tres = new MasterOfCoin(DuraEco, myRaven, strat);
+//    WarIndicators* w = new WarIndicators(tres);
+    fighter->attach(myRaven);
+    fighter->setTreasury(tres);
+    strat->setTreasury(tres);
 
     WarTheatre* OriginalWarTheatre = new Location();
     OriginalWarTheatre->decideVenue(strat);

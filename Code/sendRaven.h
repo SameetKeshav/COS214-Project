@@ -13,7 +13,7 @@
     @author Sameet Keshav u21479373
     @date October 2022
     */
-class sendRaven : Raven {
+class sendRaven : public Raven {
 
 private:
 
