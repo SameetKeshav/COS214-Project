@@ -9,6 +9,7 @@ Bannerman* ConIterator::Current() {
     return (*it);
 }
 
+
 Bannerman* ConIterator::next() {///Test
     if(hasNext()) {
         ++it;

@@ -24,7 +24,6 @@ void Commander::removeBannerman(Bannerman* x){
     groundForces.remove(x);
 }
 
-
 int Commander::getHP() {
     int total=0;
     Iterator* IT = createIterator();
