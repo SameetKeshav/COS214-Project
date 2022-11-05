@@ -9,11 +9,12 @@ void Kingdom::remove(Bannerman* b){
 	{
 		for (list<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
 		{
-			//fix this, add unique IDs to Bannerman, should be initialized to -1
-			if ((*it)->getName()==b->getName())
-			{
-				bannerman.erase(it);
-			}
+                if ((*it)->getName()==b->getName())
+                {
+                    bannerman.erase(it);
+                }
+            
+
 		}
 	}
 }

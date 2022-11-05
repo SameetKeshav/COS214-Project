@@ -106,6 +106,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
     }
     else
     {
+        cout<<"==================================================================================="<<endl;
         return false;
     }
 }

@@ -77,7 +77,7 @@ void Troop::decreaseMedical(){
 }
 
 void Troop::receiveDamage(int X) {
-    this->damage+=X;
+    this->HP-=X;
 }
 void Troop::setWeapons(int numWeapons){
     this->numWeapons  = numWeapons;
