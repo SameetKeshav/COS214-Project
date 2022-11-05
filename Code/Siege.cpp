@@ -56,7 +56,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
                 Bannerman* a = *it;
-                if (a->getFavour() >= 10){
+                if (a->getFavour() >= 9){
                     winner = true;
                 }else{
                     winner = false;
@@ -88,6 +88,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             }
 
         }
+
         if (myBannerman->getWeapons()<=minSupplies)
         {
             //tell sameet to add pointer asterisk in treasury class's notify
@@ -106,6 +107,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
     }
     else
     {
+        cout<<"==================================================================================="<<endl;
         return false;
     }
 }

@@ -67,7 +67,9 @@ Treasury* tres;
 Raven* myRaven;
 
 //======================Unit testing===================================================
-
+void DecoratorClientCode(WarTheatre* component) {
+    component->sendScout();
+}
 void RoninUnitTesting(){
 //    Factory* myFactory1 = new FoodFac();
 //    Factory* myFactory2 = new MedicalFac();
@@ -123,7 +125,37 @@ void RoninUnitTesting(){
 }
 
 void KeaUnitTesting(){
+    srand(time(0));
+    int stealth = 10 + (rand() % 100);
 
+    Strategy* strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "Ambush", 10, 5, Greg, BookOfDura);
+
+
+    cout << "------------ TESTING THE DECORATOR FUNCTIONALITY ------------" << endl;
+
+    std::cout << "\n\nClient: I have a Default Theatre\n";
+    WarTheatre* OriginalWarTheatre = new Location;
+    OriginalWarTheatre->setVenue(OriginalWarTheatre->decideVenue(strat));
+    DecoratorClientCode(OriginalWarTheatre);
+    cout << "Default terrain difficulty: " << OriginalWarTheatre->getDifficulty() << endl;
+
+    std::cout << "\n\nClient: Now I've got a Weather-Affected Theatre\n";
+    WarTheatre* weatherEffect= new Weather(OriginalWarTheatre);
+    weatherEffect->setDifficulty(OriginalWarTheatre->getDifficulty());
+    DecoratorClientCode(weatherEffect);
+    cout << "Adjusted Terrain Difficulty: " << weatherEffect->getDifficulty() << endl;
+
+    std::cout << "\n\nClient: Now I've got a Topology-Affected Theatre\n";
+    WarTheatre* topologyEffect = new Topology(weatherEffect);
+    topologyEffect->setDifficulty(weatherEffect->getDifficulty());
+    topologyEffect->setVenue(topologyEffect->decideVenue(strat));
+    DecoratorClientCode(topologyEffect);
+    cout << "Adjusted Terrain Difficulty: " << topologyEffect->getDifficulty() << endl;
+    std::cout << "\n";
+
+    delete OriginalWarTheatre;
+    delete weatherEffect;
+    delete topologyEffect;
 }
 
 void SameetUnitTesting(){
@@ -242,6 +274,7 @@ void chooseEnemy(){
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
 
     }
+    cout<<"Name your chosen bannerman: ";
     int c;
     cin>>c;
     if (c > PreadoraBannermen.size() || c < 0){
@@ -249,11 +282,10 @@ void chooseEnemy(){
     }
 
     list<Bannerman*>::iterator itr = PreadoraBannermen.begin();
-    advance(itr, c-1);
+    advance(itr, c);
 
     enemy = *itr;
     cout<<enemy->getName()<<endl;
-    cout<<"chooseEnemy success"<<endl;
 }
 
 /**
@@ -273,28 +305,24 @@ void chooseFighter(){
         cout<<"HP: " << curr->getHP() <<endl;
 
         list<Bannerman*> DuraTroops = curr->getTroops();
-        list<Bannerman*>::iterator a = DuraTroops.begin();
-        list<Bannerman*>::iterator b = DuraTroops.begin();
-        advance(b, 1);
-        Bannerman* troop1 = *a;
-        Bannerman* troop2 = *b;
-        
-        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
-        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
+
+        cout<<"HP of Squadron 1: " << DuraTroops.front()->getHP() <<endl;
+        cout<<"HP of Squadron 2: " << DuraTroops.back()->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
     }
+    cout<<"Name your chosen bannerman: ";
     int c;
     cin>>c;
     if (c > DuraBannermen.size() || c < 0){
         chooseFighter();
     }
-    
+
+
     list<Bannerman*>::iterator itr = DuraBannermen.begin();
-    advance(itr, c-1);
+    advance(itr, c);
     
     fighter = *itr;
-    cout<<"chooseFighter success"<<endl;
 
     Factory* myFactory1 = new FoodFac();
     Factory* myFactory2 = new MedicalFac();
@@ -312,23 +340,18 @@ void chooseFighter(){
     OriginalMedicalWagon->setSup(myFactory2->getSupply());
     OriginalWeaponWagon->setSup(myFactory3->getSupply());
 
-    SupplyWagon* Foodwagons[5];
-    SupplyWagon* Medicalwagons[5];
-    SupplyWagon* Weaponwagons[5];
-
     SupplyWagon** supplies = new SupplyWagon * [3];
-    //make 2d array food weapons medical
+    supplies[0] = new FoodWagon();
+    supplies[1] = new WeaponWagon();
+    supplies[2] = new MedicalWagon();
 
     myRaven = new sendRaven(supplies, fighter);
-
 }
 
 /**
  * @brief helper code for creating the location/wartheater/topology objects
  */
-void DecoratorClientCode(WarTheatre* component) {
-  component->sendScout();
-}
+
 
 /**
  * @brief lets the user choose the strategy and calls the attack method
@@ -448,11 +471,9 @@ void WarLoop(){
         char choice;
         cin>>choice;
         if (choice == 'y'){
-//            chooseEnemy();
-//            chooseFighter();
-//            goAttack();
-             cout<<"WarLoop successful"<<endl;
-             attack = false;
+            chooseEnemy();
+            chooseFighter();
+            goAttack();
         }if (choice == 'n'){
             cout<<"By choosing not to attack Preadora you will have to raise the white flag of surender."<<endl<<"Do you agree?(y/n)"<<endl;
             char surr;
@@ -483,9 +504,8 @@ int main(){
 
     intro();
     populateVectors();
-//    WarLoop();
+    WarLoop();
 
-    chooseEnemy();
 //    RoninUnitTesting();
 //    KeaUnitTesting();
 //    SameetUnitTesting();
