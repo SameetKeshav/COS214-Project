@@ -36,6 +36,7 @@ public:
  * */
     Bannerman* Current();
 
+
     /**
 * @brief Sets the (*it) pointer to the next bannerman object in groundForces to be accessed and returns it,
  * , primitive operations can be performed on the returned bannerman object
