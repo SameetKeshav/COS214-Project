@@ -23,8 +23,18 @@ void Commander::removeBannerman(Bannerman* x){
 int Commander::getHP() {
     int totalHP = 0;
 
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalHP+=(*it)->getHP();
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        totalHP+=(*it)->getHP();
+//
+    Iterator* IT = createIterator();
+
+    IT->Current();
+    totalHP+=IT->Current()->getHP();
+
+    while(IT->hasNext()){
+        IT->next();
+        totalHP+=IT->Current()->getHP();
+    }
 
     return totalHP;
 }
