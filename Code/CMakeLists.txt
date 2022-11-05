@@ -25,9 +25,11 @@ add_executable(Code
         Economy.cpp
         Economy.h
         Factory.h
+        Factory.cpp
         FailedState.cpp
         FailedState.h
         FoodFac.h
+        FoodFac.cpp
         FoodSupp.h
         FoodSupp.cpp
         FoodWagon.cpp
@@ -49,6 +51,7 @@ add_executable(Code
         MasterOfCoin.cpp
         MasterOfCoin.h
         MedicalFac.h
+        MedicalFac.cpp
         MedicalSupp.h
         MedicalSupp.cpp
         MedicalWagon.cpp
@@ -74,6 +77,7 @@ add_executable(Code
         WarTheatre.cpp
         WarTheatre.h
         WeaponsFac.h
+        WeaponsFac.cpp
         WeaponSupp.h
         WeaponSupp.cpp
         WeaponWagon.cpp

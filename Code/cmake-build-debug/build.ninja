@@ -105,8 +105,22 @@ build CMakeFiles/Code.dir/Economy.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/ju
   OBJECT_DIR = CMakeFiles\Code.dir
   OBJECT_FILE_DIR = CMakeFiles\Code.dir
 
+build CMakeFiles/Code.dir/Factory.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/Factory.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\Factory.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/Code/."
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir
+
 build CMakeFiles/Code.dir/FailedState.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/FailedState.cpp || cmake_object_order_depends_target_Code
   DEP_FILE = CMakeFiles\Code.dir\FailedState.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/Code/."
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir
+
+build CMakeFiles/Code.dir/FoodFac.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/FoodFac.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\FoodFac.cpp.obj.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -I"C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/Code/."
   OBJECT_DIR = CMakeFiles\Code.dir
@@ -182,6 +196,13 @@ build CMakeFiles/Code.dir/MasterOfCoin.cpp.obj: CXX_COMPILER__Code_Debug C$:/Use
   OBJECT_DIR = CMakeFiles\Code.dir
   OBJECT_FILE_DIR = CMakeFiles\Code.dir
 
+build CMakeFiles/Code.dir/MedicalFac.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/MedicalFac.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\MedicalFac.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/Code/."
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir
+
 build CMakeFiles/Code.dir/MedicalSupp.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/MedicalSupp.cpp || cmake_object_order_depends_target_Code
   DEP_FILE = CMakeFiles\Code.dir\MedicalSupp.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -252,6 +273,13 @@ build CMakeFiles/Code.dir/WarTheatre.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\Code.dir
   OBJECT_FILE_DIR = CMakeFiles\Code.dir
 
+build CMakeFiles/Code.dir/WeaponsFac.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/WeaponsFac.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\WeaponsFac.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/Code/."
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir
+
 build CMakeFiles/Code.dir/WeaponSupp.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/julia/OneDrive/Documents/Uni$ Work/YEAR$ 2/COS$ 214/Practicals/Project/Code/COS214-Project/Code/WeaponSupp.cpp || cmake_object_order_depends_target_Code
   DEP_FILE = CMakeFiles\Code.dir\WeaponSupp.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -281,7 +309,7 @@ build CMakeFiles/Code.dir/Weather.cpp.obj: CXX_COMPILER__Code_Debug C$:/Users/ju
 #############################################
 # Link the executable Code.exe
 
-build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/Ambush.cpp.obj CMakeFiles/Code.dir/Assassinate.cpp.obj CMakeFiles/Code.dir/Bannerman.cpp.obj CMakeFiles/Code.dir/BattleField.cpp.obj CMakeFiles/Code.dir/Commander.cpp.obj CMakeFiles/Code.dir/Conditions.cpp.obj CMakeFiles/Code.dir/ConIterator.cpp.obj CMakeFiles/Code.dir/Economy.cpp.obj CMakeFiles/Code.dir/FailedState.cpp.obj CMakeFiles/Code.dir/FoodSupp.cpp.obj CMakeFiles/Code.dir/FoodWagon.cpp.obj CMakeFiles/Code.dir/HealthyState.cpp.obj CMakeFiles/Code.dir/Historian.cpp.obj CMakeFiles/Code.dir/History.cpp.obj CMakeFiles/Code.dir/HistoryBook.cpp.obj CMakeFiles/Code.dir/Kingdom.cpp.obj CMakeFiles/Code.dir/Location.cpp.obj CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/MasterOfCoin.cpp.obj CMakeFiles/Code.dir/MedicalSupp.cpp.obj CMakeFiles/Code.dir/MedicalWagon.cpp.obj CMakeFiles/Code.dir/sendRaven.cpp.obj CMakeFiles/Code.dir/Siege.cpp.obj CMakeFiles/Code.dir/State.cpp.obj CMakeFiles/Code.dir/Strategy.cpp.obj CMakeFiles/Code.dir/Topology.cpp.obj CMakeFiles/Code.dir/Troop.cpp.obj CMakeFiles/Code.dir/UnstableState.cpp.obj CMakeFiles/Code.dir/WarTheatre.cpp.obj CMakeFiles/Code.dir/WeaponSupp.cpp.obj CMakeFiles/Code.dir/WeaponWagon.cpp.obj CMakeFiles/Code.dir/Weather.cpp.obj
+build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/Ambush.cpp.obj CMakeFiles/Code.dir/Assassinate.cpp.obj CMakeFiles/Code.dir/Bannerman.cpp.obj CMakeFiles/Code.dir/BattleField.cpp.obj CMakeFiles/Code.dir/Commander.cpp.obj CMakeFiles/Code.dir/Conditions.cpp.obj CMakeFiles/Code.dir/ConIterator.cpp.obj CMakeFiles/Code.dir/Economy.cpp.obj CMakeFiles/Code.dir/Factory.cpp.obj CMakeFiles/Code.dir/FailedState.cpp.obj CMakeFiles/Code.dir/FoodFac.cpp.obj CMakeFiles/Code.dir/FoodSupp.cpp.obj CMakeFiles/Code.dir/FoodWagon.cpp.obj CMakeFiles/Code.dir/HealthyState.cpp.obj CMakeFiles/Code.dir/Historian.cpp.obj CMakeFiles/Code.dir/History.cpp.obj CMakeFiles/Code.dir/HistoryBook.cpp.obj CMakeFiles/Code.dir/Kingdom.cpp.obj CMakeFiles/Code.dir/Location.cpp.obj CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/MasterOfCoin.cpp.obj CMakeFiles/Code.dir/MedicalFac.cpp.obj CMakeFiles/Code.dir/MedicalSupp.cpp.obj CMakeFiles/Code.dir/MedicalWagon.cpp.obj CMakeFiles/Code.dir/sendRaven.cpp.obj CMakeFiles/Code.dir/Siege.cpp.obj CMakeFiles/Code.dir/State.cpp.obj CMakeFiles/Code.dir/Strategy.cpp.obj CMakeFiles/Code.dir/Topology.cpp.obj CMakeFiles/Code.dir/Troop.cpp.obj CMakeFiles/Code.dir/UnstableState.cpp.obj CMakeFiles/Code.dir/WarTheatre.cpp.obj CMakeFiles/Code.dir/WeaponsFac.cpp.obj CMakeFiles/Code.dir/WeaponSupp.cpp.obj CMakeFiles/Code.dir/WeaponWagon.cpp.obj CMakeFiles/Code.dir/Weather.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Code.dir
