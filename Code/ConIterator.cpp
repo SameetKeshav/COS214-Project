@@ -2,19 +2,20 @@
 
 ConIterator::ConIterator(list<Bannerman*> X) {
     armyList = X;
-    it = X.begin();
+    it = armyList.begin();
 }
 
 Bannerman* ConIterator::Current() {
     return (*it);
 }
 
+
 Bannerman* ConIterator::next() {///Test
     if(hasNext()) {
         ++it;
-        return *it;
+        return (*it);
     }else{
-        return *it;
+        return (*it);
     }
 }
 
