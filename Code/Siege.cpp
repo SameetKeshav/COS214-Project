@@ -88,6 +88,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             }
 
         }
+
         if (myBannerman->getWeapons()<=minSupplies)
         {
             //tell sameet to add pointer asterisk in treasury class's notify

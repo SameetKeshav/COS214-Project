@@ -7,15 +7,15 @@ Kingdom::Kingdom(Economy* economy){
 void Kingdom::remove(Bannerman* b){
 	if (bannerman.size()>0)
 	{
-		for (list<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
-		{
-                if ((*it)->getName()==b->getName())
-                {
-                    bannerman.erase(it);
-                }
-
-
-		}
+        bannerman.remove(b);
+//		for (list<Bannerman*>::iterator it = bannerman.begin(); it !=bannerman.end(); it++)
+//		{
+//                if ((*it)==b)
+//                {
+//                    bannerman.erase(it);
+//                }
+//
+//		}
 	}
 }
 
