@@ -30,11 +30,12 @@ public:
     ConIterator(list<Bannerman*> X);
 
     /**
- * @brief Abstract. Returns a pointer to the current bannerman object in groundForces being accessed,
+ * @brief Returns a pointer to the current bannerman object in groundForces being accessed,
  * , primitive operations can be performed on the returned bannerman object
  * @returns Bannerman*
  * */
     Bannerman* Current();
+
 
     /**
 * @brief Sets the (*it) pointer to the next bannerman object in groundForces to be accessed and returns it,

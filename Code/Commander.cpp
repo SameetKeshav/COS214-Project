@@ -20,14 +20,25 @@ void Commander::removeBannerman(Bannerman* x){
     groundForces.remove(x);
 }
 
+
 int Commander::getHP() {
-    int totalHP = 0;
+        int totalHP = 0;
 
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalHP+=(*it)->getHP();
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        totalHP+=(*it)->getHP();
+//
+        Iterator* IT = createIterator();
 
-    return totalHP;
-}
+        IT->Current();
+        totalHP+=IT->Current()->getHP();
+
+        while(IT->hasNext()){
+            IT->next();
+            totalHP+=IT->Current()->getHP();
+        }
+
+        return totalHP;
+    }
 
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
@@ -175,4 +186,3 @@ void Commander::setMaster(MasterOfCoin* m){
 void Commander::setStrategy(Strategy* s){
     this->changeStrategy(s);
 }
-
