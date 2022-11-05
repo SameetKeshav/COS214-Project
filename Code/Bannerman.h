@@ -98,7 +98,7 @@ public:
 */
     virtual void increasePower(int boost) = 0;
 
-    /** @brief Abstract. Accessor that returns the name of the bannerman.
+    /** @brief Accessor that returns the name of the bannerman.
      * @return The name of the bannerman.
         */
     virtual string getName() = 0;
@@ -185,7 +185,7 @@ public:
 
     /// @brief gets the list of troops under the commander (not abstract, but just inherited)
     /// @return the list of troops varaible
-    list<Bannerman*> getTroops();
+    virtual list<Bannerman*> getTroops() = 0;
 };
 
 #endif

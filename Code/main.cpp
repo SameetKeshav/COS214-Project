@@ -46,6 +46,7 @@ using namespace std;
 #include "FoodWagon.h"
 #include "MedicalWagon.h"
 #include "WeaponWagon.h"
+#include "Troop.h"
 
 //variables;
 Kingdom* Dura;
@@ -207,7 +208,6 @@ void populateVectors(){
     Preadora->add(new Commander("Prin"));
 
 
-
 }
 
 /**
@@ -232,19 +232,15 @@ void chooseEnemy(){
         Bannerman* curr = *it; //curr = bannerman
 
         cout<< i << ": " << curr->getName() <<endl;
-//        cout<<"HP: " << curr->getHP() <<endl;
+        cout<<"HP: " << curr->getHP() <<endl;
 
-//        list<Bannerman*> PreadoraTroops = curr->getTroops();
-//        list<Bannerman*>::iterator a = PreadoraTroops.begin();
-//        list<Bannerman*>::iterator b = PreadoraTroops.begin();
-//        advance(b, 1);
-//        Bannerman* troop1 = *a;
-//        Bannerman* troop2 = *b;
-//
-//        cout<<"HP of Squadren 1: " << troop1->getHP() <<endl;
-//        cout<<"HP of Squadren 2: " << troop2->getHP() <<endl;
+        list<Bannerman*> PreadoraTroops = curr->getTroops();
 
-//        cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
+        cout<<"HP of Squadron 1: " << PreadoraTroops.front()->getHP() <<endl;
+        cout<<"HP of Squadron 2: " << PreadoraTroops.back()->getHP() <<endl;
+
+        cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
+
     }
     int c;
     cin>>c;
@@ -256,6 +252,7 @@ void chooseEnemy(){
     advance(itr, c-1);
 
     enemy = *itr;
+    cout<<enemy->getName()<<endl;
     cout<<"chooseEnemy success"<<endl;
 }
 
@@ -393,12 +390,17 @@ void goAttack(){
     fighter->setTreasury(tres);
     strat->setTreasury(tres);
 
-    WarTheatre* OriginalWarTheatre = new Location();
-    OriginalWarTheatre->decideVenue(strat);
+    WarTheatre* OriginalWarTheatre = new Location;
+    OriginalWarTheatre->setVenue(OriginalWarTheatre->decideVenue(strat));
     DecoratorClientCode(OriginalWarTheatre);
+
     WarTheatre* weatherEffect= new Weather(OriginalWarTheatre);
+    weatherEffect->setDifficulty(OriginalWarTheatre->getDifficulty());
     DecoratorClientCode(weatherEffect);
+
     WarTheatre* topologyEffect = new Topology(weatherEffect);
+    topologyEffect->setDifficulty(weatherEffect->getDifficulty());
+    topologyEffect->setVenue(topologyEffect->decideVenue(strat));
     DecoratorClientCode(topologyEffect);
  
     strat->attack(fighter, enemy);

@@ -56,7 +56,6 @@ public:
      */
     int getHP() override;
 
-    string getName() override;
     /**
      * @brief Accessor. Returns the damage.
      *
@@ -175,6 +174,8 @@ public:
 @param strategy - The new strategy bannerman objects in groundForces should have.
 */
     void setStrategy(Strategy *s);
+
+    string getName();
 };
 
 #endif

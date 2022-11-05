@@ -57,3 +57,7 @@ int WarTheatre::getDifficulty()
 	return difficulty;
 }
 
+void WarTheatre::setVenue(char v)
+{
+    venue = v;
+}

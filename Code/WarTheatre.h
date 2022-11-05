@@ -62,6 +62,8 @@ public:
 	/**@brief returns the difficulty value of the theatre
      * @return the difficulty value*/
 	int getDifficulty();
+
+    void setVenue(char v);
 };
 
 #endif

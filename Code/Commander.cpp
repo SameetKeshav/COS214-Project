@@ -1,16 +1,13 @@
 #include "Commander.h"
 #include "MasterOfCoin.h"
 #include "Troop.h"
+
 //Julianna added and changed constructor
 Commander::Commander(string n) :groundForces() {
     name = n;
-    srand(time(0));
-    HP = 150 + (rand() % 500);
-    cout<<"HP: "<<HP<<endl;
-    int a = (40/100)*HP;
-    int b = (60/100)*HP;
-    groundForces.push_back(new Troop("SquadrenA", a));
-    groundForces.push_back(new Troop("SquadrenB", b));
+    groundForces.push_back(new Troop("Squadron 1", 12, 20, 18, 200, nullptr, nullptr, nullptr, true, 200));
+    groundForces.push_back(new Troop("Squadron 2", 12, 20, 18, 300, nullptr, nullptr, nullptr, true, 300));
+
 }
 
 Iterator* Commander::createIterator() {
@@ -31,21 +28,21 @@ void Commander::removeBannerman(Bannerman* x){
 int Commander::getHP() {
         int totalHP = 0;
 
-//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-//        totalHP+=(*it)->getHP();
+    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+        totalHP+=(*it)->getHP();
 
-        Iterator* IT = createIterator();
-
-        IT->Current();
-        totalHP+=IT->Current()->getHP();
-
-        while(IT->hasNext()){
-            IT->next();
-            totalHP+=IT->Current()->getHP();
-        }
-
+//        Iterator* IT = createIterator();
+//
+//        IT->Current();
+//        totalHP+=IT->Current()->getHP();
+//
+//        while(IT->hasNext()){
+//            IT->next();
+//            totalHP+=IT->Current()->getHP();
+//        }
+        HP = totalHP;
         return totalHP;
-}
+    }
 
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
@@ -195,5 +192,5 @@ void Commander::setStrategy(Strategy* s){
 }
 
 string Commander::getName() {
-    return name;
+    return  name;
 }
