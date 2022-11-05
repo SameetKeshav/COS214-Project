@@ -1,9 +1,13 @@
 #include "Commander.h"
 #include "MasterOfCoin.h"
+#include "Troop.h"
 
 //Julianna added and changed constructor
 Commander::Commander(string n) :groundForces() {
     name = n;
+    groundForces.push_back(new Troop("Squadron 1", 12, 20, 18, 200, nullptr, nullptr, nullptr, true, 200));
+    groundForces.push_back(new Troop("Squadron 2", 12, 20, 18, 300, nullptr, nullptr, nullptr, true, 300));
+
 }
 
 Iterator* Commander::createIterator() {
@@ -22,23 +26,19 @@ void Commander::removeBannerman(Bannerman* x){
 
 
 int Commander::getHP() {
-        int totalHP = 0;
+    int total=0;
+    Iterator* IT = createIterator();
 
-//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-//        totalHP+=(*it)->getHP();
-//
-        Iterator* IT = createIterator();
+    total+=IT->Current()->getHP();
 
-        IT->Current();
-        totalHP+=IT->Current()->getHP();
-
-        while(IT->hasNext()){
-            IT->next();
-            totalHP+=IT->Current()->getHP();
-        }
-
-        return totalHP;
+    while (IT->hasNext()){
+        total+=IT->Current()->getHP();
+        IT->next();
     }
+    return total;
+
+}
+
 
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
@@ -185,4 +185,8 @@ void Commander::setMaster(MasterOfCoin* m){
 //fixed.
 void Commander::setStrategy(Strategy* s){
     this->changeStrategy(s);
+}
+
+string Commander::getName() {
+    return  name;
 }
