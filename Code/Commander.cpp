@@ -5,8 +5,8 @@
 //Julianna added and changed constructor
 Commander::Commander(string n) :groundForces() {
     name = n;
-    groundForces.push_back(new Troop("Squadron 1", 12, 20, 18, 200, nullptr, nullptr, nullptr, true, 200));
-    groundForces.push_back(new Troop("Squadron 2", 12, 20, 18, 300, nullptr, nullptr, nullptr, true, 300));
+    groundForces.push_back(new Troop("Squadron 1", 7, 20, 18, 200, nullptr, nullptr, nullptr, true, 200));
+    groundForces.push_back(new Troop("Squadron 2", 7, 20, 18, 300, nullptr, nullptr, nullptr, true, 300));
 
 }
 

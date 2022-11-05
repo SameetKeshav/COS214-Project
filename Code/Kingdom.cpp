@@ -13,7 +13,7 @@ void Kingdom::remove(Bannerman* b){
                 {
                     bannerman.erase(it);
                 }
-            
+
 
 		}
 	}

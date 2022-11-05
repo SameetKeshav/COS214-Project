@@ -67,7 +67,9 @@ Treasury* tres;
 Raven* myRaven;
 
 //======================Unit testing===================================================
-
+void DecoratorClientCode(WarTheatre* component) {
+    component->sendScout();
+}
 void RoninUnitTesting(){
 //    Factory* myFactory1 = new FoodFac();
 //    Factory* myFactory2 = new MedicalFac();
@@ -123,7 +125,37 @@ void RoninUnitTesting(){
 }
 
 void KeaUnitTesting(){
+    srand(time(0));
+    int stealth = 10 + (rand() % 100);
 
+    Strategy* strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "Ambush", 10, 5, Greg, BookOfDura);
+
+
+    cout << "------------ TESTING THE DECORATOR FUNCTIONALITY ------------" << endl;
+
+    std::cout << "\n\nClient: I have a Default Theatre\n";
+    WarTheatre* OriginalWarTheatre = new Location;
+    OriginalWarTheatre->setVenue(OriginalWarTheatre->decideVenue(strat));
+    DecoratorClientCode(OriginalWarTheatre);
+    cout << "Default terrain difficulty: " << OriginalWarTheatre->getDifficulty() << endl;
+
+    std::cout << "\n\nClient: Now I've got a Weather-Affected Theatre\n";
+    WarTheatre* weatherEffect= new Weather(OriginalWarTheatre);
+    weatherEffect->setDifficulty(OriginalWarTheatre->getDifficulty());
+    DecoratorClientCode(weatherEffect);
+    cout << "Adjusted Terrain Difficulty: " << weatherEffect->getDifficulty() << endl;
+
+    std::cout << "\n\nClient: Now I've got a Topology-Affected Theatre\n";
+    WarTheatre* topologyEffect = new Topology(weatherEffect);
+    topologyEffect->setDifficulty(weatherEffect->getDifficulty());
+    topologyEffect->setVenue(topologyEffect->decideVenue(strat));
+    DecoratorClientCode(topologyEffect);
+    cout << "Adjusted Terrain Difficulty: " << topologyEffect->getDifficulty() << endl;
+    std::cout << "\n";
+
+    delete OriginalWarTheatre;
+    delete weatherEffect;
+    delete topologyEffect;
 }
 
 void SameetUnitTesting(){
@@ -319,9 +351,7 @@ void chooseFighter(){
 /**
  * @brief helper code for creating the location/wartheater/topology objects
  */
-void DecoratorClientCode(WarTheatre* component) {
-  component->sendScout();
-}
+
 
 /**
  * @brief lets the user choose the strategy and calls the attack method

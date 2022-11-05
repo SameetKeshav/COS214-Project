@@ -49,7 +49,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
             bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
                 Bannerman* a = *it;
-                if (a->getFavour() >= 10){
+                if (a->getFavour() >= 9){
                     winner = true;
                 }else{
                     winner = false;

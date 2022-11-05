@@ -37,6 +37,7 @@ void sendRaven::checkSupplies()
         ArmySupplies* as = s->getSupplies();
         subject->setMedical(as->getAmount());
     }
+    cout<<"Supplies have been received."<<endl;
 }
 
 sendRaven::~sendRaven()
