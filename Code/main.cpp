@@ -16,7 +16,7 @@
 #include <cstdlib>
 #include <time.h>
 #include <stdio.h>
- #include <dos.h>
+
 
 using namespace std;
 
@@ -126,9 +126,9 @@ void populateVectors(){
     PreadoraState = new HealthyState();
 
     srand(time(0));
-    int DuraCurrency = 10000000 + (rand() % 1000000000);
+    int DuraCurrency = 100;
     srand(time(0));
-    int PreadoraCurrency = 10000000 + (rand() % 1000000000);
+    int PreadoraCurrency = 100;
 
     Economy* DuraEco = new Economy(DuraState, DuraCurrency);
     Economy* PreadoraEco = new Economy(PreadoraState, PreadoraCurrency);
@@ -304,6 +304,7 @@ void goAttack(){
 
 
     WarTheatre* OriginalWarTheatre = new Location();
+    OriginalWarTheatre->decideVenue(strat);
     DecoratorClientCode(OriginalWarTheatre);
     WarTheatre* weatherEffect= new Weather(OriginalWarTheatre);
     DecoratorClientCode(weatherEffect);
@@ -343,7 +344,7 @@ void WarLoop(){
         cout<<"Here is the latest news from your council:"<<endl;
         cout<<"You have " << Dura->getSize() << " Bannermen standing at your side."<<endl;
         cout<<"The state of your economy " + state->getState() << " with the great banks valuing the kingdom's "<<endl;
-        cout<<"riches at " << DuraEco->getCurrency() << " gold daras." << endl;
+        cout<<"riches at " << DuraEco->getCurrency() << " gold daras." << endl; //stops working at currency
 
         if (attack == false){
             cout<<"The long battle has ended."<<endl;
@@ -389,8 +390,8 @@ void WarLoop(){
 int main(){
 
     intro();
-//    populateVectors();
-//    WarLoop();
+    populateVectors();
+    WarLoop();
 
 //    RoninUnitTesting();
 //    KeaUnitTesting();

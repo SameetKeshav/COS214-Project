@@ -28,7 +28,7 @@ char WarTheatre::decideVenue(Strategy* strategy)
 		setStrategy(strategy);
 		return  'd';
 	} else{
-		return 'z';
+		return 'a';
 	}
 }
 
