@@ -9,7 +9,7 @@ using namespace std;
 
 class Bannerman;
 
-/** @brief A Kingdom class that has all the fighting Bannerman and Economy.
+/** @todo A Kingdom class that has all the fighting Bannerman and Economy.
     @author Morgan Bentley
     @date October 2022
     */
@@ -22,25 +22,29 @@ private:
 	Economy* economy;
 
 public:
-	/** @brief Constructor. initializes Economy pointer and vector list.
+	/** @todo Constructor. initializes Economy pointer and vector list.
 	 * @param economy - Economy pointer to player's Economy object.
-	 * @param bannerman - vector list of Bannerman objects.
 	*/
 	Kingdom(Economy* economy);
-	/** @brief removes specified Bannerman from vector list.
+	/** @todo removes specified Bannerman from vector list.
 	 * @param b - Bannerman that has lost a fight or defected to enemyKingdom.
 	*/
 	void remove(Bannerman* b);
-	/** @brief adds specified Bannerman into vector list.
+	/** @todo adds specified Bannerman into vector list.
 	 * @param b - Bannerman that has defected from enemyKingdom
 	*/
 	void add(Bannerman* b);
 	/** @todo destructor. deallocates all pointers of this class**/
 	virtual ~Kingdom();
-
-
-	int getSize(); //added
-	Bannerman* getAlly(string n); //added
+	/** @todo returns current number of Bannerman in the Kingdom.
+	 * @return integer representing the number of Bannerman in Kingdom.**/
+	int getSize();
+	/** @todo returns a particular allied Bannerman given a unique string name.
+	 * @param n - unique name of a particular Bannerman.
+	 * @return a particular allied Bannerman.**/
+	Bannerman* getAlly(string n);
+	/** @todo returns a list of Bannerman pointers in the Kingdom.
+	 * @return vector list of all Bannerman objects a Kingdom owns.**/
 	list<Bannerman*> getKingdom();
 };
 

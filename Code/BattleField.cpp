@@ -9,6 +9,11 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		//getDamage is how much damage the bannerman can inflict
 		enemyBannerman->receiveDamage(myBannerman->getDamage());
         cout<<"You deal "<<myBannerman->getDamage()<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
+		if (enemyBannerman->getHP()<0)
+		{
+			myBannerman->decreaseWeapons();
+			break;
+		}
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
 			enemyBannerman->receiveDamage(myBannerman->getDamage());
@@ -18,9 +23,17 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			enemyBannerman->decreaseFood();
 		}
 		myBannerman->decreaseWeapons();
-		
+		if (enemyBannerman->getHP()<0)
+		{
+			break;
+		}
 		myBannerman->receiveDamage(enemyBannerman->getDamage());
         cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<enemyBannerman->getDamage()<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
+		if (myBannerman->getHP()<0)
+		{
+			enemyBannerman->decreaseWeapons();
+			break;
+		}
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
 			myBannerman->receiveDamage(enemyBannerman->getDamage());
@@ -30,6 +43,10 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			myBannerman->decreaseFood();
 		}
 		enemyBannerman->decreaseWeapons();
+		if (myBannerman->getHP()<0)
+		{
+			break;
+		}
 	}
 	
 	if (myBannerman->getHP()>0&&enemyBannerman->getHP()<=0)
