@@ -40,7 +40,6 @@ int Commander::getHP() {
         return totalHP;
     }
 
-
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
 }
