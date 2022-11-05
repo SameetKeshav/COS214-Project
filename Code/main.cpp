@@ -425,7 +425,8 @@ void goAttack(){
     topologyEffect->setDifficulty(weatherEffect->getDifficulty());
     topologyEffect->setVenue(topologyEffect->decideVenue(strat));
     DecoratorClientCode(topologyEffect);
- 
+    strat->setTreasury(tres); //added by Morgan
+    DuraEco->setTreasury(tres); //added by Morgan
     strat->attack(fighter, enemy);
 
 }
