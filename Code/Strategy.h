@@ -2,6 +2,7 @@
 #define STRATEGY_H
 
 #include <string>
+#include <ctime>
 #include "Bannerman.h"
 #include "WarIndicators.h"
 #include "MasterOfCoin.h"

@@ -1,22 +1,32 @@
 #include "Ambush.h"
 
 bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
+	int advantage=(stealth-60)/3;
+    srand(time(0));
+    int val=advantage;
 	if (stealth>60)
 	{
         cout<<"You approach your enemy's location. They don't notice your advance and you manage to do extra damage as you spring attack from your position."<<endl;
-		//tell Thapelo we must decide on power or damage
-		myBannerman->increasePower(5);
-		//tell thapelo to implement decrease power
-		enemyBannerman->decreasePower(5);
 	}else{
         cout<<"You approach your enemy's location. They notice your men and jump to attack!"<<endl;
     }
 	 
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
+		if (advantage>0)
+        {
+            val=rand()%advantage+0;
+        }
+        else if(advantage<0)
+        {
+            val=rand()%(0-advantage)+advantage;
+        }
+        else{
+            val=rand()%(4)+(-6);
+        }
 		//getDamage is how much damage the bannerman can inflict
-		enemyBannerman->receiveDamage(myBannerman->getDamage());
-        cout<<"You deal "<<myBannerman->getDamage()<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
+		enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
+        cout<<"You deal "<<(myBannerman->getDamage()+val)<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
 		if (enemyBannerman->getHP()<0)
 		{
 			myBannerman->decreaseWeapons();
@@ -24,7 +34,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 		}
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
-			enemyBannerman->receiveDamage(myBannerman->getDamage());
+			enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
             cout<<"The enemy's supplies are low! They take extra damage. Enemy HP:"<<enemyBannerman->getHP()<<endl;
 		} else {
 			enemyBannerman->decreaseMedical();
@@ -35,8 +45,8 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 		{
 			break;
 		}
-		myBannerman->receiveDamage(enemyBannerman->getDamage());
-        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<enemyBannerman->getDamage()<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
+		myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
+        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<(enemyBannerman->getDamage()-val)<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
         if (myBannerman->getHP()<0)
 		{
 			enemyBannerman->decreaseWeapons();
@@ -44,7 +54,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 		}
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
-			myBannerman->receiveDamage(enemyBannerman->getDamage());
+			myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
             cout<<"Our supplies are low! We take extra damage. Enemy HP:"<<myBannerman->getHP()<<endl;
         } else {
 			myBannerman->decreaseMedical();

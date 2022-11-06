@@ -9,6 +9,9 @@ Siege::~Siege(){
 }
 
 bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
+    int advantage=(stealth-60)/2;
+    srand(time(0));
+    int val=advantage;
     if (stealth>60)
     {
         cout<<"You approach the enemy's location and make camp outside. The enemy was caught unprepared and are low on supplies."<<endl;
@@ -22,8 +25,19 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
     while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
     {
         //getDamage is how much damage the bannerman can inflict
-        enemyBannerman->receiveDamage(myBannerman->getDamage());
-        cout<<"You deal "<<myBannerman->getDamage()<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
+        if (advantage>0)
+        {
+            val=rand()%advantage+0;
+        }
+        else if(advantage<0)
+        {
+            val=rand()%(0-advantage)+advantage;
+        }
+        else{
+            val=rand()%(myBannerman->getDamage()/2)+(-(myBannerman->getDamage()/4));
+        }
+        enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
+        cout<<"You deal "<<(myBannerman->getDamage()+val)<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
         if (enemyBannerman->getHP()<0)
 		{
 			myBannerman->decreaseWeapons();
@@ -31,7 +45,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
         if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
         {
-            enemyBannerman->receiveDamage(myBannerman->getDamage());
+            enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
             cout<<"The enemy's supplies are low! They take extra damage. Enemy HP:"<<enemyBannerman->getHP()<<endl;
         } else {
             enemyBannerman->decreaseMedical();
@@ -42,8 +56,8 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		{
 			break;
 		}
-        myBannerman->receiveDamage(enemyBannerman->getDamage());
-        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<enemyBannerman->getDamage()<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
+        myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
+        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<(enemyBannerman->getDamage()-val)<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
         if (myBannerman->getHP()<0)
 		{
 			enemyBannerman->decreaseWeapons();
@@ -51,7 +65,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
         if ((myBannerman->getFood()+myBannerman->getMedical())<0)
         {
-            myBannerman->receiveDamage(enemyBannerman->getDamage());
+            myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
             cout<<"Our supplies are low! We take extra damage. Enemy HP:"<<myBannerman->getHP()<<endl;
         } else {
             myBannerman->decreaseMedical();

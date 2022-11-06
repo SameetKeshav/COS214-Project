@@ -451,7 +451,7 @@ void WarLost(){
 void WarLoop(){
     while (attack){
         State* state = DuraState;
-        if (state->getState() == "has failed" || PreadoraState->getState() == "has failed"){
+        if (DuraEco->getState()->getState() == "has failed" || PreadoraEco->getState()->getState() == "has failed"){
             attack = false;
         }
         if (Dura->getSize() <= 0 || Preadora->getSize() <= 0){
@@ -459,7 +459,7 @@ void WarLoop(){
         }
         cout<<"Here is the latest news from your council:"<<endl;
         cout<<"You have " << Dura->getSize() << " Bannermen standing at your side."<<endl;
-        cout<<"The state of your economy " + state->getState() << " with the great banks valuing the kingdom's "<<endl;
+        cout<<"The state of your economy " + DuraEco->getState()->getState() << " with the great banks valuing the kingdom's "<<endl;
         cout<<"riches at " << DuraEco->getCurrency() << " gold daras." << endl; //stops working at currency
 
         if (attack == false){
@@ -489,9 +489,9 @@ void WarLoop(){
             }
         }
     }
-    if (PreadoraState->getState() == "has failed" || Preadora->getSize() <= 0){
+    if (PreadoraEco->getState()->getState() == "has failed" || Preadora->getSize() <= 0){
         WarWon();
-    }else if (DuraState->getState() == "has failed" || Dura->getSize() <= 0){
+    }else if (DuraEco->getState()->getState() == "has failed" || Dura->getSize() <= 0){
         WarLost();
     }
 
