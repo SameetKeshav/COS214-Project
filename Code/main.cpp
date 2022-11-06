@@ -442,6 +442,7 @@ void goAttack(){
 
     default:
         goAttack();
+        return;
     }
 
     cout<<strat->getStrategyName()<<endl;
@@ -532,7 +533,7 @@ void WarLoop(){
             chooseFighter();
             goAttack();
         }if (choice == 'n'){
-            cout<<"By choosing not to attack Preadora you will have to raise the white flag of surender."<<endl<<"Do you agree?(y/n)"<<endl;
+            cout<<"By choosing not to attack Preadora you will have to raise the white flag of surrender."<<endl<<"Do you agree?(y/n)"<<endl;
             char surr;
             cin>>surr;
             if (surr == 'y'){
