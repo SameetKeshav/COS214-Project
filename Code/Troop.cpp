@@ -1,7 +1,7 @@
 #include "Troop.h"
 
 Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
-
+    
     this->size = size;
 
     this->name =name;

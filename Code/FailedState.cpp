@@ -5,7 +5,7 @@ FailedState::FailedState() {
 }
 
 void FailedState::decreaseCurrency() {
-	//cout<<"State is bankrupt, out of funds"<<endl;	
+	cout<<"State is bankrupt, cannot decrease currency"<<endl;	
 }
 
 string FailedState::getState(){
