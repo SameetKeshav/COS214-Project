@@ -60,7 +60,6 @@ TEST(WagonTestSuite, getHP){
     }
 
 
-
     delete myFactory1;
     delete myFactory2;
     delete myFactory3;
