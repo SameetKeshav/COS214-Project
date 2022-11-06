@@ -41,9 +41,6 @@ protected:
     list<Raven*> ravenList;
 
 
-    /**Indicates whether or not the bannerman is an assassin */
-    bool assassin;
-
     /**Mediator for ensuring that the bannerman/army has the supplies it needs. */
     MasterOfCoin* m;
 
@@ -55,6 +52,8 @@ protected:
 
 
 public:
+    /**Indicates whether or not the bannerman is an assassin */
+    bool assassin;
     /** @brief Default constructor.
 */
     Bannerman();

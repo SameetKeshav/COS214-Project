@@ -28,7 +28,7 @@ int Commander::getHP() {
     int total=0;
     Iterator* IT = createIterator();
 
-    total+=IT->Current()->getHP();
+    //total+=IT->Current()->getHP();
 
     while (IT->hasNext()){
         total+=IT->Current()->getHP();
@@ -49,17 +49,20 @@ void Commander::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 }
 
 int Commander::getDamage() {
-    int totalDamage = 0;
-
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalDamage+=(*it)->getDamage();
-
-    return totalDamage;
+    return groundForces.front()->getDamage();
 }
 
 void Commander::receiveDamage(int X){
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        (*it)->receiveDamage(X);
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        (*it)->receiveDamage(X);
+    if (X < 0){
+        X = 0;
+    }
+    if (groundForces.front()->getHP() > 0){
+        groundForces.front()->receiveDamage(X);
+    } else if (groundForces.back()->getHP() > 0){
+        groundForces.back()->receiveDamage(X);
+    }
 }
 
 int Commander::getWeapons() {
@@ -137,10 +140,11 @@ void Commander::decreaseFavour(){
 }
 
 int Commander::getFavour(){
-    int sum=0;
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        sum+=(*it)->getFavour();
-    return sum;
+    if (groundForces.front()->getFavour() <= groundForces.back()->getFavour()) {
+        return groundForces.front()->getFavour();
+    }else{
+        return groundForces.back()->getFavour();
+    }
 }
 
 Commander::~Commander() {

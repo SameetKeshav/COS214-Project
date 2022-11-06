@@ -1,5 +1,5 @@
 #include "Troop.h"
-
+#include <random>
 Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
     
     this->size = size;
@@ -12,11 +12,18 @@ Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre
     this->warZone =warZone;
     this->strategy =strategy;
     this->m =m;
-    damage = 12;
+    srand(time(0));
+    damage = 12 + (rand() % 25);
     this->assassin = assassin;
+    numWeapons = 17;
 }
 int Troop::getHP() {
-    return this->HP;
+    if (HP < 0){
+        HP = 0;
+        return HP;
+    }else{
+        return HP;
+    }
 }
 
 void Troop::attach(Raven* o){
