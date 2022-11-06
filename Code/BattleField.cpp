@@ -3,12 +3,14 @@
 BattleField::BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"BattleField",min,minFavour, h, hb){}
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
+	int val=1;
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
+		val=rand()%(myBannerman->getDamage()/2)+(-(myBannerman->getDamage()/4));
         cout<<"You face your foe on the battlefield!"<<endl;
 		//getDamage is how much damage the bannerman can inflict
-		enemyBannerman->receiveDamage(myBannerman->getDamage());
-        cout<<"You deal "<<myBannerman->getDamage()<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
+		enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
+        cout<<"You deal "<<(myBannerman->getDamage()+val)<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
 		if (enemyBannerman->getHP()<0)
 		{
 			myBannerman->decreaseWeapons();
@@ -16,7 +18,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
 		if ((enemyBannerman->getFood()+enemyBannerman->getMedical())<0)
 		{
-			enemyBannerman->receiveDamage(myBannerman->getDamage());
+			enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
             cout<<"The enemy's supplies are low! They take extra damage. Enemy HP:"<<enemyBannerman->getHP()<<endl;
 		} else {
 			enemyBannerman->decreaseMedical();
@@ -27,8 +29,8 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		{
 			break;
 		}
-		myBannerman->receiveDamage(enemyBannerman->getDamage());
-        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<enemyBannerman->getDamage()<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
+		myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
+        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<(enemyBannerman->getDamage()-val)<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
 		if (myBannerman->getHP()<0)
 		{
 			enemyBannerman->decreaseWeapons();
@@ -36,7 +38,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
 		if ((myBannerman->getFood()+myBannerman->getMedical())<0)
 		{
-			myBannerman->receiveDamage(enemyBannerman->getDamage());
+			myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
             cout<<"Our supplies are low! We take extra damage. Enemy HP:"<<myBannerman->getHP()<<endl;
 		} else {
 			myBannerman->decreaseMedical();

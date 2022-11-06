@@ -15,8 +15,7 @@ public:
 	/** @brief Default constructor. initializes context to null.
 	*/
 	FailedState();
-	/** @todo decreases Economy currency and then checks if the conditions are sufficient for
-	 * the economy to downgrade to a lower state**/
+	/** @todo prints out string stating that current State is FailedState**/
 	void decreaseCurrency();
 	/** @todo tells what the State of the Economy is.
 	* @return returns a string that says in text what the State is.**/
