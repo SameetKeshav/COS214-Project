@@ -71,57 +71,57 @@ void DecoratorClientCode(WarTheatre* component) {
     component->sendScout();
 }
 void RoninUnitTesting(){
-//    Factory* myFactory1 = new FoodFac();
-//    Factory* myFactory2 = new MedicalFac();
-//    Factory* myFactory3 = new WeaponsFac();
-//
-//    myFactory1->operation();
-//    myFactory2->operation();
-//    myFactory3->operation();
-//
-//    SupplyWagon* OriginalFoodWagon = new FoodWagon();
-//    SupplyWagon* OriginalMedicalWagon = new MedicalWagon();
-//    SupplyWagon* OriginalWeaponWagon = new WeaponWagon();
-//
-//    OriginalFoodWagon->setSup(myFactory1->getSupply());
-//    OriginalMedicalWagon->setSup(myFactory2->getSupply());
-//    OriginalWeaponWagon->setSup(myFactory3->getSupply());
-//
-//    SupplyWagon* Foodwagons[5];
-//    SupplyWagon* Medicalwagons[5];
-//    SupplyWagon* Weaponwagons[5];
-//
-//    for(int i =0; i<5;i++){
-//        Foodwagons[i]=OriginalFoodWagon->clone();
-//    }
-//    for(int i =0; i<5;i++){
-//        Medicalwagons[i]=OriginalMedicalWagon->clone();
-//    } for(int i =0; i<5;i++){
-//        Weaponwagons[i]=OriginalWeaponWagon->clone();
-//    }
-//
-//    for(int i =0; i<5;i++){
-//        cout<<"Food Wagon "<<(i+1)<<": "<<Foodwagons[i]->getSupplies()->getAmount()<<endl;
-//    }
-//    for(int i =0; i<5;i++){
-//        cout<<"Medical Wagon "<<(i+1)<<": "<<Medicalwagons[i]->getSupplies()->getAmount()<<endl;
-//    } for(int i =0; i<5;i++){
-//        cout<<"Weapon Wagon "<<(i+1)<<": "<<Weaponwagons[i]->getSupplies()->getAmount()<<endl;
-//    }
-//
-//    for(int i =0; i<5;i++){
-//        delete Foodwagons[i];
-//    }
-//    for(int i =0; i<5;i++){
-//        delete Medicalwagons[i];
-//    }
-//    for(int i =0; i<5;i++){
-//        delete Weaponwagons[i];
-//    }
-//
-//    delete myFactory1;
-//    delete myFactory2;
-//    delete myFactory3;
+    Factory* myFactory1 = new FoodFac();
+    Factory* myFactory2 = new MedicalFac();
+    Factory* myFactory3 = new WeaponsFac();
+
+    myFactory1->operation();
+    myFactory2->operation();
+    myFactory3->operation();
+
+    SupplyWagon* OriginalFoodWagon = new FoodWagon();
+    SupplyWagon* OriginalMedicalWagon = new MedicalWagon();
+    SupplyWagon* OriginalWeaponWagon = new WeaponWagon();
+
+    OriginalFoodWagon->setSup(myFactory1->getSupply());
+    OriginalMedicalWagon->setSup(myFactory2->getSupply());
+    OriginalWeaponWagon->setSup(myFactory3->getSupply());
+
+    SupplyWagon* Foodwagons[5];
+    SupplyWagon* Medicalwagons[5];
+    SupplyWagon* Weaponwagons[5];
+
+    for(int i =0; i<5;i++){
+        Foodwagons[i]=OriginalFoodWagon->clone();
+    }
+    for(int i =0; i<5;i++){
+        Medicalwagons[i]=OriginalMedicalWagon->clone();
+    } for(int i =0; i<5;i++){
+        Weaponwagons[i]=OriginalWeaponWagon->clone();
+    }
+
+    for(int i =0; i<5;i++){
+        cout<<"Food Wagon "<<(i+1)<<": "<<Foodwagons[i]->getSupplies()->getAmount()<<endl;
+    }
+    for(int i =0; i<5;i++){
+        cout<<"Medical Wagon "<<(i+1)<<": "<<Medicalwagons[i]->getSupplies()->getAmount()<<endl;
+    } for(int i =0; i<5;i++){
+        cout<<"Weapon Wagon "<<(i+1)<<": "<<Weaponwagons[i]->getSupplies()->getAmount()<<endl;
+    }
+
+    for(int i =0; i<5;i++){
+        delete Foodwagons[i];
+    }
+    for(int i =0; i<5;i++){
+        delete Medicalwagons[i];
+    }
+    for(int i =0; i<5;i++){
+        delete Weaponwagons[i];
+    }
+
+    delete myFactory1;
+    delete myFactory2;
+    delete myFactory3;
 }
 
 void KeaUnitTesting(){
@@ -368,21 +368,21 @@ void goAttack(){
     {
     case 1:
         strategy = " go to the Battle Field";
-        strat = new BattleField(Dura, Preadora, fighter, enemy, "BattleField", 10, 5, Greg, BookOfDura);
+        strat = new BattleField(Dura, Preadora, fighter, enemy, "BattleField", 5, 5, Greg, BookOfDura);
         break;
 
     case 2:
         strategy = " stage a Seige";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "Siege", 10, 5, Greg, BookOfDura);
+        strat = new Siege(stealth, Dura, Preadora, fighter, enemy, "Siege", 5, 5, Greg, BookOfDura);
         break;
 
     case 3:
         strategy = " Ambush the enemy";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "Ambush", 10, 5, Greg, BookOfDura);
+        strat = new Ambush(stealth, Dura, Preadora, fighter, enemy, "Ambush", 5, 5, Greg, BookOfDura);
         break;
 
     case 4:

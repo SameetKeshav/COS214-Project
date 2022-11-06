@@ -71,8 +71,10 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	{
 		//tell Jules about the decrease favour implementation
 		if(myBannerman->getFood()>enemyBannerman->getFood()){
-			myBannerman->increaseFavour();
             list<Bannerman*> s = myKingdom->getKingdom();
+            for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
+                (*it)->increaseFavour();
+            }
             bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
                 Bannerman* a = *it;
@@ -91,7 +93,6 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 		}
 		else
 		{
-			myBannerman->decreaseFavour();
 			if (myBannerman->getFavour()<minFavour) //bannerman defects
 			{
 				Greg->setAlly(myBannerman);
@@ -121,6 +122,10 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 	else if (myBannerman->getHP()<=0&&enemyBannerman->getHP()>0)
 	{
 		myKingdom->remove(myBannerman);
+        list<Bannerman*> s = myKingdom->getKingdom();
+        for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
+            (*it)->increaseFavour();
+        }
         cout<<myBannerman->getName()<<" fought bravely in the name of Dura. They were sadly lost in the battle."<<endl;
 		return false;
 	}
