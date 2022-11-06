@@ -28,7 +28,7 @@ int Commander::getHP() {
     int total=0;
     Iterator* IT = createIterator();
 
-    total+=IT->Current()->getHP();
+    //total+=IT->Current()->getHP();
 
     while (IT->hasNext()){
         total+=IT->Current()->getHP();
