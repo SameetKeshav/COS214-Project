@@ -528,8 +528,8 @@ void WarLoop(){
 int main(){
 
     intro();
-//    populateVectors();
-//    WarLoop();
+    populateVectors();
+    WarLoop();
 
 //    RoninUnitTesting();
 //    KeaUnitTesting();
