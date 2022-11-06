@@ -68,27 +68,22 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	
 	if (myBannerman->getHP()>0&&enemyBannerman->getHP()<=0)
 	{
+        list<Bannerman*> s = myKingdom->getKingdom();
+        list<Bannerman*> e = enemyKingdom->getKingdom();
+        for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it) {
+            (*it)->increaseFavour();
+        }
+        for (std::list<Bannerman*>::iterator it = e.begin(); it != e.end(); ++it){
+            (*it)->decreaseFavour();
+        }
+
+
 		if(myBannerman->getFood()>enemyBannerman->getFood()){
-            list<Bannerman*> s = myKingdom->getKingdom();
-            list<Bannerman*> e = enemyKingdom->getKingdom();
+
             for (std::list<Bannerman*>::iterator it = e.begin(); it != e.end(); ++it){
                 (*it)->decreaseFavour();
             }
-            bool winner = false;
-            for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
-                Bannerman* a = *it;
-                if (a->getFavour() >= 9){
-                    winner = true;
-                }else{
-                    winner = false;
-                }
-            }
-            if (winner == true && defectedAllies != 0){
-                Bannerman* returned = Greg->restoreAlly(BookOfDura->getAlly());
-                myKingdom->add(returned);
-                enemyKingdom->remove(returned);
-                cout<<returned->getName()<<"'s commander asks yor forgiveness and joins your fight once again."<<endl;
-            }
+
 		}
 		else
 		{
@@ -99,6 +94,26 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			
 			
 		}
+
+        bool winner = false;
+        for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
+            Bannerman* a = *it;
+            if (a->getFavour() >= 8){
+                winner = true;
+            }else{
+                winner = false;
+            }
+        }
+        if (winner == true && defectedAllies != 0){
+            Bannerman* returned = Greg->restoreAlly(BookOfDura->getAlly());
+            myKingdom->add(returned);
+            enemyKingdom->remove(returned);
+            cout<<returned->getName()<<"'s commander asks yor forgiveness and joins your fight once again."<<endl;
+        }
+
+
+
+
 		if ((myBannerman->getFavour()<=minFavour)&&((enemyKingdom->getSize()-myKingdom->getSize())>=1))
         {
             Greg->setAlly(myBannerman);

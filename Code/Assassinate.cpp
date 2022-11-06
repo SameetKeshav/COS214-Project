@@ -12,7 +12,14 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		if (stealth>60)
 		{
             cout<<"The assassin was successful and disposed of the enemy's commander without being seen."<<endl;
-            myBannerman->increaseFavour();
+            list<Bannerman*> s = myKingdom->getKingdom();
+            list<Bannerman*> e = enemyKingdom->getKingdom();
+            for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it) {
+                (*it)->increaseFavour();
+            }
+            for (std::list<Bannerman*>::iterator it = e.begin(); it != e.end(); ++it){
+                (*it)->decreaseFavour();
+            }
 			enemyKingdom->remove(enemyBannerman);
 			myBannerman->increaseHP(5);
             cout<<"With the enemy at their door, some of the Preadorean soldiers decided to join the Dura troops. The rest took their oath."<<endl;
