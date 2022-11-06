@@ -303,6 +303,7 @@ void chooseEnemy(){
         cout<<"HP of Squadron 2: " << PreadoraTroops.back()->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
+        cout<<"Allegiance that this bannerman has to the enemy: "<<curr->getFavour()<<"/10"<<endl<<endl;
 
     }
     cout<<"Name your chosen bannerman: ";
