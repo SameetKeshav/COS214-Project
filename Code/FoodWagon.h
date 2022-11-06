@@ -12,6 +12,8 @@ public:
     SupplyWagon* clone();
     ArmySupplies* getSupplies();
     ArmySupplies* supp=NULL;
+///@brief destructor for the Food Wagon class to delete and free the supply variable.
+///@author Ronin Brookes 19069686
     ~FoodWagon();
 };
 

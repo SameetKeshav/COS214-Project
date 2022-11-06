@@ -18,6 +18,7 @@ public:
     /// @return returns the supp variable. Returns the necessary supplies.
     /// @author Ronin Brookes 19069686
     virtual ArmySupplies* getSupplies()=0;
+    /**pointer to the supplies in the wagon*/
     ArmySupplies* supp;
     //virtual ~SupplyWagon();
 
