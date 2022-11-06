@@ -1,6 +1,3 @@
-//
-// Created by ic on 2022/11/06.
-//
 
 #include <Commander.h>
 
