@@ -10,7 +10,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(WagonTestSuite, getHP){
+TEST(WagonTestSuite, suppliestest){
     Factory* myFactory1 = new FoodFac();
     Factory* myFactory2 = new MedicalFac();
     Factory* myFactory3 = new WeaponsFac();

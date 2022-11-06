@@ -32,7 +32,7 @@ void DecoratorClientCode(WarTheatre* component) {
     component->sendScout();
 }
 
-TEST(DecoratorTestSuite, getHP){
+TEST(DecoratorTestSuite, OriginalWarTheatre){
     Kingdom* Dura;
     Economy* DuraEco;
     Kingdom* Preadora;
