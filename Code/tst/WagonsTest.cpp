@@ -41,12 +41,25 @@ TEST(WagonTestSuite, getHP){
     }
 
 //    for(int i =0; i<5;i++){
-        EXPECT_EQ(Foodwagons[0]->getSupplies()->getAmount(),50);
+
+    EXPECT_EQ(Foodwagons[0]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Foodwagons[1]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Foodwagons[2]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Foodwagons[3]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Foodwagons[4]->getSupplies()->getAmount(),50);
     //}
     //for(int i =0; i<5;i++){
     EXPECT_EQ(Medicalwagons[0]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Medicalwagons[1]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Medicalwagons[2]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Medicalwagons[3]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Medicalwagons[4]->getSupplies()->getAmount(),50);
    // } for(int i =0; i<5;i++){
     EXPECT_EQ(Weaponwagons[0]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Weaponwagons[1]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Weaponwagons[2]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Weaponwagons[3]->getSupplies()->getAmount(),50);
+    EXPECT_EQ(Weaponwagons[4]->getSupplies()->getAmount(),50);
     //}
 
     for(int i =0; i<5;i++){
