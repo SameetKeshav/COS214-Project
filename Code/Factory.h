@@ -9,7 +9,7 @@ using namespace std;
 class Factory : public WarIndicators {
 ///@brief Factory class to serve as a base class for all factory concrete classes used to create supplies
 ///@author Ronin Brookes 19069686
-protected
+protected:
 ///@brief make() is the factory Method called in operation() to make the new supplies.
 ///@return ArmySupplies pointer to the newly created supplies.
 ///@author Ronin Brookes 19069686

@@ -13,7 +13,7 @@ Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre
     this->strategy =strategy;
     this->m =m;
     srand(time(0));
-    damage = 12 + (rand() % 20);
+    damage = 12 + (rand() % 25);
     this->assassin = assassin;
     numWeapons = 17;
 }

@@ -230,14 +230,14 @@ void populateVectors(){
     Dura->add(new Commander("Stratham"));
     Dura->add(new Commander("Trudid"));
     Dura->add(new Commander("Mirefield"));
-    Dura->add(new Commander("Saker's Keep"));
-    Dura->add(new Commander("Breachmarsh"));
+//    Dura->add(new Commander("Saker's Keep"));
+//    Dura->add(new Commander("Breachmarsh"));
 
     Preadora->add(new Commander("Cirrane"));
     Preadora->add(new Commander("Bagger's Valley"));
     Preadora->add(new Commander("Marnmouth"));
-    Preadora->add(new Commander("Dry Gulch"));
-    Preadora->add(new Commander("Prin"));
+//    Preadora->add(new Commander("Dry Gulch"));
+//    Preadora->add(new Commander("Prin"));
 
 
 }
@@ -246,15 +246,18 @@ void populateVectors(){
  * @brief text for if the user chooses to surrender
  */
 void surrender(){
+    cout<<"===================================================================="<<endl;
     cout<<"You have raised the white flag. Preadora is victorious."<<endl;
+    cout<<"===================================================================="<<endl;
 }
 
 /**
  * @brief displays all enemy bannermen and lets the user choose which to fight
  */
 void chooseEnemy(){
+    cout<<"===================================================================="<<endl<<endl;
     list<Bannerman*> PreadoraBannermen = Preadora->getKingdom();
-    cout<<"Chose which enemy you would like to attack:"<<endl;
+    cout<<"Chose which enemy you would like to attack:"<<endl<<endl;
 
 
     for (int i=0; i<PreadoraBannermen.size(); i++){
@@ -277,23 +280,26 @@ void chooseEnemy(){
     cout<<"Name your chosen bannerman: ";
     int c;
     cin>>c;
-    if (c > PreadoraBannermen.size() || c < 0){
+
+    if (c > PreadoraBannermen.size()-1 || c < 0){
         chooseEnemy();
+        return;
     }
 
     list<Bannerman*>::iterator itr = PreadoraBannermen.begin();
     advance(itr, c);
-
+    cout<<"here"<<endl;
     enemy = *itr;
-    cout<<enemy->getName()<<endl;
+    cout<<"You chose to attack: "<<enemy->getName()<<endl;
 }
 
 /**
  * @brief displays all bannermen and lets the user choose which will fight
  */
 void chooseFighter(){
+    cout<<"===================================================================="<<endl<<endl;
     list<Bannerman*> DuraBannermen = Dura->getKingdom();
-    cout<<"Chose which enemy you would like to attack:"<<endl;
+    cout<<"Chose which bannerman will fight for you:"<<endl;
     
     for (int i=0; i<DuraBannermen.size(); i++){
 
@@ -312,10 +318,11 @@ void chooseFighter(){
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
     }
     cout<<"Name your chosen bannerman: ";
-    int c;
+    int c = 0;
     cin>>c;
-    if (c > DuraBannermen.size() || c < 0){
+    if (c > DuraBannermen.size()-1 || c < 0){
         chooseFighter();
+        return;
     }
 
 
@@ -323,6 +330,7 @@ void chooseFighter(){
     advance(itr, c);
     
     fighter = *itr;
+    cout<<"You chose to have "<<fighter->getName()<<" as your fighter."<<endl;
 
     Factory* myFactory1 = new FoodFac();
     Factory* myFactory2 = new MedicalFac();
@@ -358,9 +366,17 @@ void chooseFighter(){
  */
 void goAttack(){
     int stealth;
-
+    list<Bannerman*> DT = fighter->getTroops();
+    bool alive = DT.front()->assassin;
+    cout<<"===================================================================="<<endl<<endl;
     cout<<"Choose your strategy of attack: "<<endl;
-    cout<<"1: Battle Field      2: Seige      3: Ambush      4: Send Assassin"<<endl;
+    if (alive){
+        cout<<"1: Battle Field      2: Siege      3: Ambush      4: Send Assassin"<<endl;
+    }else{
+        cout<<"1: Battle Field      2: Siege      3: Ambush"<<endl;
+    }
+
+
     int b;
     cin>>b;
 
@@ -390,12 +406,14 @@ void goAttack(){
         srand(time(0));
         stealth = 10 + (rand() % 100);
         strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassination", 10, 5, Greg, BookOfDura);
+        DT.front()->assassin = false;
+        DT.back()->assassin = false;
         break;
 
     default:
         goAttack();
     }
-
+    cout<<"===================================================================="<<endl<<endl;
     //send scout
     cout<<"A scout has been sent to the enemies location. We await news."<<endl;
 //    delay(1);
@@ -427,6 +445,9 @@ void goAttack(){
     DecoratorClientCode(topologyEffect);
     strat->setTreasury(tres); //added by Morgan
     DuraEco->setTreasury(tres); //added by Morgan
+
+    cout<<"===================================================================="<<endl<<endl;
+
     strat->attack(fighter, enemy);
 
 }
@@ -435,14 +456,18 @@ void goAttack(){
  * @brief text for if user won the war
  */
 void WarWon(){
+    cout<<"===================================================================="<<endl;
     cout<<"The enemy has been defeated! All the land under the Kingdoms of Preadora are now under your rule! Long live Dura!"<<endl;
+    cout<<"===================================================================="<<endl;
 }
 
 /**
  * @brief text for if user lost the war
  */
 void WarLost(){
+    cout<<"===================================================================="<<endl;
     cout<<"Preadora's bannermen have overwhelmed your forces and have been crowned victorious after these long battles. Dura is under her rule."<<endl;
+    cout<<"===================================================================="<<endl;
 }
 
 /**
@@ -457,6 +482,7 @@ void WarLoop(){
         if (Dura->getSize() <= 0 || Preadora->getSize() <= 0){
             attack = false;
         }
+        cout<<"===================================================================="<<endl<<endl;
         cout<<"Here is the latest news from your council:"<<endl;
         cout<<"You have " << Dura->getSize() << " Bannermen standing at your side."<<endl;
         cout<<"The state of your economy " + DuraEco->getState()->getState() << " with the great banks valuing the kingdom's "<<endl;
@@ -486,6 +512,7 @@ void WarLoop(){
             }
             if (surr == 'n'){
                 WarLoop();
+                return;
             }
         }
     }

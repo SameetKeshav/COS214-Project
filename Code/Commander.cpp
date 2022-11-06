@@ -55,7 +55,9 @@ int Commander::getDamage() {
 void Commander::receiveDamage(int X){
 //    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
 //        (*it)->receiveDamage(X);
-
+    if (X < 0){
+        X = 0;
+    }
     if (groundForces.front()->getHP() > 0){
         groundForces.front()->receiveDamage(X);
     } else if (groundForces.back()->getHP() > 0){
