@@ -275,7 +275,7 @@ void chooseEnemy(){
         cout<<"HP of Squadron 2: " << PreadoraTroops.back()->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl;
-        cout<<"Allegiance that this Bannerman has to their current kingdom: "<<curr->getFavour()<<endl<<endl;
+        cout<<"Allegiance that this bannerman has to the enemy: "<<curr->getFavour()<<"/10"<<endl<<endl;
     }
     cout<<"Name your chosen bannerman: ";
     int c;
@@ -316,7 +316,7 @@ void chooseFighter(){
         cout<<"HP of Squadron 2: " << DuraTroops.back()->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
-        cout<<"Allegiance that this Bannerman has to their current kingdom: "<<curr->getFavour()<<endl<<endl;
+        cout<<"Allegiance that this bannerman has to you: "<<curr->getFavour()<<"/10"<<endl<<endl;
     }
     cout<<"Name your chosen bannerman: ";
     int c = 0;
