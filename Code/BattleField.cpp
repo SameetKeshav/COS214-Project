@@ -4,6 +4,7 @@ BattleField::BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myB
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	int val=1;
+    cout<<"You face your foe on the battlefield!"<<endl;
 	if ((myBannerman->getFavour()<minFavour)||((enemyKingdom->getSize()-myKingdom->getSize())>1))
 	{
 		Greg->setAlly(myBannerman);
@@ -21,7 +22,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		val=rand()%(myBannerman->getDamage()/2)+(-(myBannerman->getDamage()/4));
-        cout<<"You face your foe on the battlefield!"<<endl;
+
 		//getDamage is how much damage the bannerman can inflict
 		enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
         cout<<"You deal "<<(myBannerman->getDamage()+val)<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
