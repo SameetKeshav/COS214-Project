@@ -344,6 +344,7 @@ void chooseFighter(){
         cout<<"HP of Squadron 2: " << DuraTroops.back()->getHP() <<endl;
 
         cout<<"Damage that this Bannerman can inflict: "<<curr->getDamage()<<endl<<endl;
+        cout<<"Allegiance that this bannerman has to you: "<<curr->getFavour()<<"/10"<<endl<<endl;
     }
     cout<<"Name your chosen bannerman: ";
     int c = 0;
