@@ -170,6 +170,37 @@ void MorganUnitTesting(){
 
 void JuliannaUnitTesting(){
 
+    State* TestState = new HealthyState();
+
+    Economy* TestEco = new Economy(TestState, 100);
+
+    Kingdom* TestKingdom = new Kingdom(TestEco);
+
+    TestKingdom->add(new Commander("Stratham"));
+    TestKingdom->add(new Commander("Trudid"));
+    TestKingdom->add(new Commander("Mirefield"));
+
+
+    list<Bannerman*> s = TestKingdom->getKingdom();
+
+
+    Historian* Thom = new Historian();
+    HistoryBook* Book = new HistoryBook();
+
+    Bannerman* myBannerman = s.front();
+
+    Thom->setAlly(myBannerman);
+    Book->add(Thom->Store());
+
+    TestKingdom->remove(myBannerman);
+
+    cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+
+    Bannerman* returned = Thom->restoreAlly(Book->getAlly());
+    TestKingdom->add(returned);
+    cout<<returned->getName()<<"'s commander asks yor forgiveness and joins your fight once again."<<endl;
+
+
 }
 
 
