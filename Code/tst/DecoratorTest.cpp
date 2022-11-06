@@ -1,4 +1,3 @@
-
 #include<Historian.h> //originator, has memento included
 #include<HistoryBook.h> //caretaker
 #include<Kingdom.h>

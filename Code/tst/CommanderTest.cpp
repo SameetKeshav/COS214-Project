@@ -1,4 +1,3 @@
-
 #include <Commander.h>
 
 #include "gtest/gtest.h"
