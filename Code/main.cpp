@@ -237,37 +237,45 @@ void MorganUnitTesting(){
 
     TestHealthyState=new HealthyState();
     TestHealthyEco = new Economy(TestHealthyState,hcurrency);
+    State* eTestHealthyState=new HealthyState();
+    Economy* eTestHealthyEco = new Economy(eTestHealthyState,hcurrency);
     Bannerman* externfighter1=new Commander("externCommander1");
     Bannerman* externfighter2=new Commander("externCommander2");
     Kingdom* externKingdom1=new Kingdom(TestHealthyEco);
-    Kingdom* externKingdom2=new Kingdom(TestHealthyEco);
+    Kingdom* externKingdom2=new Kingdom(eTestHealthyEco);
     externKingdom1->add(externfighter1);
     externKingdom2->add(externfighter2);
 
     State* TestHealthyState1=new HealthyState();
     Economy* TestHealthyEco1 = new Economy(TestHealthyState1,hcurrency);
+    State* eTestHealthyState1=new HealthyState();
+    Economy* eTestHealthyEco1 = new Economy(eTestHealthyState1,hcurrency);
     Bannerman* externfighter11=new Commander("externCommander11");
     Bannerman* externfighter21=new Commander("externCommander21");
     Kingdom* externKingdom11=new Kingdom(TestHealthyEco1);
-    Kingdom* externKingdom21=new Kingdom(TestHealthyEco1);
+    Kingdom* externKingdom21=new Kingdom(eTestHealthyEco1);
     externKingdom11->add(externfighter11);
     externKingdom21->add(externfighter21);
 
     State* TestHealthyState2=new HealthyState();
     Economy* TestHealthyEco2 = new Economy(TestHealthyState2,hcurrency);
+    State* eTestHealthyState2=new HealthyState();
+    Economy* eTestHealthyEco2 = new Economy(eTestHealthyState2,hcurrency);
     Bannerman* externfighter12=new Commander("externCommander12");
     Bannerman* externfighter22=new Commander("externCommander22");
     Kingdom* externKingdom12=new Kingdom(TestHealthyEco2);
-    Kingdom* externKingdom22=new Kingdom(TestHealthyEco2);
+    Kingdom* externKingdom22=new Kingdom(eTestHealthyEco2);
     externKingdom12->add(externfighter12);
     externKingdom22->add(externfighter22);
 
     State* TestHealthyState3=new HealthyState();
     Economy* TestHealthyEco3 = new Economy(TestHealthyState3,hcurrency);
+    State* eTestHealthyState3=new HealthyState();
+    Economy* eTestHealthyEco3 = new Economy(eTestHealthyState3,hcurrency);
     Bannerman* externfighter13=new Commander("externCommander13");
     Bannerman* externfighter23=new Commander("externCommander23");
     Kingdom* externKingdom13=new Kingdom(TestHealthyEco3);
-    Kingdom* externKingdom23=new Kingdom(TestHealthyEco3);
+    Kingdom* externKingdom23=new Kingdom(eTestHealthyEco3);
     externKingdom13->add(externfighter13);
     externKingdom23->add(externfighter23);
     
@@ -323,6 +331,24 @@ void MorganUnitTesting(){
     cout<<"BattleField attack() should return boolean 0 or 1 after strategy commets:"<<TestBattleFieldStrategy->attack(externKingdom11->getAlly("externCommander11"),externKingdom21->getAlly("externCommander21"))<<endl;
     cout<<"Siege attack() should return boolean 0 or 1 after strategy commets:"<<TestSiegeStrategy->attack(externKingdom12->getAlly("externCommander12"),externKingdom22->getAlly("externCommander22"))<<endl;
     cout<<"Assassin attack() should return boolean 0 or 1 after strategy commets:"<<TestAssassinStrategy->attack(externKingdom13->getAlly("externCommander13"),externKingdom23->getAlly("externCommander23"))<<endl<<endl;
+
+    delete TestAmbushStrategy;
+    delete TestBattleFieldStrategy;
+    delete TestSiegeStrategy;
+    delete TestAssassinStrategy;
+    delete externTres;
+    delete externTres1;
+    delete externTres2;
+    delete externTres3;
+    delete externRaven;
+    delete externRaven1;
+    delete externRaven2;
+    delete externRaven3;
+    for (int i = 0; i < 3; i++)
+    {
+        delete externsupplies[i];
+    }
+    delete [] externsupplies;
 }
 
 void JuliannaUnitTesting(){
