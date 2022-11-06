@@ -402,7 +402,7 @@ void goAttack(){
         strategy = " send an Assassin";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassinate", 10, 5, Greg, BookOfDura);
+        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassinate", 5, 5, Greg, BookOfDura);
         DT.front()->assassin = false;
         DT.back()->assassin = false;
         break;

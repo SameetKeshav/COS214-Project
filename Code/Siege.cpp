@@ -104,25 +104,23 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         }
         else
         {
-//            list<Bannerman*> s = myKingdom->getKingdom();
-//            for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
-//                (*it)->decreaseFavour();
-//            }
-            if (myBannerman->getFavour()<minFavour)
-            {
-                Greg->setAlly(myBannerman);
-                BookOfDura->add(Greg->Store());
-                defectedAllies++;
-                //add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
-                //remove/add a particular bannerman
-                myKingdom->remove(myBannerman);
-                //tell thapelo to add id attribute and a getter, we must
-                //formulate a way to make bannerman ids unique
-                enemyKingdom->add(myBannerman);
-                cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
-                return false;
+            list<Bannerman*> s = myKingdom->getKingdom();
+            for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
+                if ((*it)->getFavour()<minFavour) // defecting
+                {
+                    Greg->setAlly(myBannerman);
+                    BookOfDura->add(Greg->Store());
+                    defectedAllies++;
+                    //add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
+                    //remove/add a particular bannerman
+                    myKingdom->remove(myBannerman);
+                    //tell thapelo to add id attribute and a getter, we must
+                    //formulate a way to make bannerman ids unique
+                    enemyKingdom->add(myBannerman);
+                    cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+                    return false;
+                }
             }
-
         }
 
         if (myBannerman->getWeapons()<=minSupplies)
