@@ -24,7 +24,7 @@ char WarTheatre::decideVenue(Strategy* strategy)
 		setStrategy(strategy);
 		return  'c';
 	}
-   if (strategy->getStrategyName() == "Assassination") {
+   if (strategy->getStrategyName() == "Assassinate") {
 		setStrategy(strategy);
 		return  'd';
 	} else{

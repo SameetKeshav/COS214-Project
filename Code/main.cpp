@@ -15,8 +15,6 @@
 #include <vector>
 #include <cstdlib>
 #include <time.h>
-#include <stdio.h>
-
 
 using namespace std;
 
@@ -186,26 +184,25 @@ void intro(){
     cout<<"A new dawn arrives and brings with it a red sky."<<endl;
     cout<<"You rule the great kingdom of Dura, which is in the midst of a great battle for the western"<<endl;
     cout<<"isles, the United Kingdoms of Preadora."<<endl;
-    // cout<<"press Enter to continue...";
-    // cin.ignore(numeric_limits<streamsize>::max(),'\n');
+     cout<<"press Enter to continue...";
+     cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
-//    cout<<"┌┐ ┌─┐┌┬┐┌┬┐┬  ┌─┐  ┌─┐┌─┐┬─┐  ┌┬┐┬ ┬┌─┐"<<endl;
-//    cout<<"├┴┐├─┤ │  │ │  ├┤   ├┤ │ │├┬┘   │ ├─┤├┤ "<<endl;
-//    cout<<"└─┘┴ ┴ ┴  ┴ ┴─┘└─┘  └  └─┘┴└─   ┴ ┴ ┴└─┘"<<endl;
-//
-//    cout<<"██     ██ ███████ ███████ ████████ ███████ ██████  ███    ██     ██ ███████ ██      ███████ ███████ "<<endl;
-////     delay(2);
-//    cout<<"██     ██ ██      ██         ██    ██      ██   ██ ████   ██     ██ ██      ██      ██      ██      "<<endl;
-//    // delay(2);
-//    cout<<"██  █  ██ █████   ███████    ██    █████   ██████  ██ ██  ██     ██ ███████ ██      █████   ███████ "<<endl;
-//    // delay(2);
-//    cout<<"██ ███ ██ ██           ██    ██    ██      ██   ██ ██  ██ ██     ██      ██ ██      ██           ██ "<<endl;
-//    // delay(2);
-//    cout<<" ███ ███  ███████ ███████    ██    ███████ ██   ██ ██   ████     ██ ███████ ███████ ███████ ███████ "<<endl;
+    cout<<" _                     _                  "<<endl;
+    cout<<"|_) _ _|__|_ |  _    _|_ _  __   _|_|_  _ "<<endl;
+    cout<<"|_)(_| |_ |_ | (/_    | (_) |     |_| |(/_"<<endl;
+
+    cout<<" __          __       _                     _____     _     "<<endl;
+
+    cout<<" \\ \\        / /      | |                   |_   _|   | |          "<<endl;
+    cout<<"  \\ \\  /\\  / /__  ___| |_ ___ _ __ _ __      | |  ___| | ___  ___ "<<endl;
+    cout<<"   \\ \\/  \\/ / _ \\/ __| __/ _ \\ '__| '_ \\     | | / __| |/ _ \\/ __|"<<endl;
+    cout<<"    \\  /\\  /  __/\\__ \\ ||  __/ |  | | | |   _| |_\\__ \\ |  __/\\__ \\"<<endl;
+    cout<<"     \\/  \\/ \\___||___/\\__\\___|_|  |_| |_|  |_____|___/_|\\___||___/"<<endl;
 
 
-//     cout<<"press Enter to continue...";
-//     cin.ignore(numeric_limits<streamsize>::max(),'\n');
+
+     cout<<"press Enter to continue...";
+     cin.ignore(numeric_limits<streamsize>::max(),'\n');
 }
 
 
@@ -384,7 +381,7 @@ void goAttack(){
     {
     case 1:
         strategy = " go to the Battle Field";
-        strat = new BattleField(Dura, Preadora, fighter, enemy, "BattleField", 5, 5, Greg, BookOfDura);
+        strat = new BattleField(Dura, Preadora, fighter, enemy, "Battlefield", 5, 5, Greg, BookOfDura);
         break;
 
     case 2:
@@ -405,7 +402,7 @@ void goAttack(){
         strategy = " send an Assassin";
         srand(time(0));
         stealth = 10 + (rand() % 100);
-        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassination", 10, 5, Greg, BookOfDura);
+        strat = new Assassinate(stealth, true, Dura, Preadora, fighter, enemy, "Assassinate", 10, 5, Greg, BookOfDura);
         DT.front()->assassin = false;
         DT.back()->assassin = false;
         break;
@@ -413,16 +410,14 @@ void goAttack(){
     default:
         goAttack();
     }
+
+    cout<<strat->getStrategyName()<<endl;
+
+
     cout<<"===================================================================="<<endl<<endl;
     //send scout
     cout<<"A scout has been sent to the enemies location. We await news."<<endl;
-//    delay(1);
-    cout<<".";
-//    delay(1);
-    cout<<".";
-//    delay(1);
-    cout<<"."<<endl;
-//    delay(1);
+    cout<<"..."<<endl;
     cout<<"A raven from the scout has returned! Here is the news: "<<endl;
 
     tres = new MasterOfCoin(DuraEco, myRaven, strat);
@@ -443,6 +438,8 @@ void goAttack(){
     topologyEffect->setDifficulty(weatherEffect->getDifficulty());
     topologyEffect->setVenue(topologyEffect->decideVenue(strat));
     DecoratorClientCode(topologyEffect);
+
+
     strat->setTreasury(tres); //added by Morgan
     DuraEco->setTreasury(tres); //added by Morgan
 
@@ -531,8 +528,8 @@ void WarLoop(){
 int main(){
 
     intro();
-    populateVectors();
-    WarLoop();
+//    populateVectors();
+//    WarLoop();
 
 //    RoninUnitTesting();
 //    KeaUnitTesting();
