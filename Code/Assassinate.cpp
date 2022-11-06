@@ -16,7 +16,8 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			enemyKingdom->remove(enemyBannerman);
 			myBannerman->increaseHP(5);
             cout<<"With the enemy at their door, some of the Preadorean soldiers decided to join the Dura troops. The rest took their oath."<<endl;
-		}
+            cout<<"The Preadora Kingdom has put a price on the Assassin's head, so he fled."<<endl;
+        }
 		else
 		{
             cout<<"The assassin was spotted and immediately executed."<<endl;
@@ -41,7 +42,11 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         }
 
 	}
-	return alive;
+    bool b=alive;
+    if(alive){
+        alive=false;
+    }
+	return b;
 }
 
 Assassinate::~Assassinate(){

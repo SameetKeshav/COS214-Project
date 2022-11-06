@@ -5,7 +5,7 @@ HealthyState::HealthyState(){
 }
 
 void HealthyState::decreaseCurrency() {
-	context->removeCurrency(15);
+	context->removeCurrency(25);
 	if (context->getCurrency()<60)
 	{
 		context->SetState();

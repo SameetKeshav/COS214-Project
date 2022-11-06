@@ -4,6 +4,20 @@ BattleField::BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myB
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	int val=1;
+	if ((myBannerman->getFavour()<minFavour)||((enemyKingdom->getSize()-myKingdom->getSize())>1))
+	{
+		Greg->setAlly(myBannerman);
+		BookOfDura->add(Greg->Store());
+		defectedAllies++;
+		//add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
+		//remove/add a particular bannerman
+		myKingdom->remove(myBannerman);
+		//tell thapelo to add id attribute and a getter, we must
+		//formulate a way to make bannerman ids unique
+		enemyKingdom->add(myBannerman);
+		cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+		return false;
+	}
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
 		val=rand()%(myBannerman->getDamage()/2)+(-(myBannerman->getDamage()/4));
@@ -11,7 +25,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		//getDamage is how much damage the bannerman can inflict
 		enemyBannerman->receiveDamage(myBannerman->getDamage()+val);
         cout<<"You deal "<<(myBannerman->getDamage()+val)<<" damage to the enemy. Enemy HP:"<<enemyBannerman->getHP()<<endl;
-		if (enemyBannerman->getHP()<0)
+		if (enemyBannerman->getHP()<=0)
 		{
 			myBannerman->decreaseWeapons();
 			break;
@@ -25,14 +39,13 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			enemyBannerman->decreaseFood();
 		}
 		myBannerman->decreaseWeapons();
-		if (enemyBannerman->getHP()<0 && myBannerman->getHP() > 0)
+		if (enemyBannerman->getHP()<=0)
 		{
 			break;
-		} else{
-            myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
-            cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<(enemyBannerman->getDamage()-val)<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
-        }
-		if (myBannerman->getHP()<0 && enemyBannerman->getHP()>0)
+		}
+		myBannerman->receiveDamage(enemyBannerman->getDamage()-val);
+        cout<<"The enemy delivers their blow! The bannerman from "<<myBannerman->getName()<<" takes "<<(enemyBannerman->getDamage()-val)<<" damage. Our HP: "<<myBannerman->getHP()<<endl;
+		if (myBannerman->getHP()<=0)
 		{
 			enemyBannerman->decreaseWeapons();
 			break;
@@ -46,7 +59,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 			myBannerman->decreaseFood();
 		}
 		enemyBannerman->decreaseWeapons();
-		if (myBannerman->getHP()<0)
+		if (myBannerman->getHP()<=0)
 		{
 			break;
 		}
@@ -56,8 +69,9 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 	{
 		if(myBannerman->getFood()>enemyBannerman->getFood()){
             list<Bannerman*> s = myKingdom->getKingdom();
-            for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
-                (*it)->increaseFavour();
+            list<Bannerman*> e = enemyKingdom->getKingdom();
+            for (std::list<Bannerman*>::iterator it = e.begin(); it != e.end(); ++it){
+                (*it)->decreaseFavour();
             }
             bool winner = false;
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
@@ -77,26 +91,30 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		}
 		else
 		{
-            list<Bannerman*> s = myKingdom->getKingdom();
+			list<Bannerman*> s = myKingdom->getKingdom();
             for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
-                if ((*it)->getFavour()<minFavour) // defecting
-                {
-                    Greg->setAlly(myBannerman);
-                    BookOfDura->add(Greg->Store());
-                    defectedAllies++;
-                    //add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
-                    //remove/add a particular bannerman
-                    myKingdom->remove(myBannerman);
-                    //tell thapelo to add id attribute and a getter, we must
-                    //formulate a way to make bannerman ids unique
-                    enemyKingdom->add(myBannerman);
-                    cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
-                    return false;
-                }
+                (*it)->decreaseFavour();
             }
 			
+			
 		}
-		if (myBannerman->getWeapons()<=minSupplies)
+		if ((myBannerman->getFavour()<=minFavour)&&((enemyKingdom->getSize()-myKingdom->getSize())>=1))
+        {
+            Greg->setAlly(myBannerman);
+            BookOfDura->add(Greg->Store());
+            defectedAllies++;
+            //add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
+            //remove/add a particular bannerman
+            myKingdom->remove(myBannerman);
+            //tell thapelo to add id attribute and a getter, we must
+            //formulate a way to make bannerman ids unique
+            enemyKingdom->add(myBannerman);
+            cout<<"The enemy kingdom's bannerman has been defeated. "<<enemyBannerman->getName()<<" is now under your kingdom's rule."<<endl;
+            cout<<"But the commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+            enemyKingdom->remove(enemyBannerman);
+            return false;
+        }
+		if (myBannerman->getWeapons()<=(minSupplies+2))
 		{
 			//tell sameet to add pointer asterisk in treasury class's notify
             cout<<"The fight has ended. The commander took inventory of the supplies and sends for more."<<endl;
