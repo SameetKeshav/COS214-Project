@@ -318,7 +318,6 @@ void chooseEnemy(){
 
     list<Bannerman*>::iterator itr = PreadoraBannermen.begin();
     advance(itr, c);
-    cout<<"here"<<endl;
     enemy = *itr;
     cout<<"You chose to attack: "<<enemy->getName()<<endl;
 }
