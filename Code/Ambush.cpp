@@ -1,7 +1,21 @@
 #include "Ambush.h"
 
 bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
-	int advantage=(stealth-60)/3;
+	if ((myBannerman->getFavour()<minFavour)||((enemyKingdom->getSize()-myKingdom->getSize())>1))
+	{
+		Greg->setAlly(myBannerman);
+		BookOfDura->add(Greg->Store());
+		defectedAllies++;
+		//add a remove(Bannerman* myBannerman) and add(Bannerman* myBannerman) method to
+		//remove/add a particular bannerman
+		myKingdom->remove(myBannerman);
+		//tell thapelo to add id attribute and a getter, we must
+		//formulate a way to make bannerman ids unique
+		enemyKingdom->add(myBannerman);
+		cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+		return false;
+	}
+	int advantage=(stealth-60)/2;
     srand(time(0));
     int val=advantage;
 	if (stealth>60)
@@ -101,7 +115,7 @@ bool Ambush::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 			
 			
 		}
-		if ((myBannerman->getFavour()<=minFavour)&&((enemyKingdom->getSize()-myKingdom->getSize())>=1)||myBannerman->getFavour()<minFavour) //bannerman defects
+		if ((myBannerman->getFavour()<=minFavour)&&((enemyKingdom->getSize()-myKingdom->getSize())>=1)) //bannerman defects
 		{
 			Greg->setAlly(myBannerman);
 			BookOfDura->add(Greg->Store());
