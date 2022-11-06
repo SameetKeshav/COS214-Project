@@ -158,7 +158,27 @@ void KeaUnitTesting(){
 }
 
 void SameetUnitTesting(){
+    cout << "TESTING OBSERVER" << endl << endl;
 
+    SupplyWagon** supps = new SupplyWagon * [3];
+    supps[0] = new FoodWagon();
+    supps[1] = new WeaponWagon();
+    supps[2] = new MedicalWagon();
+
+    Bannerman* b = new Commander("Sameet");
+
+    Raven* raven = new sendRaven(supps, b);
+    b->setWeapons(5);
+    b->setMedical(5);
+    b->setFood(5);
+    cout << "Amount of Weapons Before: " << b->getWeapons() << endl;
+    cout << "Amount of Food Before: " << b->getFood() << endl;
+    cout << "Amount of Medical Before: " << b->getMedical() << endl << endl;
+    cout << "Calling Update: " << endl << endl;
+    raven->update();
+    cout << "Amount of Weapons - Expected: 100, Actual: " << b->getWeapons() << endl;
+    cout << "Amount of Food - Expected: 100, Actual: " << b->getFood() << endl;
+    cout << "Amount of Medical - Expected: 100, Actual: " << b->getMedical() << endl;
 }
 
 void ThapeloUnitTesting(){
