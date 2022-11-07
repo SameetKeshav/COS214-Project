@@ -349,6 +349,189 @@ void MorganUnitTesting(){
         delete externsupplies[i];
     }
     delete [] externsupplies;
+    int goodStealth=85;
+    int badStealth=25;
+    int hcurrency=100,ucurrency=55,fcurrency=-1;
+    
+    State* TestHealthyState=new HealthyState();
+    State* TestUnstableState=new UnstableState();
+    State* TestFailedState=new FailedState();
+    Treasury* externTres1=new MasterOfCoin(nullptr, nullptr, nullptr);
+    Treasury* externTres2=new MasterOfCoin(nullptr, nullptr, nullptr);
+    Treasury* externTres3=new MasterOfCoin(nullptr, nullptr, nullptr);
+    Economy* TestHealthyEco = new Economy(TestHealthyState,hcurrency);
+    TestHealthyEco->setTreasury(externTres1);
+    Economy* TestUnstableEco = new Economy(TestUnstableState,ucurrency);
+    TestUnstableEco->setTreasury(externTres2);
+    Economy* TestFailedEco = new Economy(TestFailedState,fcurrency);
+    TestFailedEco->setTreasury(externTres3);
+    cout<<"========================================TEST FOR STATE PATTERN======================================="<<endl;
+    cout<<"HealthyEconomy getcurrency() should return 100: "<<TestHealthyEco->getCurrency()<<endl;
+    cout<<"UnstableEconomy getcurrency() should return 55: "<<TestUnstableEco->getCurrency()<<endl;
+    cout<<"FailedEconomy getcurrency() should return -1: "<<TestFailedEco->getCurrency()<<endl<<endl;
+
+    cout<<"HealthyEconomy getState() should return \"is healthy\": "<<TestHealthyEco->getState()->getState()<<endl;
+    cout<<"UnstableEconomy getState() should return \"is unstable\": "<<TestUnstableEco->getState()->getState()<<endl;
+    cout<<"FailedEconomy getState() should return \"has failed\": "<<TestFailedEco->getState()->getState()<<endl<<endl;
+
+    TestHealthyEco->removeCurrency(2);
+    cout<<"HealthyEconomy removeCurrency(2) should have just reduced currency by 2 so getcurrency() should return 98 : "<<TestHealthyEco->getCurrency()<<endl;
+    TestUnstableEco->removeCurrency(2);
+    cout<<"UnstableEconomy removeCurrency(2) should have just reduced currency by 2 so getcurrency() should return 53 : "<<TestUnstableEco->getCurrency()<<endl;
+    TestFailedEco->removeCurrency(2);
+    cout<<"FailedEconomy removeCurrency(2) should have just reduced currency by 2 so getcurrency() should return -3 : "<<TestFailedEco->getCurrency()<<endl<<endl;
+
+    TestHealthyEco->decreaseCurrency();
+    cout<<"HealthyEconomy decreaseCurrency() should decrease currency to 73: "<<TestHealthyEco->getCurrency()<<", and state should still return \"is healthy\":"<<TestHealthyEco->getState()->getState()<<endl;
+    TestHealthyEco->decreaseCurrency();
+    cout<<"HealthyEconomy decreaseCurrency() should decrease currency to 48: "<<TestHealthyEco->getCurrency()<<", and state should return \"is unstable\" if SetState() works:"<<TestHealthyEco->getState()->getState()<<endl;
+    TestUnstableEco->decreaseCurrency();
+    cout<<"UnstableEconomy decreaseCurrency() should decrease currency to 18: "<<TestUnstableEco->getCurrency()<<", and state should still return \"is unstable\":"<<TestUnstableEco->getState()->getState()<<endl;
+    TestUnstableEco->decreaseCurrency();
+    cout<<"UnstableEconomy decreaseCurrency() should decrease currency to -17: "<<TestUnstableEco->getCurrency()<<", and state should print out \"State is bankrupt, cannot decrease currency\":"<<TestUnstableEco->getState()->getState()<<endl;
+    TestUnstableEco->decreaseCurrency();
+    cout<<"FailedEconomy decreaseCurrency() should print out \"State is bankrupt, cannot decrease currency\": "<<TestFailedEco->getCurrency()<<endl<<endl;
+
+
+    delete TestHealthyEco;
+    TestHealthyEco = new Economy(TestHealthyState,hcurrency);
+    TestHealthyEco->setTreasury(externTres1);
+    TestHealthyEco->SetState();
+    cout<<"HealthyEconomy SetState() should change state to a lower state \"UnstableState\" or return a \"nullpointer\" string: "<<TestHealthyEco->getState()->getState()<<endl;
+    delete TestUnstableEco;
+    TestUnstableEco = new Economy(TestUnstableState,ucurrency);
+    TestUnstableEco->setTreasury(externTres2);
+    TestUnstableEco->SetState();
+    cout<<"UnstableEconomy SetState() should change state to a lower state \"FailedState\" or return a \"nullpointer\" string: "<<TestUnstableEco->getState()->getState()<<endl;
+    delete TestFailedEco;
+    TestFailedState=new FailedState();
+    TestFailedEco = new Economy(TestFailedState,fcurrency);
+    TestFailedEco->setTreasury(externTres3);
+    TestFailedEco->SetState();
+    cout<<"FailedEconomy SetState() should change state to a lower state or return a \"nullpointer\" string: "<<TestFailedEco->getState()<<endl<<endl;
+
+    delete TestHealthyState;
+    delete TestUnstableState;
+    delete TestFailedState;
+    delete TestHealthyEco;
+    delete TestUnstableEco;
+    delete TestFailedEco;
+    cout<<"========================================TEST FOR STRATEGY PATTERN======================================="<<endl;
+
+    TestHealthyState=new HealthyState();
+    TestHealthyEco = new Economy(TestHealthyState,hcurrency);
+    State* eTestHealthyState=new HealthyState();
+    Economy* eTestHealthyEco = new Economy(eTestHealthyState,hcurrency);
+    Bannerman* externfighter1=new Commander("externCommander1");
+    Bannerman* externfighter2=new Commander("externCommander2");
+    Kingdom* externKingdom1=new Kingdom(TestHealthyEco);
+    Kingdom* externKingdom2=new Kingdom(eTestHealthyEco);
+    externKingdom1->add(externfighter1);
+    externKingdom2->add(externfighter2);
+
+    State* TestHealthyState1=new HealthyState();
+    Economy* TestHealthyEco1 = new Economy(TestHealthyState1,hcurrency);
+    State* eTestHealthyState1=new HealthyState();
+    Economy* eTestHealthyEco1 = new Economy(eTestHealthyState1,hcurrency);
+    Bannerman* externfighter11=new Commander("externCommander11");
+    Bannerman* externfighter21=new Commander("externCommander21");
+    Kingdom* externKingdom11=new Kingdom(TestHealthyEco1);
+    Kingdom* externKingdom21=new Kingdom(eTestHealthyEco1);
+    externKingdom11->add(externfighter11);
+    externKingdom21->add(externfighter21);
+
+    State* TestHealthyState2=new HealthyState();
+    Economy* TestHealthyEco2 = new Economy(TestHealthyState2,hcurrency);
+    State* eTestHealthyState2=new HealthyState();
+    Economy* eTestHealthyEco2 = new Economy(eTestHealthyState2,hcurrency);
+    Bannerman* externfighter12=new Commander("externCommander12");
+    Bannerman* externfighter22=new Commander("externCommander22");
+    Kingdom* externKingdom12=new Kingdom(TestHealthyEco2);
+    Kingdom* externKingdom22=new Kingdom(eTestHealthyEco2);
+    externKingdom12->add(externfighter12);
+    externKingdom22->add(externfighter22);
+
+    State* TestHealthyState3=new HealthyState();
+    Economy* TestHealthyEco3 = new Economy(TestHealthyState3,hcurrency);
+    State* eTestHealthyState3=new HealthyState();
+    Economy* eTestHealthyEco3 = new Economy(eTestHealthyState3,hcurrency);
+    Bannerman* externfighter13=new Commander("externCommander13");
+    Bannerman* externfighter23=new Commander("externCommander23");
+    Kingdom* externKingdom13=new Kingdom(TestHealthyEco3);
+    Kingdom* externKingdom23=new Kingdom(eTestHealthyEco3);
+    externKingdom13->add(externfighter13);
+    externKingdom23->add(externfighter23);
+    
+    SupplyWagon** externsupplies = new SupplyWagon * [3];
+    externsupplies[0] = new FoodWagon();
+    externsupplies[1] = new WeaponWagon();
+    externsupplies[2] = new MedicalWagon();
+
+    Raven* externRaven = new sendRaven(externsupplies, externfighter1);
+    externfighter1->attach(externRaven);
+    Raven* externRaven1 = new sendRaven(externsupplies, externfighter11);
+    externfighter11->attach(externRaven1);
+    Raven* externRaven2 = new sendRaven(externsupplies, externfighter12);
+    externfighter12->attach(externRaven2);
+    Raven* externRaven3 = new sendRaven(externsupplies, externfighter13);
+    externfighter13->attach(externRaven3);
+
+    Strategy* TestAmbushStrategy=new Ambush(goodStealth, externKingdom1, externKingdom2, externfighter1, externfighter2, "Ambush", 10, 5, Greg, BookOfDura);
+    Strategy* TestBattleFieldStrategy=new BattleField(externKingdom11, externKingdom21, externfighter11, externfighter21, "Battlefield", 5, 5, Greg, BookOfDura);
+    Strategy* TestSiegeStrategy=new Siege(goodStealth, externKingdom12, externKingdom22, externfighter12, externfighter22, "Siege", 5, 5, Greg, BookOfDura);
+    Strategy* TestAssassinStrategy=new Assassinate(goodStealth, true, externKingdom13, externKingdom23, externfighter13, externfighter23, "Assassinate", 5, 5, Greg, BookOfDura);
+    Treasury* externTres=new MasterOfCoin(TestHealthyEco, externRaven, TestAmbushStrategy);
+    TestHealthyEco->setTreasury(externTres);
+    externTres1=new MasterOfCoin(TestHealthyEco1, externRaven1, TestBattleFieldStrategy);
+    TestHealthyEco1->setTreasury(externTres1);
+    externTres2=new MasterOfCoin(TestHealthyEco2, externRaven2, TestSiegeStrategy);
+    TestHealthyEco2->setTreasury(externTres2);
+    externTres3=new MasterOfCoin(TestHealthyEco3, externRaven3, TestAssassinStrategy);
+    TestHealthyEco3->setTreasury(externTres3);
+
+    TestAmbushStrategy->setTreasury(externTres);
+    TestBattleFieldStrategy->setTreasury(externTres1);
+    TestSiegeStrategy->setTreasury(externTres2);
+    TestAssassinStrategy->setTreasury(externTres3);
+
+    cout<<"Ambush getStrategyName should return \"Ambush\": "<<TestAmbushStrategy->getStrategyName()<<endl;
+    cout<<"BattleField getStrategyName should return \"BattleField\": "<<TestBattleFieldStrategy->getStrategyName()<<endl;
+    cout<<"Siege getStrategyName should return \"Siege\": "<<TestSiegeStrategy->getStrategyName()<<endl;
+    cout<<"Assassin getStrategyName should return \"Assassin\": "<<TestAssassinStrategy->getStrategyName()<<endl<<endl;
+
+    cout<<"Ambush getMyBannerman() should return \"externCommander1\": "<<TestAmbushStrategy->getMyBannerman()->getName()<<endl;
+    cout<<"BattleField getMyBannerman() should return \"externCommander1\": "<<TestBattleFieldStrategy->getMyBannerman()->getName()<<endl;
+    cout<<"Siege getMyBannerman() should return \"externCommander1\": "<<TestSiegeStrategy->getMyBannerman()->getName()<<endl;
+    cout<<"Assassin getMyBannerman() should return \"externCommander1\": "<<TestAssassinStrategy->getMyBannerman()->getName()<<endl<<endl;
+
+    cout<<"Ambush getEneMyBannerman() should return \"externCommander2\": "<<TestAmbushStrategy->getEnemyBannerman()->getName()<<endl;
+    cout<<"BattleField getEneMyBannerman() should return \"externCommander2\": "<<TestBattleFieldStrategy->getEnemyBannerman()->getName()<<endl;
+    cout<<"Siege getEneMyBannerman() should return \"externCommander2\": "<<TestSiegeStrategy->getEnemyBannerman()->getName()<<endl;
+    cout<<"Assassin getEneMyBannerman() should return \"externCommander2\": "<<TestAssassinStrategy->getEnemyBannerman()->getName()<<endl<<endl;
+
+    
+    cout<<"Ambush attack() should return boolean 0 or 1 after strategy commets:"<<TestAmbushStrategy->attack(externKingdom1->getAlly("externCommander1"),externKingdom2->getAlly("externCommander2"))<<endl;
+    cout<<"BattleField attack() should return boolean 0 or 1 after strategy commets:"<<TestBattleFieldStrategy->attack(externKingdom11->getAlly("externCommander11"),externKingdom21->getAlly("externCommander21"))<<endl;
+    cout<<"Siege attack() should return boolean 0 or 1 after strategy commets:"<<TestSiegeStrategy->attack(externKingdom12->getAlly("externCommander12"),externKingdom22->getAlly("externCommander22"))<<endl;
+    cout<<"Assassin attack() should return boolean 0 or 1 after strategy commets:"<<TestAssassinStrategy->attack(externKingdom13->getAlly("externCommander13"),externKingdom23->getAlly("externCommander23"))<<endl<<endl;
+
+    delete TestAmbushStrategy;
+    delete TestBattleFieldStrategy;
+    delete TestSiegeStrategy;
+    delete TestAssassinStrategy;
+    delete externTres;
+    delete externTres1;
+    delete externTres2;
+    delete externTres3;
+    delete externRaven;
+    delete externRaven1;
+    delete externRaven2;
+    delete externRaven3;
+    for (int i = 0; i < 3; i++)
+    {
+        delete externsupplies[i];
+    }
+    delete [] externsupplies;
 }
 
 void JuliannaUnitTesting(){
