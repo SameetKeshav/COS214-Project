@@ -15,7 +15,7 @@ private:
 	/**life state of Bannerman's assassin, is false if assassin was killed**/
 	bool alive;
 public:
-	/** @todo  constructor. initializes stealth and calls base class constructor to
+	/** @brief  constructor. initializes stealth and calls base class constructor to
 	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
 	 * @param stealth - skill level of Bannerman's assassin.
 	 * @param alive -life state of Bannerman's assassin, is false if assassin was killed.
@@ -30,13 +30,13 @@ public:
 	 * @param hb - Caretaker for memento implementation.
 	*/
 	Assassinate(int stealth, bool alive,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
-	/** @todo makes assassin of attacking Bannerman try to kill enemyBannerman
+	/** @brief makes assassin of attacking Bannerman try to kill enemyBannerman
 	 * @param myBannerman - attacking Bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.
 	 * @return battle result as a boolean with true implying the attacking Bannerman object
 	 * won and false implying the opposite**/
 	bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
-	/** @todo destructor.**/
+	/** @brief destructor.**/
 	~Assassinate();
 };
 

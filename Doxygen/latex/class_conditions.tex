@@ -19,10 +19,13 @@ Inheritance diagram for Conditions\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_conditions_a7951a7a384345f4c3ed4373ac41998d3}{send\+Scout}} ()
-\begin{DoxyCompactList}\small\item\em Abstract. Decorates the location of the battle. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em decorator function for thr pattern \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_conditions_a8ffe167dee953a567562c6be42e0f2ae}{Conditions}} (\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$\mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{my\+Venue}})
-\begin{DoxyCompactList}\small\item\em constructor for the decorator class. merely used to assign variables and call the decorator function \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\begin{DoxyCompactList}\small\item\em constructor for the decorator class. merely used to assign variables and call the decorator function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conditions_aca64d0d97b9a669b9bb30bbcef20e4c4}\label{class_conditions_aca64d0d97b9a669b9bb30bbcef20e4c4}} 
+virtual {\bfseries $\sim$\+Conditions} ()
+\begin{DoxyCompactList}\small\item\em destructor to delete the \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_conditions_aa487fd98106d4c4e0d9035b602a06092}{my\+Venue}}
@@ -67,7 +70,7 @@ constructor for the decorator class. merely used to assign variables and call th
 
 
 
-Abstract. Decorates the location of the battle. 
+decorator function for thr pattern 
 
 
 
@@ -75,7 +78,7 @@ Implements \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}
 
 
 
-Reimplemented in \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e038e}{Topology}}.
+Reimplemented in \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e038e}{Topology}}, and \mbox{\hyperlink{class_weather_a86aaa0bd9514cffbe75011eaf4c7f3b2}{Weather}}.
 
 
 
@@ -84,7 +87,7 @@ Reimplemented in \mbox{\hyperlink{class_topology_a8fb43c69fd4853283f187f32359e03
 \index{Conditions@{Conditions}!myVenue@{myVenue}}
 \index{myVenue@{myVenue}!Conditions@{Conditions}}
 \doxysubsubsection{\texorpdfstring{myVenue}{myVenue}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}$\ast$ Conditions\+::my\+Venue}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}$\ast$ Conditions\+::my\+Venue\hspace{0.3cm}{\ttfamily [private]}}
 
 Pointer to the decorated component 
 

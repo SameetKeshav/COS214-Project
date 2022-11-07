@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('class_war_indicators.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>An interface class for all classes that communicate with each other through <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> mediator.  
+<p>An interface class for all classes that communicate with each other through <a class="el" href="class_treasury.html">Treasury</a> mediator.  
  <a href="class_war_indicators.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_war_indicators_8h_source.html">WarIndicators.h</a>&gt;</code></p>
@@ -115,16 +115,16 @@ Inheritance diagram for WarIndicators:</div>
   <img src="class_war_indicators.png" usemap="#WarIndicators_map" alt=""/>
   <map id="WarIndicators_map" name="WarIndicators_map">
 <area href="class_bannerman.html" alt="Bannerman" shape="rect" coords="0,56,90,80"/>
-<area href="class_economy.html" alt="Economy" shape="rect" coords="100,56,190,80"/>
-<area href="class_factory.html" alt="Factory" shape="rect" coords="200,56,290,80"/>
+<area href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ..." alt="Economy" shape="rect" coords="100,56,190,80"/>
+<area href="class_factory.html" title="Factory class to serve as a base class for all factory concrete classes used to create supplies." alt="Factory" shape="rect" coords="200,56,290,80"/>
 <area href="class_strategy.html" title="An Abstract strategy class. A class that provides an interface to the alternative concrete strategies..." alt="Strategy" shape="rect" coords="400,56,490,80"/>
 <area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="100,112,190,136"/>
 <area href="class_commander.html" title="A class that acts as a container/composite for bannerman objects as well as performing operations on ..." alt="Commander" shape="rect" coords="100,168,190,192"/>
 <area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="100,224,190,248"/>
 <area href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition." alt="Troop" shape="rect" coords="100,280,190,304"/>
-<area href="class_food_fac.html" alt="FoodFac" shape="rect" coords="300,112,390,136"/>
-<area href="class_medical_fac.html" alt="MedicalFac" shape="rect" coords="300,168,390,192"/>
-<area href="class_weapons_fac.html" alt="WeaponsFac" shape="rect" coords="300,224,390,248"/>
+<area href="class_food_fac.html" title="Factory class to serve as a concrete creator class used to create Food supplies." alt="FoodFac" shape="rect" coords="300,112,390,136"/>
+<area href="class_medical_fac.html" title="Factory class to serve as a concrete creator class used to create Medical supplies." alt="MedicalFac" shape="rect" coords="300,168,390,192"/>
+<area href="class_weapons_fac.html" title="Factory class to serve as a concrete creator class used to create Weapons supplies." alt="WeaponsFac" shape="rect" coords="300,224,390,248"/>
 <area href="class_ambush.html" title="A concrete strategy class. A class that provides an alternative strategy for how Bannerman will fight..." alt="Ambush" shape="rect" coords="500,112,590,136"/>
 <area href="class_assassinate.html" title="A concrete strategy class. A class that provides an alternative strategy for how Bannerman will fight..." alt="Assassinate" shape="rect" coords="500,168,590,192"/>
 <area href="class_battle_field.html" title="A concrete strategy class. A class that provides an alternative strategy for how Bannerman will fight..." alt="BattleField" shape="rect" coords="500,224,590,248"/>
@@ -139,9 +139,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae400c1e7a43a5751ac7aa62855a1e1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. initializes m to null. <br /></td></tr>
 <tr class="separator:ae400c1e7a43a5751ac7aa62855a1e1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae412f0a5bb3bfc86ff6437d22e9407a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">WarIndicators</a> (<a class="el" href="class_treasury.html">Treasury</a> *<a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a>)</td></tr>
-<tr class="memdesc:ae412f0a5bb3bfc86ff6437d22e9407a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor. initializes m to the passed in <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> object.  <a href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">More...</a><br /></td></tr>
+<tr class="memdesc:ae412f0a5bb3bfc86ff6437d22e9407a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor. initializes m to the passed in <a class="el" href="class_treasury.html">Treasury</a> object.  <a href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">More...</a><br /></td></tr>
 <tr class="separator:ae412f0a5bb3bfc86ff6437d22e9407a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ee75ff5bf3d7bc1fb7f82a6527e582"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#aa8ee75ff5bf3d7bc1fb7f82a6527e582">~WarIndicators</a> ()</td></tr>
+<tr class="memitem:a13980e8e5cfecf4d3891c48e84bb7894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#a13980e8e5cfecf4d3891c48e84bb7894">setTreasury</a> (<a class="el" href="class_treasury.html">Treasury</a> *<a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a>)</td></tr>
+<tr class="memdesc:a13980e8e5cfecf4d3891c48e84bb7894"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets m (<a class="el" href="class_treasury.html">Treasury</a> mediator pointer) to the passed in <a class="el" href="class_treasury.html">Treasury</a> pointer.  <a href="class_war_indicators.html#a13980e8e5cfecf4d3891c48e84bb7894">More...</a><br /></td></tr>
+<tr class="separator:a13980e8e5cfecf4d3891c48e84bb7894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee75ff5bf3d7bc1fb7f82a6527e582"><td class="memItemLeft" align="right" valign="top"><a id="aa8ee75ff5bf3d7bc1fb7f82a6527e582" name="aa8ee75ff5bf3d7bc1fb7f82a6527e582"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~WarIndicators</b> ()</td></tr>
+<tr class="memdesc:aa8ee75ff5bf3d7bc1fb7f82a6527e582"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor. deallocates <a class="el" href="class_treasury.html">Treasury</a> pointer of this class <br /></td></tr>
 <tr class="separator:aa8ee75ff5bf3d7bc1fb7f82a6527e582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -150,7 +155,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af473554ebc672a6253eb56d84c1bb891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An interface class for all classes that communicate with each other through <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> mediator. </p>
+<div class="textblock"><p >An interface class for all classes that communicate with each other through <a class="el" href="class_treasury.html">Treasury</a> mediator. </p>
 <dl class="section author"><dt>Author</dt><dd>Morgan Bentley </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -178,18 +183,19 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>constructor. initializes m to the passed in <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> object. </p>
+<p>constructor. initializes m to the passed in <a class="el" href="class_treasury.html">Treasury</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>- mediator which is of <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> pointer type </td></tr>
+    <tr><td class="paramname">m</td><td>- mediator which is of <a class="el" href="class_treasury.html">Treasury</a> pointer type </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aa8ee75ff5bf3d7bc1fb7f82a6527e582" name="aa8ee75ff5bf3d7bc1fb7f82a6527e582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8ee75ff5bf3d7bc1fb7f82a6527e582">&#9670;&#160;</a></span>~WarIndicators()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a13980e8e5cfecf4d3891c48e84bb7894" name="a13980e8e5cfecf4d3891c48e84bb7894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13980e8e5cfecf4d3891c48e84bb7894">&#9670;&#160;</a></span>setTreasury()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,19 +204,27 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual WarIndicators::~WarIndicators </td>
+          <td class="memname">void WarIndicators::setTreasury </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_treasury.html">Treasury</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>destructor. deallocates <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> pointer of this class </dd></dl>
+
+<p>sets m (<a class="el" href="class_treasury.html">Treasury</a> mediator pointer) to the passed in <a class="el" href="class_treasury.html">Treasury</a> pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>- mediator which is of <a class="el" href="class_treasury.html">Treasury</a> pointer type </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -234,7 +248,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p ><a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> mediator pointer </p>
+<p ><a class="el" href="class_treasury.html">Treasury</a> mediator pointer </p>
 
 </div>
 </div>

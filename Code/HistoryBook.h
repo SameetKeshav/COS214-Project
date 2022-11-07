@@ -4,7 +4,7 @@
 #include <list>
 class History;
 class HistoryBook {
-/** @brief The caretaker class in the memento design pattern
+/** @brief The caretaker class in the memento design pattern.
  * @author Julianna Venter
  * @date November 2022
  */

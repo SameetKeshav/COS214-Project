@@ -2,6 +2,11 @@
 \label{class_iterator}\index{Iterator@{Iterator}}
 
 
+\mbox{\hyperlink{class_iterator}{Iterator}} class Defines an interface for accessing and traversing bannerman elements in ground\+Forces.  
+
+
+
+
 {\ttfamily \#include $<$Iterator.\+h$>$}
 
 Inheritance diagram for Iterator\+:\begin{figure}[H]
@@ -20,11 +25,13 @@ virtual bool \mbox{\hyperlink{class_iterator_ac3a1f5cb124b2b89e4cc41900ffd83f6}{
 virtual \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_iterator_acb76c46e8d0339274cb2917e14b1cd9b}{next}} ()=0
 \begin{DoxyCompactList}\small\item\em Abstract. Sets the current pointer to the next bannerman object in ground\+Forces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_iterator_a66527143108f6a24547394d807922e7b}{is\+Active}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Abstract. Returns whether or not the current item is active or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-@\+Brief \mbox{\hyperlink{class_iterator}{Iterator}} class Defines an interface for accessing and traversing bannerman elements in ground\+Forces. \begin{DoxyAuthor}{Author}
+\mbox{\hyperlink{class_iterator}{Iterator}} class Defines an interface for accessing and traversing bannerman elements in ground\+Forces. 
+
+\begin{DoxyAuthor}{Author}
 Thapelo Thoka 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
@@ -75,7 +82,11 @@ Implemented in \mbox{\hyperlink{class_con_iterator_a2b5169fea3ec59662f32f3938d5a
 \doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
 {\footnotesize\ttfamily virtual bool Iterator\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-@\+Brief Abstract. Returns whether or not the current item is active or not \begin{DoxyReturn}{Returns}
+
+
+Abstract. Returns whether or not the current item is active or not. 
+
+\begin{DoxyReturn}{Returns}
 true 
 
 false 

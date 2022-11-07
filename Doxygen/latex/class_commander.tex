@@ -18,7 +18,7 @@ Inheritance diagram for Commander\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_commander_a6124d55477cd8594fa9ad6126b77ab38}{Commander}} (string name)
+\mbox{\hyperlink{class_commander_a6124d55477cd8594fa9ad6126b77ab38}{Commander}} (string \mbox{\hyperlink{class_commander_a24f096faaaf4823fdf44b0ed2f532c88}{name}})
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_commander}{Commander}} Constructor which takes in the name of a commander. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_commander_ac2a70383e8f668e2e2010a2e2e90d74a}\label{class_commander_ac2a70383e8f668e2e2010a2e2e90d74a}} 
 \mbox{\hyperlink{class_iterator}{Iterator}} $\ast$ {\bfseries create\+Iterator} ()
@@ -65,34 +65,36 @@ void \mbox{\hyperlink{class_commander_a152eeabd214d9745dd01e3a62743b3f3}{increas
 \begin{DoxyCompactList}\small\item\em Increases the loyalty favour levels variable of the bannerman objects in ground\+Forces by 1. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_a09ae0bf59592876b0c408280dcb15417}{decrease\+Favour}} () override
 \begin{DoxyCompactList}\small\item\em Decreases the loyalty favour levels variable of the bannerman objects in ground\+Forces by 1. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_commander_a6273d07255e979e8957247af66b7f635}{get\+Favour}} ()
-\begin{DoxyCompactList}\small\item\em Abstract. returns the favour of the bannerman. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_commander_a0541392748cb186b51dca930355738ac}{get\+Favour}} () override
+\begin{DoxyCompactList}\small\item\em Returns the sum of the loyalty favour levels variable of the bannerman objects in ground\+Force. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_a8326c6d14db39c3dd52b521dc4d23561}{set\+Weapons}} (int \mbox{\hyperlink{class_bannerman_abcba7f639883998c8223ca6705234348}{num\+Weapons}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of weapon supplies of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_aecff03645144e0d32094a4987df70145}{set\+Food}} (int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of food supplies of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_a05589c79c1b3ec05041c06016216f653}{set\+Medical}} (int \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{num\+Medical}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of medical supplies of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_commander_aa2af8732b5293ada0415b092f592fdaa}{decrease\+Power}} (int x)
+void \mbox{\hyperlink{class_commander_a8d482a236c6b1c75e1f4dd1e5cef19cd}{decrease\+Power}} (int x) override
 \begin{DoxyCompactList}\small\item\em Decreases the damage capability of all the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_commander_af16b5b1c2b22e5158ce822d1b9180b10}\label{class_commander_af16b5b1c2b22e5158ce822d1b9180b10}} 
 {\bfseries $\sim$\+Commander} ()
 \begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_commander_a288ea64d4383e3e1976e7d1f2a08302b}{set\+Raven}} (list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$ r)
+void \mbox{\hyperlink{class_commander_aab49d769f9550f1b99285fa745d9b930}{set\+Raven}} (list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$ r) override
 \begin{DoxyCompactList}\small\item\em Assigns a \mbox{\hyperlink{class_raven}{Raven}} observer list to all the bannerman objects in the ground\+Forces list. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_commander_a3bb5849eee29e0feac6a13b4a3894f4d}{set\+Master}} (\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}})
+void \mbox{\hyperlink{class_commander_aad8de6279d1511471e8687e6f30dc5ad}{set\+Master}} (\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}) override
 \begin{DoxyCompactList}\small\item\em Assigns a Masterof\+Coin mediator all the bannerman objects in the ground\+Forces list to ensure that the army has the supplies it needs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_commander_a0a6fb5bffc586c56ee3284b3357e126d}{set\+Strategy}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$s)
-\begin{DoxyCompactList}\small\item\em Sets the attack strategy variable of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the attack strategy variable of the bannerman objects in ground\+Forces. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_commander_a91957d30ac49373fd741c3d02de6c36b}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this commander object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_commander_aa61af72fdcd7ffdf33158521c47754cf}\label{class_commander_aa61af72fdcd7ffdf33158521c47754cf}} 
+\mbox{\Hypertarget{class_commander_a7000d8ae58cc827a81746eed8540a3de}\label{class_commander_a7000d8ae58cc827a81746eed8540a3de}} 
 list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ {\bfseries ground\+Forces}
 \begin{DoxyCompactList}\small\item\em list of bannerman components. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_commander_a24f096faaaf4823fdf44b0ed2f532c88}\label{class_commander_a24f096faaaf4823fdf44b0ed2f532c88}} 
 string {\bfseries name}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em name of the bannerman as a whole, represented by the commander speaking for the bannerman \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -227,11 +229,11 @@ decreases the num\+Medical variables of the bannerman objects in ground\+Forces 
 
 Implements \mbox{\hyperlink{class_bannerman_a0f16bb2b3ab703469ec9f05e81d2cefa}{Bannerman}}.
 
-\mbox{\Hypertarget{class_commander_aa2af8732b5293ada0415b092f592fdaa}\label{class_commander_aa2af8732b5293ada0415b092f592fdaa}} 
+\mbox{\Hypertarget{class_commander_a8d482a236c6b1c75e1f4dd1e5cef19cd}\label{class_commander_a8d482a236c6b1c75e1f4dd1e5cef19cd}} 
 \index{Commander@{Commander}!decreasePower@{decreasePower}}
 \index{decreasePower@{decreasePower}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{decreasePower()}{decreasePower()}}
-{\footnotesize\ttfamily void Commander\+::decrease\+Power (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Commander\+::decrease\+Power (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -296,16 +298,19 @@ The total ground\+Forces damage.
 
 Implements \mbox{\hyperlink{class_bannerman_a1a5d6adb57fcf51eb355cdef86b72cb7}{Bannerman}}.
 
-\mbox{\Hypertarget{class_commander_a6273d07255e979e8957247af66b7f635}\label{class_commander_a6273d07255e979e8957247af66b7f635}} 
+\mbox{\Hypertarget{class_commander_a0541392748cb186b51dca930355738ac}\label{class_commander_a0541392748cb186b51dca930355738ac}} 
 \index{Commander@{Commander}!getFavour@{getFavour}}
 \index{getFavour@{getFavour}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{getFavour()}{getFavour()}}
-{\footnotesize\ttfamily int Commander\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily int Commander\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Abstract. returns the favour of the bannerman. 
+Returns the sum of the loyalty favour levels variable of the bannerman objects in ground\+Force. 
 
+\begin{DoxyReturn}{Returns}
+favour 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_bannerman_ad643991fd0fde3e08a5fd66054acf87e}{Bannerman}}.
@@ -361,13 +366,34 @@ num\+Medical.
 
 Implements \mbox{\hyperlink{class_bannerman_a9bc89447b53e38cd0e9d6b5962419587}{Bannerman}}.
 
+\mbox{\Hypertarget{class_commander_a91957d30ac49373fd741c3d02de6c36b}\label{class_commander_a91957d30ac49373fd741c3d02de6c36b}} 
+\index{Commander@{Commander}!getName@{getName}}
+\index{getName@{getName}!Commander@{Commander}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Commander\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the name of this commander object. 
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a53d7285a1a04a5b96f4377afc39f1221}{Bannerman}}.
+
 \mbox{\Hypertarget{class_commander_a693da40d425bc2cfaa69a3ff25c3e095}\label{class_commander_a693da40d425bc2cfaa69a3ff25c3e095}} 
 \index{Commander@{Commander}!getTroops@{getTroops}}
 \index{getTroops@{getTroops}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{getTroops()}{getTroops()}}
-{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ Commander\+::get\+Troops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ Commander\+::get\+Troops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Returns the ground\+Forces bannerman list \mbox{\Hypertarget{class_commander_a7c4bc666285ef6f1aeee228550458c4f}\label{class_commander_a7c4bc666285ef6f1aeee228550458c4f}} 
+Returns the ground\+Forces bannerman list 
+
+Implements \mbox{\hyperlink{class_bannerman_a258e604dd30cb0e2e5460b681dc5823a}{Bannerman}}.
+
+\mbox{\Hypertarget{class_commander_a7c4bc666285ef6f1aeee228550458c4f}\label{class_commander_a7c4bc666285ef6f1aeee228550458c4f}} 
 \index{Commander@{Commander}!getWeapons@{getWeapons}}
 \index{getWeapons@{getWeapons}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{getWeapons()}{getWeapons()}}
@@ -474,11 +500,11 @@ Sets the number of food supplies of the bannerman objects in ground\+Forces.
 
 Implements \mbox{\hyperlink{class_bannerman_ae820506437fc6806b77904186c7b3d10}{Bannerman}}.
 
-\mbox{\Hypertarget{class_commander_a3bb5849eee29e0feac6a13b4a3894f4d}\label{class_commander_a3bb5849eee29e0feac6a13b4a3894f4d}} 
+\mbox{\Hypertarget{class_commander_aad8de6279d1511471e8687e6f30dc5ad}\label{class_commander_aad8de6279d1511471e8687e6f30dc5ad}} 
 \index{Commander@{Commander}!setMaster@{setMaster}}
 \index{setMaster@{setMaster}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{setMaster()}{setMaster()}}
-{\footnotesize\ttfamily void Commander\+::set\+Master (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Commander\+::set\+Master (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -512,11 +538,11 @@ Sets the number of medical supplies of the bannerman objects in ground\+Forces.
 
 Implements \mbox{\hyperlink{class_bannerman_a288a8a59848ff68be805b540cbe601ea}{Bannerman}}.
 
-\mbox{\Hypertarget{class_commander_a288ea64d4383e3e1976e7d1f2a08302b}\label{class_commander_a288ea64d4383e3e1976e7d1f2a08302b}} 
+\mbox{\Hypertarget{class_commander_aab49d769f9550f1b99285fa745d9b930}\label{class_commander_aab49d769f9550f1b99285fa745d9b930}} 
 \index{Commander@{Commander}!setRaven@{setRaven}}
 \index{setRaven@{setRaven}!Commander@{Commander}}
 \doxysubsubsection{\texorpdfstring{setRaven()}{setRaven()}}
-{\footnotesize\ttfamily void Commander\+::set\+Raven (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Commander\+::set\+Raven (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 

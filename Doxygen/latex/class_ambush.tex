@@ -18,12 +18,13 @@ Inheritance diagram for Ambush\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_ambush_aec9d5a1a757133058df754172f98a128}{Ambush}} (int \mbox{\hyperlink{class_ambush_a24e4dac5df0d56ecb2d94f1ff0d6116d}{stealth}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}})
-\item 
+\mbox{\hyperlink{class_ambush_a89f7fd70add171e55d68cfe62c3cf395}{Ambush}} (int \mbox{\hyperlink{class_ambush_a24e4dac5df0d56ecb2d94f1ff0d6116d}{stealth}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_a1f81f98462f0f264e9edaa22edc9a87f}{my\+Kingdom}}, \mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$\mbox{\hyperlink{class_strategy_aeb0b0b4647d67e571e3382c6ee6ddac7}{enemy\+Kingdom}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}}, string name, int min, int \mbox{\hyperlink{class_strategy_ad0b294bb647e8e88cac038804d88acf7}{min\+Favour}}, \mbox{\hyperlink{class_historian}{Historian}} $\ast$h, \mbox{\hyperlink{class_history_book}{History\+Book}} $\ast$hb)
+\begin{DoxyCompactList}\small\item\em constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_ambush_a51193e1b97edc379fb3c79918132ea15}{attack}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a706cf037295e2bffabefb2eb226835a6}{my\+Bannerman}}, \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$\mbox{\hyperlink{class_strategy_a5473bae4c5a8c213e39c89ca176b444d}{enemy\+Bannerman}})
-\item 
-\mbox{\hyperlink{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}{$\sim$\+Ambush}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}\label{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}} 
+{\bfseries $\sim$\+Ambush} ()
+\begin{DoxyCompactList}\small\item\em destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,31 +45,39 @@ October 2022
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_ambush_aec9d5a1a757133058df754172f98a128}\label{class_ambush_aec9d5a1a757133058df754172f98a128}} 
+\mbox{\Hypertarget{class_ambush_a89f7fd70add171e55d68cfe62c3cf395}\label{class_ambush_a89f7fd70add171e55d68cfe62c3cf395}} 
 \index{Ambush@{Ambush}!Ambush@{Ambush}}
 \index{Ambush@{Ambush}!Ambush@{Ambush}}
 \doxysubsubsection{\texorpdfstring{Ambush()}{Ambush()}}
-{\footnotesize\ttfamily Ambush\+::\+Ambush (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Ambush\+::\+Ambush (\begin{DoxyParamCaption}\item[{int}]{stealth,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{my\+Kingdom,  }\item[{\mbox{\hyperlink{class_kingdom}{Kingdom}} $\ast$}]{enemy\+Kingdom,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman,  }\item[{string}]{name,  }\item[{int}]{min,  }\item[{int}]{min\+Favour,  }\item[{\mbox{\hyperlink{class_historian}{Historian}} $\ast$}]{h,  }\item[{\mbox{\hyperlink{class_history_book}{History\+Book}} $\ast$}]{hb }\end{DoxyParamCaption})}
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. \end{DoxyRefDesc}
+
+
+constructor. initializes stealth and calls base class constructor to initialize my\+Kingdom, enemy\+Kingdom, my\+Bannerman, enemy\+Bannerman, strategy, min and min\+Favour. 
+
 
 \begin{DoxyParams}{Parameters}
 {\em stealth} & -\/ skill level of \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em my\+Kingdom} & -\/ \mbox{\hyperlink{class_kingdom}{Kingdom}} pointer of attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}\textquotesingle{}s \mbox{\hyperlink{class_kingdom}{Kingdom}}. \\
+\hline
+{\em enemy\+Kingdom} & -\/ \mbox{\hyperlink{class_kingdom}{Kingdom}} pointer of enemy\+Bannerman\textquotesingle{}s \mbox{\hyperlink{class_kingdom}{Kingdom}}. \\
+\hline
+{\em my\+Bannerman} & -\/ attacking \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em enemy\+Bannerman} & -\/ defending \mbox{\hyperlink{class_bannerman}{Bannerman}}. \\
+\hline
+{\em name} & -\/ name of concrete strategy. \\
 \hline
 {\em min} & -\/ minimum supplies for food,weapons and medicine \\
 \hline
 {\em min\+Favour} & -\/ minimum favour below which bannerman change allegiances \\
 \hline
+{\em h} & -\/ \mbox{\hyperlink{class_historian}{Historian}} (originator) to save defected bannemen. \\
+\hline
+{\em hb} & -\/ Caretaker for memento implementation. \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}\label{class_ambush_a36a5798e6b3b4493e5e1c925d57d6a39}} 
-\index{Ambush@{Ambush}!````~Ambush@{$\sim$Ambush}}
-\index{````~Ambush@{$\sim$Ambush}!Ambush@{Ambush}}
-\doxysubsubsection{\texorpdfstring{$\sim$Ambush()}{~Ambush()}}
-{\footnotesize\ttfamily Ambush\+::$\sim$\+Ambush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]destructor. \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Function Documentation}
@@ -78,8 +87,10 @@ October 2022
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
 {\footnotesize\ttfamily bool Ambush\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{my\+Bannerman,  }\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{enemy\+Bannerman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]makes two bannerman from enemy kingdoms fight each other until one loses \end{DoxyRefDesc}
+
+
+makes two bannerman from enemy kingdoms fight each other until one loses 
+
 
 \begin{DoxyParams}{Parameters}
 {\em my\+Bannerman} & -\/ attacking bannerman object. \\

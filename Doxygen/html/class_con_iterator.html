@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('class_con_iterator.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
+<p>Concrete iterator class Implements the interface for accessing and traversing bannerman elements in groundForces. Keeps track of the current position in the traversal of the aggregate(groundForces list).  
+ <a href="class_con_iterator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_con_iterator_8h_source.html">ConIterator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ConIterator:</div>
@@ -111,7 +114,7 @@ Inheritance diagram for ConIterator:</div>
  <div class="center">
   <img src="class_con_iterator.png" usemap="#ConIterator_map" alt=""/>
   <map id="ConIterator_map" name="ConIterator_map">
-<area href="class_iterator.html" alt="Iterator" shape="rect" coords="0,0,75,24"/>
+<area href="class_iterator.html" title="Iterator class Defines an interface for accessing and traversing bannerman elements in groundForces." alt="Iterator" shape="rect" coords="0,0,75,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5309dbb435bbf8767777e52fe1fb2469"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#a5309dbb435bbf8767777e52fe1fb2469">ConIterator</a> (list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt; X)</td></tr>
 <tr class="separator:a5309dbb435bbf8767777e52fe1fb2469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d222acec8e723def980a98c5cd822aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bannerman.html">Bannerman</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#a0d222acec8e723def980a98c5cd822aa">Current</a> ()</td></tr>
-<tr class="memdesc:a0d222acec8e723def980a98c5cd822aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Returns a pointer to the current bannerman object in groundForces being accessed, , primitive operations can be performed on the returned bannerman object.  <a href="class_con_iterator.html#a0d222acec8e723def980a98c5cd822aa">More...</a><br /></td></tr>
+<tr class="memdesc:a0d222acec8e723def980a98c5cd822aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the current bannerman object in groundForces being accessed, , primitive operations can be performed on the returned bannerman object.  <a href="class_con_iterator.html#a0d222acec8e723def980a98c5cd822aa">More...</a><br /></td></tr>
 <tr class="separator:a0d222acec8e723def980a98c5cd822aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5dd2fc8813b5dd00594dcf9ff749cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bannerman.html">Bannerman</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#af5dd2fc8813b5dd00594dcf9ff749cd3">next</a> ()</td></tr>
 <tr class="memdesc:af5dd2fc8813b5dd00594dcf9ff749cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the (*it) pointer to the next bannerman object in groundForces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object.  <a href="class_con_iterator.html#af5dd2fc8813b5dd00594dcf9ff749cd3">More...</a><br /></td></tr>
@@ -129,6 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2b5169fea3ec59662f32f3938d5ab787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether or not the current bannerman object which (*it) currently points to is the last element in the list or not.  <a href="class_con_iterator.html#a2b5169fea3ec59662f32f3938d5ab787">More...</a><br /></td></tr>
 <tr class="separator:a2b5169fea3ec59662f32f3938d5ab787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34259fd2a0dab11f39224aaefc11983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_con_iterator.html#ad34259fd2a0dab11f39224aaefc11983">isActive</a> ()</td></tr>
+<tr class="memdesc:ad34259fd2a0dab11f39224aaefc11983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the current item is active or not by determining whether HP&gt;0 or not.  <a href="class_con_iterator.html#ad34259fd2a0dab11f39224aaefc11983">More...</a><br /></td></tr>
 <tr class="separator:ad34259fd2a0dab11f39224aaefc11983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebd6fcd615a4e67626fe6651736fcf4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_bannerman.html">Bannerman</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iterator.html#aaebd6fcd615a4e67626fe6651736fcf4">Current</a> ()=0</td></tr>
 <tr class="memdesc:aaebd6fcd615a4e67626fe6651736fcf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Returns a pointer to the current bannerman object in groundForces being accessed, , primitive operations can be performed on the returned bannerman object.  <a href="class_iterator.html#aaebd6fcd615a4e67626fe6651736fcf4">More...</a><br /></td></tr>
@@ -140,6 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acb76c46e8d0339274cb2917e14b1cd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Sets the current pointer to the next bannerman object in groundForces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object.  <a href="class_iterator.html#acb76c46e8d0339274cb2917e14b1cd9b">More...</a><br /></td></tr>
 <tr class="separator:acb76c46e8d0339274cb2917e14b1cd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66527143108f6a24547394d807922e7b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iterator.html#a66527143108f6a24547394d807922e7b">isActive</a> ()=0</td></tr>
+<tr class="memdesc:a66527143108f6a24547394d807922e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Returns whether or not the current item is active or not.  <a href="class_iterator.html#a66527143108f6a24547394d807922e7b">More...</a><br /></td></tr>
 <tr class="separator:a66527143108f6a24547394d807922e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -150,7 +155,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab965c2f2499316ad3631de8eff5f37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >@Brief Concrete iterator class Implements the interface for accessing and traversing bannerman elements in groundForces. Keeps track of the current position in the traversal of the aggregate(groundForces list). </p><dl class="section author"><dt>Author</dt><dd>Thapelo Thoka </dd></dl>
+<div class="textblock"><p >Concrete iterator class Implements the interface for accessing and traversing bannerman elements in groundForces. Keeps track of the current position in the traversal of the aggregate(groundForces list). </p>
+<dl class="section author"><dt>Author</dt><dd>Thapelo Thoka </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5309dbb435bbf8767777e52fe1fb2469" name="a5309dbb435bbf8767777e52fe1fb2469"></a>
@@ -168,7 +174,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p ><a class="el" href="class_con_iterator.html">ConIterator</a> Constructor which takes in a list of bannerman objects. </p><dl class="params"><dt>Parameters</dt><dd>
+<p ><a class="el" href="class_con_iterator.html" title="Concrete iterator class Implements the interface for accessing and traversing bannerman elements in g...">ConIterator</a> Constructor which takes in a list of bannerman objects. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">X</td><td>- the groundForces list which will be accessed sequentially. </td></tr>
   </table>
@@ -201,7 +207,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Abstract. Returns a pointer to the current bannerman object in groundForces being accessed, , primitive operations can be performed on the returned bannerman object. </p>
+<p>Returns a pointer to the current bannerman object in groundForces being accessed, , primitive operations can be performed on the returned bannerman object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Bannerman* </dd></dl>
 
 <p>Implements <a class="el" href="class_iterator.html#aaebd6fcd615a4e67626fe6651736fcf4">Iterator</a>.</p>
@@ -263,7 +269,9 @@ true </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >@Brief Returns whether or not the current item is active or not by determining whether HP&gt;0 or not </p><dl class="section return"><dt>Returns</dt><dd>true </dd>
+
+<p>Returns whether or not the current item is active or not by determining whether HP&gt;0 or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
 false </dd></dl>
 <p >Test</p>

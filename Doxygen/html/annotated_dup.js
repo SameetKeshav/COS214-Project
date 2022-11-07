@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "Ambush", "class_ambush.html", "class_ambush" ],
-    [ "ArmySupplies", "class_army_supplies.html", null ],
+    [ "ArmySupplies", "class_army_supplies.html", "class_army_supplies" ],
     [ "Assassinate", "class_assassinate.html", "class_assassinate" ],
     [ "Bannerman", "class_bannerman.html", "class_bannerman" ],
     [ "BattleField", "class_battle_field.html", "class_battle_field" ],
@@ -13,8 +13,8 @@ var annotated_dup =
     [ "Factory", "class_factory.html", "class_factory" ],
     [ "FailedState", "class_failed_state.html", "class_failed_state" ],
     [ "FoodFac", "class_food_fac.html", "class_food_fac" ],
-    [ "FoodSupp", "class_food_supp.html", null ],
-    [ "FoodWagon", "class_food_wagon.html", null ],
+    [ "FoodSupp", "class_food_supp.html", "class_food_supp" ],
+    [ "FoodWagon", "class_food_wagon.html", "class_food_wagon" ],
     [ "HealthyState", "class_healthy_state.html", "class_healthy_state" ],
     [ "Historian", "class_historian.html", "class_historian" ],
     [ "History", "class_history.html", "class_history" ],
@@ -24,8 +24,8 @@ var annotated_dup =
     [ "Location", "class_location.html", "class_location" ],
     [ "MasterOfCoin", "class_master_of_coin.html", "class_master_of_coin" ],
     [ "MedicalFac", "class_medical_fac.html", "class_medical_fac" ],
-    [ "MedicalSupp", "class_medical_supp.html", null ],
-    [ "MedicalWagon", "class_medical_wagon.html", null ],
+    [ "MedicalSupp", "class_medical_supp.html", "class_medical_supp" ],
+    [ "MedicalWagon", "class_medical_wagon.html", "class_medical_wagon" ],
     [ "Raven", "class_raven.html", "class_raven" ],
     [ "sendRaven", "classsend_raven.html", "classsend_raven" ],
     [ "Siege", "class_siege.html", "class_siege" ],
@@ -39,7 +39,7 @@ var annotated_dup =
     [ "WarIndicators", "class_war_indicators.html", "class_war_indicators" ],
     [ "WarTheatre", "class_war_theatre.html", "class_war_theatre" ],
     [ "WeaponsFac", "class_weapons_fac.html", "class_weapons_fac" ],
-    [ "WeaponSupp", "class_weapon_supp.html", null ],
-    [ "WeaponWagon", "class_weapon_wagon.html", null ],
+    [ "WeaponSupp", "class_weapon_supp.html", "class_weapon_supp" ],
+    [ "WeaponWagon", "class_weapon_wagon.html", "class_weapon_wagon" ],
     [ "Weather", "class_weather.html", "class_weather" ]
 ];

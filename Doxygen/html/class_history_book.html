@@ -107,16 +107,16 @@ $(document).ready(function(){initNavTree('class_history_book.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a94c98deec8176f5ebc50ca9f267d6c5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_history_book.html#a94c98deec8176f5ebc50ca9f267d6c5d">add</a> (<a class="el" href="class_history.html">History</a> *h)</td></tr>
-<tr class="memdesc:a94c98deec8176f5ebc50ca9f267d6c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">add memento object to the list of defecetded allies  <a href="class_history_book.html#a94c98deec8176f5ebc50ca9f267d6c5d">More...</a><br /></td></tr>
+<tr class="memdesc:a94c98deec8176f5ebc50ca9f267d6c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the passed in history object to the class list  <a href="class_history_book.html#a94c98deec8176f5ebc50ca9f267d6c5d">More...</a><br /></td></tr>
 <tr class="separator:a94c98deec8176f5ebc50ca9f267d6c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4021f7b650b77dc53b3fbe5bea2b7685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_history.html">History</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_history_book.html#a4021f7b650b77dc53b3fbe5bea2b7685">restoreAlly</a> (<a class="el" href="class_history.html">History</a> *h)</td></tr>
-<tr class="memdesc:a4021f7b650b77dc53b3fbe5bea2b7685"><td class="mdescLeft">&#160;</td><td class="mdescRight">restore the state of an ally returning  <a href="class_history_book.html#a4021f7b650b77dc53b3fbe5bea2b7685">More...</a><br /></td></tr>
-<tr class="separator:a4021f7b650b77dc53b3fbe5bea2b7685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1738139417171318b01727cbfeda103e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_history.html">History</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_history_book.html#a1738139417171318b01727cbfeda103e">getAlly</a> ()</td></tr>
+<tr class="memdesc:a1738139417171318b01727cbfeda103e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the required history object to be restored  <a href="class_history_book.html#a1738139417171318b01727cbfeda103e">More...</a><br /></td></tr>
+<tr class="separator:a1738139417171318b01727cbfeda103e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab226f084bcead80fdd99036b400a9f7c"><td class="memItemLeft" align="right" valign="top"><a id="ab226f084bcead80fdd99036b400a9f7c" name="ab226f084bcead80fdd99036b400a9f7c"></a>
-list&lt; <a class="el" href="class_history.html">History</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>defectedAllies</b></td></tr>
+<tr class="memitem:ab226f084bcead80fdd99036b400a9f7c"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_history.html">History</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_history_book.html#ab226f084bcead80fdd99036b400a9f7c">defectedAllies</a></td></tr>
+<tr class="memdesc:ab226f084bcead80fdd99036b400a9f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The caretaker class in the memento design pattern.  <a href="class_history_book.html#ab226f084bcead80fdd99036b400a9f7c">More...</a><br /></td></tr>
 <tr class="separator:ab226f084bcead80fdd99036b400a9f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -136,40 +136,60 @@ list&lt; <a class="el" href="class_history.html">History</a> * &gt;&#160;</td><t
       </table>
 </div><div class="memdoc">
 
-<p>add memento object to the list of defecetded allies </p>
+<p>adds the passed in history object to the class list </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">h</td><td>the memento object added </td></tr>
+    <tr><td class="paramname">h</td><td>the history object to be added </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4021f7b650b77dc53b3fbe5bea2b7685" name="a4021f7b650b77dc53b3fbe5bea2b7685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4021f7b650b77dc53b3fbe5bea2b7685">&#9670;&#160;</a></span>restoreAlly()</h2>
+<a id="a1738139417171318b01727cbfeda103e" name="a1738139417171318b01727cbfeda103e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1738139417171318b01727cbfeda103e">&#9670;&#160;</a></span>getAlly()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_history.html">History</a> * HistoryBook::restoreAlly </td>
+          <td class="memname"><a class="el" href="class_history.html">History</a> * HistoryBook::getAlly </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_history.html">History</a> *&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>restore the state of an ally returning </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>the ally that wants to return </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the state of the ally to be returning </dd></dl>
+<p>gets the required history object to be restored </p>
+<dl class="section return"><dt>Returns</dt><dd>the history object that will be restored </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab226f084bcead80fdd99036b400a9f7c" name="ab226f084bcead80fdd99036b400a9f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab226f084bcead80fdd99036b400a9f7c">&#9670;&#160;</a></span>defectedAllies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="class_history.html">History</a>*&gt; HistoryBook::defectedAllies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The caretaker class in the memento design pattern. </p>
+<dl class="section author"><dt>Author</dt><dd>Julianna Venter </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>November 2022 the list of history (memento) objects that represent bannermen that have defected </dd></dl>
 
 </div>
 </div>

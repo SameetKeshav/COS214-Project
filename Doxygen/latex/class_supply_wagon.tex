@@ -1,5 +1,14 @@
 \hypertarget{class_supply_wagon}{}\doxysection{Supply\+Wagon Class Reference}
 \label{class_supply_wagon}\index{SupplyWagon@{SupplyWagon}}
+
+
+Abstract Prototype class \mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} to serve as the base class for all derived concrete prototypes.  
+
+
+
+
+{\ttfamily \#include $<$Supply\+Wagon.\+h$>$}
+
 Inheritance diagram for Supply\+Wagon\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,7 +18,7 @@ Inheritance diagram for Supply\+Wagon\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_supply_wagon_a7745c14896057f3ddca58ec9a45006a5}{set\+Sup}} (\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$sup)=0
+virtual void \mbox{\hyperlink{class_supply_wagon_a320a3c29bb4d5790c8885a44d33995ca}{set\+Sup}} (\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$sup)=0
 \begin{DoxyCompactList}\small\item\em initialize the supp variable. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} $\ast$ \mbox{\hyperlink{class_supply_wagon_af69d62bb4694f936f3cbd7741310c049}{clone}} ()=0
 \begin{DoxyCompactList}\small\item\em Clone the Supply Wagon object. \end{DoxyCompactList}\item 
@@ -18,9 +27,16 @@ virtual \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyp
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_supply_wagon_a079a6516952d04103f6a04c186bfab1d}\label{class_supply_wagon_a079a6516952d04103f6a04c186bfab1d}} 
-\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ {\bfseries supp}
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_supply_wagon_a079a6516952d04103f6a04c186bfab1d}{supp}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract Prototype class \mbox{\hyperlink{class_supply_wagon}{Supply\+Wagon}} to serve as the base class for all derived concrete prototypes. 
+
+\begin{DoxyAuthor}{Author}
+Ronin Brookes 19069686 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Function Documentation}
@@ -37,9 +53,10 @@ Clone the Supply Wagon object.
 \begin{DoxyReturn}{Returns}
 the new Supply Wagon clone. 
 \end{DoxyReturn}
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
+
+
+Implemented in \mbox{\hyperlink{class_food_wagon_a550adc0ae4a83e3bc77029b2f4a68117}{Food\+Wagon}}, \mbox{\hyperlink{class_medical_wagon_a67be834f140ca381ef24148bb5f96055}{Medical\+Wagon}}, and \mbox{\hyperlink{class_weapon_wagon_ad4ef7c577dcccfe347449f32961b3766}{Weapon\+Wagon}}.
+
 \mbox{\Hypertarget{class_supply_wagon_afefd7d0905062ed7aa3c0166a2c8c58f}\label{class_supply_wagon_afefd7d0905062ed7aa3c0166a2c8c58f}} 
 \index{SupplyWagon@{SupplyWagon}!getSupplies@{getSupplies}}
 \index{getSupplies@{getSupplies}!SupplyWagon@{SupplyWagon}}
@@ -53,14 +70,15 @@ Return the supp variable.
 \begin{DoxyReturn}{Returns}
 returns the supp variable. Returns the necessary supplies. 
 \end{DoxyReturn}
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
-\mbox{\Hypertarget{class_supply_wagon_a7745c14896057f3ddca58ec9a45006a5}\label{class_supply_wagon_a7745c14896057f3ddca58ec9a45006a5}} 
+
+
+Implemented in \mbox{\hyperlink{class_food_wagon_ac2730db8bcaa320e6fd2db30432829ca}{Food\+Wagon}}, \mbox{\hyperlink{class_medical_wagon_a2de4474916a7ea70de357878b8bb7e17}{Medical\+Wagon}}, and \mbox{\hyperlink{class_weapon_wagon_a2485f967a02e4c9305fb67d1254872dd}{Weapon\+Wagon}}.
+
+\mbox{\Hypertarget{class_supply_wagon_a320a3c29bb4d5790c8885a44d33995ca}\label{class_supply_wagon_a320a3c29bb4d5790c8885a44d33995ca}} 
 \index{SupplyWagon@{SupplyWagon}!setSup@{setSup}}
 \index{setSup@{setSup}!SupplyWagon@{SupplyWagon}}
 \doxysubsubsection{\texorpdfstring{setSup()}{setSup()}}
-{\footnotesize\ttfamily void Supply\+Wagon\+::set\+Sup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$}]{sup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Supply\+Wagon\+::set\+Sup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$}]{sup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -68,13 +86,23 @@ initialize the supp variable.
 
 
 \begin{DoxyParams}{Parameters}
-{\em sup} & is used to set the supp variable, \\
+{\em sup} & used to set the supp variable. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
 
+
+Implemented in \mbox{\hyperlink{class_food_wagon_aa000da7fde7414580a3fdc65e713be91}{Food\+Wagon}}, \mbox{\hyperlink{class_medical_wagon_adc38a8ac1b0eae048f125fa21893912a}{Medical\+Wagon}}, and \mbox{\hyperlink{class_weapon_wagon_ab84a35cb1aed2266800194a35bcf38a2}{Weapon\+Wagon}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_supply_wagon_a079a6516952d04103f6a04c186bfab1d}\label{class_supply_wagon_a079a6516952d04103f6a04c186bfab1d}} 
+\index{SupplyWagon@{SupplyWagon}!supp@{supp}}
+\index{supp@{supp}!SupplyWagon@{SupplyWagon}}
+\doxysubsubsection{\texorpdfstring{supp}{supp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}}$\ast$ Supply\+Wagon\+::supp}
+
+pointer to the supplies in the wagon 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

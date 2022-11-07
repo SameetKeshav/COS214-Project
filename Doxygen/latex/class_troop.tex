@@ -19,7 +19,7 @@ Inheritance diagram for Troop\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_troop_ad9d1c39802d23d351a474aacb52b37c8}\label{class_troop_ad9d1c39802d23d351a474aacb52b37c8}} 
-{\bfseries Troop} (string \mbox{\hyperlink{class_bannerman_ad7c96e82b0a271e7bd042c0cdb9775fa}{name}}, int favor, int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}, int Medical, int \mbox{\hyperlink{class_bannerman_aa9c6fea3fb600df01d45560f5bf26185}{HP}}, \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$war\+Zone, \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$\mbox{\hyperlink{class_troop_ac023212ca342925a19179031a4aab8ee}{strategy}}, \mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}, bool \mbox{\hyperlink{class_bannerman_a36bfbb85d967236f058409fc60c5220c}{assassin}}, int \mbox{\hyperlink{class_troop_a96abe8484c1eb6531d973bf3162dced9}{size}})
+{\bfseries Troop} (string \mbox{\hyperlink{class_bannerman_ad7c96e82b0a271e7bd042c0cdb9775fa}{name}}, int favor, int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}, int Medical, int \mbox{\hyperlink{class_bannerman_aa9c6fea3fb600df01d45560f5bf26185}{HP}}, \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$\mbox{\hyperlink{class_troop_ae842d48fff559daa14b850245d2fb567}{war\+Zone}}, \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$\mbox{\hyperlink{class_troop_ac023212ca342925a19179031a4aab8ee}{strategy}}, \mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}, bool \mbox{\hyperlink{class_bannerman_a36bfbb85d967236f058409fc60c5220c}{assassin}}, int \mbox{\hyperlink{class_troop_a96abe8484c1eb6531d973bf3162dced9}{size}})
 \begin{DoxyCompactList}\small\item\em Constructor. Initializes the name; favour; num\+Food; Medical; HP; war\+Zone; strategy; m; assassin and size variables of the troop. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_troop_a6c6a0b620d2a7cbd8d513cfb86833606}{get\+HP}} () override
 \begin{DoxyCompactList}\small\item\em Returns the troop\textquotesingle{}s HP. \end{DoxyCompactList}\item 
@@ -45,8 +45,8 @@ void \mbox{\hyperlink{class_troop_a3d047fc61837848dc8c0724ff81a0eaa}{increase\+F
 \begin{DoxyCompactList}\small\item\em Increases the loyalty favour level of the troop by 1. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_troop_a6a8b1b705728e982a51aa84c18f2561d}{decrease\+Favour}} () override
 \begin{DoxyCompactList}\small\item\em Decreases the loyalty favour level of the troop by 1. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_troop_a18d453e63faf087978514658361a5e78}{get\+Favour}} ()
-\begin{DoxyCompactList}\small\item\em Abstract. returns the favour of the bannerman. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_troop_af4c21168bb79f33474d07b3155db224d}{get\+Favour}} () override
+\begin{DoxyCompactList}\small\item\em Returns the the loyalty favour levels variable of the \mbox{\hyperlink{class_troop}{Troop}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_troop_a7465cdfbb5500255ce5449d315d6a632}{increase\+HP}} (int boost) override
 \begin{DoxyCompactList}\small\item\em increases the HP of the troop. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_troop_ab6c541f28f5221177c3b614dbcb341db}{get\+Damage}} () override
@@ -63,16 +63,20 @@ void \mbox{\hyperlink{class_troop_acf950ac065019b0ca77847970a528636}{set\+Weapon
 \begin{DoxyCompactList}\small\item\em Sets the number of weapon supplies the troop has. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_troop_ad90fb0d46884a81b7c4e32f84212814d}{set\+Food}} (int \mbox{\hyperlink{class_bannerman_a494fe314830fa480a9d6f729a65489c6}{num\+Food}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of food supplies the troop has. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_troop_ac6d7f09587feacef2b70938ba7b2defb}{decrease\+Power}} (int x)
+void \mbox{\hyperlink{class_troop_af297ca555bd684563481795494a54d26}{decrease\+Power}} (int x) override
 \begin{DoxyCompactList}\small\item\em Decreases the damage capability of the troop. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_troop_a3713f9a30a83751311c1732ec2b90ecc}{set\+Medical}} (int \mbox{\hyperlink{class_bannerman_aac3030f4cb8b7ee8722a298e070f7961}{num\+Medical}}) override
 \begin{DoxyCompactList}\small\item\em Sets the number of medical supplies the troop has. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_troop_ad4c96d68362f0220d29d5e156eedafba}{set\+Raven}} (list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$ r)
+void \mbox{\hyperlink{class_troop_a4900ea9add8b0e6d2fc3d74b2e0fce6c}{set\+Raven}} (list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$ r) override
 \begin{DoxyCompactList}\small\item\em Assigns a list of \mbox{\hyperlink{class_raven}{Raven}} Observers to the troop\textquotesingle{}s raven\+List. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_troop_ad9a0a33641d779f0e58bbecd771e5baf}{set\+Master}} (\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}})
+void \mbox{\hyperlink{class_troop_a9f5a5c26cfbe10609ccd919dc4e3eb77}{set\+Master}} (\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$\mbox{\hyperlink{class_bannerman_a57933245345ac0643c872f7a5f6d6f3b}{m}}) override
 \begin{DoxyCompactList}\small\item\em Assigns a Masterof\+Coin mediator to ensure that the troop has the supplies it needs. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_troop_a812ffd2ac57069689116fdfa921aa1dd}{$\sim$\+Troop}} ()
-\end{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_troop_a983d374bdbb54dccfb781cb0306fe382}{get\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Returns the name of this \mbox{\hyperlink{class_troop}{Troop}} object. \end{DoxyCompactList}\item 
+list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ \mbox{\hyperlink{class_troop_a50b0949ff8946f205b931295f659726a}{get\+Troops}} () override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bannerman}{Bannerman}} pure virtual method, not used by troop. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -81,6 +85,8 @@ int \mbox{\hyperlink{class_troop_a96abe8484c1eb6531d973bf3162dced9}{size}}
 \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_troop_ac023212ca342925a19179031a4aab8ee}{strategy}}
 \item 
 int \mbox{\hyperlink{class_troop_af0f4a70511ca8a64c6e7d032e15145b5}{damage}}
+\item 
+\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_troop_ae842d48fff559daa14b850245d2fb567}{war\+Zone}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -207,11 +213,11 @@ decreases the num\+Medical variable of the troop by 1.
 
 Implements \mbox{\hyperlink{class_bannerman_a0f16bb2b3ab703469ec9f05e81d2cefa}{Bannerman}}.
 
-\mbox{\Hypertarget{class_troop_ac6d7f09587feacef2b70938ba7b2defb}\label{class_troop_ac6d7f09587feacef2b70938ba7b2defb}} 
+\mbox{\Hypertarget{class_troop_af297ca555bd684563481795494a54d26}\label{class_troop_af297ca555bd684563481795494a54d26}} 
 \index{Troop@{Troop}!decreasePower@{decreasePower}}
 \index{decreasePower@{decreasePower}!Troop@{Troop}}
 \doxysubsubsection{\texorpdfstring{decreasePower()}{decreasePower()}}
-{\footnotesize\ttfamily void Troop\+::decrease\+Power (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Troop\+::decrease\+Power (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -276,16 +282,19 @@ damage.
 
 Implements \mbox{\hyperlink{class_bannerman_a1a5d6adb57fcf51eb355cdef86b72cb7}{Bannerman}}.
 
-\mbox{\Hypertarget{class_troop_a18d453e63faf087978514658361a5e78}\label{class_troop_a18d453e63faf087978514658361a5e78}} 
+\mbox{\Hypertarget{class_troop_af4c21168bb79f33474d07b3155db224d}\label{class_troop_af4c21168bb79f33474d07b3155db224d}} 
 \index{Troop@{Troop}!getFavour@{getFavour}}
 \index{getFavour@{getFavour}!Troop@{Troop}}
 \doxysubsubsection{\texorpdfstring{getFavour()}{getFavour()}}
-{\footnotesize\ttfamily int Troop\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily int Troop\+::get\+Favour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Abstract. returns the favour of the bannerman. 
+Returns the the loyalty favour levels variable of the \mbox{\hyperlink{class_troop}{Troop}} object. 
 
+\begin{DoxyReturn}{Returns}
+favour 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_bannerman_ad643991fd0fde3e08a5fd66054acf87e}{Bannerman}}.
@@ -341,6 +350,23 @@ num\+Medical.
 
 Implements \mbox{\hyperlink{class_bannerman_a9bc89447b53e38cd0e9d6b5962419587}{Bannerman}}.
 
+\mbox{\Hypertarget{class_troop_a983d374bdbb54dccfb781cb0306fe382}\label{class_troop_a983d374bdbb54dccfb781cb0306fe382}} 
+\index{Troop@{Troop}!getName@{getName}}
+\index{getName@{getName}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Troop\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the name of this \mbox{\hyperlink{class_troop}{Troop}} object. 
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a53d7285a1a04a5b96f4377afc39f1221}{Bannerman}}.
+
 \mbox{\Hypertarget{class_troop_a7ee3bae0157d2a83c3e5b396a2b5ee91}\label{class_troop_a7ee3bae0157d2a83c3e5b396a2b5ee91}} 
 \index{Troop@{Troop}!getSize@{getSize}}
 \index{getSize@{getSize}!Troop@{Troop}}
@@ -354,6 +380,23 @@ Returns the troop\textquotesingle{}s size.
 \begin{DoxyReturn}{Returns}
 size. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_troop_a50b0949ff8946f205b931295f659726a}\label{class_troop_a50b0949ff8946f205b931295f659726a}} 
+\index{Troop@{Troop}!getTroops@{getTroops}}
+\index{getTroops@{getTroops}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{getTroops()}{getTroops()}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ Troop\+::get\+Troops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_bannerman}{Bannerman}} pure virtual method, not used by troop. 
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_bannerman_a258e604dd30cb0e2e5460b681dc5823a}{Bannerman}}.
+
 \mbox{\Hypertarget{class_troop_a05179a27fd117d09077708d7322b2493}\label{class_troop_a05179a27fd117d09077708d7322b2493}} 
 \index{Troop@{Troop}!getWeapons@{getWeapons}}
 \index{getWeapons@{getWeapons}!Troop@{Troop}}
@@ -461,11 +504,11 @@ Sets the number of food supplies the troop has.
 
 Implements \mbox{\hyperlink{class_bannerman_ae820506437fc6806b77904186c7b3d10}{Bannerman}}.
 
-\mbox{\Hypertarget{class_troop_ad9a0a33641d779f0e58bbecd771e5baf}\label{class_troop_ad9a0a33641d779f0e58bbecd771e5baf}} 
+\mbox{\Hypertarget{class_troop_a9f5a5c26cfbe10609ccd919dc4e3eb77}\label{class_troop_a9f5a5c26cfbe10609ccd919dc4e3eb77}} 
 \index{Troop@{Troop}!setMaster@{setMaster}}
 \index{setMaster@{setMaster}!Troop@{Troop}}
 \doxysubsubsection{\texorpdfstring{setMaster()}{setMaster()}}
-{\footnotesize\ttfamily void Troop\+::set\+Master (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Troop\+::set\+Master (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_master_of_coin}{Master\+Of\+Coin}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -499,11 +542,11 @@ Sets the number of medical supplies the troop has.
 
 Implements \mbox{\hyperlink{class_bannerman_a288a8a59848ff68be805b540cbe601ea}{Bannerman}}.
 
-\mbox{\Hypertarget{class_troop_ad4c96d68362f0220d29d5e156eedafba}\label{class_troop_ad4c96d68362f0220d29d5e156eedafba}} 
+\mbox{\Hypertarget{class_troop_a4900ea9add8b0e6d2fc3d74b2e0fce6c}\label{class_troop_a4900ea9add8b0e6d2fc3d74b2e0fce6c}} 
 \index{Troop@{Troop}!setRaven@{setRaven}}
 \index{setRaven@{setRaven}!Troop@{Troop}}
 \doxysubsubsection{\texorpdfstring{setRaven()}{setRaven()}}
-{\footnotesize\ttfamily void Troop\+::set\+Raven (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Troop\+::set\+Raven (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_raven}{Raven}} $\ast$ $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -558,7 +601,13 @@ The number of soldiers in the troop \mbox{\Hypertarget{class_troop_ac023212ca342
 \doxysubsubsection{\texorpdfstring{strategy}{strategy}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}}$\ast$ Troop\+::strategy\hspace{0.3cm}{\ttfamily [private]}}
 
-The attack strategy used by the troop in battle 
+The attack strategy used by the troop in battle \mbox{\Hypertarget{class_troop_ae842d48fff559daa14b850245d2fb567}\label{class_troop_ae842d48fff559daa14b850245d2fb567}} 
+\index{Troop@{Troop}!warZone@{warZone}}
+\index{warZone@{warZone}!Troop@{Troop}}
+\doxysubsubsection{\texorpdfstring{warZone}{warZone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}$\ast$ Troop\+::war\+Zone\hspace{0.3cm}{\ttfamily [private]}}
+
+The war theatre at which this troop engages in battle 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -10,7 +10,7 @@
 class BattleField :public Strategy {
 
 public:
-	/** @todo  constructor. initializes stealth and calls base class constructor to
+	/** @brief  constructor. initializes stealth and calls base class constructor to
 	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
 	 * @param myKingdom - Kingdom pointer of attacking Bannerman's Kingdom.
 	 * @param enemyKingdom - Kingdom pointer of enemyBannerman's Kingdom.
@@ -23,13 +23,13 @@ public:
 	 * @param hb - Caretaker for memento implementation.
 	*/
 	BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
-	/** @todo makes two bannerman from enemy kingdoms fight each other until one loses
+	/** @brief makes two bannerman from enemy kingdoms fight each other until one loses
 	 * @param myBannerman - attacking bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.
 	 * @return battle result as a boolean with true implying the attacking bannerman object
 	 * won and false implying the opposite**/
 	bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman);
-	/** @todo destructor.**/
+	/** @brief destructor.**/
 	~BattleField();
 };
 

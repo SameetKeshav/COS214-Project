@@ -15,9 +15,9 @@ public:
 	/** @brief Default constructor. initializes context to null.
 	*/
 	FailedState();
-	/** @todo prints out string stating that current State is FailedState**/
+	/** @brief prints out string stating that current State is FailedState**/
 	void decreaseCurrency();
-	/** @todo tells what the State of the Economy is.
+	/** @brief tells what the State of the Economy is.
 	* @return returns a string that says in text what the State is.**/
 	string getState();
 };

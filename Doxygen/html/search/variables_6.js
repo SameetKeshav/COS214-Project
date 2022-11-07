@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['groundforces_0',['groundForces',['../class_commander.html#aa61af72fdcd7ffdf33158521c47754cf',1,'Commander']]]
+  ['greg_0',['Greg',['../class_strategy.html#a1ef2d0a118aa3f55360c21d39f65e830',1,'Strategy']]],
+  ['groundforces_1',['groundForces',['../class_commander.html#a7000d8ae58cc827a81746eed8540a3de',1,'Commander']]]
 ];

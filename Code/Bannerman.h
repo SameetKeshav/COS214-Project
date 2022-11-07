@@ -87,7 +87,7 @@ public:
 */
     virtual void changeStrategy(Strategy* strategy) = 0;
 
-    /**@brief Abstract. uses strategy to attack another kingdom.
+    /** @brief Abstract. uses strategy to attack another kingdom.
  * @param myBannerman - The attacking bannerman object.
  * @param enemyBannerman - The bannerman object being attacked.
 */
@@ -103,18 +103,18 @@ public:
         */
     virtual string getName() = 0;
 
-    /**@brief Abstract. Accessor that returns the name of the component.
+    /** @brief Abstract. Accessor that returns the name of the component.
      * @return The name of the bannerman.
         */
     virtual int getHP() = 0;
 
-    /**@brief Abstract. Accessor that returns the damage capability of the bannerman.
+    /** @brief Abstract. Accessor that returns the damage capability of the bannerman.
  * @return The damage of the bannerman.
     */
     virtual int getDamage() = 0;
 
 
-    /**@brief Abstract. Increases the damage capability of the bannerman.
+    /** @brief Abstract. Increases the damage capability of the bannerman.
 * @param boost - the number by which to increase damage
      * */
 
@@ -125,42 +125,42 @@ public:
 */
     virtual void decreasePower(int x) = 0;
 
-    /**@brief Abstract. Decreases the number of weapons that the bannerman has */
+    /** @brief Abstract. Decreases the number of weapons that the bannerman has */
     virtual void decreaseWeapons() = 0;
 
-    /**@brief Abstract. Decreases the number of food supplies that the bannerman has */
+    /** @brief Abstract. Decreases the number of food supplies that the bannerman has */
     virtual void decreaseFood() = 0;
 
-    /**@brief Abstract. Decreases the number of medical supplies that the bannerman has */
+    /** @brief Abstract. Decreases the number of medical supplies that the bannerman has */
     virtual void decreaseMedical() = 0;
 
-    /**@brief Abstract. Accessor that returns the number of weapons of the bannerman.
+    /** @brief Abstract. Accessor that returns the number of weapons of the bannerman.
 * @return The numWeapons of the bannerman.
 */
     virtual int getWeapons() = 0;
 
-    /**@brief Abstract. Accessor that returns number of food supplies that the bannerman has.
+    /** @brief Abstract. Accessor that returns number of food supplies that the bannerman has.
 * @return The numFood of the bannerman.
 */
     virtual int getFood() = 0;
 
-    /**@brief Abstract. Accessor that returns the number of medical supplies that the bannerman has.
+    /** @brief Abstract. Accessor that returns the number of medical supplies that the bannerman has.
 * @return The numMedical of the bannerman.
 */
     virtual int getMedical() = 0;
 
 
-    /**@brief Abstract. Sets the  number of weapons of the bannerman
+    /** @brief Abstract. Sets the  number of weapons of the bannerman
         @param numWeapons - The new name the numWeapons should have
         */
     virtual void setWeapons(int numWeapons) = 0;
 
-    /**@brief Abstract. Sets the number of food supplies that the bannerman has.
+    /** @brief Abstract. Sets the number of food supplies that the bannerman has.
     @param numFood - The new numFood the component should have
     */
     virtual void setFood(int numFood) = 0;
 
-    /**@brief Abstract. Sets the number of medical supplies that the bannerman has.
+    /** @brief Abstract. Sets the number of medical supplies that the bannerman has.
     @param numMedical - The new numMedical the component should have
     */
     virtual void setMedical(int numMedical) = 0;
@@ -178,7 +178,7 @@ public:
     /** @brief Abstract. returns the favour of the bannerman.
     */
     virtual int getFavour() = 0;
-    /**@brief Default destructor.
+    /** @brief Default destructor.
 */
 
     ~Bannerman();

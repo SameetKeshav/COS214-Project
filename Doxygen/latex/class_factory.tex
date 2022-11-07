@@ -1,5 +1,14 @@
 \hypertarget{class_factory}{}\doxysection{Factory Class Reference}
 \label{class_factory}\index{Factory@{Factory}}
+
+
+\mbox{\hyperlink{class_factory}{Factory}} class to serve as a base class for all factory concrete classes used to create supplies.  
+
+
+
+
+{\ttfamily \#include $<$Factory.\+h$>$}
+
 Inheritance diagram for Factory\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,36 +18,29 @@ Inheritance diagram for Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation}} ()
-\begin{DoxyCompactList}\small\item\em Calls the method needed to manufacture the supplies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_factory_a1b1c29e611333ec1b350b75cea18e43d}\label{class_factory_a1b1c29e611333ec1b350b75cea18e43d}} 
+void {\bfseries operation} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation()}} is the template Method that calls \mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{make()}}, indirectly manufacturing the supplies. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_factory_a02d52979c980f3e841f4c759c03fcd61}{get\+Supply}} ()
-\begin{DoxyCompactList}\small\item\em Returns supplies. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_factory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory}} ()
-\begin{DoxyCompactList}\small\item\em Deletes allocated memory to supply variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em getsupply() is the get Method used to get the supply variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_factory_a8f71456f48e4df402c778a44191ff40e}\label{class_factory_a8f71456f48e4df402c778a44191ff40e}} 
+virtual {\bfseries $\sim$\+Factory} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_factory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory()}} is the destructer for the \mbox{\hyperlink{class_factory}{Factory}} class. It is never implemented as its derived classes delete the supply pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{make}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{make()}} is the factory Method called in \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation()}} to make the new supplies. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_factory_a1670104f6052c6e4fb233af0a29fa9f0}\label{class_factory_a1670104f6052c6e4fb233af0a29fa9f0}} 
-\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ {\bfseries supply}
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_factory_a1670104f6052c6e4fb233af0a29fa9f0}{supply}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_factory_a8f71456f48e4df402c778a44191ff40e}\label{class_factory_a8f71456f48e4df402c778a44191ff40e}} 
-\index{Factory@{Factory}!````~Factory@{$\sim$Factory}}
-\index{````~Factory@{$\sim$Factory}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{$\sim$Factory()}{~Factory()}}
-{\footnotesize\ttfamily Factory\+::$\sim$\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Deletes allocated memory to supply variable. 
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_factory}{Factory}} class to serve as a base class for all factory concrete classes used to create supplies. 
 
 \begin{DoxyAuthor}{Author}
 Ronin Brookes 19069686 
@@ -54,14 +56,11 @@ Ronin Brookes 19069686
 
 
 
-Returns supplies. 
+getsupply() is the get Method used to get the supply variable. 
 
 \begin{DoxyReturn}{Returns}
-returns the supplies the \mbox{\hyperlink{class_factory}{Factory}} manufactured 
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} pointer to the newly created supplies. 
 \end{DoxyReturn}
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
 \mbox{\Hypertarget{class_factory_ad6810ce8fe545d508c3f0db8079f7727}\label{class_factory_ad6810ce8fe545d508c3f0db8079f7727}} 
 \index{Factory@{Factory}!make@{make}}
 \index{make@{make}!Factory@{Factory}}
@@ -70,22 +69,25 @@ Ronin Brookes 19069686
 
 
 
+\mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{make()}} is the factory Method called in \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation()}} to make the new supplies. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} pointer to the newly created supplies. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{class_food_fac_aefe22538ae07c92211f99521873db12c}{Food\+Fac}}, \mbox{\hyperlink{class_medical_fac_aadfa87f2e0de7a3ac66e291c561f3105}{Medical\+Fac}}, and \mbox{\hyperlink{class_weapons_fac_a47a43b9a99d4ace910a315ada5412177}{Weapons\+Fac}}.
 
-\mbox{\Hypertarget{class_factory_a1b1c29e611333ec1b350b75cea18e43d}\label{class_factory_a1b1c29e611333ec1b350b75cea18e43d}} 
-\index{Factory@{Factory}!operation@{operation}}
-\index{operation@{operation}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{operation()}{operation()}}
-{\footnotesize\ttfamily void Factory\+::operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_factory_a1670104f6052c6e4fb233af0a29fa9f0}\label{class_factory_a1670104f6052c6e4fb233af0a29fa9f0}} 
+\index{Factory@{Factory}!supply@{supply}}
+\index{supply@{supply}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{supply}{supply}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}}$\ast$ Factory\+::supply\hspace{0.3cm}{\ttfamily [private]}}
 
-Calls the method needed to manufacture the supplies. 
-
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
-
+pointer to the supplies 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

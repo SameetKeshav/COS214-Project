@@ -103,27 +103,30 @@ $(document).ready(function(){initNavTree('_historian_8h_source.html',''); initRe
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define HISTORIAN_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Bannerman.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;History.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_historian.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_historian.html">Historian</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* bannerman;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="class_historian.html">Historian</a>(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* b);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="class_history.html">History</a>* <a class="code hl_function" href="class_historian.html#a62e14ea0cf82e187826bafe9a7a07d62">setAlly</a>();</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_history.html">History</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_historian.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_historian.html">Historian</a> { </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_historian.html#a22f1441ec330a462c538f1084a60254d">   13</a></span>    <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_variable" href="class_historian.html#a22f1441ec330a462c538f1084a60254d">bannerman</a>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_function" href="class_historian.html#af232c57ba998520e35c869648f0ffdbf">restoreAlly</a>(<a class="code hl_class" href="class_history.html">History</a>* h);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_historian.html">~Historian</a>(){<span class="keyword">delete</span> bannerman;};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_historian.html#a04c73b32b1936ed98851be4bc17b993f">setAlly</a>(<a class="code hl_class" href="class_bannerman.html">Bannerman</a>* b);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_history.html">History</a>* <a class="code hl_function" href="class_historian.html#a5a78b8f03d554d5e3867906d3d2d6e63">Store</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_bannerman.html">Bannerman</a>* <a class="code hl_function" href="class_historian.html#af232c57ba998520e35c869648f0ffdbf">restoreAlly</a>(<a class="code hl_class" href="class_history.html">History</a>* h); </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_historian.html#a5171a3eb32a296b1911ea218030af8f5">   36</a></span>    <a class="code hl_function" href="class_historian.html#a5171a3eb32a296b1911ea218030af8f5">~Historian</a>(){};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_bannerman_html"><div class="ttname"><a href="class_bannerman.html">Bannerman</a></div><div class="ttdef"><b>Definition:</b> Bannerman.h:18</div></div>
-<div class="ttc" id="aclass_historian_html"><div class="ttname"><a href="class_historian.html">Historian</a></div><div class="ttdef"><b>Definition:</b> Historian.h:5</div></div>
-<div class="ttc" id="aclass_historian_html_a62e14ea0cf82e187826bafe9a7a07d62"><div class="ttname"><a href="class_historian.html#a62e14ea0cf82e187826bafe9a7a07d62">Historian::setAlly</a></div><div class="ttdeci">History * setAlly()</div><div class="ttdoc">set the memento object of the defecting bannerman</div><div class="ttdef"><b>Definition:</b> Historian.cpp:11</div></div>
-<div class="ttc" id="aclass_historian_html_af232c57ba998520e35c869648f0ffdbf"><div class="ttname"><a href="class_historian.html#af232c57ba998520e35c869648f0ffdbf">Historian::restoreAlly</a></div><div class="ttdeci">Bannerman * restoreAlly(History *h)</div><div class="ttdoc">return the bannerman that defected</div><div class="ttdef"><b>Definition:</b> Historian.cpp:19</div></div>
-<div class="ttc" id="aclass_history_html"><div class="ttname"><a href="class_history.html">History</a></div><div class="ttdef"><b>Definition:</b> History.h:6</div></div>
+<div class="ttc" id="aclass_historian_html"><div class="ttname"><a href="class_historian.html">Historian</a></div><div class="ttdef"><b>Definition:</b> Historian.h:6</div></div>
+<div class="ttc" id="aclass_historian_html_a04c73b32b1936ed98851be4bc17b993f"><div class="ttname"><a href="class_historian.html#a04c73b32b1936ed98851be4bc17b993f">Historian::setAlly</a></div><div class="ttdeci">void setAlly(Bannerman *b)</div><div class="ttdoc">sets the bannerman variable</div><div class="ttdef"><b>Definition:</b> Historian.cpp:3</div></div>
+<div class="ttc" id="aclass_historian_html_a22f1441ec330a462c538f1084a60254d"><div class="ttname"><a href="class_historian.html#a22f1441ec330a462c538f1084a60254d">Historian::bannerman</a></div><div class="ttdeci">Bannerman * bannerman</div><div class="ttdoc">The originator class in the memento design pattern.</div><div class="ttdef"><b>Definition:</b> Historian.h:13</div></div>
+<div class="ttc" id="aclass_historian_html_a5171a3eb32a296b1911ea218030af8f5"><div class="ttname"><a href="class_historian.html#a5171a3eb32a296b1911ea218030af8f5">Historian::~Historian</a></div><div class="ttdeci">~Historian()</div><div class="ttdoc">the destructor.</div><div class="ttdef"><b>Definition:</b> Historian.h:36</div></div>
+<div class="ttc" id="aclass_historian_html_a5a78b8f03d554d5e3867906d3d2d6e63"><div class="ttname"><a href="class_historian.html#a5a78b8f03d554d5e3867906d3d2d6e63">Historian::Store</a></div><div class="ttdeci">History * Store()</div><div class="ttdoc">stores the bannerman in a memento object (history).</div><div class="ttdef"><b>Definition:</b> Historian.cpp:7</div></div>
+<div class="ttc" id="aclass_historian_html_af232c57ba998520e35c869648f0ffdbf"><div class="ttname"><a href="class_historian.html#af232c57ba998520e35c869648f0ffdbf">Historian::restoreAlly</a></div><div class="ttdeci">Bannerman * restoreAlly(History *h)</div><div class="ttdoc">reverts the bannerman that was stored to original state for when they return.</div><div class="ttdef"><b>Definition:</b> Historian.cpp:11</div></div>
+<div class="ttc" id="aclass_history_html"><div class="ttname"><a href="class_history.html">History</a></div><div class="ttdef"><b>Definition:</b> History.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

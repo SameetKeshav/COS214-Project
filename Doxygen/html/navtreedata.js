@@ -25,14 +25,13 @@
 var NAVTREE =
 [
   [ "COS214PROJECT", "index.html", [
-    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -45,7 +44,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ambush_8h_source.html",
-"class_troop.html#a7ee3bae0157d2a83c3e5b396a2b5ee91"
+"class_state.html#ae8c1972e00c66761620cf9c3d4d8cb49"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
