@@ -157,6 +157,7 @@ public:
 */
     void setMedical(int numMedical) override;
 
+
 /** @brief Assigns a list of Raven Observers to the troop's ravenList.
 * @param r - the list of Raven Observers to attach to the troop.
 */

@@ -17,6 +17,7 @@ class MasterOfCoin;
 class Strategy;
 class Bannerman: public WarIndicators {
 
+
 protected:
 
     /**Name of the bannerman */
