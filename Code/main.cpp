@@ -771,21 +771,6 @@ int main(){
 //    MorganUnitTesting();
 //    JuliannaUnitTesting();
 
-    //deletes
-//    delete Dura;
-//    delete DuraEco;
-//    delete Preadora;
-//    delete PreadoraEco;
-//    delete enemy;
-//    delete fighter;
-//    delete strat;
-//    delete DuraState;
-//    delete PreadoraState;
-//    delete warind;
-//    delete Greg;
-//    delete BookOfDura;
-//    delete t;
-//    delete r;
 
     return 0;
 }
