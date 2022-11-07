@@ -1,0 +1,385 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: System
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target System
+
+
+#############################################
+# Order-only phony target for System
+
+build cmake_object_order_depends_target_System: phony || CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Ambush.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Ambush.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Ambush.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Assassinate.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Assassinate.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Assassinate.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Bannerman.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Bannerman.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Bannerman.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/BattleField.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/BattleField.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/BattleField.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Commander.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Commander.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Commander.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Conditions.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Conditions.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Conditions.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/ConIterator.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/ConIterator.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/ConIterator.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Economy.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Economy.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Economy.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Factory.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Factory.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Factory.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/FailedState.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/FailedState.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/FailedState.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/FoodFac.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/FoodFac.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/FoodFac.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/FoodSupp.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/FoodSupp.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/FoodSupp.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/FoodWagon.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/FoodWagon.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/FoodWagon.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/HealthyState.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/HealthyState.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/HealthyState.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Historian.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Historian.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Historian.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/History.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/History.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/History.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/HistoryBook.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/HistoryBook.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/HistoryBook.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Kingdom.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Kingdom.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Kingdom.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Location.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Location.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Location.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/main.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/main.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/MasterOfCoin.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/MasterOfCoin.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/MasterOfCoin.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/MedicalFac.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/MedicalFac.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/MedicalFac.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/MedicalSupp.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/MedicalSupp.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/MedicalSupp.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/MedicalWagon.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/MedicalWagon.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/MedicalWagon.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/sendRaven.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/sendRaven.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/sendRaven.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Siege.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Siege.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Siege.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/State.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/State.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/State.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Strategy.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Strategy.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Strategy.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Topology.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Topology.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Topology.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Troop.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Troop.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Troop.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/UnstableState.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/UnstableState.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/UnstableState.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/WarTheatre.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/WarTheatre.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/WarTheatre.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/WeaponsFac.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/WeaponsFac.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/WeaponsFac.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/WeaponSupp.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/WeaponSupp.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/WeaponSupp.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/WeaponWagon.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/WeaponWagon.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/WeaponWagon.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+build CMakeFiles/System.dir/Weather.cpp.o: CXX_COMPILER__System_Debug /Users/sameetkeshav/Desktop/University/COS$ 214/Practicals/Project/COS214-Project/System/Weather.cpp || cmake_object_order_depends_target_System
+  DEP_FILE = CMakeFiles/System.dir/Weather.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/."
+  OBJECT_DIR = CMakeFiles/System.dir
+  OBJECT_FILE_DIR = CMakeFiles/System.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target System
+
+
+#############################################
+# Link the executable System
+
+build System: CXX_EXECUTABLE_LINKER__System_Debug CMakeFiles/System.dir/Ambush.cpp.o CMakeFiles/System.dir/Assassinate.cpp.o CMakeFiles/System.dir/Bannerman.cpp.o CMakeFiles/System.dir/BattleField.cpp.o CMakeFiles/System.dir/Commander.cpp.o CMakeFiles/System.dir/Conditions.cpp.o CMakeFiles/System.dir/ConIterator.cpp.o CMakeFiles/System.dir/Economy.cpp.o CMakeFiles/System.dir/Factory.cpp.o CMakeFiles/System.dir/FailedState.cpp.o CMakeFiles/System.dir/FoodFac.cpp.o CMakeFiles/System.dir/FoodSupp.cpp.o CMakeFiles/System.dir/FoodWagon.cpp.o CMakeFiles/System.dir/HealthyState.cpp.o CMakeFiles/System.dir/Historian.cpp.o CMakeFiles/System.dir/History.cpp.o CMakeFiles/System.dir/HistoryBook.cpp.o CMakeFiles/System.dir/Kingdom.cpp.o CMakeFiles/System.dir/Location.cpp.o CMakeFiles/System.dir/main.cpp.o CMakeFiles/System.dir/MasterOfCoin.cpp.o CMakeFiles/System.dir/MedicalFac.cpp.o CMakeFiles/System.dir/MedicalSupp.cpp.o CMakeFiles/System.dir/MedicalWagon.cpp.o CMakeFiles/System.dir/sendRaven.cpp.o CMakeFiles/System.dir/Siege.cpp.o CMakeFiles/System.dir/State.cpp.o CMakeFiles/System.dir/Strategy.cpp.o CMakeFiles/System.dir/Topology.cpp.o CMakeFiles/System.dir/Troop.cpp.o CMakeFiles/System.dir/UnstableState.cpp.o CMakeFiles/System.dir/WarTheatre.cpp.o CMakeFiles/System.dir/WeaponsFac.cpp.o CMakeFiles/System.dir/WeaponSupp.cpp.o CMakeFiles/System.dir/WeaponWagon.cpp.o CMakeFiles/System.dir/Weather.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/System.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = System
+  TARGET_PDB = System.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System" -B"/Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sameetkeshav/Desktop/University/COS 214/Practicals/Project/COS214-Project/System/cmake-build-debug
+
+build all: phony System
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
