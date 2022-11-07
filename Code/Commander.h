@@ -131,7 +131,11 @@ public:
      */
     void decreaseFavour() override;
 
+    /** @brief Returns the sum of the loyalty favour levels variable of the bannerman objects in groundForce.
+     * @return favour
+ */
     int getFavour() override;
+
 
     /** @brief Sets the number of weapon supplies of the bannerman objects in groundForces.
 @param numWeapons - The new numWeapons bannerman objects in groundForces should have.
@@ -175,7 +179,10 @@ public:
 */
     void setStrategy(Strategy *s);
 
-    string getName();
+/** @brief Returns the name of this commander object.
+ * @return name
+ */
+string getName();
 };
 
 #endif
