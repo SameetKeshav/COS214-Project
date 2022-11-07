@@ -22,6 +22,7 @@ private:
     /**The damage capability which the troop has*/
     int damage;
 
+    /**The war theatre at which this troop engages in battle*/
     WarTheatre* warZone;
 public:
     /**
@@ -90,6 +91,9 @@ public:
 */
     void decreaseFavour() override;
 
+    /** @brief Returns the the loyalty favour levels variable of the Troop object.
+ * @return favour
+*/
     int getFavour() override;
 
     /** @brief increases the HP of the troop.
@@ -153,6 +157,7 @@ public:
 */
     void setMedical(int numMedical) override;
 
+
 /** @brief Assigns a list of Raven Observers to the troop's ravenList.
 * @param r - the list of Raven Observers to attach to the troop.
 */
@@ -166,6 +171,15 @@ public:
     /** Default destructor.
 */
     ~Troop();
+    /** @brief Returns the name of this Troop object.
+ * @return name
+ */
+    string getName() override;
+    /**
+     * @brief Bannerman pure virtual method, not used by troop
+     * @returns null
+     * */
+    list<Bannerman*> getTroops() override;
 };
 
 #endif

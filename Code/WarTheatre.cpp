@@ -24,7 +24,7 @@ char WarTheatre::decideVenue(Strategy* strategy)
 		setStrategy(strategy);
 		return  'c';
 	}
-   if (strategy->getStrategyName() == "Assassination") {
+   if (strategy->getStrategyName() == "Assassinate") {
 		setStrategy(strategy);
 		return  'd';
 	} else{
@@ -57,3 +57,7 @@ int WarTheatre::getDifficulty()
 	return difficulty;
 }
 
+void WarTheatre::setVenue(char v)
+{
+    venue = v;
+}

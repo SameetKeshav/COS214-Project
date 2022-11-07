@@ -9,7 +9,6 @@ MasterOfCoin::MasterOfCoin(Economy *economy, Raven *observer, Strategy* strategy
 
 void MasterOfCoin::notify(WarIndicators* sender)
 {
-
     if(sender == strategy)
     {
         decreaseCurrency();

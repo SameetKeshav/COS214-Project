@@ -1,9 +1,13 @@
 #include "Commander.h"
 #include "MasterOfCoin.h"
+#include "Troop.h"
 
 //Julianna added and changed constructor
 Commander::Commander(string n) :groundForces() {
     name = n;
+    groundForces.push_back(new Troop("Squadron 1", 7, 20, 18, 200, nullptr, nullptr, nullptr, true, 200));
+    groundForces.push_back(new Troop("Squadron 2", 7, 20, 18, 300, nullptr, nullptr, nullptr, true, 300));
+
 }
 
 Iterator* Commander::createIterator() {
@@ -20,25 +24,20 @@ void Commander::removeBannerman(Bannerman* x){
     groundForces.remove(x);
 }
 
-
 int Commander::getHP() {
-        int totalHP = 0;
+    int total=0;
+    Iterator* IT = createIterator();
 
-//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-//        totalHP+=(*it)->getHP();
-//
-        Iterator* IT = createIterator();
+    //total+=IT->Current()->getHP();
 
-        IT->Current();
-        totalHP+=IT->Current()->getHP();
-
-        while(IT->hasNext()){
-            IT->next();
-            totalHP+=IT->Current()->getHP();
-        }
-
-        return totalHP;
+    while (IT->hasNext()){
+        total+=IT->Current()->getHP();
+        IT->next();
     }
+    return total;
+
+}
+
 
 list<Bannerman*> Commander::getTroops(){
     return groundForces;
@@ -50,17 +49,20 @@ void Commander::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
 }
 
 int Commander::getDamage() {
-    int totalDamage = 0;
-
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        totalDamage+=(*it)->getDamage();
-
-    return totalDamage;
+    return groundForces.front()->getDamage();
 }
 
 void Commander::receiveDamage(int X){
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        (*it)->receiveDamage(X);
+//    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
+//        (*it)->receiveDamage(X);
+    if (X < 0){
+        X = 0;
+    }
+    if (groundForces.front()->getHP() > 0){
+        groundForces.front()->receiveDamage(X);
+    } else if (groundForces.back()->getHP() > 0){
+        groundForces.back()->receiveDamage(X);
+    }
 }
 
 int Commander::getWeapons() {
@@ -138,10 +140,11 @@ void Commander::decreaseFavour(){
 }
 
 int Commander::getFavour(){
-    int sum=0;
-    for (std::list<Bannerman*>::iterator it = groundForces.begin(); it != groundForces.end(); ++it)
-        sum+=(*it)->getFavour();
-    return sum;
+    if (groundForces.front()->getFavour() <= groundForces.back()->getFavour()) {
+        return groundForces.front()->getFavour();
+    }else{
+        return groundForces.back()->getFavour();
+    }
 }
 
 Commander::~Commander() {
@@ -185,4 +188,8 @@ void Commander::setMaster(MasterOfCoin* m){
 //fixed.
 void Commander::setStrategy(Strategy* s){
     this->changeStrategy(s);
+}
+
+string Commander::getName() {
+    return  name;
 }

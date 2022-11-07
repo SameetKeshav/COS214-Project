@@ -24,11 +24,13 @@ public:
 	virtual void setContext(Economy* context);
 	/** @todo Abstract method.**/
 	virtual void decreaseCurrency()=0;
-	/** @todo gets lower level state of economy with null being returned if no lower state is possible
+	/** @todo gets lower level state of Economy with null being returned if no lower State is possible
 	 * @return concrete State of Economy **/
 	virtual State* getDemotionState();
 	/** @todo destructor. deallocates context**/
 	virtual ~State();
+	/** @todo Abstract method.
+	 * @return name of State as a string.**/
 	virtual string getState()=0;
 };
 

@@ -9,6 +9,7 @@
     */
 class Siege :public Strategy {
 private:
+	/**skill level of Bannerman using this strategy**/
 	int stealth;
 public:
 	/** @todo  constructor. initializes stealth and calls base class constructor to

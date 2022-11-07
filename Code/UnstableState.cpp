@@ -5,8 +5,8 @@ UnstableState::UnstableState() {
 }
 
 void UnstableState::decreaseCurrency() {
-	context->removeCurrency(10);
-	if (context->getCurrency()<15)
+	context->removeCurrency(35);
+	if (context->getCurrency()<0)
 	{
 		context->SetState();
 	}

@@ -82,6 +82,10 @@ void Weather::sendScout()
 }
 
 void Weather::weatherReport() {
-     string output = "-----------------\nThe weather at the venue is as follows:\n ";
-      cout << output << "Temp: " << temp << "\nRain: " << rain << "\nWS: " << windspeed << "\n-----------------" <<endl;
+    string outR = "";
+    string output = "\t-----------------\nThe weather at the venue is as follows:\n";
+    if (rain) outR = "True";
+    else outR = "False";
+
+    cout << output << "Temp: " << temp << "\nRain: " << outR << "\nWindSpeed: " << windspeed << "\n\t-----------------" <<endl;
 }

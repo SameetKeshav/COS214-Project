@@ -17,6 +17,7 @@ class MasterOfCoin;
 class Strategy;
 class Bannerman: public WarIndicators {
 
+
 protected:
 
     /**Name of the bannerman */
@@ -41,9 +42,6 @@ protected:
     list<Raven*> ravenList;
 
 
-    /**Indicates whether or not the bannerman is an assassin */
-    bool assassin;
-
     /**Mediator for ensuring that the bannerman/army has the supplies it needs. */
     MasterOfCoin* m;
 
@@ -55,6 +53,8 @@ protected:
 
 
 public:
+    /**Indicates whether or not the bannerman is an assassin */
+    bool assassin;
     /** @brief Default constructor.
 */
     Bannerman();
@@ -101,7 +101,7 @@ public:
     /** @brief Accessor that returns the name of the bannerman.
      * @return The name of the bannerman.
         */
-    string getName();
+    virtual string getName() = 0;
 
     /**@brief Abstract. Accessor that returns the name of the component.
      * @return The name of the bannerman.
@@ -183,9 +183,9 @@ public:
 
     ~Bannerman();
 
-    /// @brief gets the list of troops under the commander (not abstract, but just inherited)
-    /// @return the list of troops varaible
-    list<Bannerman*> getTroops();
+    /// @brief Abstract. gets the list of troops under the commander
+    /// @return the list of troops variable
+    virtual list<Bannerman*> getTroops() = 0;
 };
 
 #endif

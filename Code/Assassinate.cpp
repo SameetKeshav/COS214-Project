@@ -12,11 +12,19 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		if (stealth>60)
 		{
             cout<<"The assassin was successful and disposed of the enemy's commander without being seen."<<endl;
-            myBannerman->increaseFavour();
+            list<Bannerman*> s = myKingdom->getKingdom();
+            list<Bannerman*> e = enemyKingdom->getKingdom();
+            for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it) {
+                (*it)->increaseFavour();
+            }
+            for (std::list<Bannerman*>::iterator it = e.begin(); it != e.end(); ++it){
+                (*it)->decreaseFavour();
+            }
 			enemyKingdom->remove(enemyBannerman);
 			myBannerman->increaseHP(5);
             cout<<"With the enemy at their door, some of the Preadorean soldiers decided to join the Dura troops. The rest took their oath."<<endl;
-		}
+            cout<<"The Preadora Kingdom has put a price on the Assassin's head, so he fled."<<endl;
+        }
 		else
 		{
             cout<<"The assassin was spotted and immediately executed."<<endl;
@@ -27,7 +35,7 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         bool winner = false;
         for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
             Bannerman* a = *it;
-            if (a->getFavour() >= 10){
+            if (a->getFavour() >= 9){
                 winner = true;
             }else{
                 winner = false;
@@ -41,7 +49,11 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         }
 
 	}
-	return alive;
+    bool b=alive;
+    if(alive){
+        alive=false;
+    }
+	return b;
 }
 
 Assassinate::~Assassinate(){

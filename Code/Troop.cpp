@@ -1,7 +1,7 @@
 #include "Troop.h"
-
+#include <random>
 Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre*warZone,Strategy*strategy,MasterOfCoin* m, bool assassin, int size): Bannerman(){
-
+    
     this->size = size;
 
     this->name =name;
@@ -12,11 +12,18 @@ Troop::Troop(string name, int favor, int numFood, int Medical, int HP,WarTheatre
     this->warZone =warZone;
     this->strategy =strategy;
     this->m =m;
-
+    srand(time(0));
+    damage = 12 + (rand() % 25);
     this->assassin = assassin;
+    numWeapons = 17;
 }
 int Troop::getHP() {
-    return this->HP;
+    if (HP < 0){
+        HP = 0;
+        return HP;
+    }else{
+        return HP;
+    }
 }
 
 void Troop::attach(Raven* o){
@@ -36,6 +43,10 @@ int Troop::getSize() {
 }
 void Troop::attack(Bannerman* myBannerman, Bannerman* enemyBannerman){
     strategy->attack(myBannerman,enemyBannerman);
+}
+
+string Troop::getName() {
+    return  name;
 }
 
 void Troop::increaseHP(int boost){
@@ -73,7 +84,7 @@ void Troop::decreaseMedical(){
 }
 
 void Troop::receiveDamage(int X) {
-    this->damage+=X;
+    this->HP-=X;
 }
 void Troop::setWeapons(int numWeapons){
     this->numWeapons  = numWeapons;
@@ -111,4 +122,9 @@ void Troop::decreasePower(int x){
 }
 Troop::~Troop() {
 
+}
+
+list<Bannerman*> Troop::getTroops(){
+    list<Bannerman*> empty;
+    return empty;
 }

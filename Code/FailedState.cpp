@@ -5,7 +5,7 @@ FailedState::FailedState() {
 }
 
 void FailedState::decreaseCurrency() {
-	context->removeCurrency(22);	
+	cout<<"State is bankrupt, cannot decrease currency"<<endl;	
 }
 
 string FailedState::getState(){
