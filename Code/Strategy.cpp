@@ -29,4 +29,6 @@ Bannerman* Strategy::getEnemyBannerman() {
 Strategy::~Strategy(){
 	delete myKingdom;
 	delete enemyKingdom;
+	delete myBannerman;
+	delete enemyBannerman;
 }

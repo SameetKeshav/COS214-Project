@@ -18,16 +18,8 @@ public:
 	/** @todo  constructor. initializes stealth and calls base class constructor to
 	 * initialize myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, min and minFavour.
 	 * @param stealth - skill level of Bannerman's assassin.
-	 * @param alive -life state of Bannerman's assassin, is false if assassin was killed.
-	 * @param myKingdom - Kingdom pointer of attacking Bannerman's Kingdom.
-	 * @param enemyKingdom - Kingdom pointer of enemyBannerman's Kingdom.
-	 * @param myBannerman - attacking Bannerman.
-	 * @param enemyBannerman - defending Bannerman.
-	 * @param name - name of concrete strategy.
 	 * @param min - minimum supplies for food,weapons and medicine
-	 * @param minFavour - minimum favour below which bannerman change allegiances
-	 * @param h - Historian (originator) to save defected bannemen.
-	 * @param hb - Caretaker for memento implementation.
+	 * @param minFavour - minimum favour below which Bannerman change allegiances
 	*/
 	Assassinate(int stealth, bool alive,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
 	/** @todo makes assassin of attacking Bannerman try to kill enemyBannerman
