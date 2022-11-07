@@ -17,6 +17,7 @@ class MasterOfCoin;
 class Strategy;
 class Bannerman: public WarIndicators {
 
+
 protected:
 
     /**Name of the bannerman */
@@ -182,8 +183,8 @@ public:
 
     ~Bannerman();
 
-    /// @brief gets the list of troops under the commander (not abstract, but just inherited)
-    /// @return the list of troops varaible
+    /// @brief Abstract. gets the list of troops under the commander
+    /// @return the list of troops variable
     virtual list<Bannerman*> getTroops() = 0;
 };
 
