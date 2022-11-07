@@ -15,7 +15,6 @@ add_executable(Code
         Bannerman.h
         BattleField.cpp
         BattleField.h
-        Class.h
         Commander.cpp
         Commander.h
         Conditions.cpp
