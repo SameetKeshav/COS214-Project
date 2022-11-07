@@ -63,6 +63,8 @@ public:
      * @return the difficulty value*/
 	int getDifficulty();
 
+    /**@brief sets the venue variable
+     * @param v - the char variable used to set the venue*/
     void setVenue(char v);
 };
 
