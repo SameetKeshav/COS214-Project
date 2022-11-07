@@ -16,6 +16,8 @@
 #include <vector>
 #include <cstdlib>
 #include <time.h>
+#include <windows.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -406,7 +408,9 @@ void JuliannaUnitTesting(){
 
 //=========================================================================================
 
-
+void changeColor(int desiredColor){
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), desiredColor);
+}
 
 /**
  * @brief the text introduction to the simulator's story
@@ -417,6 +421,7 @@ void intro(){
     cout<<"isles, the United Kingdoms of Preadora."<<endl;
      cout<<"press Enter to continue...";
      cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    changeColor(6);
 
     cout<<" _                     _                  "<<endl;
     cout<<"|_) _ _|__|_ |  _    _|_ _  __   _|_|_  _ "<<endl;
@@ -429,7 +434,7 @@ void intro(){
     cout<<"   \\ \\/  \\/ / _ \\/ __| __/ _ \\ '__| '_ \\     | | / __| |/ _ \\/ __|"<<endl;
     cout<<"    \\  /\\  /  __/\\__ \\ ||  __/ |  | | | |   _| |_\\__ \\ |  __/\\__ \\"<<endl;
     cout<<"     \\/  \\/ \\___||___/\\__\\___|_|  |_| |_|  |_____|___/_|\\___||___/"<<endl;
-
+    changeColor(7);
 
 
      cout<<"press Enter to continue...";
@@ -484,6 +489,7 @@ void surrender(){
  */
 void chooseEnemy(){
     cout<<"===================================================================="<<endl<<endl;
+    changeColor(13);
     list<Bannerman*> PreadoraBannermen = Preadora->getKingdom();
     cout<<"Chose which enemy you would like to attack:"<<endl<<endl;
 
@@ -519,6 +525,7 @@ void chooseEnemy(){
     advance(itr, c);
     enemy = *itr;
     cout<<"You chose to attack: "<<enemy->getName()<<endl;
+    changeColor(7);
 }
 
 /**
@@ -526,6 +533,7 @@ void chooseEnemy(){
  */
 void chooseFighter(){
     cout<<"===================================================================="<<endl<<endl;
+    changeColor(14);
     list<Bannerman*> DuraBannermen = Dura->getKingdom();
     cout<<"Chose which bannerman will fight for you:"<<endl;
     
@@ -583,6 +591,7 @@ void chooseFighter(){
     supplies[2] = new MedicalWagon();
 
     myRaven = new sendRaven(supplies, fighter);
+    changeColor(7);
 }
 
 /**
@@ -659,6 +668,7 @@ void goAttack(){
     fighter->setTreasury(tres);
     strat->setTreasury(tres);
 
+    changeColor(1);
     WarTheatre* OriginalWarTheatre = new Location;
     OriginalWarTheatre->setVenue(OriginalWarTheatre->decideVenue(strat));
     DecoratorClientCode(OriginalWarTheatre);
@@ -671,7 +681,7 @@ void goAttack(){
     topologyEffect->setDifficulty(weatherEffect->getDifficulty());
     topologyEffect->setVenue(topologyEffect->decideVenue(strat));
     DecoratorClientCode(topologyEffect);
-
+    changeColor(7);
 
     strat->setTreasury(tres); //added by Morgan
     DuraEco->setTreasury(tres); //added by Morgan
@@ -686,8 +696,10 @@ void goAttack(){
  * @brief text for if user won the war
  */
 void WarWon(){
-    cout<<"===================================================================="<<endl;
+    cout<<endl<<"===================================================================="<<endl;
+    changeColor(2);
     cout<<"The enemy has been defeated! All the land under the Kingdoms of Preadora are now under your rule! Long live Dura!"<<endl;
+    changeColor(7);
     cout<<"===================================================================="<<endl;
 }
 
@@ -695,8 +707,10 @@ void WarWon(){
  * @brief text for if user lost the war
  */
 void WarLost(){
-    cout<<"===================================================================="<<endl;
+    cout<<endl<<"===================================================================="<<endl;
+    changeColor(4);
     cout<<"Preadora's bannermen have overwhelmed your forces and have been crowned victorious after these long battles. Dura is under her rule."<<endl;
+    changeColor(7);
     cout<<"===================================================================="<<endl;
 }
 

@@ -1,5 +1,5 @@
 #include "BattleField.h"
-
+#include <windows.h>
 BattleField::BattleField(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"BattleField",min,minFavour, h, hb){}
 
 bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
@@ -16,8 +16,10 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		//tell thapelo to add id attribute and a getter, we must
 		//formulate a way to make bannerman ids unique
 		enemyKingdom->add(myBannerman);
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
-		return false;
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+        return false;
 	}
 	while (myBannerman->getHP()>0&&enemyBannerman->getHP()>0)
 	{
@@ -108,7 +110,9 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             Bannerman* returned = Greg->restoreAlly(BookOfDura->getAlly());
             myKingdom->add(returned);
             enemyKingdom->remove(returned);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
             cout<<returned->getName()<<"'s commander asks yor forgiveness and joins your fight once again."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         }
 
 
@@ -133,12 +137,16 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		if (myBannerman->getWeapons()<=(minSupplies+2))
 		{
 			//tell sameet to add pointer asterisk in treasury class's notify
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
             cout<<"The fight has ended. The commander took inventory of the supplies and sends for more."<<endl;
 			m->notify(this);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 		}
 		enemyKingdom->remove(enemyBannerman);
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
         cout<<"The enemy kingdom's bannerman has been defeated. "<<enemyBannerman->getName()<<" is now under your kingdom's rule."<<endl;
-		return true;
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+        return true;
 	}
 	else if (myBannerman->getHP()<=0&&enemyBannerman->getHP()>0)
 	{
@@ -147,7 +155,9 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         for (std::list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it){
             (*it)->decreaseFavour();
         }
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
         cout<<myBannerman->getName()<<" fought bravely in the name of Dura. They were sadly lost in the battle."<<endl;
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 		return false;
 	}
 	else

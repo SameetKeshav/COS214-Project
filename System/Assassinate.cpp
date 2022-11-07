@@ -1,5 +1,5 @@
 #include "Assassinate.h"
-
+#include <windows.h>
 Assassinate::Assassinate(int stealth, bool alive,Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb):Strategy(myKingdom,enemyKingdom,myBannerman,enemyBannerman,"Assassinate",min,minFavour, h, hb) {
 	this->alive=alive;
 	this->stealth=stealth;
@@ -11,7 +11,9 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         cout<<"You sent an assassin into the chambers of the enemy commander under the cover of night."<<endl;
 		if (stealth>60)
 		{
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
             cout<<"The assassin was successful and disposed of the enemy's commander without being seen."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
             list<Bannerman*> s = myKingdom->getKingdom();
             list<Bannerman*> e = enemyKingdom->getKingdom();
             for (list<Bannerman*>::iterator it = s.begin(); it != s.end(); ++it) {
@@ -27,7 +29,9 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
         }
 		else
 		{
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
             cout<<"The assassin was spotted and immediately executed."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			alive=false;
 		}
 
@@ -45,7 +49,9 @@ bool Assassinate::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             Bannerman* returned = Greg->restoreAlly(BookOfDura->getAlly());
             myKingdom->add(returned);
             enemyKingdom->remove(returned);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
             cout<<"Old allies have heard of your gallantry and have decided to come back to Dura."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         }
 
 	}

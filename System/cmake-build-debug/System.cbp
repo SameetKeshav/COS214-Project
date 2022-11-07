@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="System"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="System">
+				<Option output="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/System.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 System"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="System/fast">
+				<Option output="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/System.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 System/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Ambush.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Ambush.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/ArmySupplies.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Assassinate.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Assassinate.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Bannerman.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Bannerman.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/BattleField.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/BattleField.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Commander.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Commander.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/ConIterator.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/ConIterator.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Conditions.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Conditions.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Economy.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Economy.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Factory.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Factory.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FailedState.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FailedState.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodFac.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodFac.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodSupp.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodSupp.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodWagon.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/FoodWagon.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/HealthyState.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/HealthyState.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Historian.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Historian.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/History.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/History.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/HistoryBook.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/HistoryBook.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Iterator.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Kingdom.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Kingdom.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Location.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Location.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MasterOfCoin.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MasterOfCoin.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalFac.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalFac.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalSupp.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalSupp.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalWagon.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/MedicalWagon.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Raven.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Siege.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Siege.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/State.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/State.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Strategy.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Strategy.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/SupplyWagon.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Topology.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Topology.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Treasury.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Troop.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Troop.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/UnstableState.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/UnstableState.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WarIndicators.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WarTheatre.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WarTheatre.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponSupp.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponSupp.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponWagon.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponWagon.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponsFac.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/WeaponsFac.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Weather.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/Weather.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/main.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/sendRaven.cpp">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/sendRaven.h">
+			<Option target="System"/>
+		</Unit>
+		<Unit filename="C:/Users/julia/OneDrive/Documents/Uni Work/YEAR 2/COS 214/Practicals/Project/Code/COS214-Project/System/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
