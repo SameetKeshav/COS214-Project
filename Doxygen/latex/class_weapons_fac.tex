@@ -1,17 +1,37 @@
 \hypertarget{class_weapons_fac}{}\doxysection{Weapons\+Fac Class Reference}
 \label{class_weapons_fac}\index{WeaponsFac@{WeaponsFac}}
+
+
+\mbox{\hyperlink{class_factory}{Factory}} class to serve as a concrete creator class used to create Weapons supplies.  
+
+
+
+
+{\ttfamily \#include $<$Weapons\+Fac.\+h$>$}
+
 Inheritance diagram for Weapons\+Fac\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_weapons_fac}
+\includegraphics[height=3.000000cm]{class_weapons_fac}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} $\ast$ \mbox{\hyperlink{class_weapons_fac_a47a43b9a99d4ace910a315ada5412177}{make}} ()
-\begin{DoxyCompactList}\small\item\em Weapon \mbox{\hyperlink{class_factory}{Factory}} makes Weapon supplies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapons_fac_a47a43b9a99d4ace910a315ada5412177}{make()}} is the factory Method called in \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation()}} to make the Weapon supplies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weapons_fac_a6c6b5f3e34ebe35f864fa5896d86f556}\label{class_weapons_fac_a6c6b5f3e34ebe35f864fa5896d86f556}} 
+{\bfseries $\sim$\+Weapons\+Fac} ()
+\begin{DoxyCompactList}\small\item\em destructor for the \mbox{\hyperlink{class_weapons_fac}{Weapons\+Fac}} class to delete and free the supply variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_factory}{Factory}} class to serve as a concrete creator class used to create Weapons supplies. 
+
+\begin{DoxyAuthor}{Author}
+Ronin Brookes 19069686 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Function Documentation}
@@ -23,17 +43,14 @@ Inheritance diagram for Weapons\+Fac\+:\begin{figure}[H]
 
 
 
-Weapon \mbox{\hyperlink{class_factory}{Factory}} makes Weapon supplies. 
+\mbox{\hyperlink{class_weapons_fac_a47a43b9a99d4ace910a315ada5412177}{make()}} is the factory Method called in \mbox{\hyperlink{class_factory_a1b1c29e611333ec1b350b75cea18e43d}{operation()}} to make the Weapon supplies. 
 
 \begin{DoxyReturn}{Returns}
-returns the supplies the Weapon \mbox{\hyperlink{class_factory}{Factory}} just manufactured 
+\mbox{\hyperlink{class_army_supplies}{Army\+Supplies}} pointer to the newly created Weapon supplies. 
 \end{DoxyReturn}
-\begin{DoxyAuthor}{Author}
-Ronin Brookes 19069686 
-\end{DoxyAuthor}
 
 
-Implements \mbox{\hyperlink{class_factory}{Factory}}.
+Implements \mbox{\hyperlink{class_factory_ad6810ce8fe545d508c3f0db8079f7727}{Factory}}.
 
 
 

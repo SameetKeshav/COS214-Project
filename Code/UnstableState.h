@@ -16,13 +16,13 @@ public:
 	/** @brief Default constructor. initializes context to null.
 	*/
 	UnstableState();
-	/** @todo decreases Economy currency and then checks if the conditions are sufficient for
+	/** @brief decreases Economy currency and then checks if the conditions are sufficient for
 	 * the economy to downgrade to a lower state**/
 	void decreaseCurrency();
-	/** @todo gets lower level state of economy
+	/** @brief gets lower level state of economy
 	 * @return concrete State of Economy **/
 	State* getDemotionState();
-	/** @todo tells what the State of the Economy is.
+	/** @brief tells what the State of the Economy is.
 	* @return returns a string that says in text what the State is.**/
 	string getState();
 };

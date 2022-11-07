@@ -3,29 +3,34 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WEATHER\_H}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define WEATHER\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_weather}{Weather}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_conditions}{Conditions}} \{}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{keyword}{private}:}
-\DoxyCodeLine{14     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_weather_afdac2f27873a3a32db764fccb8e4716a}{temp}};}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{17     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_weather_a90bc66823ba61d0917dfc16f37c22d37}{rain}};}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weather_a1bb87ed2f5a18f1a3b1f78eca9fda53c}{windspeed}};}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{keyword}{public}:}
-\DoxyCodeLine{25     \mbox{\hyperlink{class_weather}{Weather}}(\textcolor{keywordtype}{int} val);}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weather_aff9cf48baf52cf21cd3cefc2bddb15fe}{calcEffect}}();}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a6487c3b3c60e1529d4fb61f6e4b5fa16}{setTemp}}(\textcolor{keywordtype}{double} t);}
-\DoxyCodeLine{34 }
-\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a7cc0999e40297d49217d215706e51fc2}{makeItRain}}();}
-\DoxyCodeLine{38 }
-\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a663284cd5bc8db13e2693e333bcd71fc}{setWindSpeed}}(\textcolor{keywordtype}{int} SP);}
-\DoxyCodeLine{42     \textcolor{comment}{//void weatherReport(); ask Jules}}
-\DoxyCodeLine{43 \};}
-\DoxyCodeLine{44 }
-\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Conditions.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_weather}{Weather}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_conditions}{Conditions}}\{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_weather_afdac2f27873a3a32db764fccb8e4716a}{temp}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_weather_a90bc66823ba61d0917dfc16f37c22d37}{rain}};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weather_a1bb87ed2f5a18f1a3b1f78eca9fda53c}{windspeed}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_weather}{Weather}}(\mbox{\hyperlink{class_war_theatre}{WarTheatre}}* myTheatre);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weather_aff9cf48baf52cf21cd3cefc2bddb15fe}{calcEffect}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a6487c3b3c60e1529d4fb61f6e4b5fa16}{setTemp}}(\textcolor{keywordtype}{double} t);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a7cc0999e40297d49217d215706e51fc2}{makeItRain}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a663284cd5bc8db13e2693e333bcd71fc}{setWindSpeed}}(\textcolor{keywordtype}{int} SP);}
+\DoxyCodeLine{44     }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_ab9dc1b0510e03f86aebd580ddc8678c0}{weatherReport}}(); \textcolor{comment}{//ask Jules}}
+\DoxyCodeLine{47     }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weather_a86aaa0bd9514cffbe75011eaf4c7f3b2}{sendScout}}();}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

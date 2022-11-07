@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('class_healthy_state.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>A concrete state class. A class that is one of the alternative concrete states for <a class="el" href="class_economy.html">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>.  
+<p>A concrete state class. A class that is one of the alternative concrete states for <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>.  
  <a href="class_healthy_state.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_healthy_state_8h_source.html">HealthyState.h</a>&gt;</code></p>
@@ -124,22 +124,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a290f38ea1ce2f6fcd54a549a4a890f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. initializes context to null. <br /></td></tr>
 <tr class="separator:a290f38ea1ce2f6fcd54a549a4a890f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f75e1935e20ed34b73d259a2324e4f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_state.html#a5f75e1935e20ed34b73d259a2324e4f9">decreaseCurrency</a> ()</td></tr>
+<tr class="memdesc:a5f75e1935e20ed34b73d259a2324e4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">decreases <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state  <a href="class_healthy_state.html#a5f75e1935e20ed34b73d259a2324e4f9">More...</a><br /></td></tr>
 <tr class="separator:a5f75e1935e20ed34b73d259a2324e4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97583e0f477b87971b3a586ef1ba89e6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_state.html#a97583e0f477b87971b3a586ef1ba89e6">getDemotionState</a> ()</td></tr>
+<tr class="memdesc:a97583e0f477b87971b3a586ef1ba89e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets lower level state of economy  <a href="class_healthy_state.html#a97583e0f477b87971b3a586ef1ba89e6">More...</a><br /></td></tr>
 <tr class="separator:a97583e0f477b87971b3a586ef1ba89e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59cf5b13d9d1ab72a49bce5ef5f031e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healthy_state.html#ad59cf5b13d9d1ab72a49bce5ef5f031e">getState</a> ()</td></tr>
+<tr class="memdesc:ad59cf5b13d9d1ab72a49bce5ef5f031e"><td class="mdescLeft">&#160;</td><td class="mdescRight">tells what the <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> of the <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> is.  <a href="class_healthy_state.html#ad59cf5b13d9d1ab72a49bce5ef5f031e">More...</a><br /></td></tr>
+<tr class="separator:ad59cf5b13d9d1ab72a49bce5ef5f031e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_state"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_state')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_state.html">State</a></td></tr>
 <tr class="memitem:ab91bb1dd5aa6260ab2a456581daf9ec2 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top"><a id="ab91bb1dd5aa6260ab2a456581daf9ec2" name="ab91bb1dd5aa6260ab2a456581daf9ec2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> ()</td></tr>
 <tr class="memdesc:ab91bb1dd5aa6260ab2a456581daf9ec2 inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:ab91bb1dd5aa6260ab2a456581daf9ec2 inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c1972e00c66761620cf9c3d4d8cb49 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#ae8c1972e00c66761620cf9c3d4d8cb49">setContext</a> (<a class="el" href="class_economy.html">Economy</a> *<a class="el" href="class_state.html#a00fd56d8caa101c7ef2488b914ddffc9">context</a>)</td></tr>
+<tr class="memdesc:ae8c1972e00c66761620cf9c3d4d8cb49 inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets context variable.  <a href="class_state.html#ae8c1972e00c66761620cf9c3d4d8cb49">More...</a><br /></td></tr>
 <tr class="separator:ae8c1972e00c66761620cf9c3d4d8cb49 inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5773daf54efd2c1e6723950d4e44b5a7 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a5773daf54efd2c1e6723950d4e44b5a7">decreaseCurrency</a> ()=0</td></tr>
+<tr class="memdesc:a5773daf54efd2c1e6723950d4e44b5a7 inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method.  <a href="class_state.html#a5773daf54efd2c1e6723950d4e44b5a7">More...</a><br /></td></tr>
 <tr class="separator:a5773daf54efd2c1e6723950d4e44b5a7 inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa901c36d20da2a396e4fa27bf8576eec inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#aa901c36d20da2a396e4fa27bf8576eec">getDemotionState</a> ()</td></tr>
+<tr class="memdesc:aa901c36d20da2a396e4fa27bf8576eec inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets lower level state of <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> with null being returned if no lower <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> is possible  <a href="class_state.html#aa901c36d20da2a396e4fa27bf8576eec">More...</a><br /></td></tr>
 <tr class="separator:aa901c36d20da2a396e4fa27bf8576eec inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab438d92b90dc18d194dbd9c9c8bab3 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#afab438d92b90dc18d194dbd9c9c8bab3">~State</a> ()</td></tr>
+<tr class="memitem:afab438d92b90dc18d194dbd9c9c8bab3 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top"><a id="afab438d92b90dc18d194dbd9c9c8bab3" name="afab438d92b90dc18d194dbd9c9c8bab3"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~State</b> ()</td></tr>
+<tr class="memdesc:afab438d92b90dc18d194dbd9c9c8bab3 inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor. deallocates context <br /></td></tr>
 <tr class="separator:afab438d92b90dc18d194dbd9c9c8bab3 inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc4ba7ba1874d60a61fdc503d31c6d0 inherit pub_methods_class_state"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a5dc4ba7ba1874d60a61fdc503d31c6d0">getState</a> ()=0</td></tr>
+<tr class="memdesc:a5dc4ba7ba1874d60a61fdc503d31c6d0 inherit pub_methods_class_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method.  <a href="class_state.html#a5dc4ba7ba1874d60a61fdc503d31c6d0">More...</a><br /></td></tr>
+<tr class="separator:a5dc4ba7ba1874d60a61fdc503d31c6d0 inherit pub_methods_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -148,7 +161,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a00fd56d8caa101c7ef2488b914ddffc9 inherit pro_attribs_class_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A concrete state class. A class that is one of the alternative concrete states for <a class="el" href="class_economy.html">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>. </p>
+<div class="textblock"><p >A concrete state class. A class that is one of the alternative concrete states for <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> of <a class="el" href="class_kingdom.html" title="A Kingdom class that has all the fighting Bannerman and Economy.">Kingdom</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Morgan Bentley </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>October 2022 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -174,7 +187,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>decreases <a class="el" href="class_economy.html">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state </dd></dl>
+
+<p>decreases <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state </p>
 
 <p>Implements <a class="el" href="class_state.html#a5773daf54efd2c1e6723950d4e44b5a7">State</a>.</p>
 
@@ -202,10 +216,41 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>gets lower level state of economy </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>concrete <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> of <a class="el" href="class_economy.html">Economy</a> </dd></dl>
+
+<p>gets lower level state of economy </p>
+<dl class="section return"><dt>Returns</dt><dd>concrete <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> of <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_state.html#aa901c36d20da2a396e4fa27bf8576eec">State</a>.</p>
+
+</div>
+</div>
+<a id="ad59cf5b13d9d1ab72a49bce5ef5f031e" name="ad59cf5b13d9d1ab72a49bce5ef5f031e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59cf5b13d9d1ab72a49bce5ef5f031e">&#9670;&#160;</a></span>getState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HealthyState::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>tells what the <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> of the <a class="el" href="class_economy.html" title="keeps all variables relating to the state of Economy, is context of States. A class that provides an ...">Economy</a> is. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns a string that says in text what the <a class="el" href="class_state.html" title="An Abstract state class. A class that provides an interface to the alternative concrete states for Ec...">State</a> is. </dd></dl>
+
+<p>Implements <a class="el" href="class_state.html#a5dc4ba7ba1874d60a61fdc503d31c6d0">State</a>.</p>
 
 </div>
 </div>

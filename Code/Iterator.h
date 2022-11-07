@@ -3,7 +3,7 @@
 #include "Bannerman.h"
 
 /**
- * @Brief Iterator class
+ * @brief Iterator class
  * Defines an interface for accessing and traversing bannerman elements in groundForces.
  *  @author Thapelo Thoka
  *   @date October 2022
@@ -32,7 +32,7 @@ public:
      * */
     virtual Bannerman* next() = 0;
 
-    /**@Brief Abstract. Returns whether or not the current item is active or not
+    /** @brief Abstract. Returns whether or not the current item is active or not
      * @returns true
      * @returns false
      * */

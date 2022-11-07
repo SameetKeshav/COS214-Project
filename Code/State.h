@@ -19,17 +19,17 @@ public:
 	/** @brief Default constructor.
 	*/
 	State();
-	/** @todo sets context variable.
+	/** @brief sets context variable.
 	 * @param context - Economy pointer to player's Economy object.**/
 	virtual void setContext(Economy* context);
-	/** @todo Abstract method.**/
+	/** @brief Abstract method.**/
 	virtual void decreaseCurrency()=0;
-	/** @todo gets lower level state of Economy with null being returned if no lower State is possible
+	/** @brief gets lower level state of Economy with null being returned if no lower State is possible
 	 * @return concrete State of Economy **/
 	virtual State* getDemotionState();
-	/** @todo destructor. deallocates context**/
+	/** @brief destructor. deallocates context**/
 	virtual ~State();
-	/** @todo Abstract method.
+	/** @brief Abstract method.
 	 * @return name of State as a string.**/
 	virtual string getState()=0;
 };

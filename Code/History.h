@@ -5,18 +5,18 @@
 using namespace std;
 class Bannerman;
 class History { //memento
-/** @brief The memento class in the memento design pattern
+/** @brief The memento class in the memento design pattern.
  * @author Julianna Venter
  * @date November 2022
  */
 private:
-    /** a bannerman object that represents the current bannerman being stored - the one that has defected */
+    /** a bannerman object that represents the current bannerman being stored - the one that has defected. */
 	Bannerman* bannerman;
 
 public:
     /**
-     * @brief constructor that sets class variable
-     * @param b parameter that class variable is set to
+     * @brief constructor that sets class variable.
+     * @param b parameter that class variable is set to.
      */
 	History(Bannerman* b);
 

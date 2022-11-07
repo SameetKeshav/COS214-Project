@@ -124,7 +124,7 @@ Inheritance diagram for Troop:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9d1c39802d23d351a474aacb52b37c8"><td class="memItemLeft" align="right" valign="top"><a id="ad9d1c39802d23d351a474aacb52b37c8" name="ad9d1c39802d23d351a474aacb52b37c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Troop</b> (string <a class="el" href="class_bannerman.html#ad7c96e82b0a271e7bd042c0cdb9775fa">name</a>, int favor, int <a class="el" href="class_bannerman.html#a494fe314830fa480a9d6f729a65489c6">numFood</a>, int Medical, int <a class="el" href="class_bannerman.html#aa9c6fea3fb600df01d45560f5bf26185">HP</a>, <a class="el" href="class_war_theatre.html">WarTheatre</a> *warZone, <a class="el" href="class_strategy.html">Strategy</a> *<a class="el" href="class_troop.html#ac023212ca342925a19179031a4aab8ee">strategy</a>, <a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *<a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a>, bool <a class="el" href="class_bannerman.html#a36bfbb85d967236f058409fc60c5220c">assassin</a>, int <a class="el" href="class_troop.html#a96abe8484c1eb6531d973bf3162dced9">size</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Troop</b> (string <a class="el" href="class_bannerman.html#ad7c96e82b0a271e7bd042c0cdb9775fa">name</a>, int favor, int <a class="el" href="class_bannerman.html#a494fe314830fa480a9d6f729a65489c6">numFood</a>, int Medical, int <a class="el" href="class_bannerman.html#aa9c6fea3fb600df01d45560f5bf26185">HP</a>, <a class="el" href="class_war_theatre.html">WarTheatre</a> *<a class="el" href="class_troop.html#ae842d48fff559daa14b850245d2fb567">warZone</a>, <a class="el" href="class_strategy.html">Strategy</a> *<a class="el" href="class_troop.html#ac023212ca342925a19179031a4aab8ee">strategy</a>, <a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *<a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a>, bool <a class="el" href="class_bannerman.html#a36bfbb85d967236f058409fc60c5220c">assassin</a>, int <a class="el" href="class_troop.html#a96abe8484c1eb6531d973bf3162dced9">size</a>)</td></tr>
 <tr class="memdesc:ad9d1c39802d23d351a474aacb52b37c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Initializes the name; favour; numFood; Medical; HP; warZone; strategy; m; assassin and size variables of the troop. <br /></td></tr>
 <tr class="separator:ad9d1c39802d23d351a474aacb52b37c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6a0b620d2a7cbd8d513cfb86833606"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a6c6a0b620d2a7cbd8d513cfb86833606">getHP</a> () override</td></tr>
@@ -163,9 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a8b1b705728e982a51aa84c18f2561d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a6a8b1b705728e982a51aa84c18f2561d">decreaseFavour</a> () override</td></tr>
 <tr class="memdesc:a6a8b1b705728e982a51aa84c18f2561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the loyalty favour level of the troop by 1.  <a href="class_troop.html#a6a8b1b705728e982a51aa84c18f2561d">More...</a><br /></td></tr>
 <tr class="separator:a6a8b1b705728e982a51aa84c18f2561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d453e63faf087978514658361a5e78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a18d453e63faf087978514658361a5e78">getFavour</a> ()</td></tr>
-<tr class="memdesc:a18d453e63faf087978514658361a5e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. returns the favour of the bannerman.  <a href="class_troop.html#a18d453e63faf087978514658361a5e78">More...</a><br /></td></tr>
-<tr class="separator:a18d453e63faf087978514658361a5e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c21168bb79f33474d07b3155db224d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#af4c21168bb79f33474d07b3155db224d">getFavour</a> () override</td></tr>
+<tr class="memdesc:af4c21168bb79f33474d07b3155db224d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the the loyalty favour levels variable of the <a class="el" href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition.">Troop</a> object.  <a href="class_troop.html#af4c21168bb79f33474d07b3155db224d">More...</a><br /></td></tr>
+<tr class="separator:af4c21168bb79f33474d07b3155db224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7465cdfbb5500255ce5449d315d6a632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a7465cdfbb5500255ce5449d315d6a632">increaseHP</a> (int boost) override</td></tr>
 <tr class="memdesc:a7465cdfbb5500255ce5449d315d6a632"><td class="mdescLeft">&#160;</td><td class="mdescRight">increases the HP of the troop.  <a href="class_troop.html#a7465cdfbb5500255ce5449d315d6a632">More...</a><br /></td></tr>
 <tr class="separator:a7465cdfbb5500255ce5449d315d6a632"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,20 +190,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad90fb0d46884a81b7c4e32f84212814d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#ad90fb0d46884a81b7c4e32f84212814d">setFood</a> (int <a class="el" href="class_bannerman.html#a494fe314830fa480a9d6f729a65489c6">numFood</a>) override</td></tr>
 <tr class="memdesc:ad90fb0d46884a81b7c4e32f84212814d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of food supplies the troop has.  <a href="class_troop.html#ad90fb0d46884a81b7c4e32f84212814d">More...</a><br /></td></tr>
 <tr class="separator:ad90fb0d46884a81b7c4e32f84212814d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d7f09587feacef2b70938ba7b2defb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#ac6d7f09587feacef2b70938ba7b2defb">decreasePower</a> (int x)</td></tr>
-<tr class="memdesc:ac6d7f09587feacef2b70938ba7b2defb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the damage capability of the troop.  <a href="class_troop.html#ac6d7f09587feacef2b70938ba7b2defb">More...</a><br /></td></tr>
-<tr class="separator:ac6d7f09587feacef2b70938ba7b2defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af297ca555bd684563481795494a54d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#af297ca555bd684563481795494a54d26">decreasePower</a> (int x) override</td></tr>
+<tr class="memdesc:af297ca555bd684563481795494a54d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the damage capability of the troop.  <a href="class_troop.html#af297ca555bd684563481795494a54d26">More...</a><br /></td></tr>
+<tr class="separator:af297ca555bd684563481795494a54d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3713f9a30a83751311c1732ec2b90ecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a3713f9a30a83751311c1732ec2b90ecc">setMedical</a> (int <a class="el" href="class_bannerman.html#aac3030f4cb8b7ee8722a298e070f7961">numMedical</a>) override</td></tr>
 <tr class="memdesc:a3713f9a30a83751311c1732ec2b90ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of medical supplies the troop has.  <a href="class_troop.html#a3713f9a30a83751311c1732ec2b90ecc">More...</a><br /></td></tr>
 <tr class="separator:a3713f9a30a83751311c1732ec2b90ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c96d68362f0220d29d5e156eedafba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#ad4c96d68362f0220d29d5e156eedafba">setRaven</a> (list&lt; <a class="el" href="class_raven.html">Raven</a> * &gt; r)</td></tr>
-<tr class="memdesc:ad4c96d68362f0220d29d5e156eedafba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a list of <a class="el" href="class_raven.html" title="The Abstract class for the Observer A class that the Concrete Observer class inherits from.">Raven</a> Observers to the troop's ravenList.  <a href="class_troop.html#ad4c96d68362f0220d29d5e156eedafba">More...</a><br /></td></tr>
-<tr class="separator:ad4c96d68362f0220d29d5e156eedafba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a0a33641d779f0e58bbecd771e5baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#ad9a0a33641d779f0e58bbecd771e5baf">setMaster</a> (<a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *<a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a>)</td></tr>
-<tr class="memdesc:ad9a0a33641d779f0e58bbecd771e5baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a MasterofCoin mediator to ensure that the troop has the supplies it needs.  <a href="class_troop.html#ad9a0a33641d779f0e58bbecd771e5baf">More...</a><br /></td></tr>
-<tr class="separator:ad9a0a33641d779f0e58bbecd771e5baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4900ea9add8b0e6d2fc3d74b2e0fce6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a4900ea9add8b0e6d2fc3d74b2e0fce6c">setRaven</a> (list&lt; <a class="el" href="class_raven.html">Raven</a> * &gt; r) override</td></tr>
+<tr class="memdesc:a4900ea9add8b0e6d2fc3d74b2e0fce6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a list of <a class="el" href="class_raven.html" title="The Abstract class for the Observer A class that the Concrete Observer class inherits from.">Raven</a> Observers to the troop's ravenList.  <a href="class_troop.html#a4900ea9add8b0e6d2fc3d74b2e0fce6c">More...</a><br /></td></tr>
+<tr class="separator:a4900ea9add8b0e6d2fc3d74b2e0fce6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5a5c26cfbe10609ccd919dc4e3eb77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a9f5a5c26cfbe10609ccd919dc4e3eb77">setMaster</a> (<a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *<a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a>) override</td></tr>
+<tr class="memdesc:a9f5a5c26cfbe10609ccd919dc4e3eb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a MasterofCoin mediator to ensure that the troop has the supplies it needs.  <a href="class_troop.html#a9f5a5c26cfbe10609ccd919dc4e3eb77">More...</a><br /></td></tr>
+<tr class="separator:a9f5a5c26cfbe10609ccd919dc4e3eb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812ffd2ac57069689116fdfa921aa1dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a812ffd2ac57069689116fdfa921aa1dd">~Troop</a> ()</td></tr>
 <tr class="separator:a812ffd2ac57069689116fdfa921aa1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983d374bdbb54dccfb781cb0306fe382"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a983d374bdbb54dccfb781cb0306fe382">getName</a> () override</td></tr>
+<tr class="memdesc:a983d374bdbb54dccfb781cb0306fe382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this <a class="el" href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition.">Troop</a> object.  <a href="class_troop.html#a983d374bdbb54dccfb781cb0306fe382">More...</a><br /></td></tr>
+<tr class="separator:a983d374bdbb54dccfb781cb0306fe382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b0949ff8946f205b931295f659726a"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#a50b0949ff8946f205b931295f659726a">getTroops</a> () override</td></tr>
+<tr class="memdesc:a50b0949ff8946f205b931295f659726a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_bannerman.html">Bannerman</a> pure virtual method, not used by troop.  <a href="class_troop.html#a50b0949ff8946f205b931295f659726a">More...</a><br /></td></tr>
+<tr class="separator:a50b0949ff8946f205b931295f659726a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_bannerman"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_bannerman')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_bannerman.html">Bannerman</a></td></tr>
 <tr class="memitem:a838e0518a0bf6781f5843d44934a06ff inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top"><a id="a838e0518a0bf6781f5843d44934a06ff" name="a838e0518a0bf6781f5843d44934a06ff"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Bannerman</b> ()</td></tr>
@@ -233,9 +239,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1abcef28173e5b38ece6306be6b02148 inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1abcef28173e5b38ece6306be6b02148">increasePower</a> (int boost)=0</td></tr>
 <tr class="memdesc:a1abcef28173e5b38ece6306be6b02148 inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. increases the damage capability of the bannerman.  <a href="class_bannerman.html#a1abcef28173e5b38ece6306be6b02148">More...</a><br /></td></tr>
 <tr class="separator:a1abcef28173e5b38ece6306be6b02148 inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac34f077972ae84ad34b77bf6f174a0ce inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#ac34f077972ae84ad34b77bf6f174a0ce">getName</a> ()</td></tr>
-<tr class="memdesc:ac34f077972ae84ad34b77bf6f174a0ce inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor that returns the name of the bannerman.  <a href="class_bannerman.html#ac34f077972ae84ad34b77bf6f174a0ce">More...</a><br /></td></tr>
-<tr class="separator:ac34f077972ae84ad34b77bf6f174a0ce inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d7285a1a04a5b96f4377afc39f1221 inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a53d7285a1a04a5b96f4377afc39f1221">getName</a> ()=0</td></tr>
+<tr class="memdesc:a53d7285a1a04a5b96f4377afc39f1221 inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor that returns the name of the bannerman.  <a href="class_bannerman.html#a53d7285a1a04a5b96f4377afc39f1221">More...</a><br /></td></tr>
+<tr class="separator:a53d7285a1a04a5b96f4377afc39f1221 inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c99451818f71d15d15e0bf35d4b62d6 inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a8c99451818f71d15d15e0bf35d4b62d6">getHP</a> ()=0</td></tr>
 <tr class="memdesc:a8c99451818f71d15d15e0bf35d4b62d6 inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. Accessor that returns the name of the component.  <a href="class_bannerman.html#a8c99451818f71d15d15e0bf35d4b62d6">More...</a><br /></td></tr>
 <tr class="separator:a8c99451818f71d15d15e0bf35d4b62d6 inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,15 +294,23 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Bannerman</b> ()</td></tr>
 <tr class="memdesc:add811865a500b84e9baa7fff28230115 inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:add811865a500b84e9baa7fff28230115 inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258e604dd30cb0e2e5460b681dc5823a inherit pub_methods_class_bannerman"><td class="memItemLeft" align="right" valign="top">virtual list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a258e604dd30cb0e2e5460b681dc5823a">getTroops</a> ()=0</td></tr>
+<tr class="memdesc:a258e604dd30cb0e2e5460b681dc5823a inherit pub_methods_class_bannerman"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract. gets the list of troops under the commander.  <a href="class_bannerman.html#a258e604dd30cb0e2e5460b681dc5823a">More...</a><br /></td></tr>
+<tr class="separator:a258e604dd30cb0e2e5460b681dc5823a inherit pub_methods_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_war_indicators"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_war_indicators')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_war_indicators.html">WarIndicators</a></td></tr>
 <tr class="memitem:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="ae400c1e7a43a5751ac7aa62855a1e1a0" name="ae400c1e7a43a5751ac7aa62855a1e1a0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WarIndicators</b> ()</td></tr>
 <tr class="memdesc:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. initializes m to null. <br /></td></tr>
 <tr class="separator:ae400c1e7a43a5751ac7aa62855a1e1a0 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">WarIndicators</a> (<a class="el" href="class_treasury.html">Treasury</a> *<a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a>)</td></tr>
-<tr class="memdesc:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor. initializes m to the passed in <a class="el" href="class_treasury.html" title="The Abstract class for the Mediator A class that the Concrete Mediator class inherits from.">Treasury</a> object.  <a href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">More...</a><br /></td></tr>
+<tr class="memdesc:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor. initializes m to the passed in <a class="el" href="class_treasury.html">Treasury</a> object.  <a href="class_war_indicators.html#ae412f0a5bb3bfc86ff6437d22e9407a5">More...</a><br /></td></tr>
 <tr class="separator:ae412f0a5bb3bfc86ff6437d22e9407a5 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#aa8ee75ff5bf3d7bc1fb7f82a6527e582">~WarIndicators</a> ()</td></tr>
+<tr class="memitem:a13980e8e5cfecf4d3891c48e84bb7894 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_war_indicators.html#a13980e8e5cfecf4d3891c48e84bb7894">setTreasury</a> (<a class="el" href="class_treasury.html">Treasury</a> *<a class="el" href="class_war_indicators.html#af473554ebc672a6253eb56d84c1bb891">m</a>)</td></tr>
+<tr class="memdesc:a13980e8e5cfecf4d3891c48e84bb7894 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets m (<a class="el" href="class_treasury.html">Treasury</a> mediator pointer) to the passed in <a class="el" href="class_treasury.html">Treasury</a> pointer.  <a href="class_war_indicators.html#a13980e8e5cfecf4d3891c48e84bb7894">More...</a><br /></td></tr>
+<tr class="separator:a13980e8e5cfecf4d3891c48e84bb7894 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="memItemLeft" align="right" valign="top"><a id="aa8ee75ff5bf3d7bc1fb7f82a6527e582" name="aa8ee75ff5bf3d7bc1fb7f82a6527e582"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~WarIndicators</b> ()</td></tr>
+<tr class="memdesc:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor. deallocates <a class="el" href="class_treasury.html">Treasury</a> pointer of this class <br /></td></tr>
 <tr class="separator:aa8ee75ff5bf3d7bc1fb7f82a6527e582 inherit pub_methods_class_war_indicators"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -307,9 +321,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac023212ca342925a19179031a4aab8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f4a70511ca8a64c6e7d032e15145b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#af0f4a70511ca8a64c6e7d032e15145b5">damage</a></td></tr>
 <tr class="separator:af0f4a70511ca8a64c6e7d032e15145b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae842d48fff559daa14b850245d2fb567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_war_theatre.html">WarTheatre</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_troop.html#ae842d48fff559daa14b850245d2fb567">warZone</a></td></tr>
+<tr class="separator:ae842d48fff559daa14b850245d2fb567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_bannerman"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_bannerman')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_bannerman.html">Bannerman</a></td></tr>
+<tr class="memitem:a36bfbb85d967236f058409fc60c5220c inherit pub_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a36bfbb85d967236f058409fc60c5220c">assassin</a></td></tr>
+<tr class="separator:a36bfbb85d967236f058409fc60c5220c inherit pub_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_bannerman"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_bannerman')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_bannerman.html">Bannerman</a></td></tr>
 <tr class="memitem:ad7c96e82b0a271e7bd042c0cdb9775fa inherit pro_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#ad7c96e82b0a271e7bd042c0cdb9775fa">name</a></td></tr>
 <tr class="separator:ad7c96e82b0a271e7bd042c0cdb9775fa inherit pro_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,8 +344,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aac3030f4cb8b7ee8722a298e070f7961 inherit pro_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcec90d90ed29a452314a3bd14a7e807 inherit pro_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_raven.html">Raven</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#adcec90d90ed29a452314a3bd14a7e807">ravenList</a></td></tr>
 <tr class="separator:adcec90d90ed29a452314a3bd14a7e807 inherit pro_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36bfbb85d967236f058409fc60c5220c inherit pro_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a36bfbb85d967236f058409fc60c5220c">assassin</a></td></tr>
-<tr class="separator:a36bfbb85d967236f058409fc60c5220c inherit pro_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57933245345ac0643c872f7a5f6d6f3b inherit pro_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_master_of_coin.html">MasterOfCoin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a57933245345ac0643c872f7a5f6d6f3b">m</a></td></tr>
 <tr class="separator:a57933245345ac0643c872f7a5f6d6f3b inherit pro_attribs_class_bannerman"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e339f6c73c8a75da5d7e88c0dabb412 inherit pro_attribs_class_bannerman"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_strategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bannerman.html#a1e339f6c73c8a75da5d7e88c0dabb412">strategy</a></td></tr>
@@ -567,8 +584,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6d7f09587feacef2b70938ba7b2defb" name="ac6d7f09587feacef2b70938ba7b2defb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d7f09587feacef2b70938ba7b2defb">&#9670;&#160;</a></span>decreasePower()</h2>
+<a id="af297ca555bd684563481795494a54d26" name="af297ca555bd684563481795494a54d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af297ca555bd684563481795494a54d26">&#9670;&#160;</a></span>decreasePower()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,7 +603,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -698,8 +715,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a18d453e63faf087978514658361a5e78" name="a18d453e63faf087978514658361a5e78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d453e63faf087978514658361a5e78">&#9670;&#160;</a></span>getFavour()</h2>
+<a id="af4c21168bb79f33474d07b3155db224d" name="af4c21168bb79f33474d07b3155db224d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c21168bb79f33474d07b3155db224d">&#9670;&#160;</a></span>getFavour()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -716,12 +733,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Abstract. returns the favour of the bannerman. </p>
+<p>Returns the the loyalty favour levels variable of the <a class="el" href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition.">Troop</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>favour </dd></dl>
 
 <p>Implements <a class="el" href="class_bannerman.html#ad643991fd0fde3e08a5fd66054acf87e">Bannerman</a>.</p>
 
@@ -817,6 +835,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a983d374bdbb54dccfb781cb0306fe382" name="a983d374bdbb54dccfb781cb0306fe382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983d374bdbb54dccfb781cb0306fe382">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Troop::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the name of this <a class="el" href="class_troop.html" title="A class that defines the primitive objects of the Bannerman composition.">Troop</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>name </dd></dl>
+
+<p>Implements <a class="el" href="class_bannerman.html#a53d7285a1a04a5b96f4377afc39f1221">Bannerman</a>.</p>
+
+</div>
+</div>
 <a id="a7ee3bae0157d2a83c3e5b396a2b5ee91" name="a7ee3bae0157d2a83c3e5b396a2b5ee91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ee3bae0157d2a83c3e5b396a2b5ee91">&#9670;&#160;</a></span>getSize()</h2>
 
@@ -834,6 +882,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the troop's size. </p>
 <dl class="section return"><dt>Returns</dt><dd>size. </dd></dl>
+
+</div>
+</div>
+<a id="a50b0949ff8946f205b931295f659726a" name="a50b0949ff8946f205b931295f659726a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b0949ff8946f205b931295f659726a">&#9670;&#160;</a></span>getTroops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; <a class="el" href="class_bannerman.html">Bannerman</a> * &gt; Troop::getTroops </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_bannerman.html">Bannerman</a> pure virtual method, not used by troop. </p>
+<dl class="section return"><dt>Returns</dt><dd>null </dd></dl>
+
+<p>Implements <a class="el" href="class_bannerman.html#a258e604dd30cb0e2e5460b681dc5823a">Bannerman</a>.</p>
 
 </div>
 </div>
@@ -1040,8 +1118,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9a0a33641d779f0e58bbecd771e5baf" name="ad9a0a33641d779f0e58bbecd771e5baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9a0a33641d779f0e58bbecd771e5baf">&#9670;&#160;</a></span>setMaster()</h2>
+<a id="a9f5a5c26cfbe10609ccd919dc4e3eb77" name="a9f5a5c26cfbe10609ccd919dc4e3eb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5a5c26cfbe10609ccd919dc4e3eb77">&#9670;&#160;</a></span>setMaster()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1137,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1112,8 +1190,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4c96d68362f0220d29d5e156eedafba" name="ad4c96d68362f0220d29d5e156eedafba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c96d68362f0220d29d5e156eedafba">&#9670;&#160;</a></span>setRaven()</h2>
+<a id="a4900ea9add8b0e6d2fc3d74b2e0fce6c" name="a4900ea9add8b0e6d2fc3d74b2e0fce6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4900ea9add8b0e6d2fc3d74b2e0fce6c">&#9670;&#160;</a></span>setRaven()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1131,7 +1209,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1251,6 +1329,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >The attack strategy used by the troop in battle </p>
+
+</div>
+</div>
+<a id="ae842d48fff559daa14b850245d2fb567" name="ae842d48fff559daa14b850245d2fb567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae842d48fff559daa14b850245d2fb567">&#9670;&#160;</a></span>warZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_war_theatre.html">WarTheatre</a>* Troop::warZone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >The war theatre at which this troop engages in battle </p>
 
 </div>
 </div>

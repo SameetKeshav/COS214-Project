@@ -3,32 +3,46 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WARTHEATRE\_H}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define WARTHEATRE\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{keyword}{using namespace }std;}
-\DoxyCodeLine{5 }
-\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14 \textcolor{keyword}{private}:}
-\DoxyCodeLine{16     \mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}};}
-\DoxyCodeLine{18     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_ac4ea86c245fdad602fe85f6b62021cb9}{venue}};}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{21     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_war_theatre_afd8f31c3b35b4560e50407da71d6ab41}{location}};}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_war_theatre_a96237b9b1916bd84b5cbee90ce88d702}{difficulty}};}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27 \textcolor{keyword}{public}:}
-\DoxyCodeLine{30     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}(\mbox{\hyperlink{class_strategy}{Strategy}}* myStrat);}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Strategy.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_strategy}{Strategy}};}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_war_theatre}{WarTheatre}} \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}};}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{23     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_ac4ea86c245fdad602fe85f6b62021cb9}{venue}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_war_theatre_afd8f31c3b35b4560e50407da71d6ab41}{location}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_war_theatre_a96237b9b1916bd84b5cbee90ce88d702}{difficulty}} = 1;}
+\DoxyCodeLine{30 }
 \DoxyCodeLine{31 }
-\DoxyCodeLine{34     \mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a13c389a4110d878a617486d8a02cd9b0}{getStrategy}}(); \textcolor{comment}{//may need to make sendScout the virtual one instead}}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_war_theatre_aeac00db856afa4a7223d265093c7eca2}{WarTheatre}}();}
 \DoxyCodeLine{35 }
-\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}{sendScout}}() = 0;}
-\DoxyCodeLine{38 }
-\DoxyCodeLine{43     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_a4399abd6bdf199436d7cdff2d8c73bff}{decideVenue}}(\mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}});}
-\DoxyCodeLine{44 }
-\DoxyCodeLine{45     \mbox{\hyperlink{class_war_theatre}{WarTheatre}}(\mbox{\hyperlink{class_strategy}{Strategy}} myStrat);}
-\DoxyCodeLine{46 \};}
-\DoxyCodeLine{47 }
-\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a13c389a4110d878a617486d8a02cd9b0}{getStrategy}}(); \textcolor{comment}{//may need to make sendScout the virtual one instead}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a1ec7bc16674dd5a818f8fd9f05c8bca5}{sendScout}}() = 0;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_a4399abd6bdf199436d7cdff2d8c73bff}{decideVenue}}(\mbox{\hyperlink{class_strategy}{Strategy}}* \mbox{\hyperlink{class_war_theatre_a0a9d900992e27f6ec93e3ea6d8079936}{strategy}});}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{51     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_war_theatre_ac6380448de4d65ca548c4b9e0c0de94d}{getVenue}}();}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a14a5ba8feda58d2efa00d8c36aa954ef}{setStrategy}}(\mbox{\hyperlink{class_strategy}{Strategy}}* myStrat);}
+\DoxyCodeLine{55     }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a25c89883f8f14910f0eb908526e1b632}{setLocation}}(\textcolor{keywordtype}{string} loc);}
+\DoxyCodeLine{58     }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_a41b2ea62790ef0848221f3648a967882}{setDifficulty}}(\textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{61     }
+\DoxyCodeLine{64     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_war_theatre_ac5511a78ae1d6b4ca34acf7dd8836309}{getDifficulty}}();}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_war_theatre_aa905368cbf747b0d9cd9d4a5494d21ba}{setVenue}}(\textcolor{keywordtype}{char} v);}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

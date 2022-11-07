@@ -134,6 +134,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkSupplies</b> ()<
 &#160;</td><td class="memItemRight" valign="bottom"><b>~sendRaven</b> ()</td></tr>
 <tr class="memdesc:a5ae649aa7e798d6ea6fe148fb2acc144"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Destructor will be used to deference all pointer variables used by this class to stop all memory leaks. <br /></td></tr>
 <tr class="separator:a5ae649aa7e798d6ea6fe148fb2acc144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ebf6a7b05e1e05520b7f48dde90834"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raven.html#a41ebf6a7b05e1e05520b7f48dde90834">update</a> ()=0</td></tr>
+<tr class="memdesc:a41ebf6a7b05e1e05520b7f48dde90834"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Pure Virtual function for the update method that the concrete class uses.  <a href="class_raven.html#a41ebf6a7b05e1e05520b7f48dde90834">More...</a><br /></td></tr>
+<tr class="separator:a41ebf6a7b05e1e05520b7f48dde90834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -151,18 +154,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>numWeapons</b></td></t
 <tr class="separator:a143ce0d976159d380e73c6c761992598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366eb34973a6a2c209a7073957a7cda9"><td class="memItemLeft" align="right" valign="top"><a id="a366eb34973a6a2c209a7073957a7cda9" name="a366eb34973a6a2c209a7073957a7cda9"></a>
 <a class="el" href="class_supply_wagon.html">SupplyWagon</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>supplies</b></td></tr>
-<tr class="memdesc:a366eb34973a6a2c209a7073957a7cda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of <a class="el" href="class_supply_wagon.html">SupplyWagon</a>'s used to hold the different types of supplies. <br /></td></tr>
+<tr class="memdesc:a366eb34973a6a2c209a7073957a7cda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of <a class="el" href="class_supply_wagon.html" title="Abstract Prototype class SupplyWagon to serve as the base class for all derived concrete prototypes.">SupplyWagon</a>'s used to hold the different types of supplies. <br /></td></tr>
 <tr class="separator:a366eb34973a6a2c209a7073957a7cda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a3b832d5c42bd354a8713bed6a1a69"><td class="memItemLeft" align="right" valign="top"><a id="a91a3b832d5c42bd354a8713bed6a1a69" name="a91a3b832d5c42bd354a8713bed6a1a69"></a>
 <a class="el" href="class_bannerman.html">Bannerman</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>subject</b></td></tr>
 <tr class="memdesc:a91a3b832d5c42bd354a8713bed6a1a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_bannerman.html">Bannerman</a> subject the Observer watches. <br /></td></tr>
 <tr class="separator:a91a3b832d5c42bd354a8713bed6a1a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="memitem:a41ebf6a7b05e1e05520b7f48dde90834"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raven.html#a41ebf6a7b05e1e05520b7f48dde90834">update</a> ()=0</td></tr>
-<tr class="memdesc:a41ebf6a7b05e1e05520b7f48dde90834"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Pure Virtual function for the update method that the concrete class uses.  <a href="class_raven.html#a41ebf6a7b05e1e05520b7f48dde90834">More...</a><br /></td></tr>
-<tr class="separator:a41ebf6a7b05e1e05520b7f48dde90834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The Concrete class for the Observer A class that watches the <a class="el" href="class_bannerman.html">Bannerman</a> for any changes that are made. </p>
@@ -198,7 +195,7 @@ Additional Inherited Members</h2></td></tr>
 <p>constructor for the concrete <a class="el" href="class_raven.html" title="The Abstract class for the Observer A class that the Concrete Observer class inherits from.">Raven</a> class </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">supplies</td><td>is an array of pointer objects of type <a class="el" href="class_supply_wagon.html">SupplyWagon</a> </td></tr>
+    <tr><td class="paramname">supplies</td><td>is an array of pointer objects of type <a class="el" href="class_supply_wagon.html" title="Abstract Prototype class SupplyWagon to serve as the base class for all derived concrete prototypes.">SupplyWagon</a> </td></tr>
     <tr><td class="paramname">subject</td><td>is a pointer for the <a class="el" href="class_bannerman.html">Bannerman</a> subject that this Observer will observe </td></tr>
   </table>
   </dd>

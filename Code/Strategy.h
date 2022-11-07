@@ -45,7 +45,7 @@ protected:
 	/**amount of defected allies**/
 	int defectedAllies;
 public:
-	/** @todo  constructor. initializes myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, minSupplies
+	/** @brief  constructor. initializes myKingdom, enemyKingdom, myBannerman, enemyBannerman, strategy, minSupplies
 	 *  and minFavour.
 	 * @param myKingdom - Kingdom pointer of attacking Bannerman's Kingdom.
 	 * @param enemyKingdom - Kingdom pointer of enemyBannerman's Kingdom.
@@ -58,22 +58,22 @@ public:
 	 * @param hb - Caretaker for memento implementation.
 	*/
 	Strategy(Kingdom* myKingdom,Kingdom* enemyKingdom,Bannerman* myBannerman, Bannerman* enemyBannerman,string name,int min,int minFavour, Historian* h, HistoryBook* hb);
-	/** @todo Abstract method
+	/** @brief Abstract method
 	 * @param myBannerman - attacking Bannerman object.
 	 * @param enemyBannerman - Bannerman object being attacked.
 	 * @return battle result as a boolean with true implying the attacking bannerman object
 	 * won and false implying the opposite**/
 	virtual bool attack(Bannerman* myBannerman, Bannerman* enemyBannerman)=0;
-	/** @todo gets strategy variable
+	/** @brief gets strategy variable
 	 * @return strategy variable**/
 	virtual string getStrategyName();
-	/** @todo gets attacking Bannerman
+	/** @brief gets attacking Bannerman
 	 *  @return myBannerman pointer**/
 	virtual Bannerman* getMyBannerman();
-	/** @todo gets Bannerman being attacked
+	/** @brief gets Bannerman being attacked
 	 *  @return enemyBannerman pointer**/
 	virtual Bannerman* getEnemyBannerman();
-	/** @todo destructor. deallocates all pointers of this class**/
+	/** @brief destructor. deallocates all pointers of this class**/
 	virtual ~Strategy();
 };
 #endif

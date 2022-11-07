@@ -4,30 +4,28 @@
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ECONOMY\_H}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define ECONOMY\_H}}
 \DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}WarIndicators.h"{}}}
-\DoxyCodeLine{4 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{4 }
 \DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}State.h"{}}}
-\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_state}{State}};}
-\DoxyCodeLine{8 \textcolor{comment}{//circular dependency with state}}
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_economy}{Economy}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_war_indicators}{WarIndicators}} \{}
-\DoxyCodeLine{10     }
-\DoxyCodeLine{11 \textcolor{keyword}{private}:}
-\DoxyCodeLine{13     \mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_economy_a5ec4a8858c44c0515ff2ee53d0c9d783}{state}};}
-\DoxyCodeLine{14     \textcolor{keywordtype}{int} currency;}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16 \textcolor{keyword}{public}:}
-\DoxyCodeLine{17     \mbox{\hyperlink{class_economy}{Economy}}(\mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_economy_a5ec4a8858c44c0515ff2ee53d0c9d783}{state}},\textcolor{keywordtype}{int} currency);}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{19     \textcolor{keywordtype}{void} SetState();}
-\DoxyCodeLine{20 }
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} decreaseCurrency();}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23     \textcolor{keywordtype}{int} getCurrency();}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25     \textcolor{keywordtype}{void} removeCurrency(\textcolor{keywordtype}{int} i);}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_economy}{\string~Economy}}();}
-\DoxyCodeLine{28 \};}
-\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_state}{State}};}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_economy}{Economy}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_war_indicators}{WarIndicators}} \{}
+\DoxyCodeLine{17     }
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_economy_a5ec4a8858c44c0515ff2ee53d0c9d783}{state}};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_economy_aaa0a568fe2b1b01438ca845741697f78}{currency}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_economy}{Economy}}(\mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_economy_a5ec4a8858c44c0515ff2ee53d0c9d783}{state}},\textcolor{keywordtype}{int} \mbox{\hyperlink{class_economy_aaa0a568fe2b1b01438ca845741697f78}{currency}});}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_economy_acbb04e7c1518d92b64cfacfa6e8187cf}{SetState}}();}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_economy_a2cdfb351b76c4357137647d943a461b8}{getState}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_economy_a3a72de0a27d172c8faa11ca0e9ee63c9}{decreaseCurrency}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_economy_ae193cf90accae8316a79f8050f8fce46}{getCurrency}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_economy_a162695f628750e0d2e79a1d2e460db64}{removeCurrency}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{45     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_economy_acb0e31af66707d6fbb4b6178f2979e98}{\string~Economy}}();}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

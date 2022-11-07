@@ -23,8 +23,11 @@ Inheritance diagram for War\+Indicators\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Default constructor. initializes m to null. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_war_indicators_ae412f0a5bb3bfc86ff6437d22e9407a5}{War\+Indicators}} (\mbox{\hyperlink{class_treasury}{Treasury}} $\ast$\mbox{\hyperlink{class_war_indicators_af473554ebc672a6253eb56d84c1bb891}{m}})
 \begin{DoxyCompactList}\small\item\em constructor. initializes m to the passed in \mbox{\hyperlink{class_treasury}{Treasury}} object. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}{$\sim$\+War\+Indicators}} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_war_indicators_a13980e8e5cfecf4d3891c48e84bb7894}{set\+Treasury}} (\mbox{\hyperlink{class_treasury}{Treasury}} $\ast$\mbox{\hyperlink{class_war_indicators_af473554ebc672a6253eb56d84c1bb891}{m}})
+\begin{DoxyCompactList}\small\item\em sets m (\mbox{\hyperlink{class_treasury}{Treasury}} mediator pointer) to the passed in \mbox{\hyperlink{class_treasury}{Treasury}} pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}\label{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}} 
+virtual {\bfseries $\sim$\+War\+Indicators} ()
+\begin{DoxyCompactList}\small\item\em destructor. deallocates \mbox{\hyperlink{class_treasury}{Treasury}} pointer of this class \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -59,14 +62,24 @@ constructor. initializes m to the passed in \mbox{\hyperlink{class_treasury}{Tre
 {\em m} & -\/ mediator which is of \mbox{\hyperlink{class_treasury}{Treasury}} pointer type \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}\label{class_war_indicators_aa8ee75ff5bf3d7bc1fb7f82a6527e582}} 
-\index{WarIndicators@{WarIndicators}!````~WarIndicators@{$\sim$WarIndicators}}
-\index{````~WarIndicators@{$\sim$WarIndicators}!WarIndicators@{WarIndicators}}
-\doxysubsubsection{\texorpdfstring{$\sim$WarIndicators()}{~WarIndicators()}}
-{\footnotesize\ttfamily virtual War\+Indicators\+::$\sim$\+War\+Indicators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000029}{Todo}}]destructor. deallocates \mbox{\hyperlink{class_treasury}{Treasury}} pointer of this class \end{DoxyRefDesc}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_war_indicators_a13980e8e5cfecf4d3891c48e84bb7894}\label{class_war_indicators_a13980e8e5cfecf4d3891c48e84bb7894}} 
+\index{WarIndicators@{WarIndicators}!setTreasury@{setTreasury}}
+\index{setTreasury@{setTreasury}!WarIndicators@{WarIndicators}}
+\doxysubsubsection{\texorpdfstring{setTreasury()}{setTreasury()}}
+{\footnotesize\ttfamily void War\+Indicators\+::set\+Treasury (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_treasury}{Treasury}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets m (\mbox{\hyperlink{class_treasury}{Treasury}} mediator pointer) to the passed in \mbox{\hyperlink{class_treasury}{Treasury}} pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ mediator which is of \mbox{\hyperlink{class_treasury}{Treasury}} pointer type \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}

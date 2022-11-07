@@ -2,6 +2,11 @@
 \label{class_con_iterator}\index{ConIterator@{ConIterator}}
 
 
+Concrete iterator class Implements the interface for accessing and traversing bannerman elements in ground\+Forces. Keeps track of the current position in the traversal of the aggregate(ground\+Forces list).  
+
+
+
+
 {\ttfamily \#include $<$Con\+Iterator.\+h$>$}
 
 Inheritance diagram for Con\+Iterator\+:\begin{figure}[H]
@@ -16,13 +21,13 @@ Inheritance diagram for Con\+Iterator\+:\begin{figure}[H]
 \mbox{\hyperlink{class_con_iterator_a5309dbb435bbf8767777e52fe1fb2469}{Con\+Iterator}} (list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$ X)
 \item 
 \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_con_iterator_a0d222acec8e723def980a98c5cd822aa}{Current}} ()
-\begin{DoxyCompactList}\small\item\em Abstract. Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_con_iterator_af5dd2fc8813b5dd00594dcf9ff749cd3}{next}} ()
 \begin{DoxyCompactList}\small\item\em Sets the ($\ast$it) pointer to the next bannerman object in ground\+Forces to be accessed and returns it, , primitive operations can be performed on the returned bannerman object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_con_iterator_a2b5169fea3ec59662f32f3938d5ab787}{has\+Next}} ()
 \begin{DoxyCompactList}\small\item\em Determines whether or not the current bannerman object which ($\ast$it) currently points to is the last element in the list or not. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_con_iterator_ad34259fd2a0dab11f39224aaefc11983}{is\+Active}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns whether or not the current item is active or not by determining whether HP\texorpdfstring{$>$}{>}0 or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,7 +38,9 @@ list$<$ \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ $>$\+::iterator \mb
 
 
 \doxysubsection{Detailed Description}
-@\+Brief Concrete iterator class Implements the interface for accessing and traversing bannerman elements in ground\+Forces. Keeps track of the current position in the traversal of the aggregate(ground\+Forces list). \begin{DoxyAuthor}{Author}
+Concrete iterator class Implements the interface for accessing and traversing bannerman elements in ground\+Forces. Keeps track of the current position in the traversal of the aggregate(ground\+Forces list). 
+
+\begin{DoxyAuthor}{Author}
 Thapelo Thoka 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
@@ -64,7 +71,7 @@ October 2022
 
 
 
-Abstract. Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. 
+Returns a pointer to the current bannerman object in ground\+Forces being accessed, , primitive operations can be performed on the returned bannerman object. 
 
 \begin{DoxyReturn}{Returns}
 Bannerman$\ast$ 
@@ -98,7 +105,11 @@ Implements \mbox{\hyperlink{class_iterator_ac3a1f5cb124b2b89e4cc41900ffd83f6}{It
 \doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
 {\footnotesize\ttfamily bool Con\+Iterator\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-@\+Brief Returns whether or not the current item is active or not by determining whether HP\texorpdfstring{$>$}{>}0 or not \begin{DoxyReturn}{Returns}
+
+
+Returns whether or not the current item is active or not by determining whether HP\texorpdfstring{$>$}{>}0 or not. 
+
+\begin{DoxyReturn}{Returns}
 true 
 
 false 

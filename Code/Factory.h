@@ -9,7 +9,7 @@ using namespace std;
 ///@author Ronin Brookes 19069686
 class Factory : public WarIndicators {
 
-protected
+protected:
 ///@brief make() is the factory Method called in operation() to make the new supplies.
 ///@return ArmySupplies pointer to the newly created supplies.
     virtual ArmySupplies* make() = 0;

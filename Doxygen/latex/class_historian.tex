@@ -3,36 +3,20 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_historian_a9be92cef3c946f8ce81a3f2724129cc9}{Historian}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$b)
-\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_history}{History}} $\ast$ \mbox{\hyperlink{class_historian_a62e14ea0cf82e187826bafe9a7a07d62}{set\+Ally}} ()
-\begin{DoxyCompactList}\small\item\em set the memento object of the defecting bannerman \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_historian_a04c73b32b1936ed98851be4bc17b993f}{set\+Ally}} (\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em sets the bannerman variable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_history}{History}} $\ast$ \mbox{\hyperlink{class_historian_a5a78b8f03d554d5e3867906d3d2d6e63}{Store}} ()
+\begin{DoxyCompactList}\small\item\em stores the bannerman in a memento object (history). \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_historian_af232c57ba998520e35c869648f0ffdbf}{restore\+Ally}} (\mbox{\hyperlink{class_history}{History}} $\ast$h)
-\begin{DoxyCompactList}\small\item\em return the bannerman that defected \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em reverts the bannerman that was stored to original state for when they return. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_historian_a5171a3eb32a296b1911ea218030af8f5}\label{class_historian_a5171a3eb32a296b1911ea218030af8f5}} 
+{\bfseries $\sim$\+Historian} ()
+\begin{DoxyCompactList}\small\item\em the destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_historian_a22f1441ec330a462c538f1084a60254d}\label{class_historian_a22f1441ec330a462c538f1084a60254d}} 
-\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ {\bfseries bannerman}
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_historian_a9be92cef3c946f8ce81a3f2724129cc9}\label{class_historian_a9be92cef3c946f8ce81a3f2724129cc9}} 
-\index{Historian@{Historian}!Historian@{Historian}}
-\index{Historian@{Historian}!Historian@{Historian}}
-\doxysubsubsection{\texorpdfstring{Historian()}{Historian()}}
-{\footnotesize\ttfamily Historian\+::\+Historian (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{b }\end{DoxyParamCaption})}
-
-
-
-constructor 
-
-
-\begin{DoxyParams}{Parameters}
-{\em b} & bannerman that is defecting \\
-\hline
-\end{DoxyParams}
+\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$ \mbox{\hyperlink{class_historian_a22f1441ec330a462c538f1084a60254d}{bannerman}}
+\begin{DoxyCompactList}\small\item\em The originator class in the memento design pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -44,29 +28,63 @@ constructor
 
 
 
-return the bannerman that defected 
+reverts the bannerman that was stored to original state for when they return. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em h} & the memento object that needs to be restored \\
+{\em h} & the history object being restored. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-the bannerman of that object 
+the bannerman that was restored from the stored history object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_historian_a62e14ea0cf82e187826bafe9a7a07d62}\label{class_historian_a62e14ea0cf82e187826bafe9a7a07d62}} 
+\mbox{\Hypertarget{class_historian_a04c73b32b1936ed98851be4bc17b993f}\label{class_historian_a04c73b32b1936ed98851be4bc17b993f}} 
 \index{Historian@{Historian}!setAlly@{setAlly}}
 \index{setAlly@{setAlly}!Historian@{Historian}}
 \doxysubsubsection{\texorpdfstring{setAlly()}{setAlly()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_history}{History}} $\ast$ Historian\+::set\+Ally (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Historian\+::set\+Ally (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bannerman}{Bannerman}} $\ast$}]{b }\end{DoxyParamCaption})}
 
 
 
-set the memento object of the defecting bannerman 
+sets the bannerman variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the bannerman being set to the class variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_historian_a5a78b8f03d554d5e3867906d3d2d6e63}\label{class_historian_a5a78b8f03d554d5e3867906d3d2d6e63}} 
+\index{Historian@{Historian}!Store@{Store}}
+\index{Store@{Store}!Historian@{Historian}}
+\doxysubsubsection{\texorpdfstring{Store()}{Store()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_history}{History}} $\ast$ Historian\+::\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stores the bannerman in a memento object (history). 
 
 \begin{DoxyReturn}{Returns}
-the created memento object for that bannerman 
+the resulting history object with the bannerman. 
 \end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_historian_a22f1441ec330a462c538f1084a60254d}\label{class_historian_a22f1441ec330a462c538f1084a60254d}} 
+\index{Historian@{Historian}!bannerman@{bannerman}}
+\index{bannerman@{bannerman}!Historian@{Historian}}
+\doxysubsubsection{\texorpdfstring{bannerman}{bannerman}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bannerman}{Bannerman}}$\ast$ Historian\+::bannerman\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The originator class in the memento design pattern. 
+
+\begin{DoxyAuthor}{Author}
+Julianna Venter. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2022. a bannerman object that represents the current bannerman being stored -\/ the one that has defected 
+\end{DoxyDate}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

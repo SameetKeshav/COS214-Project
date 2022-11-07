@@ -55,12 +55,12 @@ public:
  * @param o - the Raven observer object to detach*/
     void detach(Raven* o) override;
 
-    /**@brief increases the damage variables of the troop.
-@param boost - The number by which to increase the damage of the troop.
+    /** @brief increases the damage variables of the troop.
+ @param boost - The number by which to increase the damage of the troop.
 */
     void increasePower(int boost) override;
 
-    /**@brief uses strategy to make a troop attack another kingdom.
+    /** @brief uses strategy to make a troop attack another kingdom.
  * @param myBannerman - The attacking bannerman object.
  * @param enemyBannerman - The bannerman object being attacked.
 */
@@ -79,7 +79,7 @@ public:
     void decreaseMedical() override;
 
     /** @brief Changes the attack strategy of the troop.
-@param strategy - The new strategy the troop should have.
+ @param strategy - The new strategy the troop should have.
 */
     void changeStrategy(Strategy* strategy) override;
 
@@ -97,7 +97,7 @@ public:
     int getFavour() override;
 
     /** @brief increases the HP of the troop.
-@param boost - The number by which to increase the HP of the troop.
+ @param boost - The number by which to increase the HP of the troop.
 */
     void increaseHP(int boost) override;
     /**
@@ -135,12 +135,12 @@ public:
     int getMedical() override;
 
     /** @brief Sets the number of weapon supplies the troop has.
-@param numWeapons - The new numWeapons the troop should have.
+ @param numWeapons - The new numWeapons the troop should have.
 */
     void setWeapons(int numWeapons) override;
 
     /** @brief Sets the number of food supplies the troop has.
-@param numFood - The new numFood the troop should have.
+ @param numFood - The new numFood the troop should have.
 */
     void setFood(int numFood) override;
 
@@ -153,7 +153,7 @@ public:
 
 
     /** @brief Sets the number of medical supplies the troop has.
-@param numMedical - The new numMedical the troop should have.
+ @param numMedical - The new numMedical the troop should have.
 */
     void setMedical(int numMedical) override;
 

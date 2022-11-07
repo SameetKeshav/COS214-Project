@@ -22,9 +22,11 @@ Inheritance diagram for Healthy\+State\+:\begin{figure}[H]
 {\bfseries Healthy\+State} ()
 \begin{DoxyCompactList}\small\item\em Default constructor. initializes context to null. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_healthy_state_a5f75e1935e20ed34b73d259a2324e4f9}{decrease\+Currency}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_state}{State}} $\ast$ \mbox{\hyperlink{class_healthy_state_a97583e0f477b87971b3a586ef1ba89e6}{get\+Demotion\+State}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em gets lower level state of economy \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_healthy_state_ad59cf5b13d9d1ab72a49bce5ef5f031e}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em tells what the \mbox{\hyperlink{class_state}{State}} of the \mbox{\hyperlink{class_economy}{Economy}} is. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -46,8 +48,10 @@ October 2022
 \doxysubsubsection{\texorpdfstring{decreaseCurrency()}{decreaseCurrency()}}
 {\footnotesize\ttfamily void Healthy\+State\+::decrease\+Currency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state \end{DoxyRefDesc}
+
+
+decreases \mbox{\hyperlink{class_economy}{Economy}} currency and then checks if the conditions are sufficient for the economy to downgrade to a lower state 
+
 
 
 Implements \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State}}.
@@ -58,14 +62,33 @@ Implements \mbox{\hyperlink{class_state_a5773daf54efd2c1e6723950d4e44b5a7}{State
 \doxysubsubsection{\texorpdfstring{getDemotionState()}{getDemotionState()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_state}{State}} $\ast$ Healthy\+State\+::get\+Demotion\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]gets lower level state of economy \end{DoxyRefDesc}
+
+
+gets lower level state of economy 
+
 \begin{DoxyReturn}{Returns}
 concrete \mbox{\hyperlink{class_state}{State}} of \mbox{\hyperlink{class_economy}{Economy}} 
 \end{DoxyReturn}
 
 
 Reimplemented from \mbox{\hyperlink{class_state_aa901c36d20da2a396e4fa27bf8576eec}{State}}.
+
+\mbox{\Hypertarget{class_healthy_state_ad59cf5b13d9d1ab72a49bce5ef5f031e}\label{class_healthy_state_ad59cf5b13d9d1ab72a49bce5ef5f031e}} 
+\index{HealthyState@{HealthyState}!getState@{getState}}
+\index{getState@{getState}!HealthyState@{HealthyState}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily string Healthy\+State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+tells what the \mbox{\hyperlink{class_state}{State}} of the \mbox{\hyperlink{class_economy}{Economy}} is. 
+
+\begin{DoxyReturn}{Returns}
+returns a string that says in text what the \mbox{\hyperlink{class_state}{State}} is. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_a5dc4ba7ba1874d60a61fdc503d31c6d0}{State}}.
 
 
 
