@@ -20,7 +20,7 @@ bool Siege::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		//tell thapelo to add id attribute and a getter, we must
 		//formulate a way to make bannerman ids unique
 		enemyKingdom->add(myBannerman);
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 		cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         return false;

@@ -16,7 +16,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
 		//tell thapelo to add id attribute and a getter, we must
 		//formulate a way to make bannerman ids unique
 		enemyKingdom->add(myBannerman);
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 		cout<<"The commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         return false;
@@ -110,7 +110,7 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             Bannerman* returned = Greg->restoreAlly(BookOfDura->getAlly());
             myKingdom->add(returned);
             enemyKingdom->remove(returned);
-            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
             cout<<returned->getName()<<"'s commander asks yor forgiveness and joins your fight once again."<<endl;
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         }
@@ -129,8 +129,11 @@ bool BattleField::attack(Bannerman* myBannerman, Bannerman* enemyBannerman) {
             //tell thapelo to add id attribute and a getter, we must
             //formulate a way to make bannerman ids unique
             enemyKingdom->add(myBannerman);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
             cout<<"The enemy kingdom's bannerman has been defeated. "<<enemyBannerman->getName()<<" is now under your kingdom's rule."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
             cout<<"But the commanders are losing faith in your cause. "<<myBannerman->getName()<<" has defected to the other side."<<endl;
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
             enemyKingdom->remove(enemyBannerman);
             return false;
         }
