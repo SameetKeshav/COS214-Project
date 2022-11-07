@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\tst\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_run">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Code_run.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Code_run"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_run/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Code_run.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Code_run/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_lib">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/libCode_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Code_lib"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_lib/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/libCode_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Code_lib/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_tst">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Code_tst.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 Code_tst"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Code_tst/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Code_tst.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 Code_tst/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/tst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/include"/>
+					<Add directory="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Ambush.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Ambush.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/ArmySupplies.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Assassinate.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Assassinate.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Bannerman.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Bannerman.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/BattleField.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/BattleField.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Commander.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Commander.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/ConIterator.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/ConIterator.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Conditions.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Conditions.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Economy.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Economy.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Factory.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Factory.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FailedState.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FailedState.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodFac.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodFac.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodSupp.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodSupp.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodWagon.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/FoodWagon.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/HealthyState.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/HealthyState.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Historian.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Historian.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/History.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/History.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/HistoryBook.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/HistoryBook.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Iterator.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Kingdom.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Kingdom.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Location.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Location.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MasterOfCoin.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MasterOfCoin.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalFac.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalFac.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalSupp.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalSupp.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalWagon.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/MedicalWagon.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Raven.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Siege.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Siege.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/State.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/State.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Strategy.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Strategy.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/SupplyWagon.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/SupplyWagon.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Topology.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Topology.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Treasury.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Troop.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Troop.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/UnstableState.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/UnstableState.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WarIndicators.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WarTheatre.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WarTheatre.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponSupp.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponSupp.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponWagon.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponWagon.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponsFac.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/WeaponsFac.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Weather.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/Weather.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/main.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/sendRaven.cpp">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/sendRaven.h">
+			<Option target="Code_run"/>
+			<Option target="Code_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/CommanderTest.cpp">
+			<Option target="Code_tst"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/DecoratorTest.cpp">
+			<Option target="Code_tst"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/JuliannaUnitTesting.cpp">
+			<Option target="Code_tst"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/WagonsTest.cpp">
+			<Option target="Code_tst"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/main.cpp">
+			<Option target="Code_tst"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/tst/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tst\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/ic/Desktop/Computer Science/2nd Year/2nd Semester/COS214/AssignmentWithUnitTest/GoogleTesting/Code/lib/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
