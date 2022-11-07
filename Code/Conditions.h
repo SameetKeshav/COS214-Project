@@ -6,7 +6,7 @@
 //#include "Topology.h"
 #include "Location.h"
 
-/**@brief decorator class.
+/** @brief decorator class.
  * This is the class/object decorates the concreteComponent. Inherits from WarTheatre class.
  * @author Keabetswe Mothapo
  * @date October 2022
@@ -20,16 +20,16 @@ private:
 	
 public:
 
-	/**@brief decorator function for thr pattern*/
+	/** @brief decorator function for thr pattern*/
 	void sendScout() ;
 
-    /**@brief constructor for the decorator class.
+    /** @brief constructor for the decorator class.
      * merely used to assign variables and call the decorator function
      * @param myVenue - pointer to the object that is to be decoraed
      */
 	Conditions(WarTheatre* myVenue);
 	
-	/**@brief destructor to delete the WarTheatre pointer*/
+	/** @brief destructor to delete the WarTheatre pointer*/
 	virtual ~Conditions();
 };
 

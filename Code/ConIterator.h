@@ -5,8 +5,7 @@
 #include <list>
 using namespace std;
 
-/**
- * @Brief Concrete iterator class
+/** @brief Concrete iterator class
  * Implements the interface for accessing and traversing bannerman elements in groundForces.
  * Keeps track of the current position in the traversal of the aggregate(groundForces list).
  *  @author Thapelo Thoka
@@ -51,7 +50,7 @@ public:
  * @returns true */
     bool hasNext();
 
-    /**@Brief Returns whether or not the current item is active or not by determining whether HP>0 or not
+    /** @brief Returns whether or not the current item is active or not by determining whether HP>0 or not
  * @returns true
  * @returns false
  * */
